@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>12 Сбор данных из интернета: rvest | Наука о данных в R для программы Цифровых гуманитарных исследований</title>
+  <meta name="description" content="12 Сбор данных из интернета: rvest | Наука о данных в R для программы Цифровых гуманитарных исследований" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="12 Сбор данных из интернета: rvest | Наука о данных в R для программы Цифровых гуманитарных исследований" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="12 Сбор данных из интернета: rvest | Наука о данных в R для программы Цифровых гуманитарных исследований" />
+  
+  
+  
+
+<meta name="author" content="Г. А. Мороз, И. С. Поздняков" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="работа-со-временем-lubridate.html"/>
+<link rel="next" href="описательная-статистика-распределения.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+<script src="libs/htmlwidgets-1.5.1/htmlwidgets.js"></script>
+<link href="libs/str_view-0.1.0/str_view.css" rel="stylesheet" />
+<script src="libs/str_view-binding-1.4.0/str_view.js"></script>
+<link href="libs/leaflet-1.3.1/leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet" />
+<script src="libs/Proj4Leaflet-1.0.1/proj4-compressed.js"></script>
+<script src="libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet" />
+<script src="libs/leaflet-binding-2.0.3/leaflet.js"></script>
+<script src="libs/leaflet-providers-1.9.0/leaflet-providers_1.9.0.js"></script>
+<script src="libs/leaflet-providers-plugin-2.0.3/leaflet-providers-plugin.js"></script>
+<script src="libs/Leaflet.Sync-0.0.5/L.Map.Sync.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Наука о данных в R для ЦГИ</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> О курсе</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Введение в R</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#наука-о-данных"><i class="fa fa-check"></i><b>2.1</b> Наука о данных</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#установка-r-и-rstudio"><i class="fa fa-check"></i><b>2.2</b> Установка R и RStudio</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#полезные-ссылки"><i class="fa fa-check"></i><b>2.3</b> Полезные ссылки</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#rstudio"><i class="fa fa-check"></i><b>2.4</b> Rstudio</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#введение-в-r"><i class="fa fa-check"></i><b>2.5</b> Введение в R</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="intro.html"><a href="intro.html#calc"><i class="fa fa-check"></i><b>2.5.1</b> R как калькулятор</a></li>
+<li class="chapter" data-level="2.5.2" data-path="intro.html"><a href="intro.html#func"><i class="fa fa-check"></i><b>2.5.2</b> Функции</a></li>
+<li class="chapter" data-level="2.5.3" data-path="intro.html"><a href="intro.html#variables"><i class="fa fa-check"></i><b>2.5.3</b> Переменные</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#data_types"><i class="fa fa-check"></i><b>2.6</b> Типы данных</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#atomic"><i class="fa fa-check"></i><b>2.7</b> Вектор</a><ul>
+<li class="chapter" data-level="2.7.1" data-path="intro.html"><a href="intro.html#coercion"><i class="fa fa-check"></i><b>2.7.1</b> Coercion</a></li>
+<li class="chapter" data-level="2.7.2" data-path="intro.html"><a href="intro.html#vector_op"><i class="fa fa-check"></i><b>2.7.2</b> Операции с векторами</a></li>
+<li class="chapter" data-level="2.7.3" data-path="intro.html"><a href="intro.html#recycling"><i class="fa fa-check"></i><b>2.7.3</b> Recycling</a></li>
+<li class="chapter" data-level="2.7.4" data-path="intro.html"><a href="intro.html#index_atomic"><i class="fa fa-check"></i><b>2.7.4</b> Индексирование векторов</a></li>
+<li class="chapter" data-level="2.7.5" data-path="intro.html"><a href="intro.html#na"><i class="fa fa-check"></i><b>2.7.5</b> NA — пропущенные значения</a></li>
+<li class="chapter" data-level="2.7.6" data-path="intro.html"><a href="intro.html#google"><i class="fa fa-check"></i><b>2.7.6</b> В любой непонятной ситуации — ищите в поисковике</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#matrix"><i class="fa fa-check"></i><b>2.8</b> Матрицы (matrix)</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#list"><i class="fa fa-check"></i><b>2.9</b> Списки (list)</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#df"><i class="fa fa-check"></i><b>2.10</b> Data.frame</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#real_data"><i class="fa fa-check"></i><b>2.11</b> Начинаем работу с реальными данными</a><ul>
+<li class="chapter" data-level="2.11.1" data-path="intro.html"><a href="intro.html#wd"><i class="fa fa-check"></i><b>2.11.1</b> Рабочая папка и проекты</a></li>
+<li class="chapter" data-level="2.11.2" data-path="intro.html"><a href="intro.html#import"><i class="fa fa-check"></i><b>2.11.2</b> Импорт данных</a></li>
+</ul></li>
+<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#prep"><i class="fa fa-check"></i><b>2.12</b> Препроцессинг данных в R</a><ul>
+<li class="chapter" data-level="2.12.1" data-path="intro.html"><a href="intro.html#explore"><i class="fa fa-check"></i><b>2.12.1</b> Исследование данных</a></li>
+<li class="chapter" data-level="2.12.2" data-path="intro.html"><a href="intro.html#subset"><i class="fa fa-check"></i><b>2.12.2</b> Subsetting</a></li>
+<li class="chapter" data-level="2.12.3" data-path="intro.html"><a href="intro.html#newcol"><i class="fa fa-check"></i><b>2.12.3</b> Создание новых колонок</a></li>
+<li class="chapter" data-level="2.12.4" data-path="intro.html"><a href="intro.html#dtvstidy"><i class="fa fa-check"></i><b>2.12.4</b> data.table vs. tidyverse</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html"><i class="fa fa-check"></i><b>3</b> <code>tidyverse</code>: Загрузка и трансформация данных</a><ul>
+<li class="chapter" data-level="3.1" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#загрузка-данных"><i class="fa fa-check"></i><b>3.1</b> Загрузка данных</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#рабочая-директория"><i class="fa fa-check"></i><b>3.1.1</b> Рабочая директория</a></li>
+<li class="chapter" data-level="3.1.2" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#форматы-данных-.csv"><i class="fa fa-check"></i><b>3.1.2</b> Форматы данных: <code>.csv</code></a></li>
+<li class="chapter" data-level="3.1.3" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#загрузка-данных-readr-readxl"><i class="fa fa-check"></i><b>3.1.3</b> Загрузка данных: readr, readxl</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#tibble"><i class="fa fa-check"></i><b>3.2</b> <code>tibble</code></a></li>
+<li class="chapter" data-level="3.3" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyr"><i class="fa fa-check"></i><b>3.3</b> <code>dplyr</code></a><ul>
+<li class="chapter" data-level="3.3.1" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrfilter"><i class="fa fa-check"></i><b>3.3.1</b> <code>dplyr::filter()</code></a></li>
+<li class="chapter" data-level="3.3.2" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrslice"><i class="fa fa-check"></i><b>3.3.2</b> <code>dplyr::slice()</code></a></li>
+<li class="chapter" data-level="3.3.3" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrselect"><i class="fa fa-check"></i><b>3.3.3</b> <code>dplyr::select()</code></a></li>
+<li class="chapter" data-level="3.3.4" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrarrange"><i class="fa fa-check"></i><b>3.3.4</b> <code>dplyr::arrange()</code></a></li>
+<li class="chapter" data-level="3.3.5" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrdistinct"><i class="fa fa-check"></i><b>3.3.5</b> <code>dplyr::distinct()</code></a></li>
+<li class="chapter" data-level="3.3.6" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrmutate"><i class="fa fa-check"></i><b>3.3.6</b> <code>dplyr::mutate()</code></a></li>
+<li class="chapter" data-level="3.3.7" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrgroup_by...-summarise..."><i class="fa fa-check"></i><b>3.3.7</b> <code>dplyr::group_by(...) %&gt;% summarise(...)</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#соединение-датафреймов"><i class="fa fa-check"></i><b>3.4</b> Соединение датафреймов</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#bind_..."><i class="fa fa-check"></i><b>3.4.1</b> <code>bind_...</code></a></li>
+<li class="chapter" data-level="3.4.2" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyr.._join"><i class="fa fa-check"></i><b>3.4.2</b> <code>dplyr::.._join()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#tidyr-package"><i class="fa fa-check"></i><b>3.5</b> <code>tidyr</code> package</a></li>
+<li class="chapter" data-level="3.6" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#полезные-надстройки"><i class="fa fa-check"></i><b>3.6</b> Полезные надстройки</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="viz-1.html"><a href="viz-1.html"><i class="fa fa-check"></i><b>4</b> Визуализация данных</a><ul>
+<li class="chapter" data-level="4.1" data-path="viz-1.html"><a href="viz-1.html#зачем-визуализировать-данные"><i class="fa fa-check"></i><b>4.1</b> Зачем визуализировать данные?</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="viz-1.html"><a href="viz-1.html#квартет-анскомба"><i class="fa fa-check"></i><b>4.1.1</b> Квартет Анскомба</a></li>
+<li class="chapter" data-level="4.1.2" data-path="viz-1.html"><a href="viz-1.html#датазаурус"><i class="fa fa-check"></i><b>4.1.2</b> Датазаурус</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="viz-1.html"><a href="viz-1.html#основы-ggplot2"><i class="fa fa-check"></i><b>4.2</b> Основы <code>ggplot2</code></a><ul>
+<li class="chapter" data-level="4.2.1" data-path="viz-1.html"><a href="viz-1.html#диаграмма-рассеяния-scaterplot"><i class="fa fa-check"></i><b>4.2.1</b> Диаграмма рассеяния (Scaterplot)</a></li>
+<li class="chapter" data-level="4.2.2" data-path="viz-1.html"><a href="viz-1.html#слои"><i class="fa fa-check"></i><b>4.2.2</b> Слои</a></li>
+<li class="chapter" data-level="4.2.3" data-path="viz-1.html"><a href="viz-1.html#aes"><i class="fa fa-check"></i><b>4.2.3</b> <code>aes()</code></a></li>
+<li class="chapter" data-level="4.2.4" data-path="viz-1.html"><a href="viz-1.html#оформление"><i class="fa fa-check"></i><b>4.2.4</b> Оформление</a></li>
+<li class="chapter" data-level="4.2.5" data-path="viz-1.html"><a href="viz-1.html#логарифмические-шкалы"><i class="fa fa-check"></i><b>4.2.5</b> Логарифмические шкалы</a></li>
+<li class="chapter" data-level="4.2.6" data-path="viz-1.html"><a href="viz-1.html#annotate"><i class="fa fa-check"></i><b>4.2.6</b> <code>annotate()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="viz-1.html"><a href="viz-1.html#столбчатые-диаграммы-barplots"><i class="fa fa-check"></i><b>4.3</b> Столбчатые диаграммы (barplots)</a></li>
+<li class="chapter" data-level="4.4" data-path="viz-1.html"><a href="viz-1.html#факторы"><i class="fa fa-check"></i><b>4.4</b> Факторы</a></li>
+<li class="chapter" data-level="4.5" data-path="viz-1.html"><a href="viz-1.html#дотплот"><i class="fa fa-check"></i><b>4.5</b> Дотплот</a></li>
+<li class="chapter" data-level="4.6" data-path="viz-1.html"><a href="viz-1.html#гистограммы"><i class="fa fa-check"></i><b>4.6</b> Гистограммы</a></li>
+<li class="chapter" data-level="4.7" data-path="viz-1.html"><a href="viz-1.html#функции-плотности"><i class="fa fa-check"></i><b>4.7</b> Функции плотности</a></li>
+<li class="chapter" data-level="4.8" data-path="viz-1.html"><a href="viz-1.html#точки-джиттер-jitter-вайолинплот-violinplot-ящики-с-усами-boxplot"><i class="fa fa-check"></i><b>4.8</b> Точки, джиттер (jitter), вайолинплот (violinplot), ящики с усами (boxplot),</a></li>
+<li class="chapter" data-level="4.9" data-path="viz-1.html"><a href="viz-1.html#фасетизация"><i class="fa fa-check"></i><b>4.9</b> Фасетизация</a></li>
+<li class="chapter" data-level="4.10" data-path="viz-1.html"><a href="viz-1.html#визуализация-комбинаций-признаков"><i class="fa fa-check"></i><b>4.10</b> Визуализация комбинаций признаков</a><ul>
+<li class="chapter" data-level="4.10.1" data-path="viz-1.html"><a href="viz-1.html#потоковая-диаграмма-sankey-diagram"><i class="fa fa-check"></i><b>4.10.1</b> Потоковая Диаграмма (Sankey diagram)</a></li>
+<li class="chapter" data-level="4.10.2" data-path="viz-1.html"><a href="viz-1.html#upset-plot"><i class="fa fa-check"></i><b>4.10.2</b> UpSet Plot</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="strings.html"><a href="strings.html"><i class="fa fa-check"></i><b>5</b> Работа со строками</a><ul>
+<li class="chapter" data-level="5.1" data-path="strings.html"><a href="strings.html#работа-со-строками-в-r"><i class="fa fa-check"></i><b>5.1</b> Работа со строками в R</a></li>
+<li class="chapter" data-level="5.2" data-path="strings.html"><a href="strings.html#как-получить-строку"><i class="fa fa-check"></i><b>5.2</b> Как получить строку?</a></li>
+<li class="chapter" data-level="5.3" data-path="strings.html"><a href="strings.html#соединение-и-разделение-строк"><i class="fa fa-check"></i><b>5.3</b> Соединение и разделение строк</a></li>
+<li class="chapter" data-level="5.4" data-path="strings.html"><a href="strings.html#количество-символов"><i class="fa fa-check"></i><b>5.4</b> Количество символов</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="strings.html"><a href="strings.html#подсчет-количества-символов"><i class="fa fa-check"></i><b>5.4.1</b> Подсчет количества символов</a></li>
+<li class="chapter" data-level="5.4.2" data-path="strings.html"><a href="strings.html#подгонка-количества-символов"><i class="fa fa-check"></i><b>5.4.2</b> Подгонка количества символов</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="strings.html"><a href="strings.html#сортировка"><i class="fa fa-check"></i><b>5.5</b> Сортировка</a></li>
+<li class="chapter" data-level="5.6" data-path="strings.html"><a href="strings.html#поиск-подстроки"><i class="fa fa-check"></i><b>5.6</b> Поиск подстроки</a></li>
+<li class="chapter" data-level="5.7" data-path="strings.html"><a href="strings.html#изменение-строк"><i class="fa fa-check"></i><b>5.7</b> Изменение строк</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="strings.html"><a href="strings.html#изменение-регистра"><i class="fa fa-check"></i><b>5.7.1</b> Изменение регистра</a></li>
+<li class="chapter" data-level="5.7.2" data-path="strings.html"><a href="strings.html#выделение-подстроки"><i class="fa fa-check"></i><b>5.7.2</b> Выделение подстроки</a></li>
+<li class="chapter" data-level="5.7.3" data-path="strings.html"><a href="strings.html#замена-подстроки"><i class="fa fa-check"></i><b>5.7.3</b> Замена подстроки</a></li>
+<li class="chapter" data-level="5.7.4" data-path="strings.html"><a href="strings.html#удаление-подстроки"><i class="fa fa-check"></i><b>5.7.4</b> Удаление подстроки</a></li>
+<li class="chapter" data-level="5.7.5" data-path="strings.html"><a href="strings.html#транслитерация-строк"><i class="fa fa-check"></i><b>5.7.5</b> Транслитерация строк</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="strings.html"><a href="strings.html#регулярные-выражения"><i class="fa fa-check"></i><b>5.8</b> Регулярные выражения</a><ul>
+<li class="chapter" data-level="5.8.1" data-path="strings.html"><a href="strings.html#экранирование-метасимволов"><i class="fa fa-check"></i><b>5.8.1</b> Экранирование метасимволов</a></li>
+<li class="chapter" data-level="5.8.2" data-path="strings.html"><a href="strings.html#классы-знаков"><i class="fa fa-check"></i><b>5.8.2</b> Классы знаков</a></li>
+<li class="chapter" data-level="5.8.3" data-path="strings.html"><a href="strings.html#квантификация"><i class="fa fa-check"></i><b>5.8.3</b> Квантификация</a></li>
+<li class="chapter" data-level="5.8.4" data-path="strings.html"><a href="strings.html#позиционная-проверка-look-arounds"><i class="fa fa-check"></i><b>5.8.4</b> Позиционная проверка (look arounds)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.9" data-path="strings.html"><a href="strings.html#определение-языка"><i class="fa fa-check"></i><b>5.9</b> Определение языка</a></li>
+<li class="chapter" data-level="5.10" data-path="strings.html"><a href="strings.html#расстояния-между-строками"><i class="fa fa-check"></i><b>5.10</b> Расстояния между строками</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="lists.html"><a href="lists.html"><i class="fa fa-check"></i><b>6</b> Работа со списками</a><ul>
+<li class="chapter" data-level="6.1" data-path="lists.html"><a href="lists.html#что-такое-списки"><i class="fa fa-check"></i><b>6.1</b> Что такое списки?</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="lists.html"><a href="lists.html#превращение-json-в-список-и-обратно"><i class="fa fa-check"></i><b>6.1.1</b> Превращение JSON в список и обратно</a></li>
+<li class="chapter" data-level="6.1.2" data-path="lists.html"><a href="lists.html#превращение-.xml-в-список-и-обратно"><i class="fa fa-check"></i><b>6.1.2</b> Превращение <code>.xml</code> в список и обратно</a></li>
+<li class="chapter" data-level="6.1.3" data-path="lists.html"><a href="lists.html#просмотр-списков-в-r"><i class="fa fa-check"></i><b>6.1.3</b> Просмотр списков в R</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="lists.html"><a href="lists.html#пакет-purrr"><i class="fa fa-check"></i><b>6.2</b> Пакет <code>purrr</code></a><ul>
+<li class="chapter" data-level="6.2.1" data-path="lists.html"><a href="lists.html#функция-map-и-map..."><i class="fa fa-check"></i><b>6.2.1</b> Функция <code>map()</code> и <code>map...()</code></a></li>
+<li class="chapter" data-level="6.2.2" data-path="lists.html"><a href="lists.html#фильтрация-списков"><i class="fa fa-check"></i><b>6.2.2</b> Фильтрация списков</a></li>
+<li class="chapter" data-level="6.2.3" data-path="lists.html"><a href="lists.html#операции-со-списками"><i class="fa fa-check"></i><b>6.2.3</b> Операции со списками</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="data-presentation.html"><a href="data-presentation.html"><i class="fa fa-check"></i><b>7</b> Представление данных: <code>rmarkdown</code></a><ul>
+<li class="chapter" data-level="7.1" data-path="data-presentation.html"><a href="data-presentation.html#rmarkdown"><i class="fa fa-check"></i><b>7.1</b> <code>rmarkdown</code></a><ul>
+<li class="chapter" data-level="7.1.1" data-path="data-presentation.html"><a href="data-presentation.html#установка"><i class="fa fa-check"></i><b>7.1.1</b> Установка</a></li>
+<li class="chapter" data-level="7.1.2" data-path="data-presentation.html"><a href="data-presentation.html#составляющие-rmarkdown-документа"><i class="fa fa-check"></i><b>7.1.2</b> Составляющие <code>rmarkdown</code>-документа</a></li>
+<li class="chapter" data-level="7.1.3" data-path="data-presentation.html"><a href="data-presentation.html#пример-rmarkdown-документа"><i class="fa fa-check"></i><b>7.1.3</b> Пример <code>rmarkdown</code>-документа</a></li>
+<li class="chapter" data-level="7.1.4" data-path="data-presentation.html"><a href="data-presentation.html#markdown"><i class="fa fa-check"></i><b>7.1.4</b> <code>Markdown</code></a></li>
+<li class="chapter" data-level="7.1.5" data-path="data-presentation.html"><a href="data-presentation.html#pandoc"><i class="fa fa-check"></i><b>7.1.5</b> <code>Pandoc</code></a></li>
+<li class="chapter" data-level="7.1.6" data-path="data-presentation.html"><a href="data-presentation.html#code-chunks"><i class="fa fa-check"></i><b>7.1.6</b> Code chunks</a></li>
+<li class="chapter" data-level="7.1.7" data-path="data-presentation.html"><a href="data-presentation.html#yaml-шапка"><i class="fa fa-check"></i><b>7.1.7</b> YAML шапка</a></li>
+<li class="chapter" data-level="7.1.8" data-path="data-presentation.html"><a href="data-presentation.html#где-хостить-.html"><i class="fa fa-check"></i><b>7.1.8</b> Где хостить <code>.html</code>?</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="data-presentation.html"><a href="data-presentation.html#бывают-и-другие-способы-представления-данных"><i class="fa fa-check"></i><b>7.2</b> Бывают и другие способы представления данных</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>8</b> Собственные функции и использование их в <code>tidyverse</code></a><ul>
+<li class="chapter" data-level="8.1" data-path="functions.html"><a href="functions.html#напоминание-логические-операции"><i class="fa fa-check"></i><b>8.1</b> Напоминание: логические операции</a></li>
+<li class="chapter" data-level="8.2" data-path="functions.html"><a href="functions.html#создание-собственных-функций"><i class="fa fa-check"></i><b>8.2</b> Создание собственных функций</a></li>
+<li class="chapter" data-level="8.3" data-path="functions.html"><a href="functions.html#использование-условий-в-tidyverse"><i class="fa fa-check"></i><b>8.3</b> Использование условий в tidyverse</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="functions.html"><a href="functions.html#условия-в-строчках"><i class="fa fa-check"></i><b>8.3.1</b> Условия в строчках</a></li>
+<li class="chapter" data-level="8.3.2" data-path="functions.html"><a href="functions.html#условия-в-столбцах"><i class="fa fa-check"></i><b>8.3.2</b> Условия в столбцах</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="functions.html"><a href="functions.html#reinvent-the-map-function"><i class="fa fa-check"></i><b>8.4</b> Reinvent the <code>map</code> function</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="tidytext.html"><a href="tidytext.html"><i class="fa fa-check"></i><b>9</b> Работа с текстами: <code>gutenbergr</code>, <code>tidytext</code>, <code>stopwords</code>, <code>udpipe</code></a><ul>
+<li class="chapter" data-level="9.1" data-path="tidytext.html"><a href="tidytext.html#загрузка-текста-в-r"><i class="fa fa-check"></i><b>9.1</b> Загрузка текста в R</a></li>
+<li class="chapter" data-level="9.2" data-path="tidytext.html"><a href="tidytext.html#пакет-gutenbergr"><i class="fa fa-check"></i><b>9.2</b> Пакет <code>gutenbergr</code></a></li>
+<li class="chapter" data-level="9.3" data-path="tidytext.html"><a href="tidytext.html#библиотека-tidytext"><i class="fa fa-check"></i><b>9.3</b> Библиотека <code>tidytext</code></a></li>
+<li class="chapter" data-level="9.4" data-path="tidytext.html"><a href="tidytext.html#пакет-stopwords"><i class="fa fa-check"></i><b>9.4</b> Пакет <code>stopwords</code></a></li>
+<li class="chapter" data-level="9.5" data-path="tidytext.html"><a href="tidytext.html#пакет-udpipe"><i class="fa fa-check"></i><b>9.5</b> Пакет <code>udpipe</code></a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html"><i class="fa fa-check"></i><b>10</b> Работа с геоданными: <code>leaflet</code></a><ul>
+<li class="chapter" data-level="10.1" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#векторная-и-растровая-графика"><i class="fa fa-check"></i><b>10.1</b> Векторная и растровая графика</a></li>
+<li class="chapter" data-level="10.2" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#картографические-примитивы"><i class="fa fa-check"></i><b>10.2</b> Картографические примитивы</a></li>
+<li class="chapter" data-level="10.3" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#leaflet"><i class="fa fa-check"></i><b>10.3</b> <code>leaflet</code></a><ul>
+<li class="chapter" data-level="10.3.1" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#csv-файлы"><i class="fa fa-check"></i><b>10.3.1</b> <code>.csv</code> файлы</a></li>
+<li class="chapter" data-level="10.3.2" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#комбинация-карт-leafsync"><i class="fa fa-check"></i><b>10.3.2</b> Комбинация карт: <code>leafsync</code></a></li>
+<li class="chapter" data-level="10.3.3" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#работа-с-.geojson"><i class="fa fa-check"></i><b>10.3.3</b> Работа с <code>.geojson</code></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="работа-со-временем-lubridate.html"><a href="работа-со-временем-lubridate.html"><i class="fa fa-check"></i><b>11</b> Работа со временем: <code>lubridate</code></a><ul>
+<li class="chapter" data-level="11.1" data-path="работа-со-временем-lubridate.html"><a href="работа-со-временем-lubridate.html#создание-даты"><i class="fa fa-check"></i><b>11.1</b> Создание даты</a></li>
+<li class="chapter" data-level="11.2" data-path="работа-со-временем-lubridate.html"><a href="работа-со-временем-lubridate.html#извлечение-компонентов-даты"><i class="fa fa-check"></i><b>11.2</b> Извлечение компонентов даты</a></li>
+<li class="chapter" data-level="11.3" data-path="работа-со-временем-lubridate.html"><a href="работа-со-временем-lubridate.html#операции-с-датами"><i class="fa fa-check"></i><b>11.3</b> Операции с датами</a></li>
+<li class="chapter" data-level="11.4" data-path="работа-со-временем-lubridate.html"><a href="работа-со-временем-lubridate.html#визуализация-времени-данные-левада-центра"><i class="fa fa-check"></i><b>11.4</b> Визуализация времени: данные Левада-центра</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html"><i class="fa fa-check"></i><b>12</b> Сбор данных из интернета: <code>rvest</code></a><ul>
+<li class="chapter" data-level="12.1" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#введение"><i class="fa fa-check"></i><b>12.1</b> Введение</a></li>
+<li class="chapter" data-level="12.2" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#работа-с-пакетом-rvest"><i class="fa fa-check"></i><b>12.2</b> Работа с пакетом <code>rvest</code></a><ul>
+<li class="chapter" data-level="12.2.1" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#простой-случай"><i class="fa fa-check"></i><b>12.2.1</b> Простой случай</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#использование-атрибута-class"><i class="fa fa-check"></i><b>12.3</b> Использование атрибута <code>class</code></a><ul>
+<li class="chapter" data-level="12.3.1" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#чтение-таблиц"><i class="fa fa-check"></i><b>12.3.1</b> Чтение таблиц</a></li>
+<li class="chapter" data-level="12.3.2" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#некоторые-советы"><i class="fa fa-check"></i><b>12.3.2</b> Некоторые советы</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html"><i class="fa fa-check"></i><b>13</b> Описательная статистика, распределения</a><ul>
+<li class="chapter" data-level="13.1" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#описательная-статистика"><i class="fa fa-check"></i><b>13.1</b> Описательная статистика</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#категориальные-переменные"><i class="fa fa-check"></i><b>13.1.1</b> Категориальные переменные</a></li>
+<li class="chapter" data-level="13.1.2" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#числовые-переменные"><i class="fa fa-check"></i><b>13.1.2</b> Числовые переменные</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#от-частотности-к-вероятности"><i class="fa fa-check"></i><b>13.2</b> От частотности к вероятности</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#категориальная-переменная"><i class="fa fa-check"></i><b>13.2.1</b> Категориальная переменная</a></li>
+<li class="chapter" data-level="13.2.2" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#числовая-переменная"><i class="fa fa-check"></i><b>13.2.2</b> Числовая переменная</a></li>
+<li class="chapter" data-level="13.2.3" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#распределения"><i class="fa fa-check"></i><b>13.2.3</b> Распределения</a></li>
+<li class="chapter" data-level="13.2.4" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#давайте-посчитаем-вероятности"><i class="fa fa-check"></i><b>13.2.4</b> Давайте посчитаем вероятности</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html"><i class="fa fa-check"></i><b>14</b> Проверка статистических гипотез</a><ul>
+<li class="chapter" data-level="14.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#о-статистике"><i class="fa fa-check"></i><b>14.1</b> О статистике</a></li>
+<li class="chapter" data-level="14.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#проверка-нулевой-гипотезы"><i class="fa fa-check"></i><b>14.2</b> Проверка нулевой гипотезы</a></li>
+<li class="chapter" data-level="14.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#классификация-статистических-тестов"><i class="fa fa-check"></i><b>14.3</b> Классификация статистических тестов</a><ul>
+<li class="chapter" data-level="14.3.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#количество-выборок"><i class="fa fa-check"></i><b>14.3.1</b> Количество выборок</a></li>
+<li class="chapter" data-level="14.3.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#направление"><i class="fa fa-check"></i><b>14.3.2</b> Направление</a></li>
+<li class="chapter" data-level="14.3.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#парные-vs.-непарные"><i class="fa fa-check"></i><b>14.3.3</b> Парные vs. непарные</a></li>
+<li class="chapter" data-level="14.3.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#параметрические-vs.-непараметрические"><i class="fa fa-check"></i><b>14.3.4</b> Параметрические vs. непараметрические</a></li>
+<li class="chapter" data-level="14.3.5" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#классификация-тестов"><i class="fa fa-check"></i><b>14.3.5</b> Классификация тестов</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#одновыборочные-тесты"><i class="fa fa-check"></i><b>14.4</b> Одновыборочные тесты</a><ul>
+<li class="chapter" data-level="14.4.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#биномиальный-тест"><i class="fa fa-check"></i><b>14.4.1</b> Биномиальный тест</a></li>
+<li class="chapter" data-level="14.4.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#одновыборочный-t-тест"><i class="fa fa-check"></i><b>14.4.2</b> Одновыборочный t-тест</a></li>
+<li class="chapter" data-level="14.4.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#тест-уилкоксона"><i class="fa fa-check"></i><b>14.4.3</b> Тест Уилкоксона</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#двухвыборочные-тесты"><i class="fa fa-check"></i><b>14.5</b> Двухвыборочные тесты</a><ul>
+<li class="chapter" data-level="14.5.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#двухвыборочный-t-тест"><i class="fa fa-check"></i><b>14.5.1</b> Двухвыборочный t-тест</a></li>
+<li class="chapter" data-level="14.5.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#двухвыборочный-парный-t-тест"><i class="fa fa-check"></i><b>14.5.2</b> Двухвыборочный парный t-тест</a></li>
+<li class="chapter" data-level="14.5.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#критерий-манна-уитни"><i class="fa fa-check"></i><b>14.5.3</b> Критерий Манна-Уитни</a></li>
+<li class="chapter" data-level="14.5.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#критерий-χ²-тест-фишера"><i class="fa fa-check"></i><b>14.5.4</b> Критерий χ², тест Фишера</a></li>
+<li class="chapter" data-level="14.5.5" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#критерий-мак-немара"><i class="fa fa-check"></i><b>14.5.5</b> Критерий Мак Немара</a></li>
+</ul></li>
+<li class="chapter" data-level="14.6" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#послесловие"><i class="fa fa-check"></i><b>14.6</b> Послесловие</a></li>
+<li class="chapter" data-level="14.7" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#рассказы-чехова-и-зощенко"><i class="fa fa-check"></i><b>14.7</b> Рассказы Чехова и Зощенко</a><ul>
+<li class="chapter" data-level="14.7.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#section"><i class="fa fa-check"></i><b>14.7.1</b> </a></li>
+<li class="chapter" data-level="14.7.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#section-1"><i class="fa fa-check"></i><b>14.7.2</b> </a></li>
+<li class="chapter" data-level="14.7.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#section-2"><i class="fa fa-check"></i><b>14.7.3</b> </a></li>
+<li class="chapter" data-level="14.7.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#section-3"><i class="fa fa-check"></i><b>14.7.4</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="14.8" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#obamacare"><i class="fa fa-check"></i><b>14.8</b> Obamacare</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html"><i class="fa fa-check"></i><b>15</b> Корреляция и регрессия</a><ul>
+<li class="chapter" data-level="15.1" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#дисперсия-и-стандартное-отклонение"><i class="fa fa-check"></i><b>15.1</b> Дисперсия и стандартное отклонение</a></li>
+<li class="chapter" data-level="15.2" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#z-преобразование"><i class="fa fa-check"></i><b>15.2</b> z-преобразование</a></li>
+<li class="chapter" data-level="15.3" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#ковариация"><i class="fa fa-check"></i><b>15.3</b> Ковариация</a></li>
+<li class="chapter" data-level="15.4" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#корреляция"><i class="fa fa-check"></i><b>15.4</b> Корреляция</a><ul>
+<li class="chapter" data-level="15.4.1" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#корреляция-пирсона"><i class="fa fa-check"></i><b>15.4.1</b> Корреляция Пирсона</a></li>
+<li class="chapter" data-level="15.4.2" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#ранговые-корреляции-спирмана-и-кендалла"><i class="fa fa-check"></i><b>15.4.2</b> Ранговые корреляции Спирмана и Кендалла</a></li>
+</ul></li>
+<li class="chapter" data-level="15.5" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#регрессионный-анализ"><i class="fa fa-check"></i><b>15.5</b> Регрессионный анализ</a><ul>
+<li class="chapter" data-level="15.5.1" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#основы"><i class="fa fa-check"></i><b>15.5.1</b> Основы</a></li>
+<li class="chapter" data-level="15.5.2" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#первая-регрессия"><i class="fa fa-check"></i><b>15.5.2</b> Первая регрессия</a></li>
+<li class="chapter" data-level="15.5.3" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#категориальные-переменные-1"><i class="fa fa-check"></i><b>15.5.3</b> Категориальные переменные</a></li>
+<li class="chapter" data-level="15.5.4" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#множественная-регрессия"><i class="fa fa-check"></i><b>15.5.4</b> Множественная регрессия</a></li>
+<li class="chapter" data-level="15.5.5" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#сравнение-моделей"><i class="fa fa-check"></i><b>15.5.5</b> Сравнение моделей</a></li>
+<li class="chapter" data-level="15.5.6" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#послесловие-1"><i class="fa fa-check"></i><b>15.5.6</b> Послесловие</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="работа-статистического-детектива.html"><a href="работа-статистического-детектива.html"><i class="fa fa-check"></i><b>16</b> Работа статистического детектива</a><ul>
+<li class="chapter" data-level="16.1" data-path="работа-статистического-детектива.html"><a href="работа-статистического-детектива.html#введение-1"><i class="fa fa-check"></i><b>16.1</b> Введение</a></li>
+<li class="chapter" data-level="16.2" data-path="работа-статистического-детектива.html"><a href="работа-статистического-детектива.html#возможно-ли-такое-среднее"><i class="fa fa-check"></i><b>16.2</b> Возможно ли такое среднее?</a></li>
+<li class="chapter" data-level="16.3" data-path="работа-статистического-детектива.html"><a href="работа-статистического-детектива.html#пакет-statcheck"><i class="fa fa-check"></i><b>16.3</b> Пакет <code>statcheck</code></a></li>
+<li class="chapter" data-level="16.4" data-path="работа-статистического-детектива.html"><a href="работа-статистического-детектива.html#пакет-digitize"><i class="fa fa-check"></i><b>16.4</b> Пакет <code>digitize</code></a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="кластеризация.html"><a href="кластеризация.html"><i class="fa fa-check"></i><b>17</b> Кластеризация</a><ul>
+<li class="chapter" data-level="17.1" data-path="кластеризация.html"><a href="кластеризация.html#метод-k-средних-k-means"><i class="fa fa-check"></i><b>17.1</b> Метод k-средних (k-means)</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="кластеризация.html"><a href="кластеризация.html#пример"><i class="fa fa-check"></i><b>17.1.1</b> Пример</a></li>
+</ul></li>
+<li class="chapter" data-level="17.2" data-path="кластеризация.html"><a href="кластеризация.html#иерархическая-кластеризация"><i class="fa fa-check"></i><b>17.2</b> Иерархическая кластеризация</a><ul>
+<li class="chapter" data-level="17.2.1" data-path="кластеризация.html"><a href="кластеризация.html#матрица-расстояний"><i class="fa fa-check"></i><b>17.2.1</b> Матрица расстояний</a></li>
+<li class="chapter" data-level="17.2.2" data-path="кластеризация.html"><a href="кластеризация.html#расстояние-между-словами"><i class="fa fa-check"></i><b>17.2.2</b> Расстояние между словами</a></li>
+<li class="chapter" data-level="17.2.3" data-path="кластеризация.html"><a href="кластеризация.html#применение-иерархической-кластеризации"><i class="fa fa-check"></i><b>17.2.3</b> Применение иерархической кластеризации</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html"><i class="fa fa-check"></i><b>18</b> Методы уменьшения размерностей</a><ul>
+<li class="chapter" data-level="18.1" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#визуализация-многомерных-пространств"><i class="fa fa-check"></i><b>18.1</b> Визуализация многомерных пространств</a></li>
+<li class="chapter" data-level="18.2" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#простой-пример-из-двумерного-пространства-в-одномерное-пространство"><i class="fa fa-check"></i><b>18.2</b> Простой пример: из двумерного пространства в одномерное пространство</a></li>
+<li class="chapter" data-level="18.3" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#многомерное-шкалирование-mds"><i class="fa fa-check"></i><b>18.3</b> Многомерное шкалирование (MDS)</a></li>
+<li class="chapter" data-level="18.4" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#метод-главных-компонент-pca"><i class="fa fa-check"></i><b>18.4</b> Метод главных компонент (PCA)</a></li>
+<li class="chapter" data-level="18.5" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#множественный-анализ-соответствий"><i class="fa fa-check"></i><b>18.5</b> Множественный анализ соответствий</a></li>
+<li class="chapter" data-level="18.6" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#другие-методы-уменьшения-размерности"><i class="fa fa-check"></i><b>18.6</b> Другие методы уменьшения размерности</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>19</b> Задания</a><ul>
+<li class="chapter" data-level="19.1" data-path="tasks.html"><a href="tasks.html#vec_task_1"><i class="fa fa-check"></i><b>19.1</b> Вектор</a></li>
+<li class="chapter" data-level="19.2" data-path="tasks.html"><a href="tasks.html#vec_op"><i class="fa fa-check"></i><b>19.2</b> Вектор. Операции с векторами</a></li>
+<li class="chapter" data-level="19.3" data-path="tasks.html"><a href="tasks.html#vec_task_2"><i class="fa fa-check"></i><b>19.3</b> Вектор. Индексирование</a></li>
+<li class="chapter" data-level="19.4" data-path="tasks.html"><a href="tasks.html#list_ta"><i class="fa fa-check"></i><b>19.4</b> Списки</a></li>
+<li class="chapter" data-level="19.5" data-path="tasks.html"><a href="tasks.html#t"><i class="fa fa-check"></i><b>19.5</b> Матрицы</a></li>
+<li class="chapter" data-level="19.6" data-path="tasks.html"><a href="tasks.html#df_task"><i class="fa fa-check"></i><b>19.6</b> Датафрейм</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="solutions.html"><a href="solutions.html"><i class="fa fa-check"></i><b>20</b> Решения_заданий</a><ul>
+<li class="chapter" data-level="20.1" data-path="solutions.html"><a href="solutions.html#solvvec_task_1"><i class="fa fa-check"></i><b>20.1</b> Вектор</a></li>
+<li class="chapter" data-level="20.2" data-path="solutions.html"><a href="solutions.html#solvvec_op"><i class="fa fa-check"></i><b>20.2</b> Вектор. Операции с векторами</a></li>
+<li class="chapter" data-level="20.3" data-path="solutions.html"><a href="solutions.html#solvvec_task_2"><i class="fa fa-check"></i><b>20.3</b> Вектор. Индексирование</a></li>
+<li class="chapter" data-level="20.4" data-path="solutions.html"><a href="solutions.html#solvlist_ta"><i class="fa fa-check"></i><b>20.4</b> Списки</a></li>
+<li class="chapter" data-level="20.5" data-path="solutions.html"><a href="solutions.html#solvt"><i class="fa fa-check"></i><b>20.5</b> Матрицы</a></li>
+<li class="chapter" data-level="20.6" data-path="solutions.html"><a href="solutions.html#solvdf_task"><i class="fa fa-check"></i><b>20.6</b> Датафрейм</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ссылки-на-литературу.html"><a href="ссылки-на-литературу.html"><i class="fa fa-check"></i>Ссылки на литературу</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Наука о данных в R для программы Цифровых гуманитарных исследований</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="сбор-данных-из-интернета-rvest" class="section level1">
+<h1><span class="header-section-number">12</span> Сбор данных из интернета: <code>rvest</code></h1>
+<div class="sourceCode" id="cb999"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb999-1"><a href="сбор-данных-из-интернета-rvest.html#cb999-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<p>Достаточно часто данные не ходят упакованные в готовые файлы <code>.csv</code> или <code>.json</code>. Иногда данные лежат в открытом доступе на какой-нибудь странице в интернете (например, таблицы Левада-центра из предыдущего занятия). А иногда никто и не думал, что что-то станет данными: заголовки и тексты новостей, комментарии, твиты и т. п. В этом разделе мы обсудим основы извлечения данных из вебстраниц.</p>
+<div id="введение" class="section level2">
+<h2><span class="header-section-number">12.1</span> Введение</h2>
+<p>Любая <code>html</code>-документ — это обычный xml файл. Обычно самый верхний узел называется <code>html</code>, который имеет два дочерних узла <code>head</code> и <code>body</code>. Каждый html-документ является инструкцией для браузера, в которой говориться что и в каком порядке нужно отображать, но одновременно эта инструкция является кодом, который мы можем посмотреть. В большинстве браузеров это можно сделать при помощи горячих клавиш <code>Ctrl+U</code>, в Apple Safari — <code>Cmd+Option+U</code>. Кроме того есть режим разработчика, который позволяет делать много всего, в том числе наводить на какой-то объект в браузере и узнавать какой фрагмент кода ему соответствует (этот режим можно вызвать, нажав <code>F12</code> или <code>Ctrl+Shift+I</code>, в Apple Safari вроде нет горячих клавиш и нужно вызывать как-то из меню). Большинство узлов <code>html</code>-документа состоят из</p>
+<ul>
+<li>тег узла, например, <code>p</code></li>
+<li>значения узла, например, <code>Жили-были три медведя.</code></li>
+<li><code>id</code> (уникальные объекты в <code>html</code>-документе), <code>class</code> (неуникальные объекты в <code>html</code>-документе) и другием атрибуты узла</li>
+</ul>
+<p>Например:</p>
+<pre><code>&lt;p class=&quot;story&quot; some_atribute = 42&gt;Жили-были три медведя.&lt;/p&gt;</code></pre>
+<p>Некоторые <code>html</code>-документ не являются статическими и изменяются после того, как страница была открыта при помощи JavaScript’а. Это динамичность может быть скрытой, когда пользователь лишь видит, как открывается страница, а иногда может быть завязана на некоторые действия пользователя. Информацию со статических страниц собирать достаточно просто и для этого нам хватит пакета <code>rvest</code>. C динамическими сайтами все иногда несколько сложнее. Иногда на диномических страницах можно отследить источник данных, посмотрев вкладку <code>Network</code> в режиме разработчика (ведь откуда-то эти данные появляются в браузере, правда?). Иногда необходимо делать <code>POST</code> и <code>GET</code> запросы, хранить cookies, и т. п. — все это можно сделать при помощи пакета <a href="https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html"><code>httr</code></a>, а в самых сложных случаях (когда JavaScript JavaScript погоняет) поможет пакет <a href="https://docs.ropensci.org/RSelenium/"><code>RSelenium</code></a>.</p>
+</div>
+<div id="работа-с-пакетом-rvest" class="section level2">
+<h2><span class="header-section-number">12.2</span> Работа с пакетом <code>rvest</code></h2>
+<p><a href="http://rvest.tidyverse.org/index.html">Пакет <code>rvest</code></a> позволяет скачивать страницы и потом их обрабатывать. Включим библиотеку:</p>
+<div class="sourceCode" id="cb1001"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1001-1"><a href="сбор-данных-из-интернета-rvest.html#cb1001-1"></a><span class="kw">library</span>(rvest)</span></code></pre></div>
+<pre><code>
+Attaching package: &#39;rvest&#39;</code></pre>
+<pre><code>The following object is masked from &#39;package:purrr&#39;:
+
+    pluck</code></pre>
+<pre><code>The following object is masked from &#39;package:readr&#39;:
+
+    guess_encoding</code></pre>
+<div id="простой-случай" class="section level3">
+<h3><span class="header-section-number">12.2.1</span> Простой случай</h3>
+<p>В качестве примера рассмотрим сайт Центра цифровых гуманитарных исследований НИУ ВШЭ:</p>
+<div class="sourceCode" id="cb1005"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1005-1"><a href="сбор-данных-из-интернета-rvest.html#cb1005-1"></a>source &lt;-<span class="st"> </span><span class="kw">read_html</span>(<span class="st">&quot;https://hum.hse.ru/digital&quot;</span>)</span></code></pre></div>
+<p>Объект <code>source</code> является списком, который содержит <code>html</code>-страницу. Давайте допустим, что мы хотем скачать все заголовки новостей, т. е. нам нужны значения всех узло <code>h2</code>. Функция <code>html_nodes()</code> позволяет вычленить исключительно узлы с каким-то тегом из всего <code>xml</code>-файла.</p>
+<div class="sourceCode" id="cb1006"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1006-1"><a href="сбор-данных-из-интернета-rvest.html#cb1006-1"></a>source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1006-2"><a href="сбор-данных-из-интернета-rvest.html#cb1006-2"></a><span class="st">  </span><span class="kw">html_nodes</span>(<span class="st">&quot;h2&quot;</span>)</span></code></pre></div>
+<pre><code>{xml_nodeset (10)}
+ [1] &lt;h2 class=&quot;first_child &quot;&gt;&lt;a title=&quot;Лайфхаки онлайна: оживить лекцию с iP ...
+ [2] &lt;h2 class=&quot;first_child &quot;&gt;&lt;a title=&quot;Лайфхаки онлайна: антистрессовые тест ...
+ [3] &lt;h2 class=&quot;first_child &quot;&gt;&lt;a title=&quot;Лайфхаки онлайна: как организовать пр ...
+ [4] &lt;h2 class=&quot;first_child &quot;&gt;&lt;a title=&quot;Лайфхаки онлайна: вовлекаем студентов ...
+ [5] &lt;h2 class=&quot;first_child &quot;&gt;&lt;a title=&quot;Цифровые гуманитарии выступили на DH  ...
+ [6] &lt;h2 class=&quot;first_child &quot;&gt;&lt;a title=&quot;Командные DH-проекты: «Instagram Л.Н. ...
+ [7] &lt;h2 class=&quot;first_child &quot;&gt;&lt;a title=&quot;Цифровые гуманитарии прокачались в ге ...
+ [8] &lt;h2 class=&quot;first_child &quot;&gt;&lt;a title=&quot;Цифровой архив «Отечественных записок ...
+ [9] &lt;h2 class=&quot;first_child &quot;&gt;&lt;a title=&quot;Командные DH-проекты: «Отечественные  ...
+[10] &lt;h2 class=&quot;first_child &quot;&gt;&lt;a title=&quot;Цифровая трансформация культурного на ...</code></pre>
+<p>Теперь если мы хотим обратиться к значениям этих узлов, мы можем использовать функцию <code>html_text()</code></p>
+<div class="sourceCode" id="cb1008"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1008-1"><a href="сбор-данных-из-интернета-rvest.html#cb1008-1"></a>source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1008-2"><a href="сбор-данных-из-интернета-rvest.html#cb1008-2"></a><span class="st">  </span><span class="kw">html_nodes</span>(<span class="st">&quot;h2&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1008-3"><a href="сбор-данных-из-интернета-rvest.html#cb1008-3"></a><span class="st">  </span><span class="kw">html_text</span>()</span></code></pre></div>
+<pre><code> [1] &quot;Лайфхаки онлайна: оживить лекцию с iPad и Apple Pencil&quot;                       
+ [2] &quot;Лайфхаки онлайна: антистрессовые тесты и Zoom в костюме лемура&quot;               
+ [3] &quot;Лайфхаки онлайна: как организовать проектную работу и не застрять&quot;            
+ [4] &quot;Лайфхаки онлайна: вовлекаем студентов в занятие через Kahoot&quot;                 
+ [5] &quot;Цифровые гуманитарии выступили на DH Meetup в Минске&quot;                         
+ [6] &quot;Командные DH-проекты: «Instagram Л.Н. Толстого»&quot;                              
+ [7] &quot;Цифровые гуманитарии прокачались в геоинформатике&quot;                            
+ [8] &quot;Цифровой архив «Отечественных записок» выиграл грант «Инфокультуры»&quot;          
+ [9] &quot;Командные DH-проекты: «Отечественные записки 2.0»&quot;                            
+[10] &quot;Цифровая трансформация культурного наследия: цифровой архив узоров «Орнамика»&quot;</code></pre>
+<p>Если мы откроем превью узла <code>h2</code> (команда <code>View()</code>), то мы увидим что-то такое:</p>
+<p><img src="images/12_title_preview.png" /></p>
+<p>Эта схема показывает, что каждый узел <code>h2</code> содержит узел <code>a</code> который содержит три атрибута: <code>title</code> и <code>href</code>. Вложенность отображается знаком <code>&gt;</code>, а обращаться к атрибутам можно, используя функцию <code>html_attr()</code>:</p>
+<div class="sourceCode" id="cb1010"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1010-1"><a href="сбор-данных-из-интернета-rvest.html#cb1010-1"></a>source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1010-2"><a href="сбор-данных-из-интернета-rvest.html#cb1010-2"></a><span class="st">  </span><span class="kw">html_nodes</span>(<span class="st">&quot;h2 &gt; a&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1010-3"><a href="сбор-данных-из-интернета-rvest.html#cb1010-3"></a><span class="st">  </span><span class="kw">html_attr</span>(<span class="st">&quot;title&quot;</span>) -&gt;</span>
+<span id="cb1010-4"><a href="сбор-данных-из-интернета-rvest.html#cb1010-4"></a><span class="st">  </span>titles</span>
+<span id="cb1010-5"><a href="сбор-данных-из-интернета-rvest.html#cb1010-5"></a></span>
+<span id="cb1010-6"><a href="сбор-данных-из-интернета-rvest.html#cb1010-6"></a>source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1010-7"><a href="сбор-данных-из-интернета-rvest.html#cb1010-7"></a><span class="st">  </span><span class="kw">html_nodes</span>(<span class="st">&quot;h2 &gt; a&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1010-8"><a href="сбор-данных-из-интернета-rvest.html#cb1010-8"></a><span class="st">  </span><span class="kw">html_attr</span>(<span class="st">&quot;href&quot;</span>) -&gt;</span>
+<span id="cb1010-9"><a href="сбор-данных-из-интернета-rvest.html#cb1010-9"></a><span class="st">  </span>links</span>
+<span id="cb1010-10"><a href="сбор-данных-из-интернета-rvest.html#cb1010-10"></a></span>
+<span id="cb1010-11"><a href="сбор-данных-из-интернета-rvest.html#cb1010-11"></a><span class="kw">tibble</span>(titles, links)</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["titles"],"name":[1],"type":["chr"],"align":["left"]},{"label":["links"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"Лайфхаки онлайна: оживить лекцию с iPad и Apple Pencil","2":"https://hum.hse.ru/digital/news/364823664.html"},{"1":"Лайфхаки онлайна: антистрессовые тесты и Zoom в костюме лемура","2":"https://hum.hse.ru/digital/news/363050908.html"},{"1":"Лайфхаки онлайна: как организовать проектную работу и не застрять","2":"https://hum.hse.ru/digital/news/361602930.html"},{"1":"Лайфхаки онлайна: вовлекаем студентов в занятие через Kahoot","2":"https://hum.hse.ru/digital/news/359605533.html"},{"1":"Цифровые гуманитарии выступили на DH Meetup в Минске","2":"https://hum.hse.ru/digital/news/354335283.html"},{"1":"Командные DH-проекты: «Instagram Л.Н. Толстого»","2":"https://hum.hse.ru/digital/news/353935508.html"},{"1":"Цифровые гуманитарии прокачались в геоинформатике","2":"https://hum.hse.ru/digital/news/351694288.html"},{"1":"Цифровой архив «Отечественных записок» выиграл грант «Инфокультуры»","2":"https://www.hse.ru/ma/dh/news/348090631.html"},{"1":"Командные DH-проекты: «Отечественные записки 2.0»","2":"https://hum.hse.ru/digital/news/346244389.html"},{"1":"Цифровая трансформация культурного наследия: цифровой архив узоров «Орнамика»","2":"https://hum.hse.ru/digital/news/345295011.html"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Как видно из получившейся таблицы, на первой странице сайта всего 10 новостей. А что если мы хотим скачать все новости? Исследовав страницу Центра цифровых гуманитарных исследований, становится понятно, что все новые страницы генерятся по одному и тому же паттерну:</p>
+<ul>
+<li><a href="https://hum.hse.ru/digital/news/page2.html" class="uri">https://hum.hse.ru/digital/news/page2.html</a></li>
+<li><a href="https://hum.hse.ru/digital/news/page3.html" class="uri">https://hum.hse.ru/digital/news/page3.html</a></li>
+<li>…</li>
+<li><a href="https://hum.hse.ru/digital/news/page6.html" class="uri">https://hum.hse.ru/digital/news/page6.html</a></li>
+<li>и даже на первую страницу, на которую мы попали по короткому адресу &lt;hum.hse.ru/digital&gt;, можно также попасть по этому адресу <a href="https://hum.hse.ru/digital/news/page1.html" class="uri">https://hum.hse.ru/digital/news/page1.html</a></li>
+</ul>
+<p>Сгенерим список страниц:</p>
+<div class="sourceCode" id="cb1011"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1011-1"><a href="сбор-данных-из-интернета-rvest.html#cb1011-1"></a><span class="kw">str_c</span>(<span class="st">&quot;https://hum.hse.ru/digital/news/page&quot;</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">6</span>, <span class="st">&quot;.html&quot;</span>)</span></code></pre></div>
+<pre><code>[1] &quot;https://hum.hse.ru/digital/news/page1.html&quot;
+[2] &quot;https://hum.hse.ru/digital/news/page2.html&quot;
+[3] &quot;https://hum.hse.ru/digital/news/page3.html&quot;
+[4] &quot;https://hum.hse.ru/digital/news/page4.html&quot;
+[5] &quot;https://hum.hse.ru/digital/news/page5.html&quot;
+[6] &quot;https://hum.hse.ru/digital/news/page6.html&quot;</code></pre>
+<p>А теперь сделаем функцию, которая ходит по страницам и все собирает</p>
+<div class="sourceCode" id="cb1013"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1013-1"><a href="сбор-данных-из-интернета-rvest.html#cb1013-1"></a><span class="kw">map_dfr</span>(<span class="kw">str_c</span>(<span class="st">&quot;https://hum.hse.ru/digital/news/page&quot;</span>, <span class="dv">1</span><span class="op">:</span><span class="dv">6</span>, <span class="st">&quot;.html&quot;</span>), <span class="cf">function</span>(x){</span>
+<span id="cb1013-2"><a href="сбор-данных-из-интернета-rvest.html#cb1013-2"></a>  source &lt;-<span class="st"> </span><span class="kw">read_html</span>(x)  </span>
+<span id="cb1013-3"><a href="сбор-данных-из-интернета-rvest.html#cb1013-3"></a>  </span>
+<span id="cb1013-4"><a href="сбор-данных-из-интернета-rvest.html#cb1013-4"></a>  source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1013-5"><a href="сбор-данных-из-интернета-rvest.html#cb1013-5"></a><span class="st">    </span><span class="kw">html_nodes</span>(<span class="st">&quot;h2 &gt; a&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1013-6"><a href="сбор-данных-из-интернета-rvest.html#cb1013-6"></a><span class="st">    </span><span class="kw">html_attr</span>(<span class="st">&quot;title&quot;</span>) -&gt;</span>
+<span id="cb1013-7"><a href="сбор-данных-из-интернета-rvest.html#cb1013-7"></a><span class="st">    </span>titles</span>
+<span id="cb1013-8"><a href="сбор-данных-из-интернета-rvest.html#cb1013-8"></a>  </span>
+<span id="cb1013-9"><a href="сбор-данных-из-интернета-rvest.html#cb1013-9"></a>  source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1013-10"><a href="сбор-данных-из-интернета-rvest.html#cb1013-10"></a><span class="st">    </span><span class="kw">html_nodes</span>(<span class="st">&quot;h2 &gt; a&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1013-11"><a href="сбор-данных-из-интернета-rvest.html#cb1013-11"></a><span class="st">    </span><span class="kw">html_attr</span>(<span class="st">&quot;href&quot;</span>) -&gt;</span>
+<span id="cb1013-12"><a href="сбор-данных-из-интернета-rvest.html#cb1013-12"></a><span class="st">    </span>links</span>
+<span id="cb1013-13"><a href="сбор-данных-из-интернета-rvest.html#cb1013-13"></a>  </span>
+<span id="cb1013-14"><a href="сбор-данных-из-интернета-rvest.html#cb1013-14"></a>  <span class="kw">tibble</span>(titles, links)</span>
+<span id="cb1013-15"><a href="сбор-данных-из-интернета-rvest.html#cb1013-15"></a>}) -&gt;</span>
+<span id="cb1013-16"><a href="сбор-данных-из-интернета-rvest.html#cb1013-16"></a><span class="st">  </span>df_news</span>
+<span id="cb1013-17"><a href="сбор-данных-из-интернета-rvest.html#cb1013-17"></a></span>
+<span id="cb1013-18"><a href="сбор-данных-из-интернета-rvest.html#cb1013-18"></a>df_news</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["titles"],"name":[1],"type":["chr"],"align":["left"]},{"label":["links"],"name":[2],"type":["chr"],"align":["left"]}],"data":[{"1":"Лайфхаки онлайна: оживить лекцию с iPad и Apple Pencil","2":"https://hum.hse.ru/digital/news/364823664.html"},{"1":"Лайфхаки онлайна: антистрессовые тесты и Zoom в костюме лемура","2":"https://hum.hse.ru/digital/news/363050908.html"},{"1":"Лайфхаки онлайна: как организовать проектную работу и не застрять","2":"https://hum.hse.ru/digital/news/361602930.html"},{"1":"Лайфхаки онлайна: вовлекаем студентов в занятие через Kahoot","2":"https://hum.hse.ru/digital/news/359605533.html"},{"1":"Цифровые гуманитарии выступили на DH Meetup в Минске","2":"https://hum.hse.ru/digital/news/354335283.html"},{"1":"Командные DH-проекты: «Instagram Л.Н. Толстого»","2":"https://hum.hse.ru/digital/news/353935508.html"},{"1":"Цифровые гуманитарии прокачались в геоинформатике","2":"https://hum.hse.ru/digital/news/351694288.html"},{"1":"Цифровой архив «Отечественных записок» выиграл грант «Инфокультуры»","2":"https://www.hse.ru/ma/dh/news/348090631.html"},{"1":"Командные DH-проекты: «Отечественные записки 2.0»","2":"https://hum.hse.ru/digital/news/346244389.html"},{"1":"Цифровая трансформация культурного наследия: цифровой архив узоров «Орнамика»","2":"https://hum.hse.ru/digital/news/345295011.html"},{"1":"Как цифровые гуманитарии зафрендились с ABBYY","2":"https://hum.hse.ru/digital/news/342826901.html"},{"1":"Виртуальные музеи — интернет-стартап 90-х или 70 лет эволюции?","2":"https://hum.hse.ru/digital/news/340358329.html"},{"1":"Где кутил Чайковский? Мастер-класс по культурным GIS от St.Retrospect","2":"https://www.hse.ru/ma/dh/news/324836167.html"},{"1":"К полету готовы: школа по Digital Humanities как предчувствие гуманитарного космоса","2":"https://hum.hse.ru/digital/news/321597643.html"},{"1":"Terra Oblita: открытая карта памяти забытых жертв нацизма","2":"https://hum.hse.ru/digital/news/309545113.html"},{"1":"Мир до вас дорастет: запущена первая DH-магистратура в Москве","2":"https://hum.hse.ru/digital/news/306308322.html"},{"1":"Лес, сосиски, (не)работающий код: второй хакатон по Digital Humanities","2":"https://hum.hse.ru/digital/news/304027108.html"},{"1":"Цифровые гуманитарии из Вышки выступили в Принстоне","2":"https://hum.hse.ru/digital/news/303021330.html"},{"1":"Новая книга Бориса Орехова","2":"https://ling.hse.ru/news/293720240.html"},{"1":"«12-часовой хакатон промелькнул на одном дыхании»","2":"https://hum.hse.ru/digital/news/268624983.html"},{"1":"Эротический корпус, статистика и рок-н-ролл!","2":"https://hum.hse.ru/digital/news/269663056.html"},{"1":"Корочун — это когда? О переводе «внутренней механики» древнерусского календаря на электронные рельсы","2":"https://hum.hse.ru/digital/news/267933233.html"},{"1":"Digital-гуманитарии из Вышки выступили в Яндексе","2":"https://hum.hse.ru/digital/news/255596923.html"},{"1":"Цифровой гуманитарный фьюжн","2":"https://hum.hse.ru/digital/news/251759561.html"},{"1":"«Мы делаем Digital Humanities, потому что это сложно»","2":"https://hum.hse.ru/digital/news/249411950.html"},{"1":"Как цифровые технологии помогли прочесть рукопись из Освенцима","2":"https://hum.hse.ru/digital/news/245879744.html"},{"1":"Поздравляем Даниила Скоринкина с защитой кандидатской","2":"https://hum.hse.ru/digital/news/245555465.html"},{"1":"Новая магистерская программа ВШЭ даст гуманитариям цифровые инструменты","2":"//www.hse.ru/news/admission/242537275.html"},{"1":"Нейролирика","2":"https://iq.hse.ru/news/228812683.html"},{"1":"«Мой мозг счастлив»: состоялась III Московско-тартуская школа по Digital Humanities","2":"https://hum.hse.ru/digital/news/226157828.html"},{"1":"«Война и мир» как социальная сеть","2":"https://hum.hse.ru/digital/news/223709144.html"},{"1":"Развиртуализация: центр цифровых гуманитарных исследований открыл двери в реальный мир","2":"https://hum.hse.ru/digital/news/218857883.html"},{"1":"От Тацита до Оксимирона: цифровые исследования студентов ФГН НИУ ВШЭ","2":"https://hum.hse.ru/digital/news/217695778.html"},{"1":"Сотрудники и студенты Вышки взяли две награды за лучший постер на крупнейшей конференции по Digital Humanities в Европе","2":"https://hum.hse.ru/digital/rusdracor/news/217161884.html"},{"1":"«Проблема сохранения языка актуальна для многих народов, в том числе и в России»","2":"https://ling.hse.ru/news/216423109.html"},{"1":"«Взглянуть на историю литературы с нового нестандартного угла»","2":"https://hum.hse.ru/digital/news/216129631.html"},{"1":"Разработка Центра цифровых гуманитарных исследований номинирована на DH Awards 2017","2":"https://hum.hse.ru/digital/news/216046287.html"},{"1":"Забытые страницы русской «вычислительной филологии»","2":"https://hum.hse.ru/digital/news/215659389.html"},{"1":"Сотрудники Центра Digital Humanities рассказали о сетевом анализе драмы на ФКН","2":"https://hum.hse.ru/digital/news/215249172.html"},{"1":"«Эволюция культуры — не просто метафора»","2":"https://hum.hse.ru/digital/news/214879621.html"},{"1":"Исследователи Вышки открыли выставку интернет-отзывов на русскую классику","2":"//www.hse.ru/news/communication/213456365.html"},{"1":"«Четыре дня непрерывного интеллектуального наслаждения»","2":"https://hum.hse.ru/digital/news/212319823.html"},{"1":"«Получился превосходный в интеллектуальном и эмоциональном смысле коктейль»","2":"https://hum.hse.ru/digital/news/210481158.html"},{"1":"«Нематерик» Софьи Гавриловой в Московском музее современного искусства","2":"https://hum.hse.ru/digital/news/209852511.html"},{"1":"Игра «Толстой или компьютер» для сайта «Арзамас»","2":"https://hum.hse.ru/digital/news/209128453.html"},{"1":"«Digital Humanities — это действительно мощное научное направление»","2":"https://hum.hse.ru/digital/news/208661458.html"},{"1":"Социальные сети Медеи, Арагорна и Ганнибала Лектера","2":"https://hum.hse.ru/digital/news/206773411.html"},{"1":"В гуманитарных науках развивается новое направление — Digital Humanities. Что это вообще такое?","2":"//www.hse.ru/news/edu/206297682.html"},{"1":"«Под зонтичным термином Digital Humanities объединились самые разные проекты»","2":"https://hum.hse.ru/digital/news/205496426.html"},{"1":"«Как отличить яблоки от вишен и сотрудничество от рабства»: Джесси Лабов — о размытости Digital Humanities","2":"https://hum.hse.ru/digital/news/204881699.html"},{"1":"«Плоть ли я дрожащая…»: доцент школы лингвистики научил компьютер писать векторные романы","2":"https://ling.hse.ru/news/204860376.html"},{"1":"10–14 апреля 2017 г. Школа исторических наук и Центр цифровых гуманитарных исследований Факультета гуманитарных наук НИУ ВШЭ организуют «Неделю Digital Humanities».","2":"https://hum.hse.ru/digital/news/204495037.html"},{"1":"Видеозапись круглого стола «История точных методов как проблема наук о человеке»","2":"https://hum.hse.ru/news/203422603.html"},{"1":"Цифровые методы от Платона до Тарантино","2":"https://ling.hse.ru/news/202466349.html"},{"1":"«Суть Digital Humanities — в междисциплинарном сотрудничестве»","2":"https://ling.hse.ru/news/201280617.html"},{"1":"В проекте Вышки «Живые страницы» — три новых романа","2":"//www.hse.ru/news/community/200893106.html"},{"1":"Даниил Скоринкин рассказал об оцифровке текстов Л.Н. Толстого на AIUCD 2017 в Риме","2":"https://ling.hse.ru/news/200855633.html"},{"1":"Сотрудник центра цифровых гуманитарных исследований Франк Фишер стал директором DARIAH","2":"https://hum.hse.ru/digital/news/200491107.html"},{"1":"Анастасия Бонч-Осмоловская рассказала о проекте Tolstoy.Digital на семинаре в Лозанне","2":"https://ling.hse.ru/news/197989862.html"},{"1":"Сотрудники школы лингвистики выступили на семинаре международной лаборатории сетевого анализа","2":"https://ling.hse.ru/news/197192624.html"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="rmdtask">
+<p>
+Создайте датафрейм, содержащий заголовки и ссылки на новости со страницы <a href="https://www.hse.ru/ma/dh">Магистерской программы «Цифровые методы в гуманитарных науках»</a>.
+</p>
+</div>
+</div>
+</div>
+<div id="использование-атрибута-class" class="section level2">
+<h2><span class="header-section-number">12.3</span> Использование атрибута <code>class</code></h2>
+<p>Допустим, нас интересует дата создания новости на странице Центра цифровых гуманитарных исследований. Исследовав сайт, легко обнаружить, что информация о дате создания новости хранится в теге <code>span</code>. Однако, если мы попробуем использовать лишь эту информацию, то мы получим много лишнего:</p>
+<div class="sourceCode" id="cb1014"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1014-1"><a href="сбор-данных-из-интернета-rvest.html#cb1014-1"></a>source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1014-2"><a href="сбор-данных-из-интернета-rvest.html#cb1014-2"></a><span class="st">  </span><span class="kw">html_nodes</span>(<span class="st">&quot;span&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1014-3"><a href="сбор-данных-из-интернета-rvest.html#cb1014-3"></a><span class="st">  </span><span class="kw">html_text</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1014-4"><a href="сбор-данных-из-интернета-rvest.html#cb1014-4"></a><span class="st">  </span><span class="kw">head</span>(<span class="dv">20</span>)</span></code></pre></div>
+<pre><code> [1] &quot;✖&quot;                                                                                                                                                                                                                                                                                                                                                                                                                                      
+ [2] &quot;\n\t\t\t\n\t\t\t\n\t\t&quot;                                                                                                                                                                                                                                                                                                                                                                                                                 
+ [3] &quot;&quot;                                                                                                                                                                                                                                                                                                                                                                                                                                       
+ [4] &quot;\n\t\t\t\t\t\t\tvision&quot;                                                                                                                                                                                                                                                                                                                                                                                                                 
+ [5] &quot;\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tНайти\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tРасширенный поиск по сайту\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t&quot;
+ [6] &quot;&quot;                                                                                                                                                                                                                                                                                                                                                                                                                                       
+ [7] &quot;Национальный исследовательский университет «Высшая школа экономики»&quot;                                                                                                                                                                                                                                                                                                                                                                    
+ [8] &quot;Учебные подразделения&quot;                                                                                                                                                                                                                                                                                                                                                                                                                  
+ [9] &quot;Факультет гуманитарных наук&quot;                                                                                                                                                                                                                                                                                                                                                                                                            
+[10] &quot;\n\t\t\t\t\t\tЦентр цифровых гуманитарных исследований НИУ ВШЭ\n\t\t\t\t\t&quot;                                                                                                                                                                                                                                                                                                                                                             
+[11] &quot;Центр цифровых гуманитарных исследований НИУ ВШЭ&quot;                                                                                                                                                                                                                                                                                                                                                                                       
+[12] &quot;\n\t\t\t\t\t\tvision&quot;                                                                                                                                                                                                                                                                                                                                                                                                                   
+[13] &quot;&quot;                                                                                                                                                                                                                                                                                                                                                                                                                                       
+[14] &quot;&quot;                                                                                                                                                                                                                                                                                                                                                                                                                                       
+[15] &quot;Главное&quot;                                                                                                                                                                                                                                                                                                                                                                                                                                
+[16] &quot;Школы по Digital Humanities&quot;                                                                                                                                                                                                                                                                                                                                                                                                            
+[17] &quot;&quot;                                                                                                                                                                                                                                                                                                                                                                                                                                       
+[18] &quot;Приглашенные исследователи&quot;                                                                                                                                                                                                                                                                                                                                                                                                             
+[19] &quot;&quot;                                                                                                                                                                                                                                                                                                                                                                                                                                       
+[20] &quot;Видео&quot;                                                                                                                                                                                                                                                                                                                                                                                                                                  </code></pre>
+<p>Дело в том, что тег <code>span</code> имеется у многих других объектов на странице. Однако, если присмотреться к значениям, которые мы находим в режиме разработчика, можно заметить следующее:</p>
+<p><img src="images/12_developer_mode.png" /></p>
+<p>Если посмотреть код, то мы увидем следующее:</p>
+<div class="sourceCode" id="cb1016"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1016-1"><a href="сбор-данных-из-интернета-rvest.html#cb1016-1"></a>...</span>
+<span id="cb1016-2"><a href="сбор-данных-из-интернета-rvest.html#cb1016-2"></a><span class="kw">&lt;span</span><span class="ot"> class=</span><span class="st">&quot;post__date&quot;</span><span class="kw">&gt;</span> 17 декабря, 2019 г.<span class="kw">&lt;/span&gt;</span></span>
+<span id="cb1016-3"><a href="сбор-данных-из-интернета-rvest.html#cb1016-3"></a>...</span></code></pre></div>
+<p>Чтобы обратиться к таким элементам нужно использовать точку:</p>
+<div class="sourceCode" id="cb1017"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1017-1"><a href="сбор-данных-из-интернета-rvest.html#cb1017-1"></a>source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1017-2"><a href="сбор-данных-из-интернета-rvest.html#cb1017-2"></a><span class="st">  </span><span class="kw">html_nodes</span>(<span class="st">&quot;span.post__date&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1017-3"><a href="сбор-данных-из-интернета-rvest.html#cb1017-3"></a><span class="st">  </span><span class="kw">html_text</span>()</span></code></pre></div>
+<pre><code> [1] &quot;\n\t\t\t\t\t\t15 мая\n\t\t\t\t\t&quot;    
+ [2] &quot;\n\t\t\t\t\t\t8 мая\n\t\t\t\t\t&quot;     
+ [3] &quot;\n\t\t\t\t\t\t2 мая\n\t\t\t\t\t&quot;     
+ [4] &quot;\n\t\t\t\t\t\t23 апреля\n\t\t\t\t\t&quot; 
+ [5] &quot;\n\t\t\t\t\t\t1 апреля\n\t\t\t\t\t&quot;  
+ [6] &quot;\n\t\t\t\t\t\t30 марта\n\t\t\t\t\t&quot;  
+ [7] &quot;\n\t\t\t\t\t\t23 марта\n\t\t\t\t\t&quot;  
+ [8] &quot;\n\t\t\t\t\t\t10 марта\n\t\t\t\t\t&quot;  
+ [9] &quot;\n\t\t\t\t\t\t2 марта\n\t\t\t\t\t&quot;   
+[10] &quot;\n\t\t\t\t\t\t28 февраля\n\t\t\t\t\t&quot;</code></pre>
+<p>Почистим:</p>
+<div class="sourceCode" id="cb1019"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1019-1"><a href="сбор-данных-из-интернета-rvest.html#cb1019-1"></a>source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1019-2"><a href="сбор-данных-из-интернета-rvest.html#cb1019-2"></a><span class="st">  </span><span class="kw">html_nodes</span>(<span class="st">&quot;span.post__date&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1019-3"><a href="сбор-данных-из-интернета-rvest.html#cb1019-3"></a><span class="st">  </span><span class="kw">html_text</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1019-4"><a href="сбор-данных-из-интернета-rvest.html#cb1019-4"></a><span class="st">  </span><span class="kw">str_remove_all</span>(<span class="st">&quot;</span><span class="ch">\\</span><span class="st">n|</span><span class="ch">\\</span><span class="st">t&quot;</span>)</span></code></pre></div>
+<pre><code> [1] &quot;15 мая&quot;     &quot;8 мая&quot;      &quot;2 мая&quot;      &quot;23 апреля&quot;  &quot;1 апреля&quot;  
+ [6] &quot;30 марта&quot;   &quot;23 марта&quot;   &quot;10 марта&quot;   &quot;2 марта&quot;    &quot;28 февраля&quot;</code></pre>
+<div class="rmdtask">
+<p>
+Постройте график, показывающий количество новостей Центра цифровых гуманитарных исследований за каждый месяц.
+</p>
+</div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-472-1.png" width="672" /></p>
+<div id="чтение-таблиц" class="section level3">
+<h3><span class="header-section-number">12.3.1</span> Чтение таблиц</h3>
+<p>Таблицы, которые хранятся на <code>html</code>-странице можно считывать как таблицы (а, не например, построчно). Рассмотрим вкладку “Число студентов и вакантные места” на сайте Магистерской программы «Цифровые методы в гуманитарных науках»:</p>
+<div class="sourceCode" id="cb1021"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1021-1"><a href="сбор-данных-из-интернета-rvest.html#cb1021-1"></a>source &lt;-<span class="st"> </span><span class="kw">read_html</span>(<span class="st">&quot;https://www.hse.ru/ma/dh/vacant&quot;</span>)</span>
+<span id="cb1021-2"><a href="сбор-данных-из-интернета-rvest.html#cb1021-2"></a></span>
+<span id="cb1021-3"><a href="сбор-данных-из-интернета-rvest.html#cb1021-3"></a>source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1021-4"><a href="сбор-данных-из-интернета-rvest.html#cb1021-4"></a><span class="st">  </span><span class="kw">html_node</span>(<span class="st">&quot;table&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1021-5"><a href="сбор-данных-из-интернета-rvest.html#cb1021-5"></a><span class="st">  </span><span class="kw">html_table</span>()</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["X1"],"name":[1],"type":["chr"],"align":["left"]},{"label":["X2"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"Общий контингент студентов","2":"21"},{"1":"из них на местах, финансируемых за счет субсидий из федерального бюджета на выполнение государственного задания","2":"18"},{"1":"из них на местах по договорам об оказании платных образовательных услуг","2":"3"},{"1":"из них на местах, финансируемых в рамках межправительственных соглашений","2":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<p>Функция <code>html_node()</code> возвращает первую таблицу на странице. В предыдущих разделах мы использовали функцию <code>html_nodes()</code>, которая вытаскивает все узлы с соответствующими атрибутами:</p>
+<div class="sourceCode" id="cb1022"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1022-1"><a href="сбор-данных-из-интернета-rvest.html#cb1022-1"></a>source <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1022-2"><a href="сбор-данных-из-интернета-rvest.html#cb1022-2"></a><span class="st">  </span><span class="kw">html_nodes</span>(<span class="st">&quot;table&quot;</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb1022-3"><a href="сбор-данных-из-интернета-rvest.html#cb1022-3"></a><span class="st">  </span><span class="kw">html_table</span>() -&gt;</span>
+<span id="cb1022-4"><a href="сбор-данных-из-интернета-rvest.html#cb1022-4"></a><span class="st">  </span>l</span>
+<span id="cb1022-5"><a href="сбор-данных-из-интернета-rvest.html#cb1022-5"></a><span class="kw">str</span>(l)</span></code></pre></div>
+<pre><code>List of 3
+ $ :&#39;data.frame&#39;:   4 obs. of  2 variables:
+  ..$ X1: chr [1:4] &quot;Общий контингент студентов&quot; &quot;из них на местах, финансируемых за счет субсидий из федерального бюджета на выполнение государственного задания&quot; &quot;из них на местах по договорам об оказании платных образовательных услуг&quot; &quot;из них на местах, финансируемых в рамках межправительственных соглашений&quot;
+  ..$ X2: int [1:4] 21 18 3 0
+ $ :&#39;data.frame&#39;:   2 obs. of  2 variables:
+  ..$ X1: chr [1:2] &quot;1 курс&quot; &quot;2 курс&quot;
+  ..$ X2: int [1:2] 0 NA
+ $ :&#39;data.frame&#39;:   3 obs. of  3 variables:
+  ..$ X1: chr [1:3] &quot;&quot; &quot;1 курс&quot; &quot;2 курс&quot;
+  ..$ X2: chr [1:3] &quot;места, финансируемые за счет субсидий из федерального бюджета на выполнение государственного задания&quot; &quot;0&quot; &quot;&quot;
+  ..$ X3: chr [1:3] &quot;места по договорам об оказании платных образовательных услуг&quot; &quot;0&quot; &quot;&quot;</code></pre>
+<p>Получился список (объект типа <code>list</code>), в котором содержаться все таблицы со страницы. Так что, для того, чтобы работать с конкретной таблицей нужно использовать индексацию списков:</p>
+<div class="sourceCode" id="cb1024"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1024-1"><a href="сбор-данных-из-интернета-rvest.html#cb1024-1"></a>l[[<span class="dv">1</span>]]</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["X1"],"name":[1],"type":["chr"],"align":["left"]},{"label":["X2"],"name":[2],"type":["int"],"align":["right"]}],"data":[{"1":"Общий контингент студентов","2":"21"},{"1":"из них на местах, финансируемых за счет субсидий из федерального бюджета на выполнение государственного задания","2":"18"},{"1":"из них на местах по договорам об оказании платных образовательных услуг","2":"3"},{"1":"из них на местах, финансируемых в рамках межправительственных соглашений","2":"0"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+</div>
+<div id="некоторые-советы" class="section level3">
+<h3><span class="header-section-number">12.3.2</span> Некоторые советы</h3>
+<p>Некоторые ресурсы блокируют возможность скачивать из них данные. Обычно это делается на уровне сервера, который видит, что с какого-то IP приходит по 5 запросов в секунду и ограничивает доступ, на случай если вы начинаете DDoS атаку. Если сервер не отдает вам данные или отдает, но раз в какой-то временной промежуток, следует прописать в вашей программе ожидание (команда <code>Sys.sleep()</code>). Некоторые сайты, например, Википедия, специально архивирует данные, чтобы люди не пытались ее обкачать: <a href="https://en.wikipedia.org/wiki/Wikipedia:Database_download">вот страница</a>, на которой это подробно описано.</p>
+
+<p>Вот cheatsheet по <a href="https://github.com/wzchen/probability_cheatsheet/raw/master/probability_cheatsheet.pdf">теории вероятности</a>.</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="работа-со-временем-lubridate.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="описательная-статистика-распределения.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/agricolamz/DS_for_DH/edit/master/11-rvest.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["DS_for_DH.pdf", "DS_for_DH.epub"],
+"toc": {
+"collapse": "section"
+},
+"self_contained": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

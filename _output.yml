@@ -1,0 +1,24 @@
+bookdown::gitbook:
+  df_print: paged
+  css: style.css
+  always_allow_html: yes
+  config:
+    self_contained: yes
+    toc:
+      collapse: section
+      before: |
+        <li><a href="./">Наука о данных в R для ЦГИ</a></li>
+    download: ["pdf", "epub"]
+    sharing: no
+    edit:
+      link: https://github.com/agricolamz/DS_for_DH/edit/master/%s
+      text: "Edit"
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  fig_width: 7
+  fig_height: 4
+  highlight: tango
+bookdown::epub_book: default

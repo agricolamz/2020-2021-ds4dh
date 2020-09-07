@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>18 Методы уменьшения размерностей | Наука о данных в R для программы Цифровых гуманитарных исследований</title>
+  <meta name="description" content="18 Методы уменьшения размерностей | Наука о данных в R для программы Цифровых гуманитарных исследований" />
+  <meta name="generator" content="bookdown 0.19 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="18 Методы уменьшения размерностей | Наука о данных в R для программы Цифровых гуманитарных исследований" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="18 Методы уменьшения размерностей | Наука о данных в R для программы Цифровых гуманитарных исследований" />
+  
+  
+  
+
+<meta name="author" content="Г. А. Мороз, И. С. Поздняков" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="кластеризация.html"/>
+<link rel="next" href="tasks.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Наука о данных в R для ЦГИ</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> О курсе</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Введение в R</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#наука-о-данных"><i class="fa fa-check"></i><b>2.1</b> Наука о данных</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#установка-r-и-rstudio"><i class="fa fa-check"></i><b>2.2</b> Установка R и RStudio</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#полезные-ссылки"><i class="fa fa-check"></i><b>2.3</b> Полезные ссылки</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#rstudio"><i class="fa fa-check"></i><b>2.4</b> Rstudio</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#введение-в-r"><i class="fa fa-check"></i><b>2.5</b> Введение в R</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="intro.html"><a href="intro.html#calc"><i class="fa fa-check"></i><b>2.5.1</b> R как калькулятор</a></li>
+<li class="chapter" data-level="2.5.2" data-path="intro.html"><a href="intro.html#func"><i class="fa fa-check"></i><b>2.5.2</b> Функции</a></li>
+<li class="chapter" data-level="2.5.3" data-path="intro.html"><a href="intro.html#variables"><i class="fa fa-check"></i><b>2.5.3</b> Переменные</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#data_types"><i class="fa fa-check"></i><b>2.6</b> Типы данных</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#atomic"><i class="fa fa-check"></i><b>2.7</b> Вектор</a><ul>
+<li class="chapter" data-level="2.7.1" data-path="intro.html"><a href="intro.html#coercion"><i class="fa fa-check"></i><b>2.7.1</b> Coercion</a></li>
+<li class="chapter" data-level="2.7.2" data-path="intro.html"><a href="intro.html#vector_op"><i class="fa fa-check"></i><b>2.7.2</b> Операции с векторами</a></li>
+<li class="chapter" data-level="2.7.3" data-path="intro.html"><a href="intro.html#recycling"><i class="fa fa-check"></i><b>2.7.3</b> Recycling</a></li>
+<li class="chapter" data-level="2.7.4" data-path="intro.html"><a href="intro.html#index_atomic"><i class="fa fa-check"></i><b>2.7.4</b> Индексирование векторов</a></li>
+<li class="chapter" data-level="2.7.5" data-path="intro.html"><a href="intro.html#na"><i class="fa fa-check"></i><b>2.7.5</b> NA — пропущенные значения</a></li>
+<li class="chapter" data-level="2.7.6" data-path="intro.html"><a href="intro.html#google"><i class="fa fa-check"></i><b>2.7.6</b> В любой непонятной ситуации — ищите в поисковике</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#matrix"><i class="fa fa-check"></i><b>2.8</b> Матрицы (matrix)</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#list"><i class="fa fa-check"></i><b>2.9</b> Списки (list)</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#df"><i class="fa fa-check"></i><b>2.10</b> Data.frame</a></li>
+<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#real_data"><i class="fa fa-check"></i><b>2.11</b> Начинаем работу с реальными данными</a><ul>
+<li class="chapter" data-level="2.11.1" data-path="intro.html"><a href="intro.html#wd"><i class="fa fa-check"></i><b>2.11.1</b> Рабочая папка и проекты</a></li>
+<li class="chapter" data-level="2.11.2" data-path="intro.html"><a href="intro.html#import"><i class="fa fa-check"></i><b>2.11.2</b> Импорт данных</a></li>
+</ul></li>
+<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#prep"><i class="fa fa-check"></i><b>2.12</b> Препроцессинг данных в R</a><ul>
+<li class="chapter" data-level="2.12.1" data-path="intro.html"><a href="intro.html#explore"><i class="fa fa-check"></i><b>2.12.1</b> Исследование данных</a></li>
+<li class="chapter" data-level="2.12.2" data-path="intro.html"><a href="intro.html#subset"><i class="fa fa-check"></i><b>2.12.2</b> Subsetting</a></li>
+<li class="chapter" data-level="2.12.3" data-path="intro.html"><a href="intro.html#newcol"><i class="fa fa-check"></i><b>2.12.3</b> Создание новых колонок</a></li>
+<li class="chapter" data-level="2.12.4" data-path="intro.html"><a href="intro.html#dtvstidy"><i class="fa fa-check"></i><b>2.12.4</b> data.table vs. tidyverse</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html"><i class="fa fa-check"></i><b>3</b> <code>tidyverse</code>: Загрузка и трансформация данных</a><ul>
+<li class="chapter" data-level="3.1" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#загрузка-данных"><i class="fa fa-check"></i><b>3.1</b> Загрузка данных</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#рабочая-директория"><i class="fa fa-check"></i><b>3.1.1</b> Рабочая директория</a></li>
+<li class="chapter" data-level="3.1.2" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#форматы-данных-.csv"><i class="fa fa-check"></i><b>3.1.2</b> Форматы данных: <code>.csv</code></a></li>
+<li class="chapter" data-level="3.1.3" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#загрузка-данных-readr-readxl"><i class="fa fa-check"></i><b>3.1.3</b> Загрузка данных: readr, readxl</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#tibble"><i class="fa fa-check"></i><b>3.2</b> <code>tibble</code></a></li>
+<li class="chapter" data-level="3.3" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyr"><i class="fa fa-check"></i><b>3.3</b> <code>dplyr</code></a><ul>
+<li class="chapter" data-level="3.3.1" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrfilter"><i class="fa fa-check"></i><b>3.3.1</b> <code>dplyr::filter()</code></a></li>
+<li class="chapter" data-level="3.3.2" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrslice"><i class="fa fa-check"></i><b>3.3.2</b> <code>dplyr::slice()</code></a></li>
+<li class="chapter" data-level="3.3.3" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrselect"><i class="fa fa-check"></i><b>3.3.3</b> <code>dplyr::select()</code></a></li>
+<li class="chapter" data-level="3.3.4" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrarrange"><i class="fa fa-check"></i><b>3.3.4</b> <code>dplyr::arrange()</code></a></li>
+<li class="chapter" data-level="3.3.5" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrdistinct"><i class="fa fa-check"></i><b>3.3.5</b> <code>dplyr::distinct()</code></a></li>
+<li class="chapter" data-level="3.3.6" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrmutate"><i class="fa fa-check"></i><b>3.3.6</b> <code>dplyr::mutate()</code></a></li>
+<li class="chapter" data-level="3.3.7" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyrgroup_by...-summarise..."><i class="fa fa-check"></i><b>3.3.7</b> <code>dplyr::group_by(...) %&gt;% summarise(...)</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3.4" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#соединение-датафреймов"><i class="fa fa-check"></i><b>3.4</b> Соединение датафреймов</a><ul>
+<li class="chapter" data-level="3.4.1" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#bind_..."><i class="fa fa-check"></i><b>3.4.1</b> <code>bind_...</code></a></li>
+<li class="chapter" data-level="3.4.2" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#dplyr.._join"><i class="fa fa-check"></i><b>3.4.2</b> <code>dplyr::.._join()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#tidyr-package"><i class="fa fa-check"></i><b>3.5</b> <code>tidyr</code> package</a></li>
+<li class="chapter" data-level="3.6" data-path="tidy-dplyr.html"><a href="tidy-dplyr.html#полезные-надстройки"><i class="fa fa-check"></i><b>3.6</b> Полезные надстройки</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="viz-1.html"><a href="viz-1.html"><i class="fa fa-check"></i><b>4</b> Визуализация данных</a><ul>
+<li class="chapter" data-level="4.1" data-path="viz-1.html"><a href="viz-1.html#зачем-визуализировать-данные"><i class="fa fa-check"></i><b>4.1</b> Зачем визуализировать данные?</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="viz-1.html"><a href="viz-1.html#квартет-анскомба"><i class="fa fa-check"></i><b>4.1.1</b> Квартет Анскомба</a></li>
+<li class="chapter" data-level="4.1.2" data-path="viz-1.html"><a href="viz-1.html#датазаурус"><i class="fa fa-check"></i><b>4.1.2</b> Датазаурус</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="viz-1.html"><a href="viz-1.html#основы-ggplot2"><i class="fa fa-check"></i><b>4.2</b> Основы <code>ggplot2</code></a><ul>
+<li class="chapter" data-level="4.2.1" data-path="viz-1.html"><a href="viz-1.html#диаграмма-рассеяния-scaterplot"><i class="fa fa-check"></i><b>4.2.1</b> Диаграмма рассеяния (Scaterplot)</a></li>
+<li class="chapter" data-level="4.2.2" data-path="viz-1.html"><a href="viz-1.html#слои"><i class="fa fa-check"></i><b>4.2.2</b> Слои</a></li>
+<li class="chapter" data-level="4.2.3" data-path="viz-1.html"><a href="viz-1.html#aes"><i class="fa fa-check"></i><b>4.2.3</b> <code>aes()</code></a></li>
+<li class="chapter" data-level="4.2.4" data-path="viz-1.html"><a href="viz-1.html#оформление"><i class="fa fa-check"></i><b>4.2.4</b> Оформление</a></li>
+<li class="chapter" data-level="4.2.5" data-path="viz-1.html"><a href="viz-1.html#логарифмические-шкалы"><i class="fa fa-check"></i><b>4.2.5</b> Логарифмические шкалы</a></li>
+<li class="chapter" data-level="4.2.6" data-path="viz-1.html"><a href="viz-1.html#annotate"><i class="fa fa-check"></i><b>4.2.6</b> <code>annotate()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="viz-1.html"><a href="viz-1.html#столбчатые-диаграммы-barplots"><i class="fa fa-check"></i><b>4.3</b> Столбчатые диаграммы (barplots)</a></li>
+<li class="chapter" data-level="4.4" data-path="viz-1.html"><a href="viz-1.html#факторы"><i class="fa fa-check"></i><b>4.4</b> Факторы</a></li>
+<li class="chapter" data-level="4.5" data-path="viz-1.html"><a href="viz-1.html#дотплот"><i class="fa fa-check"></i><b>4.5</b> Дотплот</a></li>
+<li class="chapter" data-level="4.6" data-path="viz-1.html"><a href="viz-1.html#гистограммы"><i class="fa fa-check"></i><b>4.6</b> Гистограммы</a></li>
+<li class="chapter" data-level="4.7" data-path="viz-1.html"><a href="viz-1.html#функции-плотности"><i class="fa fa-check"></i><b>4.7</b> Функции плотности</a></li>
+<li class="chapter" data-level="4.8" data-path="viz-1.html"><a href="viz-1.html#точки-джиттер-jitter-вайолинплот-violinplot-ящики-с-усами-boxplot"><i class="fa fa-check"></i><b>4.8</b> Точки, джиттер (jitter), вайолинплот (violinplot), ящики с усами (boxplot),</a></li>
+<li class="chapter" data-level="4.9" data-path="viz-1.html"><a href="viz-1.html#фасетизация"><i class="fa fa-check"></i><b>4.9</b> Фасетизация</a></li>
+<li class="chapter" data-level="4.10" data-path="viz-1.html"><a href="viz-1.html#визуализация-комбинаций-признаков"><i class="fa fa-check"></i><b>4.10</b> Визуализация комбинаций признаков</a><ul>
+<li class="chapter" data-level="4.10.1" data-path="viz-1.html"><a href="viz-1.html#потоковая-диаграмма-sankey-diagram"><i class="fa fa-check"></i><b>4.10.1</b> Потоковая Диаграмма (Sankey diagram)</a></li>
+<li class="chapter" data-level="4.10.2" data-path="viz-1.html"><a href="viz-1.html#upset-plot"><i class="fa fa-check"></i><b>4.10.2</b> UpSet Plot</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="strings.html"><a href="strings.html"><i class="fa fa-check"></i><b>5</b> Работа со строками</a><ul>
+<li class="chapter" data-level="5.1" data-path="strings.html"><a href="strings.html#работа-со-строками-в-r"><i class="fa fa-check"></i><b>5.1</b> Работа со строками в R</a></li>
+<li class="chapter" data-level="5.2" data-path="strings.html"><a href="strings.html#как-получить-строку"><i class="fa fa-check"></i><b>5.2</b> Как получить строку?</a></li>
+<li class="chapter" data-level="5.3" data-path="strings.html"><a href="strings.html#соединение-и-разделение-строк"><i class="fa fa-check"></i><b>5.3</b> Соединение и разделение строк</a></li>
+<li class="chapter" data-level="5.4" data-path="strings.html"><a href="strings.html#количество-символов"><i class="fa fa-check"></i><b>5.4</b> Количество символов</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="strings.html"><a href="strings.html#подсчет-количества-символов"><i class="fa fa-check"></i><b>5.4.1</b> Подсчет количества символов</a></li>
+<li class="chapter" data-level="5.4.2" data-path="strings.html"><a href="strings.html#подгонка-количества-символов"><i class="fa fa-check"></i><b>5.4.2</b> Подгонка количества символов</a></li>
+</ul></li>
+<li class="chapter" data-level="5.5" data-path="strings.html"><a href="strings.html#сортировка"><i class="fa fa-check"></i><b>5.5</b> Сортировка</a></li>
+<li class="chapter" data-level="5.6" data-path="strings.html"><a href="strings.html#поиск-подстроки"><i class="fa fa-check"></i><b>5.6</b> Поиск подстроки</a></li>
+<li class="chapter" data-level="5.7" data-path="strings.html"><a href="strings.html#изменение-строк"><i class="fa fa-check"></i><b>5.7</b> Изменение строк</a><ul>
+<li class="chapter" data-level="5.7.1" data-path="strings.html"><a href="strings.html#изменение-регистра"><i class="fa fa-check"></i><b>5.7.1</b> Изменение регистра</a></li>
+<li class="chapter" data-level="5.7.2" data-path="strings.html"><a href="strings.html#выделение-подстроки"><i class="fa fa-check"></i><b>5.7.2</b> Выделение подстроки</a></li>
+<li class="chapter" data-level="5.7.3" data-path="strings.html"><a href="strings.html#замена-подстроки"><i class="fa fa-check"></i><b>5.7.3</b> Замена подстроки</a></li>
+<li class="chapter" data-level="5.7.4" data-path="strings.html"><a href="strings.html#удаление-подстроки"><i class="fa fa-check"></i><b>5.7.4</b> Удаление подстроки</a></li>
+<li class="chapter" data-level="5.7.5" data-path="strings.html"><a href="strings.html#транслитерация-строк"><i class="fa fa-check"></i><b>5.7.5</b> Транслитерация строк</a></li>
+</ul></li>
+<li class="chapter" data-level="5.8" data-path="strings.html"><a href="strings.html#регулярные-выражения"><i class="fa fa-check"></i><b>5.8</b> Регулярные выражения</a><ul>
+<li class="chapter" data-level="5.8.1" data-path="strings.html"><a href="strings.html#экранирование-метасимволов"><i class="fa fa-check"></i><b>5.8.1</b> Экранирование метасимволов</a></li>
+<li class="chapter" data-level="5.8.2" data-path="strings.html"><a href="strings.html#классы-знаков"><i class="fa fa-check"></i><b>5.8.2</b> Классы знаков</a></li>
+<li class="chapter" data-level="5.8.3" data-path="strings.html"><a href="strings.html#квантификация"><i class="fa fa-check"></i><b>5.8.3</b> Квантификация</a></li>
+<li class="chapter" data-level="5.8.4" data-path="strings.html"><a href="strings.html#позиционная-проверка-look-arounds"><i class="fa fa-check"></i><b>5.8.4</b> Позиционная проверка (look arounds)</a></li>
+</ul></li>
+<li class="chapter" data-level="5.9" data-path="strings.html"><a href="strings.html#определение-языка"><i class="fa fa-check"></i><b>5.9</b> Определение языка</a></li>
+<li class="chapter" data-level="5.10" data-path="strings.html"><a href="strings.html#расстояния-между-строками"><i class="fa fa-check"></i><b>5.10</b> Расстояния между строками</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="lists.html"><a href="lists.html"><i class="fa fa-check"></i><b>6</b> Работа со списками</a><ul>
+<li class="chapter" data-level="6.1" data-path="lists.html"><a href="lists.html#что-такое-списки"><i class="fa fa-check"></i><b>6.1</b> Что такое списки?</a><ul>
+<li class="chapter" data-level="6.1.1" data-path="lists.html"><a href="lists.html#превращение-json-в-список-и-обратно"><i class="fa fa-check"></i><b>6.1.1</b> Превращение JSON в список и обратно</a></li>
+<li class="chapter" data-level="6.1.2" data-path="lists.html"><a href="lists.html#превращение-.xml-в-список-и-обратно"><i class="fa fa-check"></i><b>6.1.2</b> Превращение <code>.xml</code> в список и обратно</a></li>
+<li class="chapter" data-level="6.1.3" data-path="lists.html"><a href="lists.html#просмотр-списков-в-r"><i class="fa fa-check"></i><b>6.1.3</b> Просмотр списков в R</a></li>
+</ul></li>
+<li class="chapter" data-level="6.2" data-path="lists.html"><a href="lists.html#пакет-purrr"><i class="fa fa-check"></i><b>6.2</b> Пакет <code>purrr</code></a><ul>
+<li class="chapter" data-level="6.2.1" data-path="lists.html"><a href="lists.html#функция-map-и-map..."><i class="fa fa-check"></i><b>6.2.1</b> Функция <code>map()</code> и <code>map...()</code></a></li>
+<li class="chapter" data-level="6.2.2" data-path="lists.html"><a href="lists.html#фильтрация-списков"><i class="fa fa-check"></i><b>6.2.2</b> Фильтрация списков</a></li>
+<li class="chapter" data-level="6.2.3" data-path="lists.html"><a href="lists.html#операции-со-списками"><i class="fa fa-check"></i><b>6.2.3</b> Операции со списками</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="data-presentation.html"><a href="data-presentation.html"><i class="fa fa-check"></i><b>7</b> Представление данных: <code>rmarkdown</code></a><ul>
+<li class="chapter" data-level="7.1" data-path="data-presentation.html"><a href="data-presentation.html#rmarkdown"><i class="fa fa-check"></i><b>7.1</b> <code>rmarkdown</code></a><ul>
+<li class="chapter" data-level="7.1.1" data-path="data-presentation.html"><a href="data-presentation.html#установка"><i class="fa fa-check"></i><b>7.1.1</b> Установка</a></li>
+<li class="chapter" data-level="7.1.2" data-path="data-presentation.html"><a href="data-presentation.html#составляющие-rmarkdown-документа"><i class="fa fa-check"></i><b>7.1.2</b> Составляющие <code>rmarkdown</code>-документа</a></li>
+<li class="chapter" data-level="7.1.3" data-path="data-presentation.html"><a href="data-presentation.html#пример-rmarkdown-документа"><i class="fa fa-check"></i><b>7.1.3</b> Пример <code>rmarkdown</code>-документа</a></li>
+<li class="chapter" data-level="7.1.4" data-path="data-presentation.html"><a href="data-presentation.html#markdown"><i class="fa fa-check"></i><b>7.1.4</b> <code>Markdown</code></a></li>
+<li class="chapter" data-level="7.1.5" data-path="data-presentation.html"><a href="data-presentation.html#pandoc"><i class="fa fa-check"></i><b>7.1.5</b> <code>Pandoc</code></a></li>
+<li class="chapter" data-level="7.1.6" data-path="data-presentation.html"><a href="data-presentation.html#code-chunks"><i class="fa fa-check"></i><b>7.1.6</b> Code chunks</a></li>
+<li class="chapter" data-level="7.1.7" data-path="data-presentation.html"><a href="data-presentation.html#yaml-шапка"><i class="fa fa-check"></i><b>7.1.7</b> YAML шапка</a></li>
+<li class="chapter" data-level="7.1.8" data-path="data-presentation.html"><a href="data-presentation.html#где-хостить-.html"><i class="fa fa-check"></i><b>7.1.8</b> Где хостить <code>.html</code>?</a></li>
+</ul></li>
+<li class="chapter" data-level="7.2" data-path="data-presentation.html"><a href="data-presentation.html#бывают-и-другие-способы-представления-данных"><i class="fa fa-check"></i><b>7.2</b> Бывают и другие способы представления данных</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="functions.html"><a href="functions.html"><i class="fa fa-check"></i><b>8</b> Собственные функции и использование их в <code>tidyverse</code></a><ul>
+<li class="chapter" data-level="8.1" data-path="functions.html"><a href="functions.html#напоминание-логические-операции"><i class="fa fa-check"></i><b>8.1</b> Напоминание: логические операции</a></li>
+<li class="chapter" data-level="8.2" data-path="functions.html"><a href="functions.html#создание-собственных-функций"><i class="fa fa-check"></i><b>8.2</b> Создание собственных функций</a></li>
+<li class="chapter" data-level="8.3" data-path="functions.html"><a href="functions.html#использование-условий-в-tidyverse"><i class="fa fa-check"></i><b>8.3</b> Использование условий в tidyverse</a><ul>
+<li class="chapter" data-level="8.3.1" data-path="functions.html"><a href="functions.html#условия-в-строчках"><i class="fa fa-check"></i><b>8.3.1</b> Условия в строчках</a></li>
+<li class="chapter" data-level="8.3.2" data-path="functions.html"><a href="functions.html#условия-в-столбцах"><i class="fa fa-check"></i><b>8.3.2</b> Условия в столбцах</a></li>
+</ul></li>
+<li class="chapter" data-level="8.4" data-path="functions.html"><a href="functions.html#reinvent-the-map-function"><i class="fa fa-check"></i><b>8.4</b> Reinvent the <code>map</code> function</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="tidytext.html"><a href="tidytext.html"><i class="fa fa-check"></i><b>9</b> Работа с текстами: <code>gutenbergr</code>, <code>tidytext</code>, <code>stopwords</code>, <code>udpipe</code></a><ul>
+<li class="chapter" data-level="9.1" data-path="tidytext.html"><a href="tidytext.html#загрузка-текста-в-r"><i class="fa fa-check"></i><b>9.1</b> Загрузка текста в R</a></li>
+<li class="chapter" data-level="9.2" data-path="tidytext.html"><a href="tidytext.html#пакет-gutenbergr"><i class="fa fa-check"></i><b>9.2</b> Пакет <code>gutenbergr</code></a></li>
+<li class="chapter" data-level="9.3" data-path="tidytext.html"><a href="tidytext.html#библиотека-tidytext"><i class="fa fa-check"></i><b>9.3</b> Библиотека <code>tidytext</code></a></li>
+<li class="chapter" data-level="9.4" data-path="tidytext.html"><a href="tidytext.html#пакет-stopwords"><i class="fa fa-check"></i><b>9.4</b> Пакет <code>stopwords</code></a></li>
+<li class="chapter" data-level="9.5" data-path="tidytext.html"><a href="tidytext.html#пакет-udpipe"><i class="fa fa-check"></i><b>9.5</b> Пакет <code>udpipe</code></a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html"><i class="fa fa-check"></i><b>10</b> Работа с геоданными: <code>leaflet</code></a><ul>
+<li class="chapter" data-level="10.1" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#векторная-и-растровая-графика"><i class="fa fa-check"></i><b>10.1</b> Векторная и растровая графика</a></li>
+<li class="chapter" data-level="10.2" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#картографические-примитивы"><i class="fa fa-check"></i><b>10.2</b> Картографические примитивы</a></li>
+<li class="chapter" data-level="10.3" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#leaflet"><i class="fa fa-check"></i><b>10.3</b> <code>leaflet</code></a><ul>
+<li class="chapter" data-level="10.3.1" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#csv-файлы"><i class="fa fa-check"></i><b>10.3.1</b> <code>.csv</code> файлы</a></li>
+<li class="chapter" data-level="10.3.2" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#комбинация-карт-leafsync"><i class="fa fa-check"></i><b>10.3.2</b> Комбинация карт: <code>leafsync</code></a></li>
+<li class="chapter" data-level="10.3.3" data-path="работа-с-геоданными-leaflet.html"><a href="работа-с-геоданными-leaflet.html#работа-с-.geojson"><i class="fa fa-check"></i><b>10.3.3</b> Работа с <code>.geojson</code></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="работа-со-временем-lubridate.html"><a href="работа-со-временем-lubridate.html"><i class="fa fa-check"></i><b>11</b> Работа со временем: <code>lubridate</code></a><ul>
+<li class="chapter" data-level="11.1" data-path="работа-со-временем-lubridate.html"><a href="работа-со-временем-lubridate.html#создание-даты"><i class="fa fa-check"></i><b>11.1</b> Создание даты</a></li>
+<li class="chapter" data-level="11.2" data-path="работа-со-временем-lubridate.html"><a href="работа-со-временем-lubridate.html#извлечение-компонентов-даты"><i class="fa fa-check"></i><b>11.2</b> Извлечение компонентов даты</a></li>
+<li class="chapter" data-level="11.3" data-path="работа-со-временем-lubridate.html"><a href="работа-со-временем-lubridate.html#операции-с-датами"><i class="fa fa-check"></i><b>11.3</b> Операции с датами</a></li>
+<li class="chapter" data-level="11.4" data-path="работа-со-временем-lubridate.html"><a href="работа-со-временем-lubridate.html#визуализация-времени-данные-левада-центра"><i class="fa fa-check"></i><b>11.4</b> Визуализация времени: данные Левада-центра</a></li>
+</ul></li>
+<li class="chapter" data-level="12" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html"><i class="fa fa-check"></i><b>12</b> Сбор данных из интернета: <code>rvest</code></a><ul>
+<li class="chapter" data-level="12.1" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#введение"><i class="fa fa-check"></i><b>12.1</b> Введение</a></li>
+<li class="chapter" data-level="12.2" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#работа-с-пакетом-rvest"><i class="fa fa-check"></i><b>12.2</b> Работа с пакетом <code>rvest</code></a><ul>
+<li class="chapter" data-level="12.2.1" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#простой-случай"><i class="fa fa-check"></i><b>12.2.1</b> Простой случай</a></li>
+</ul></li>
+<li class="chapter" data-level="12.3" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#использование-атрибута-class"><i class="fa fa-check"></i><b>12.3</b> Использование атрибута <code>class</code></a><ul>
+<li class="chapter" data-level="12.3.1" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#чтение-таблиц"><i class="fa fa-check"></i><b>12.3.1</b> Чтение таблиц</a></li>
+<li class="chapter" data-level="12.3.2" data-path="сбор-данных-из-интернета-rvest.html"><a href="сбор-данных-из-интернета-rvest.html#некоторые-советы"><i class="fa fa-check"></i><b>12.3.2</b> Некоторые советы</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="13" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html"><i class="fa fa-check"></i><b>13</b> Описательная статистика, распределения</a><ul>
+<li class="chapter" data-level="13.1" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#описательная-статистика"><i class="fa fa-check"></i><b>13.1</b> Описательная статистика</a><ul>
+<li class="chapter" data-level="13.1.1" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#категориальные-переменные"><i class="fa fa-check"></i><b>13.1.1</b> Категориальные переменные</a></li>
+<li class="chapter" data-level="13.1.2" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#числовые-переменные"><i class="fa fa-check"></i><b>13.1.2</b> Числовые переменные</a></li>
+</ul></li>
+<li class="chapter" data-level="13.2" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#от-частотности-к-вероятности"><i class="fa fa-check"></i><b>13.2</b> От частотности к вероятности</a><ul>
+<li class="chapter" data-level="13.2.1" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#категориальная-переменная"><i class="fa fa-check"></i><b>13.2.1</b> Категориальная переменная</a></li>
+<li class="chapter" data-level="13.2.2" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#числовая-переменная"><i class="fa fa-check"></i><b>13.2.2</b> Числовая переменная</a></li>
+<li class="chapter" data-level="13.2.3" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#распределения"><i class="fa fa-check"></i><b>13.2.3</b> Распределения</a></li>
+<li class="chapter" data-level="13.2.4" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#давайте-посчитаем-вероятности"><i class="fa fa-check"></i><b>13.2.4</b> Давайте посчитаем вероятности</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="14" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html"><i class="fa fa-check"></i><b>14</b> Проверка статистических гипотез</a><ul>
+<li class="chapter" data-level="14.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#о-статистике"><i class="fa fa-check"></i><b>14.1</b> О статистике</a></li>
+<li class="chapter" data-level="14.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#проверка-нулевой-гипотезы"><i class="fa fa-check"></i><b>14.2</b> Проверка нулевой гипотезы</a></li>
+<li class="chapter" data-level="14.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#классификация-статистических-тестов"><i class="fa fa-check"></i><b>14.3</b> Классификация статистических тестов</a><ul>
+<li class="chapter" data-level="14.3.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#количество-выборок"><i class="fa fa-check"></i><b>14.3.1</b> Количество выборок</a></li>
+<li class="chapter" data-level="14.3.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#направление"><i class="fa fa-check"></i><b>14.3.2</b> Направление</a></li>
+<li class="chapter" data-level="14.3.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#парные-vs.-непарные"><i class="fa fa-check"></i><b>14.3.3</b> Парные vs. непарные</a></li>
+<li class="chapter" data-level="14.3.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#параметрические-vs.-непараметрические"><i class="fa fa-check"></i><b>14.3.4</b> Параметрические vs. непараметрические</a></li>
+<li class="chapter" data-level="14.3.5" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#классификация-тестов"><i class="fa fa-check"></i><b>14.3.5</b> Классификация тестов</a></li>
+</ul></li>
+<li class="chapter" data-level="14.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#одновыборочные-тесты"><i class="fa fa-check"></i><b>14.4</b> Одновыборочные тесты</a><ul>
+<li class="chapter" data-level="14.4.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#биномиальный-тест"><i class="fa fa-check"></i><b>14.4.1</b> Биномиальный тест</a></li>
+<li class="chapter" data-level="14.4.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#одновыборочный-t-тест"><i class="fa fa-check"></i><b>14.4.2</b> Одновыборочный t-тест</a></li>
+<li class="chapter" data-level="14.4.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#тест-уилкоксона"><i class="fa fa-check"></i><b>14.4.3</b> Тест Уилкоксона</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#двухвыборочные-тесты"><i class="fa fa-check"></i><b>14.5</b> Двухвыборочные тесты</a><ul>
+<li class="chapter" data-level="14.5.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#двухвыборочный-t-тест"><i class="fa fa-check"></i><b>14.5.1</b> Двухвыборочный t-тест</a></li>
+<li class="chapter" data-level="14.5.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#двухвыборочный-парный-t-тест"><i class="fa fa-check"></i><b>14.5.2</b> Двухвыборочный парный t-тест</a></li>
+<li class="chapter" data-level="14.5.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#критерий-манна-уитни"><i class="fa fa-check"></i><b>14.5.3</b> Критерий Манна-Уитни</a></li>
+<li class="chapter" data-level="14.5.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#критерий-χ²-тест-фишера"><i class="fa fa-check"></i><b>14.5.4</b> Критерий χ², тест Фишера</a></li>
+<li class="chapter" data-level="14.5.5" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#критерий-мак-немара"><i class="fa fa-check"></i><b>14.5.5</b> Критерий Мак Немара</a></li>
+</ul></li>
+<li class="chapter" data-level="14.6" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#послесловие"><i class="fa fa-check"></i><b>14.6</b> Послесловие</a></li>
+<li class="chapter" data-level="14.7" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#рассказы-чехова-и-зощенко"><i class="fa fa-check"></i><b>14.7</b> Рассказы Чехова и Зощенко</a></li>
+<li class="chapter" data-level="14.8" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#obamacare"><i class="fa fa-check"></i><b>14.8</b> Obamacare</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html"><i class="fa fa-check"></i><b>15</b> Корреляция и регрессия</a><ul>
+<li class="chapter" data-level="15.1" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#дисперсия-и-стандартное-отклонение"><i class="fa fa-check"></i><b>15.1</b> Дисперсия и стандартное отклонение</a></li>
+<li class="chapter" data-level="15.2" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#z-преобразование"><i class="fa fa-check"></i><b>15.2</b> z-преобразование</a></li>
+<li class="chapter" data-level="15.3" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#ковариация"><i class="fa fa-check"></i><b>15.3</b> Ковариация</a></li>
+<li class="chapter" data-level="15.4" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#корреляция"><i class="fa fa-check"></i><b>15.4</b> Корреляция</a><ul>
+<li class="chapter" data-level="15.4.1" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#корреляция-пирсона"><i class="fa fa-check"></i><b>15.4.1</b> Корреляция Пирсона</a></li>
+<li class="chapter" data-level="15.4.2" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#ранговые-корреляции-спирмана-и-кендалла"><i class="fa fa-check"></i><b>15.4.2</b> Ранговые корреляции Спирмана и Кендалла</a></li>
+</ul></li>
+<li class="chapter" data-level="15.5" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#регрессионный-анализ"><i class="fa fa-check"></i><b>15.5</b> Регрессионный анализ</a><ul>
+<li class="chapter" data-level="15.5.1" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#основы"><i class="fa fa-check"></i><b>15.5.1</b> Основы</a></li>
+<li class="chapter" data-level="15.5.2" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#первая-регрессия"><i class="fa fa-check"></i><b>15.5.2</b> Первая регрессия</a></li>
+<li class="chapter" data-level="15.5.3" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#категориальные-переменные-1"><i class="fa fa-check"></i><b>15.5.3</b> Категориальные переменные</a></li>
+<li class="chapter" data-level="15.5.4" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#множественная-регрессия"><i class="fa fa-check"></i><b>15.5.4</b> Множественная регрессия</a></li>
+<li class="chapter" data-level="15.5.5" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#сравнение-моделей"><i class="fa fa-check"></i><b>15.5.5</b> Сравнение моделей</a></li>
+<li class="chapter" data-level="15.5.6" data-path="корреляция-и-регрессия.html"><a href="корреляция-и-регрессия.html#послесловие-1"><i class="fa fa-check"></i><b>15.5.6</b> Послесловие</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="работа-статистического-детектива.html"><a href="работа-статистического-детектива.html"><i class="fa fa-check"></i><b>16</b> Работа статистического детектива</a><ul>
+<li class="chapter" data-level="16.1" data-path="работа-статистического-детектива.html"><a href="работа-статистического-детектива.html#введение-1"><i class="fa fa-check"></i><b>16.1</b> Введение</a></li>
+<li class="chapter" data-level="16.2" data-path="работа-статистического-детектива.html"><a href="работа-статистического-детектива.html#возможно-ли-такое-среднее"><i class="fa fa-check"></i><b>16.2</b> Возможно ли такое среднее?</a></li>
+<li class="chapter" data-level="16.3" data-path="работа-статистического-детектива.html"><a href="работа-статистического-детектива.html#пакет-statcheck"><i class="fa fa-check"></i><b>16.3</b> Пакет <code>statcheck</code></a></li>
+<li class="chapter" data-level="16.4" data-path="работа-статистического-детектива.html"><a href="работа-статистического-детектива.html#пакет-digitize"><i class="fa fa-check"></i><b>16.4</b> Пакет <code>digitize</code></a></li>
+</ul></li>
+<li class="chapter" data-level="17" data-path="кластеризация.html"><a href="кластеризация.html"><i class="fa fa-check"></i><b>17</b> Кластеризация</a><ul>
+<li class="chapter" data-level="17.1" data-path="кластеризация.html"><a href="кластеризация.html#метод-k-средних-k-means"><i class="fa fa-check"></i><b>17.1</b> Метод k-средних (k-means)</a><ul>
+<li class="chapter" data-level="17.1.1" data-path="кластеризация.html"><a href="кластеризация.html#пример"><i class="fa fa-check"></i><b>17.1.1</b> Пример</a></li>
+</ul></li>
+<li class="chapter" data-level="17.2" data-path="кластеризация.html"><a href="кластеризация.html#иерархическая-кластеризация"><i class="fa fa-check"></i><b>17.2</b> Иерархическая кластеризация</a><ul>
+<li class="chapter" data-level="17.2.1" data-path="кластеризация.html"><a href="кластеризация.html#матрица-расстояний"><i class="fa fa-check"></i><b>17.2.1</b> Матрица расстояний</a></li>
+<li class="chapter" data-level="17.2.2" data-path="кластеризация.html"><a href="кластеризация.html#расстояние-между-словами"><i class="fa fa-check"></i><b>17.2.2</b> Расстояние между словами</a></li>
+<li class="chapter" data-level="17.2.3" data-path="кластеризация.html"><a href="кластеризация.html#применение-иерархической-кластеризации"><i class="fa fa-check"></i><b>17.2.3</b> Применение иерархической кластеризации</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="18" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html"><i class="fa fa-check"></i><b>18</b> Методы уменьшения размерностей</a><ul>
+<li class="chapter" data-level="18.1" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#визуализация-многомерных-пространств"><i class="fa fa-check"></i><b>18.1</b> Визуализация многомерных пространств</a></li>
+<li class="chapter" data-level="18.2" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#простой-пример-из-двумерного-пространства-в-одномерное-пространство"><i class="fa fa-check"></i><b>18.2</b> Простой пример: из двумерного пространства в одномерное пространство</a></li>
+<li class="chapter" data-level="18.3" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#многомерное-шкалирование-mds"><i class="fa fa-check"></i><b>18.3</b> Многомерное шкалирование (MDS)</a></li>
+<li class="chapter" data-level="18.4" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#метод-главных-компонент-pca"><i class="fa fa-check"></i><b>18.4</b> Метод главных компонент (PCA)</a></li>
+<li class="chapter" data-level="18.5" data-path="методы-уменьшения-размерностей.html"><a href="методы-уменьшения-размерностей.html#другие-методы-уменьшения-размерности"><i class="fa fa-check"></i><b>18.5</b> Другие методы уменьшения размерности</a></li>
+</ul></li>
+<li class="chapter" data-level="19" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>19</b> Задания</a><ul>
+<li class="chapter" data-level="19.1" data-path="tasks.html"><a href="tasks.html#vec_task_1"><i class="fa fa-check"></i><b>19.1</b> Вектор</a></li>
+<li class="chapter" data-level="19.2" data-path="tasks.html"><a href="tasks.html#vec_op"><i class="fa fa-check"></i><b>19.2</b> Вектор. Операции с векторами</a></li>
+<li class="chapter" data-level="19.3" data-path="tasks.html"><a href="tasks.html#vec_task_2"><i class="fa fa-check"></i><b>19.3</b> Вектор. Индексирование</a></li>
+<li class="chapter" data-level="19.4" data-path="tasks.html"><a href="tasks.html#list_ta"><i class="fa fa-check"></i><b>19.4</b> Списки</a></li>
+<li class="chapter" data-level="19.5" data-path="tasks.html"><a href="tasks.html#t"><i class="fa fa-check"></i><b>19.5</b> Матрицы</a></li>
+<li class="chapter" data-level="19.6" data-path="tasks.html"><a href="tasks.html#df_task"><i class="fa fa-check"></i><b>19.6</b> Датафрейм</a></li>
+</ul></li>
+<li class="chapter" data-level="20" data-path="solutions.html"><a href="solutions.html"><i class="fa fa-check"></i><b>20</b> Решения_заданий</a><ul>
+<li class="chapter" data-level="20.1" data-path="solutions.html"><a href="solutions.html#solvvec_task_1"><i class="fa fa-check"></i><b>20.1</b> Вектор</a></li>
+<li class="chapter" data-level="20.2" data-path="solutions.html"><a href="solutions.html#solvvec_op"><i class="fa fa-check"></i><b>20.2</b> Вектор. Операции с векторами</a></li>
+<li class="chapter" data-level="20.3" data-path="solutions.html"><a href="solutions.html#solvvec_task_2"><i class="fa fa-check"></i><b>20.3</b> Вектор. Индексирование</a></li>
+<li class="chapter" data-level="20.4" data-path="solutions.html"><a href="solutions.html#solvlist_ta"><i class="fa fa-check"></i><b>20.4</b> Списки</a></li>
+<li class="chapter" data-level="20.5" data-path="solutions.html"><a href="solutions.html#solvt"><i class="fa fa-check"></i><b>20.5</b> Матрицы</a></li>
+<li class="chapter" data-level="20.6" data-path="solutions.html"><a href="solutions.html#solvdf_task"><i class="fa fa-check"></i><b>20.6</b> Датафрейм</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ссылки-на-литературу.html"><a href="ссылки-на-литературу.html"><i class="fa fa-check"></i>Ссылки на литературу</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Наука о данных в R для программы Цифровых гуманитарных исследований</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="методы-уменьшения-размерностей" class="section level1">
+<h1><span class="header-section-number">18</span> Методы уменьшения размерностей</h1>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="методы-уменьшения-размерностей.html#cb1-1"></a><span class="kw">library</span>(tidyverse)</span></code></pre></div>
+<p>Методы уменьшения размерностей – это эксплораторные методы, которые позволяет использовать меньше переменных для того, чтобы найти связи в данных и связи между переменными. Немножко жаргона: размерность здесь является прямым аналогом размерности в описании физических объектов (например, 2-ухмерное, 3-ехмерное, 4-ехмерное и т. д. пространство). Важно понимать, что каждая переменная в любом датасете можно воспринимать как отдельную размерность, так что каждая строчка в датасете <code>mtcars</code> – объект в 11-мерном пространстве просто потому что в этом датасете 11 переменных.</p>
+<div id="визуализация-многомерных-пространств" class="section level2">
+<h2><span class="header-section-number">18.1</span> Визуализация многомерных пространств</h2>
+<p>Визуализация многомерного пространства — дело сложное. Когда переменных не так уж и много, то в целом данную задачу можно решить используя разные трюки:</p>
+<ul>
+<li>много диаграмм рассеяния</li>
+</ul>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb2-1"><a href="методы-уменьшения-размерностей.html#cb2-1"></a><span class="kw">library</span>(GGally)</span>
+<span id="cb2-2"><a href="методы-уменьшения-размерностей.html#cb2-2"></a><span class="kw">ggpairs</span>(mtcars)</span></code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/ggally-1.png" width="768" /></p>
+<ul>
+<li>радиальная диаграмма (радар, паук)</li>
+</ul>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="методы-уменьшения-размерностей.html#cb3-1"></a>mtcars <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-2"><a href="методы-уменьшения-размерностей.html#cb3-2"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">car_names =</span> <span class="kw">rownames</span>(mtcars)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb3-3"><a href="методы-уменьшения-размерностей.html#cb3-3"></a><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="dt">names_to =</span> <span class="st">&quot;variables&quot;</span>, <span class="dt">values_to =</span> <span class="st">&quot;values&quot;</span>, mpg<span class="op">:</span>carb) <span class="op">%&gt;%</span></span>
+<span id="cb3-4"><a href="методы-уменьшения-размерностей.html#cb3-4"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">variables =</span> <span class="kw">factor</span>(variables, <span class="dt">levels =</span> <span class="kw">colnames</span>(mtcars))) <span class="op">%&gt;%</span><span class="st">   </span></span>
+<span id="cb3-5"><a href="методы-уменьшения-размерностей.html#cb3-5"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(variables, values, <span class="dt">color =</span> car_names, <span class="dt">group =</span> car_names))<span class="op">+</span></span>
+<span id="cb3-6"><a href="методы-уменьшения-размерностей.html#cb3-6"></a><span class="st">  </span><span class="kw">geom_point</span>()<span class="op">+</span></span>
+<span id="cb3-7"><a href="методы-уменьшения-размерностей.html#cb3-7"></a><span class="st">  </span><span class="kw">geom_polygon</span>(<span class="dt">fill =</span> <span class="ot">NA</span>)<span class="op">+</span></span>
+<span id="cb3-8"><a href="методы-уменьшения-размерностей.html#cb3-8"></a><span class="st">  </span><span class="kw">ggproto</span>(<span class="st">&quot;CordRadar&quot;</span>, CoordPolar, <span class="dt">theta =</span> <span class="st">&quot;x&quot;</span>, <span class="dt">r =</span> <span class="st">&quot;x&quot;</span>, <span class="dt">start =</span> <span class="dv">0</span>, <span class="dt">direction =</span> <span class="dv">1</span>, <span class="dt">is_linear =</span> <span class="cf">function</span>(coord) <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+<p>Не очень видно. Давайте нормализуем переменные:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="методы-уменьшения-размерностей.html#cb4-1"></a>mtcars <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb4-2"><a href="методы-уменьшения-размерностей.html#cb4-2"></a><span class="st">  </span><span class="kw">mutate_all</span>(scale) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb4-3"><a href="методы-уменьшения-размерностей.html#cb4-3"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">car_names =</span> <span class="kw">rownames</span>(mtcars)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb4-4"><a href="методы-уменьшения-размерностей.html#cb4-4"></a><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="dt">names_to =</span> <span class="st">&quot;variables&quot;</span>, <span class="dt">values_to =</span> <span class="st">&quot;values&quot;</span>, mpg<span class="op">:</span>carb) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb4-5"><a href="методы-уменьшения-размерностей.html#cb4-5"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">variables =</span> <span class="kw">factor</span>(variables, <span class="dt">levels =</span> <span class="kw">colnames</span>(mtcars))) <span class="op">%&gt;%</span><span class="st">   </span></span>
+<span id="cb4-6"><a href="методы-уменьшения-размерностей.html#cb4-6"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(variables, values, <span class="dt">color =</span> car_names, <span class="dt">group =</span> car_names))<span class="op">+</span></span>
+<span id="cb4-7"><a href="методы-уменьшения-размерностей.html#cb4-7"></a><span class="st">  </span><span class="kw">geom_point</span>()<span class="op">+</span></span>
+<span id="cb4-8"><a href="методы-уменьшения-размерностей.html#cb4-8"></a><span class="st">  </span><span class="kw">geom_polygon</span>(<span class="dt">fill =</span> <span class="ot">NA</span>)<span class="op">+</span></span>
+<span id="cb4-9"><a href="методы-уменьшения-размерностей.html#cb4-9"></a><span class="st">  </span><span class="kw">ggproto</span>(<span class="st">&quot;CordRadar&quot;</span>, CoordPolar, <span class="dt">theta =</span> <span class="st">&quot;x&quot;</span>, <span class="dt">r =</span> <span class="st">&quot;x&quot;</span>, <span class="dt">start =</span> <span class="dv">0</span>, <span class="dt">direction =</span> <span class="dv">1</span>, <span class="dt">is_linear =</span> <span class="cf">function</span>(coord) <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p>Все равно не очень хорошо видно, давайте сделаем фасетизацию:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="методы-уменьшения-размерностей.html#cb5-1"></a>mtcars <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb5-2"><a href="методы-уменьшения-размерностей.html#cb5-2"></a><span class="st">  </span><span class="kw">mutate_all</span>(scale) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb5-3"><a href="методы-уменьшения-размерностей.html#cb5-3"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">car_names =</span> <span class="kw">rownames</span>(mtcars)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb5-4"><a href="методы-уменьшения-размерностей.html#cb5-4"></a><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="dt">names_to =</span> <span class="st">&quot;variables&quot;</span>, <span class="dt">values_to =</span> <span class="st">&quot;values&quot;</span>, mpg<span class="op">:</span>carb) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb5-5"><a href="методы-уменьшения-размерностей.html#cb5-5"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">variables =</span> <span class="kw">factor</span>(variables, <span class="dt">levels =</span> <span class="kw">colnames</span>(mtcars))) <span class="op">%&gt;%</span><span class="st">   </span></span>
+<span id="cb5-6"><a href="методы-уменьшения-размерностей.html#cb5-6"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(variables, values, <span class="dt">group =</span> car_names, <span class="dt">color =</span> car_names))<span class="op">+</span></span>
+<span id="cb5-7"><a href="методы-уменьшения-размерностей.html#cb5-7"></a><span class="st">  </span><span class="kw">geom_point</span>(<span class="dt">show.legend =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
+<span id="cb5-8"><a href="методы-уменьшения-размерностей.html#cb5-8"></a><span class="st">  </span><span class="kw">geom_polygon</span>(<span class="dt">fill =</span> <span class="ot">NA</span>, <span class="dt">show.legend =</span> <span class="ot">FALSE</span>)<span class="op">+</span></span>
+<span id="cb5-9"><a href="методы-уменьшения-размерностей.html#cb5-9"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>car_names)<span class="op">+</span></span>
+<span id="cb5-10"><a href="методы-уменьшения-размерностей.html#cb5-10"></a><span class="st">  </span><span class="kw">ggproto</span>(<span class="st">&quot;CordRadar&quot;</span>, CoordPolar, <span class="dt">theta =</span> <span class="st">&quot;x&quot;</span>, <span class="dt">r =</span> <span class="st">&quot;x&quot;</span>, <span class="dt">start =</span> <span class="dv">0</span>, <span class="dt">direction =</span> <span class="dv">1</span>, <span class="dt">is_linear =</span> <span class="cf">function</span>(coord) <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-5-1.png" width="1152" /></p>
+</div>
+<div id="простой-пример-из-двумерного-пространства-в-одномерное-пространство" class="section level2">
+<h2><span class="header-section-number">18.2</span> Простой пример: из двумерного пространства в одномерное пространство</h2>
+<p>Мы уже рассматривали связь между количество слов в рассказе и количеством слов <em>и</em> в рассказах М. Зощенко:</p>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>Мы уже смотрели коэффициент корреляции между этими переменными (r = 0.83).</p>
+<p>Представим, что я перешел к новой системе координат:</p>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-7-1.png" width="672" /></p>
+<p>Теперь я могу предсказывать значения переменных <code>количество слов в рассказе</code> и <code>количестов и в рассказе</code> на основе этой новой переменной.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="методы-уменьшения-размерностей.html#cb6-1"></a>zo <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb6-2"><a href="методы-уменьшения-размерностей.html#cb6-2"></a><span class="st">  </span><span class="kw">select</span>(n, n_words) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb6-3"><a href="методы-уменьшения-размерностей.html#cb6-3"></a><span class="st">  </span><span class="kw">prcomp</span>(<span class="dt">scale. =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb6-4"><a href="методы-уменьшения-размерностей.html#cb6-4"></a><span class="st">  </span>broom<span class="op">::</span><span class="kw">augment</span>(zo) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb6-5"><a href="методы-уменьшения-размерностей.html#cb6-5"></a><span class="st">  </span><span class="kw">pivot_longer</span>(<span class="dt">names_to =</span> <span class="st">&quot;type&quot;</span>, <span class="dt">values_to =</span> <span class="st">&quot;value&quot;</span>, n<span class="op">:</span>n_words) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb6-6"><a href="методы-уменьшения-размерностей.html#cb6-6"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">type =</span> <span class="kw">recode</span>(type, <span class="dt">n =</span> <span class="st">&quot;количество и&quot;</span>, <span class="dt">n_words =</span> <span class="st">&quot;количество слов&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb6-7"><a href="методы-уменьшения-размерностей.html#cb6-7"></a><span class="st">  </span><span class="kw">group_by</span>(type) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb6-8"><a href="методы-уменьшения-размерностей.html#cb6-8"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">cor =</span> <span class="kw">str_c</span>(<span class="st">&quot;r = &quot;</span>,<span class="kw">round</span>(<span class="kw">cor</span>(.fittedPC1, value), <span class="dv">2</span>)),</span>
+<span id="cb6-9"><a href="методы-уменьшения-размерностей.html#cb6-9"></a>         <span class="dt">max =</span> <span class="kw">max</span>(value)<span class="op">-</span><span class="st"> </span><span class="kw">sd</span>(value)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb6-10"><a href="методы-уменьшения-размерностей.html#cb6-10"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(.fittedPC1, value))<span class="op">+</span></span>
+<span id="cb6-11"><a href="методы-уменьшения-размерностей.html#cb6-11"></a><span class="st">  </span><span class="kw">geom_point</span>()<span class="op">+</span></span>
+<span id="cb6-12"><a href="методы-уменьшения-размерностей.html#cb6-12"></a><span class="st">  </span><span class="kw">geom_label</span>(<span class="kw">aes</span>(<span class="dt">label =</span> cor, <span class="dt">y =</span> max), <span class="dt">x =</span> <span class="fl">-1.5</span>)<span class="op">+</span></span>
+<span id="cb6-13"><a href="методы-уменьшения-размерностей.html#cb6-13"></a><span class="st">  </span><span class="kw">facet_wrap</span>(<span class="op">~</span>type, <span class="dt">scales =</span> <span class="st">&quot;free&quot;</span>)<span class="op">+</span></span>
+<span id="cb6-14"><a href="методы-уменьшения-размерностей.html#cb6-14"></a><span class="st">  </span><span class="kw">labs</span>(<span class="dt">x =</span> <span class="st">&quot;новая переменная&quot;</span>, <span class="dt">y =</span> <span class="st">&quot;старые переменные&quot;</span>)</span></code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-8-1.png" width="672" /></p>
+</div>
+<div id="многомерное-шкалирование-mds" class="section level2">
+<h2><span class="header-section-number">18.3</span> Многомерное шкалирование (MDS)</h2>
+<p>Многомерное шкалирование – преобразование из многомерного пространства в n-мерное пространство (чаще всего смотрят на n равное 2), которое старается как можно меньше исказить <strong>расстояния</strong> между наблюдениями.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="методы-уменьшения-размерностей.html#cb7-1"></a>iris <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb7-2"><a href="методы-уменьшения-размерностей.html#cb7-2"></a><span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>Species) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb7-3"><a href="методы-уменьшения-размерностей.html#cb7-3"></a><span class="st">  </span><span class="kw">dist</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb7-4"><a href="методы-уменьшения-размерностей.html#cb7-4"></a><span class="st">  </span><span class="kw">cmdscale</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb7-5"><a href="методы-уменьшения-размерностей.html#cb7-5"></a><span class="st">  </span><span class="kw">as_tibble</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb7-6"><a href="методы-уменьшения-размерностей.html#cb7-6"></a><span class="st">  </span><span class="kw">bind_cols</span>(iris) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb7-7"><a href="методы-уменьшения-размерностей.html#cb7-7"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(V1, V2, <span class="dt">color =</span> Species))<span class="op">+</span></span>
+<span id="cb7-8"><a href="методы-уменьшения-размерностей.html#cb7-8"></a><span class="st">  </span><span class="kw">geom_point</span>()</span></code></pre></div>
+<pre><code>## Warning: The `x` argument of `as_tibble.matrix()` must have column names if `.name_repair` is omitted as of tibble 2.0.0.
+## Using compatibility `.name_repair`.
+## This warning is displayed once every 8 hours.
+## Call `lifecycle::last_warnings()` to see where this warning was generated.</code></pre>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>Если по какой-то причине вы хотите использовать большую размерность итогового пространства, можно использовать аргумент <code>k</code> функции <code>cmdscale()</code> (по умолчанию он 2). Как видно из кода, я использовал функцию <code>dist()</code>, которую мы видели в предыдущем разделе: мы можем использовать любую другую матрицу расстояний, которую мы посчитаем (существует множество метрик расстояния, которые можно посмотреть в справке <code>?dist</code>). Давайте, например, посмотрим на многомерное шкалирование расстояний Левинштейна-Димерау между стопсловами русского языка:</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb9-1"><a href="методы-уменьшения-размерностей.html#cb9-1"></a><span class="kw">library</span>(stringdist)</span>
+<span id="cb9-2"><a href="методы-уменьшения-размерностей.html#cb9-2"></a><span class="kw">library</span>(stopwords)</span>
+<span id="cb9-3"><a href="методы-уменьшения-размерностей.html#cb9-3"></a></span>
+<span id="cb9-4"><a href="методы-уменьшения-размерностей.html#cb9-4"></a><span class="kw">stringdistmatrix</span>(<span class="kw">stopwords</span>(<span class="st">&quot;ru&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb9-5"><a href="методы-уменьшения-размерностей.html#cb9-5"></a><span class="st">  </span><span class="kw">cmdscale</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb9-6"><a href="методы-уменьшения-размерностей.html#cb9-6"></a><span class="st">  </span><span class="kw">as_tibble</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb9-7"><a href="методы-уменьшения-размерностей.html#cb9-7"></a><span class="st">  </span><span class="kw">mutate</span>(<span class="dt">words =</span> <span class="kw">stopwords</span>(<span class="st">&quot;ru&quot;</span>)) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb9-8"><a href="методы-уменьшения-размерностей.html#cb9-8"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(V1, V2, <span class="dt">label =</span> words))<span class="op">+</span></span>
+<span id="cb9-9"><a href="методы-уменьшения-размерностей.html#cb9-9"></a><span class="st">  </span><span class="kw">geom_text</span>()</span></code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-10-1.png" width="672" /></p>
+<p>Как интерпретировать получившийся график? Часто мы не можем придать никакого значения получившимся осям, однако расстояния между точками на графике призвано отражать расстояние в многомерном пространстве. Так что, используя многомерное шкалирование</p>
+<ul>
+<li>можно обнаружить, есть ли кластеры в многомерных данных</li>
+<li>можно обнаружить, есть ли связь между наблюдениями, в том числе невыраженная переменными, которые есть в датасете. Например, из графика со стопсловами, видна “скрытая” переменная – длина слова.</li>
+</ul>
+<div class="rmdtask">
+<p>
+<a href="https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/chekhov_zoshenko.csv">В датасет</a> записаны частотности некоторых слов в рассказах А. Чехова и М. Зощенко. Постройте многомерное шкалирование используя все переменные, и раскрасьте рассказы в зависимости от авторства. Делятся ли рассказы на кластеры? Как вы думаете почему?
+</p>
+</div>
+</div>
+<div id="метод-главных-компонент-pca" class="section level2">
+<h2><span class="header-section-number">18.4</span> Метод главных компонент (PCA)</h2>
+<p>Метод главных компонент – преобразование из многомерного пространства в n-мерное пространство (чаще всего смотрят на n равное 2), которое старается как можно меньше исказить <strong>корреляции</strong> между переменными.</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb10-1"><a href="методы-уменьшения-размерностей.html#cb10-1"></a><span class="kw">library</span>(broom)</span>
+<span id="cb10-2"><a href="методы-уменьшения-размерностей.html#cb10-2"></a>iris <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb10-3"><a href="методы-уменьшения-размерностей.html#cb10-3"></a><span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>Species) <span class="op">%&gt;%</span></span>
+<span id="cb10-4"><a href="методы-уменьшения-размерностей.html#cb10-4"></a><span class="st">  </span><span class="kw">prcomp</span>() <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb10-5"><a href="методы-уменьшения-размерностей.html#cb10-5"></a><span class="st">  </span><span class="kw">augment</span>(iris) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb10-6"><a href="методы-уменьшения-размерностей.html#cb10-6"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(.fittedPC1, .fittedPC2, <span class="dt">color =</span> Species))<span class="op">+</span></span>
+<span id="cb10-7"><a href="методы-уменьшения-размерностей.html#cb10-7"></a><span class="st">  </span><span class="kw">geom_point</span>()</span></code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>В целом, эта картинка ничем не отличается от полученной нам в многомерном шкалировании (плсю-минус зеркальное отображение; так будет каждый раз, если при построении многомерного шкалирования использовано евклидово расстояние).</p>
+<p>Так как метод главных компонент старается сохранить как можно больше дисперсии из всех данных, в результате этот метод (да и многомерное шкалирование) очень чувствителен к дисперсии переменных. Это значит, что данный метод будет давать разные результаты в зависимости того, в метрах исследуемая переменная или в километрах. Чтобы предотвратить этот крен в сторону переменных с большей дисперсией, следует добавлять в функцию <code>prcomp()</code> аргумент <code>scale. = TRUE</code>, которые, соответственно нормализует переменные перед применением алгоритма:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="методы-уменьшения-размерностей.html#cb11-1"></a>iris <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb11-2"><a href="методы-уменьшения-размерностей.html#cb11-2"></a><span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>Species) <span class="op">%&gt;%</span></span>
+<span id="cb11-3"><a href="методы-уменьшения-размерностей.html#cb11-3"></a><span class="st">  </span><span class="kw">prcomp</span>(<span class="dt">scale. =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb11-4"><a href="методы-уменьшения-размерностей.html#cb11-4"></a><span class="st">  </span><span class="kw">augment</span>(iris) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb11-5"><a href="методы-уменьшения-размерностей.html#cb11-5"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(.fittedPC1, .fittedPC2, <span class="dt">color =</span> Species))<span class="op">+</span></span>
+<span id="cb11-6"><a href="методы-уменьшения-размерностей.html#cb11-6"></a><span class="st">  </span><span class="kw">geom_point</span>()</span></code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p>В отличие от многомерного шкалирования, метод главных компонент позволяет также посмотреть на процент объясненной дисперсии:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb12-1"><a href="методы-уменьшения-размерностей.html#cb12-1"></a>iris <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb12-2"><a href="методы-уменьшения-размерностей.html#cb12-2"></a><span class="st">  </span><span class="kw">select</span>(<span class="op">-</span>Species) <span class="op">%&gt;%</span></span>
+<span id="cb12-3"><a href="методы-уменьшения-размерностей.html#cb12-3"></a><span class="st">  </span><span class="kw">prcomp</span>(<span class="dt">scale. =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb12-4"><a href="методы-уменьшения-размерностей.html#cb12-4"></a><span class="st">  </span><span class="kw">summary</span>()</span></code></pre></div>
+<pre><code>## Importance of components:
+##                           PC1    PC2     PC3     PC4
+## Standard deviation     1.7084 0.9560 0.38309 0.14393
+## Proportion of Variance 0.7296 0.2285 0.03669 0.00518
+## Cumulative Proportion  0.7296 0.9581 0.99482 1.00000</code></pre>
+<p>Ученые (к счастью) не договорились относительно порога, начиная с которого процент объясненной дисперсии является хорошим. Я обычно радуюсь значением больше 0.7 (т. е. при переходе к новым осям мы выкинули всего 30% дисперсии).</p>
+<p>Кроме того, благодаря методу главных компонент мы можем посмотреть на связь переменных. Давайте продемонстрируем это на частотности слов в евангелиях:</p>
+<div class="sourceCode" id="cb14"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb14-1"><a href="методы-уменьшения-размерностей.html#cb14-1"></a>gospels &lt;-<span class="st"> </span><span class="kw">read_csv</span>(<span class="st">&quot;https://raw.githubusercontent.com/agricolamz/2019_data_analysis_for_linguists/master/data/gospel_freq_words.csv&quot;</span>)</span></code></pre></div>
+<pre><code>## Parsed with column specification:
+## cols(
+##   word = col_character(),
+##   John = col_double(),
+##   Luke = col_double(),
+##   Mark = col_double(),
+##   Matthew = col_double()
+## )</code></pre>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="методы-уменьшения-размерностей.html#cb16-1"></a>gospels</span></code></pre></div>
+<div data-pagedtable="false">
+<script data-pagedtable-source type="application/json">
+{"columns":[{"label":["word"],"name":[1],"type":["chr"],"align":["left"]},{"label":["John"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Luke"],"name":[3],"type":["dbl"],"align":["right"]},{"label":["Mark"],"name":[4],"type":["dbl"],"align":["right"]},{"label":["Matthew"],"name":[5],"type":["dbl"],"align":["right"]}],"data":[{"1":"abide","2":"0.0020627063","3":"0.0004161465","4":"0.0002449780","5":"0.0001473405"},{"1":"abraham","2":"0.0016501650","3":"0.0019420169","4":"0.0002449780","5":"0.0010313835"},{"1":"abroad","2":"0.0004125413","3":"0.0005548620","4":"0.0009799118","5":"0.0007367025"},{"1":"accusation","2":"0.0002062706","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"accuse","2":"0.0004125413","3":"0.0005548620","4":"0.0002449780","5":"0.0001473405"},{"1":"adultery","2":"0.0004125413","3":"0.0004161465","4":"0.0007349339","5":"0.0010313835"},{"1":"afraid","2":"0.0008250825","3":"0.0006935775","4":"0.0017148457","5":"0.0010313835"},{"1":"afterward","2":"0.0002062706","3":"0.0005548620","4":"0.0004899559","5":"0.0005893620"},{"1":"amen","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"andrew","2":"0.0010313531","3":"0.0001387155","4":"0.0009799118","5":"0.0002946810"},{"1":"angels","2":"0.0004125413","3":"0.0012484395","4":"0.0012248898","5":"0.0019154266"},{"1":"answer","2":"0.0004125413","3":"0.0011097240","4":"0.0007349339","5":"0.0007367025"},{"1":"answered","2":"0.0158828383","3":"0.0033291719","4":"0.0073493386","5":"0.0070723442"},{"1":"arimathaea","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"arise","2":"0.0002062706","3":"0.0008322930","4":"0.0007349339","5":"0.0008840430"},{"1":"arose","2":"0.0006188119","3":"0.0016645859","4":"0.0022048016","5":"0.0017680860"},{"1":"art","2":"0.0057755776","3":"0.0036066029","4":"0.0026947575","5":"0.0025047886"},{"1":"authority","2":"0.0002062706","3":"0.0012484395","4":"0.0019598236","5":"0.0010313835"},{"1":"baptize","2":"0.0004125413","3":"0.0002774310","4":"0.0004899559","5":"0.0002946810"},{"1":"baptized","2":"0.0010313531","3":"0.0009710085","4":"0.0019598236","5":"0.0011787240"},{"1":"barabbas","2":"0.0004125413","3":"0.0001387155","4":"0.0007349339","5":"0.0007367025"},{"1":"bare","2":"0.0016501650","3":"0.0006935775","4":"0.0004899559","5":"0.0001473405"},{"1":"baskets","2":"0.0002062706","3":"0.0001387155","4":"0.0009799118","5":"0.0005893620"},{"1":"bear","2":"0.0030940594","3":"0.0011097240","4":"0.0004899559","5":"0.0005893620"},{"1":"bed","2":"0.0010313531","3":"0.0005548620","4":"0.0014698677","5":"0.0002946810"},{"1":"beginning","2":"0.0020627063","3":"0.0005548620","4":"0.0007349339","5":"0.0008840430"},{"1":"beheld","2":"0.0004125413","3":"0.0008322930","4":"0.0007349339","5":"0.0001473405"},{"1":"behold","2":"0.0039191419","3":"0.0072132057","4":"0.0031847134","5":"0.0088404302"},{"1":"believed","2":"0.0055693069","3":"0.0006935775","4":"0.0007349339","5":"0.0004420215"},{"1":"belly","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"besought","2":"0.0008250825","3":"0.0013871549","4":"0.0014698677","5":"0.0007367025"},{"1":"bethany","2":"0.0006188119","3":"0.0002774310","4":"0.0009799118","5":"0.0002946810"},{"1":"bethsaida","2":"0.0004125413","3":"0.0002774310","4":"0.0004899559","5":"0.0001473405"},{"1":"betray","2":"0.0012376238","3":"0.0002774310","4":"0.0009799118","5":"0.0007367025"},{"1":"betrayed","2":"0.0004125413","3":"0.0002774310","4":"0.0009799118","5":"0.0013260645"},{"1":"betrayeth","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"blessed","2":"0.0004125413","3":"0.0038840338","4":"0.0017148457","5":"0.0026521291"},{"1":"blind","2":"0.0037128713","3":"0.0011097240","4":"0.0012248898","5":"0.0026521291"},{"1":"blood","2":"0.0012376238","3":"0.0011097240","4":"0.0007349339","5":"0.0017680860"},{"1":"body","2":"0.0010313531","3":"0.0018033014","4":"0.0014698677","5":"0.0022101076"},{"1":"book","2":"0.0002062706","3":"0.0006935775","4":"0.0002449780","5":"0.0001473405"},{"1":"born","2":"0.0035066007","3":"0.0004161465","4":"0.0002449780","5":"0.0010313835"},{"1":"borne","2":"0.0004125413","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"bound","2":"0.0008250825","3":"0.0004161465","4":"0.0009799118","5":"0.0005893620"},{"1":"brake","2":"0.0004125413","3":"0.0006935775","4":"0.0012248898","5":"0.0004420215"},{"1":"branches","2":"0.0004125413","3":"0.0001387155","4":"0.0004899559","5":"0.0002946810"},{"1":"bread","2":"0.0041254125","3":"0.0019420169","4":"0.0034296913","5":"0.0020627671"},{"1":"brethren","2":"0.0012376238","3":"0.0013871549","4":"0.0017148457","5":"0.0023574481"},{"1":"bridegroom","2":"0.0006188119","3":"0.0002774310","4":"0.0007349339","5":"0.0008840430"},{"1":"bring","2":"0.0014438944","3":"0.0020807324","4":"0.0017148457","5":"0.0017680860"},{"1":"bringeth","2":"0.0004125413","3":"0.0005548620","4":"0.0002449780","5":"0.0013260645"},{"1":"broken","2":"0.0012376238","3":"0.0002774310","4":"0.0007349339","5":"0.0004420215"},{"1":"brother","2":"0.0016501650","3":"0.0018033014","4":"0.0029397354","5":"0.0030941506"},{"1":"brought","2":"0.0016501650","3":"0.0027743099","4":"0.0031847134","5":"0.0033888316"},{"1":"buy","2":"0.0006188119","3":"0.0002774310","4":"0.0004899559","5":"0.0004420215"},{"1":"caesar","2":"0.0004125413","3":"0.0006935775","4":"0.0004899559","5":"0.0002946810"},{"1":"caesar's","2":"0.0002062706","3":"0.0002774310","4":"0.0004899559","5":"0.0002946810"},{"1":"call","2":"0.0006188119","3":"0.0009710085","4":"0.0009799118","5":"0.0013260645"},{"1":"called","2":"0.0045379538","3":"0.0049937578","4":"0.0031847134","5":"0.0053042581"},{"1":"calleth","2":"0.0004125413","3":"0.0005548620","4":"0.0009799118","5":"0.0001473405"},{"1":"canst","2":"0.0004125413","3":"0.0002774310","4":"0.0007349339","5":"0.0002946810"},{"1":"capernaum","2":"0.0010313531","3":"0.0005548620","4":"0.0007349339","5":"0.0005893620"},{"1":"cast","2":"0.0028877888","3":"0.0043001803","4":"0.0068593827","5":"0.0070723442"},{"1":"caught","2":"0.0004125413","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"chief","2":"0.0022689769","3":"0.0027743099","4":"0.0039196472","5":"0.0029468101"},{"1":"child","2":"0.0004125413","3":"0.0024968789","4":"0.0012248898","5":"0.0025047886"},{"1":"children","2":"0.0012376238","3":"0.0031904564","4":"0.0024497795","5":"0.0045675556"},{"1":"chosen","2":"0.0010313531","3":"0.0002774310","4":"0.0002449780","5":"0.0004420215"},{"1":"christ","2":"0.0043316832","3":"0.0019420169","4":"0.0019598236","5":"0.0025047886"},{"1":"city","2":"0.0016501650","3":"0.0049937578","4":"0.0017148457","5":"0.0032414911"},{"1":"clean","2":"0.0008250825","3":"0.0005548620","4":"0.0004899559","5":"0.0007367025"},{"1":"clothes","2":"0.0008250825","3":"0.0006935775","4":"0.0009799118","5":"0.0004420215"},{"1":"cock","2":"0.0004125413","3":"0.0004161465","4":"0.0009799118","5":"0.0004420215"},{"1":"colt","2":"0.0002062706","3":"0.0005548620","4":"0.0009799118","5":"0.0004420215"},{"1":"cometh","2":"0.0084570957","3":"0.0026355944","4":"0.0046545811","5":"0.0030941506"},{"1":"comfort","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"coming","2":"0.0018564356","3":"0.0013871549","4":"0.0014698677","5":"0.0014734050"},{"1":"command","2":"0.0004125413","3":"0.0004161465","4":"0.0002449780","5":"0.0004420215"},{"1":"commanded","2":"0.0002062706","3":"0.0012484395","4":"0.0024497795","5":"0.0014734050"},{"1":"commandment","2":"0.0014438944","3":"0.0002774310","4":"0.0012248898","5":"0.0007367025"},{"1":"commandments","2":"0.0008250825","3":"0.0002774310","4":"0.0007349339","5":"0.0005893620"},{"1":"commit","2":"0.0002062706","3":"0.0004161465","4":"0.0002449780","5":"0.0005893620"},{"1":"committed","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"committeth","2":"0.0002062706","3":"0.0002774310","4":"0.0004899559","5":"0.0002946810"},{"1":"condemn","2":"0.0004125413","3":"0.0004161465","4":"0.0002449780","5":"0.0004420215"},{"1":"condemned","2":"0.0006188119","3":"0.0002774310","4":"0.0002449780","5":"0.0004420215"},{"1":"converted","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"corn","2":"0.0002062706","3":"0.0002774310","4":"0.0007349339","5":"0.0002946810"},{"1":"council","2":"0.0002062706","3":"0.0001387155","4":"0.0004899559","5":"0.0004420215"},{"1":"counsel","2":"0.0004125413","3":"0.0002774310","4":"0.0002449780","5":"0.0005893620"},{"1":"country","2":"0.0006188119","3":"0.0022194479","4":"0.0024497795","5":"0.0011787240"},{"1":"crew","2":"0.0002062706","3":"0.0001387155","4":"0.0004899559","5":"0.0001473405"},{"1":"cried","2":"0.0020627063","3":"0.0013871549","4":"0.0034296913","5":"0.0014734050"},{"1":"cross","2":"0.0008250825","3":"0.0004161465","4":"0.0012248898","5":"0.0007367025"},{"1":"crow","2":"0.0002062706","3":"0.0002774310","4":"0.0004899559","5":"0.0002946810"},{"1":"crucified","2":"0.0012376238","3":"0.0005548620","4":"0.0012248898","5":"0.0011787240"},{"1":"crucify","2":"0.0012376238","3":"0.0002774310","4":"0.0009799118","5":"0.0004420215"},{"1":"crying","2":"0.0002062706","3":"0.0002774310","4":"0.0007349339","5":"0.0004420215"},{"1":"cup","2":"0.0002062706","3":"0.0006935775","4":"0.0012248898","5":"0.0011787240"},{"1":"custom","2":"0.0002062706","3":"0.0006935775","4":"0.0002449780","5":"0.0002946810"},{"1":"cut","2":"0.0004125413","3":"0.0005548620","4":"0.0009799118","5":"0.0005893620"},{"1":"damnation","2":"0.0002062706","3":"0.0001387155","4":"0.0004899559","5":"0.0002946810"},{"1":"darkness","2":"0.0014438944","3":"0.0008322930","4":"0.0002449780","5":"0.0013260645"},{"1":"daughter","2":"0.0002062706","3":"0.0012484395","4":"0.0019598236","5":"0.0013260645"},{"1":"david","2":"0.0004125413","3":"0.0016645859","4":"0.0017148457","5":"0.0025047886"},{"1":"day","2":"0.0082508251","3":"0.0087390762","4":"0.0053895149","5":"0.0057462797"},{"1":"days","2":"0.0020627063","3":"0.0051324733","4":"0.0046545811","5":"0.0033888316"},{"1":"dead","2":"0.0043316832","3":"0.0026355944","4":"0.0031847134","5":"0.0023574481"},{"1":"death","2":"0.0024752475","3":"0.0013871549","4":"0.0024497795","5":"0.0017680860"},{"1":"delivered","2":"0.0012376238","3":"0.0022194479","4":"0.0014698677","5":"0.0010313835"},{"1":"denied","2":"0.0008250825","3":"0.0004161465","4":"0.0004899559","5":"0.0002946810"},{"1":"depart","2":"0.0006188119","3":"0.0012484395","4":"0.0007349339","5":"0.0008840430"},{"1":"departed","2":"0.0010313531","3":"0.0020807324","4":"0.0017148457","5":"0.0035361721"},{"1":"desert","2":"0.0002062706","3":"0.0004161465","4":"0.0009799118","5":"0.0004420215"},{"1":"desired","2":"0.0002062706","3":"0.0008322930","4":"0.0002449780","5":"0.0002946810"},{"1":"destroy","2":"0.0004125413","3":"0.0006935775","4":"0.0014698677","5":"0.0011787240"},{"1":"devil","2":"0.0020627063","3":"0.0018033014","4":"0.0014698677","5":"0.0017680860"},{"1":"die","2":"0.0035066007","3":"0.0005548620","4":"0.0007349339","5":"0.0004420215"},{"1":"died","2":"0.0006188119","3":"0.0008322930","4":"0.0004899559","5":"0.0001473405"},{"1":"disciples","2":"0.0134075908","3":"0.0048550423","4":"0.0112689858","5":"0.0104611758"},{"1":"doctrine","2":"0.0006188119","3":"0.0001387155","4":"0.0012248898","5":"0.0004420215"},{"1":"doest","2":"0.0008250825","3":"0.0001387155","4":"0.0002449780","5":"0.0004420215"},{"1":"door","2":"0.0014438944","3":"0.0004161465","4":"0.0012248898","5":"0.0005893620"},{"1":"doth","2":"0.0010313531","3":"0.0013871549","4":"0.0007349339","5":"0.0013260645"},{"1":"doubt","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"dove","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"drew","2":"0.0006188119","3":"0.0009710085","4":"0.0004899559","5":"0.0005893620"},{"1":"drink","2":"0.0014438944","3":"0.0013871549","4":"0.0024497795","5":"0.0025047886"},{"1":"durst","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"ear","2":"0.0004125413","3":"0.0004161465","4":"0.0007349339","5":"0.0002946810"},{"1":"earth","2":"0.0008250825","3":"0.0023581634","4":"0.0022048016","5":"0.0039781936"},{"1":"eat","2":"0.0030940594","3":"0.0037453184","4":"0.0063694268","5":"0.0025047886"},{"1":"eaten","2":"0.0004125413","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"eateth","2":"0.0010313531","3":"0.0001387155","4":"0.0004899559","5":"0.0001473405"},{"1":"elias","2":"0.0004125413","3":"0.0011097240","4":"0.0022048016","5":"0.0013260645"},{"1":"enter","2":"0.0006188119","3":"0.0023581634","4":"0.0034296913","5":"0.0025047886"},{"1":"entered","2":"0.0014438944","3":"0.0024968789","4":"0.0029397354","5":"0.0007367025"},{"1":"entereth","2":"0.0004125413","3":"0.0001387155","4":"0.0007349339","5":"0.0001473405"},{"1":"esaias","2":"0.0008250825","3":"0.0002774310","4":"0.0002449780","5":"0.0008840430"},{"1":"eternal","2":"0.0018564356","3":"0.0002774310","4":"0.0007349339","5":"0.0002946810"},{"1":"evening","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0004420215"},{"1":"evil","2":"0.0014438944","3":"0.0019420169","4":"0.0014698677","5":"0.0029468101"},{"1":"eyes","2":"0.0037128713","3":"0.0012484395","4":"0.0014698677","5":"0.0017680860"},{"1":"faithless","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"fall","2":"0.0002062706","3":"0.0011097240","4":"0.0002449780","5":"0.0013260645"},{"1":"father","2":"0.0259900990","3":"0.0059647663","4":"0.0046545811","5":"0.0088404302"},{"1":"fault","2":"0.0006188119","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"feared","2":"0.0002062706","3":"0.0008322930","4":"0.0012248898","5":"0.0004420215"},{"1":"feast","2":"0.0043316832","3":"0.0008322930","4":"0.0007349339","5":"0.0005893620"},{"1":"feet","2":"0.0026815182","3":"0.0022194479","4":"0.0009799118","5":"0.0008840430"},{"1":"fell","2":"0.0004125413","3":"0.0024968789","4":"0.0024497795","5":"0.0016207455"},{"1":"fever","2":"0.0002062706","3":"0.0002774310","4":"0.0004899559","5":"0.0002946810"},{"1":"fig","2":"0.0004125413","3":"0.0004161465","4":"0.0009799118","5":"0.0007367025"},{"1":"filled","2":"0.0014438944","3":"0.0020807324","4":"0.0012248898","5":"0.0005893620"},{"1":"findeth","2":"0.0008250825","3":"0.0002774310","4":"0.0002449780","5":"0.0007367025"},{"1":"fire","2":"0.0006188119","3":"0.0011097240","4":"0.0022048016","5":"0.0017680860"},{"1":"fishes","2":"0.0010313531","3":"0.0005548620","4":"0.0012248898","5":"0.0005893620"},{"1":"flee","2":"0.0002062706","3":"0.0002774310","4":"0.0002449780","5":"0.0005893620"},{"1":"flesh","2":"0.0026815182","3":"0.0002774310","4":"0.0009799118","5":"0.0007367025"},{"1":"follow","2":"0.0020627063","3":"0.0012484395","4":"0.0017148457","5":"0.0008840430"},{"1":"followeth","2":"0.0002062706","3":"0.0001387155","4":"0.0004899559","5":"0.0001473405"},{"1":"foot","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0007367025"},{"1":"forty","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"found","2":"0.0014438944","3":"0.0038840338","4":"0.0019598236","5":"0.0019154266"},{"1":"fragments","2":"0.0004125413","3":"0.0001387155","4":"0.0007349339","5":"0.0001473405"},{"1":"fruit","2":"0.0020627063","3":"0.0018033014","4":"0.0019598236","5":"0.0022101076"},{"1":"fulfilled","2":"0.0022689769","3":"0.0011097240","4":"0.0009799118","5":"0.0023574481"},{"1":"galilee","2":"0.0035066007","3":"0.0020807324","4":"0.0029397354","5":"0.0025047886"},{"1":"garments","2":"0.0006188119","3":"0.0002774310","4":"0.0007349339","5":"0.0005893620"},{"1":"gather","2":"0.0006188119","3":"0.0005548620","4":"0.0002449780","5":"0.0014734050"},{"1":"gathered","2":"0.0004125413","3":"0.0009710085","4":"0.0012248898","5":"0.0020627671"},{"1":"gentiles","2":"0.0004125413","3":"0.0006935775","4":"0.0004899559","5":"0.0011787240"},{"1":"ghost","2":"0.0010313531","3":"0.0016645859","4":"0.0014698677","5":"0.0010313835"},{"1":"glad","2":"0.0006188119","3":"0.0006935775","4":"0.0002449780","5":"0.0001473405"},{"1":"glorified","2":"0.0024752475","3":"0.0008322930","4":"0.0002449780","5":"0.0002946810"},{"1":"glory","2":"0.0024752475","3":"0.0016645859","4":"0.0007349339","5":"0.0013260645"},{"1":"god","2":"0.0169141914","3":"0.0172007213","4":"0.0124938756","5":"0.0081037277"},{"1":"god's","2":"0.0002062706","3":"0.0002774310","4":"0.0002449780","5":"0.0002946810"},{"1":"goeth","2":"0.0010313531","3":"0.0004161465","4":"0.0012248898","5":"0.0013260645"},{"1":"grass","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"ground","2":"0.0012376238","3":"0.0009710085","4":"0.0019598236","5":"0.0005893620"},{"1":"hail","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0004420215"},{"1":"hair","2":"0.0004125413","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"hall","2":"0.0008250825","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"halt","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"hand","2":"0.0024752475","3":"0.0026355944","4":"0.0051445370","5":"0.0045675556"},{"1":"hands","2":"0.0020627063","3":"0.0018033014","4":"0.0041646252","5":"0.0019154266"},{"1":"harvest","2":"0.0004125413","3":"0.0004161465","4":"0.0002449780","5":"0.0008840430"},{"1":"hast","2":"0.0074257426","3":"0.0026355944","4":"0.0007349339","5":"0.0026521291"},{"1":"hated","2":"0.0010313531","3":"0.0002774310","4":"0.0002449780","5":"0.0002946810"},{"1":"hath","2":"0.0156765677","3":"0.0106810931","4":"0.0068593827","5":"0.0060409607"},{"1":"head","2":"0.0010313531","3":"0.0009710085","4":"0.0022048016","5":"0.0016207455"},{"1":"heal","2":"0.0004125413","3":"0.0011097240","4":"0.0004899559","5":"0.0007367025"},{"1":"healed","2":"0.0002062706","3":"0.0023581634","4":"0.0014698677","5":"0.0014734050"},{"1":"hear","2":"0.0037128713","3":"0.0037453184","4":"0.0044096031","5":"0.0039781936"},{"1":"heard","2":"0.0068069307","3":"0.0043001803","4":"0.0061244488","5":"0.0047148961"},{"1":"heart","2":"0.0014438944","3":"0.0016645859","4":"0.0024497795","5":"0.0022101076"},{"1":"heaven","2":"0.0039191419","3":"0.0043001803","4":"0.0041646252","5":"0.0111978783"},{"1":"hid","2":"0.0002062706","3":"0.0012484395","4":"0.0004899559","5":"0.0010313835"},{"1":"holy","2":"0.0010313531","3":"0.0026355944","4":"0.0017148457","5":"0.0016207455"},{"1":"home","2":"0.0004125413","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"honour","2":"0.0020627063","3":"0.0001387155","4":"0.0007349339","5":"0.0005893620"},{"1":"hour","2":"0.0043316832","3":"0.0018033014","4":"0.0022048016","5":"0.0030941506"},{"1":"house","2":"0.0020627063","3":"0.0080454987","4":"0.0073493386","5":"0.0053042581"},{"1":"hundred","2":"0.0010313531","3":"0.0005548620","4":"0.0009799118","5":"0.0002946810"},{"1":"husband","2":"0.0008250825","3":"0.0002774310","4":"0.0002449780","5":"0.0002946810"},{"1":"immediately","2":"0.0010313531","3":"0.0018033014","4":"0.0041646252","5":"0.0008840430"},{"1":"iscariot","2":"0.0010313531","3":"0.0002774310","4":"0.0004899559","5":"0.0002946810"},{"1":"israel","2":"0.0008250825","3":"0.0016645859","4":"0.0004899559","5":"0.0017680860"},{"1":"jacob","2":"0.0004125413","3":"0.0005548620","4":"0.0002449780","5":"0.0008840430"},{"1":"jerusalem","2":"0.0026815182","3":"0.0045776113","4":"0.0026947575","5":"0.0019154266"},{"1":"jews","2":"0.0140264026","3":"0.0006935775","4":"0.0014698677","5":"0.0007367025"},{"1":"john","2":"0.0039191419","3":"0.0043001803","4":"0.0063694268","5":"0.0038308531"},{"1":"jordan","2":"0.0006188119","3":"0.0002774310","4":"0.0009799118","5":"0.0008840430"},{"1":"joseph","2":"0.0008250825","3":"0.0013871549","4":"0.0004899559","5":"0.0013260645"},{"1":"journey","2":"0.0002062706","3":"0.0005548620","4":"0.0004899559","5":"0.0002946810"},{"1":"judaea","2":"0.0012376238","3":"0.0011097240","4":"0.0009799118","5":"0.0011787240"},{"1":"judas","2":"0.0018564356","3":"0.0006935775","4":"0.0007349339","5":"0.0011787240"},{"1":"judgment","2":"0.0028877888","3":"0.0005548620","4":"0.0002449780","5":"0.0019154266"},{"1":"kill","2":"0.0018564356","3":"0.0008322930","4":"0.0012248898","5":"0.0013260645"},{"1":"king","2":"0.0033003300","3":"0.0011097240","4":"0.0026947575","5":"0.0029468101"},{"1":"kingdom","2":"0.0010313531","3":"0.0062421973","4":"0.0051445370","5":"0.0082510682"},{"1":"knowest","2":"0.0018564356","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"knoweth","2":"0.0016501650","3":"0.0004161465","4":"0.0004899559","5":"0.0007367025"},{"1":"knowing","2":"0.0008250825","3":"0.0004161465","4":"0.0009799118","5":"0.0002946810"},{"1":"laid","2":"0.0024752475","3":"0.0023581634","4":"0.0024497795","5":"0.0013260645"},{"1":"land","2":"0.0010313531","3":"0.0009710085","4":"0.0012248898","5":"0.0016207455"},{"1":"lawful","2":"0.0004125413","3":"0.0006935775","4":"0.0014698677","5":"0.0013260645"},{"1":"lay","2":"0.0018564356","3":"0.0009710085","4":"0.0017148457","5":"0.0011787240"},{"1":"leave","2":"0.0010313531","3":"0.0004161465","4":"0.0009799118","5":"0.0005893620"},{"1":"led","2":"0.0006188119","3":"0.0012484395","4":"0.0009799118","5":"0.0005893620"},{"1":"left","2":"0.0010313531","3":"0.0018033014","4":"0.0039196472","5":"0.0027994696"},{"1":"life","2":"0.0090759076","3":"0.0020807324","4":"0.0019598236","5":"0.0022101076"},{"1":"lifted","2":"0.0022689769","3":"0.0005548620","4":"0.0004899559","5":"0.0001473405"},{"1":"light","2":"0.0049504950","3":"0.0018033014","4":"0.0002449780","5":"0.0020627671"},{"1":"likewise","2":"0.0006188119","3":"0.0027743099","4":"0.0009799118","5":"0.0016207455"},{"1":"linen","2":"0.0008250825","3":"0.0004161465","4":"0.0009799118","5":"0.0001473405"},{"1":"live","2":"0.0016501650","3":"0.0005548620","4":"0.0002449780","5":"0.0002946810"},{"1":"living","2":"0.0012376238","3":"0.0009710085","4":"0.0004899559","5":"0.0004420215"},{"1":"lo","2":"0.0004125413","3":"0.0012484395","4":"0.0009799118","5":"0.0011787240"},{"1":"loaves","2":"0.0008250825","3":"0.0004161465","4":"0.0019598236","5":"0.0010313835"},{"1":"loose","2":"0.0002062706","3":"0.0005548620","4":"0.0004899559","5":"0.0004420215"},{"1":"lord","2":"0.0094884488","3":"0.0142876959","4":"0.0046545811","5":"0.0111978783"},{"1":"lose","2":"0.0004125413","3":"0.0009710085","4":"0.0009799118","5":"0.0007367025"},{"1":"lost","2":"0.0006188119","3":"0.0009710085","4":"0.0002449780","5":"0.0005893620"},{"1":"lots","2":"0.0004125413","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"loud","2":"0.0002062706","3":"0.0009710085","4":"0.0009799118","5":"0.0002946810"},{"1":"love","2":"0.0045379538","3":"0.0016645859","4":"0.0014698677","5":"0.0016207455"},{"1":"lying","2":"0.0006188119","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"magdalene","2":"0.0006188119","3":"0.0002774310","4":"0.0009799118","5":"0.0004420215"},{"1":"maketh","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"manner","2":"0.0006188119","3":"0.0012484395","4":"0.0007349339","5":"0.0011787240"},{"1":"man's","2":"0.0002062706","3":"0.0006935775","4":"0.0004899559","5":"0.0004420215"},{"1":"marriage","2":"0.0004125413","3":"0.0004161465","4":"0.0002449780","5":"0.0008840430"},{"1":"marvelled","2":"0.0004125413","3":"0.0008322930","4":"0.0009799118","5":"0.0010313835"},{"1":"mary","2":"0.0030940594","3":"0.0023581634","4":"0.0019598236","5":"0.0016207455"},{"1":"master","2":"0.0020627063","3":"0.0034678874","4":"0.0041646252","5":"0.0023574481"},{"1":"measure","2":"0.0002062706","3":"0.0002774310","4":"0.0009799118","5":"0.0002946810"},{"1":"meat","2":"0.0014438944","3":"0.0023581634","4":"0.0009799118","5":"0.0014734050"},{"1":"meet","2":"0.0002062706","3":"0.0004161465","4":"0.0004899559","5":"0.0007367025"},{"1":"met","2":"0.0008250825","3":"0.0004161465","4":"0.0004899559","5":"0.0002946810"},{"1":"midst","2":"0.0014438944","3":"0.0013871549","4":"0.0009799118","5":"0.0005893620"},{"1":"mine","2":"0.0033003300","3":"0.0009710085","4":"0.0004899559","5":"0.0007367025"},{"1":"money","2":"0.0004125413","3":"0.0005548620","4":"0.0007349339","5":"0.0010313835"},{"1":"morning","2":"0.0004125413","3":"0.0002774310","4":"0.0012248898","5":"0.0005893620"},{"1":"moses","2":"0.0026815182","3":"0.0013871549","4":"0.0019598236","5":"0.0010313835"},{"1":"mother","2":"0.0018564356","3":"0.0029130254","4":"0.0046545811","5":"0.0041255341"},{"1":"mount","2":"0.0002062706","3":"0.0008322930","4":"0.0007349339","5":"0.0004420215"},{"1":"mountain","2":"0.0008250825","3":"0.0006935775","4":"0.0012248898","5":"0.0014734050"},{"1":"multitude","2":"0.0008250825","3":"0.0024968789","4":"0.0041646252","5":"0.0038308531"},{"1":"murmured","2":"0.0006188119","3":"0.0004161465","4":"0.0002449780","5":"0.0001473405"},{"1":"named","2":"0.0006188119","3":"0.0015258704","4":"0.0004899559","5":"0.0002946810"},{"1":"name's","2":"0.0002062706","3":"0.0002774310","4":"0.0002449780","5":"0.0004420215"},{"1":"nation","2":"0.0010313531","3":"0.0005548620","4":"0.0007349339","5":"0.0004420215"},{"1":"nazareth","2":"0.0010313531","3":"0.0011097240","4":"0.0012248898","5":"0.0005893620"},{"1":"net","2":"0.0008250825","3":"0.0002774310","4":"0.0002449780","5":"0.0002946810"},{"1":"nigh","2":"0.0014438944","3":"0.0019420169","4":"0.0012248898","5":"0.0005893620"},{"1":"night","2":"0.0014438944","3":"0.0011097240","4":"0.0012248898","5":"0.0008840430"},{"1":"offend","2":"0.0002062706","3":"0.0001387155","4":"0.0009799118","5":"0.0010313835"},{"1":"offended","2":"0.0002062706","3":"0.0001387155","4":"0.0009799118","5":"0.0011787240"},{"1":"ointment","2":"0.0008250825","3":"0.0004161465","4":"0.0004899559","5":"0.0004420215"},{"1":"olives","2":"0.0002062706","3":"0.0005548620","4":"0.0007349339","5":"0.0004420215"},{"1":"palace","2":"0.0002062706","3":"0.0001387155","4":"0.0004899559","5":"0.0004420215"},{"1":"parable","2":"0.0002062706","3":"0.0022194479","4":"0.0014698677","5":"0.0013260645"},{"1":"parents","2":"0.0012376238","3":"0.0006935775","4":"0.0002449780","5":"0.0001473405"},{"1":"pass","2":"0.0008250825","3":"0.0080454987","4":"0.0026947575","5":"0.0022101076"},{"1":"passed","2":"0.0006188119","3":"0.0005548620","4":"0.0022048016","5":"0.0005893620"},{"1":"passover","2":"0.0020627063","3":"0.0009710085","4":"0.0012248898","5":"0.0005893620"},{"1":"peace","2":"0.0012376238","3":"0.0026355944","4":"0.0019598236","5":"0.0008840430"},{"1":"pence","2":"0.0002062706","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"people","2":"0.0041254125","3":"0.0080454987","4":"0.0056344929","5":"0.0035361721"},{"1":"perceive","2":"0.0004125413","3":"0.0001387155","4":"0.0007349339","5":"0.0001473405"},{"1":"perceived","2":"0.0002062706","3":"0.0006935775","4":"0.0002449780","5":"0.0004420215"},{"1":"perish","2":"0.0008250825","3":"0.0009710085","4":"0.0002449780","5":"0.0008840430"},{"1":"peter","2":"0.0066006601","3":"0.0027743099","4":"0.0046545811","5":"0.0033888316"},{"1":"pharisees","2":"0.0041254125","3":"0.0029130254","4":"0.0029397354","5":"0.0042728746"},{"1":"philip","2":"0.0024752475","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"pilate","2":"0.0043316832","3":"0.0016645859","4":"0.0024497795","5":"0.0013260645"},{"1":"poor","2":"0.0008250825","3":"0.0012484395","4":"0.0012248898","5":"0.0007367025"},{"1":"power","2":"0.0014438944","3":"0.0024968789","4":"0.0017148457","5":"0.0011787240"},{"1":"pray","2":"0.0012376238","3":"0.0019420169","4":"0.0019598236","5":"0.0017680860"},{"1":"prayed","2":"0.0002062706","3":"0.0009710085","4":"0.0009799118","5":"0.0004420215"},{"1":"preparation","2":"0.0006188119","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"prepare","2":"0.0004125413","3":"0.0006935775","4":"0.0007349339","5":"0.0004420215"},{"1":"priest","2":"0.0020627063","3":"0.0005548620","4":"0.0024497795","5":"0.0008840430"},{"1":"priests","2":"0.0022689769","3":"0.0022194479","4":"0.0034296913","5":"0.0029468101"},{"1":"prison","2":"0.0002062706","3":"0.0006935775","4":"0.0007349339","5":"0.0014734050"},{"1":"prophesied","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"prophet","2":"0.0020627063","3":"0.0019420169","4":"0.0009799118","5":"0.0035361721"},{"1":"prophets","2":"0.0008250825","3":"0.0024968789","4":"0.0009799118","5":"0.0025047886"},{"1":"putteth","2":"0.0002062706","3":"0.0006935775","4":"0.0007349339","5":"0.0002946810"},{"1":"question","2":"0.0002062706","3":"0.0001387155","4":"0.0009799118","5":"0.0001473405"},{"1":"quickly","2":"0.0004125413","3":"0.0002774310","4":"0.0002449780","5":"0.0004420215"},{"1":"raiment","2":"0.0002062706","3":"0.0006935775","4":"0.0002449780","5":"0.0010313835"},{"1":"raise","2":"0.0010313531","3":"0.0002774310","4":"0.0002449780","5":"0.0004420215"},{"1":"ran","2":"0.0002062706","3":"0.0005548620","4":"0.0012248898","5":"0.0002946810"},{"1":"read","2":"0.0002062706","3":"0.0002774310","4":"0.0007349339","5":"0.0008840430"},{"1":"ready","2":"0.0002062706","3":"0.0012484395","4":"0.0007349339","5":"0.0007367025"},{"1":"reason","2":"0.0004125413","3":"0.0002774310","4":"0.0004899559","5":"0.0001473405"},{"1":"receive","2":"0.0028877888","3":"0.0024968789","4":"0.0029397354","5":"0.0020627671"},{"1":"received","2":"0.0030940594","3":"0.0012484395","4":"0.0009799118","5":"0.0026521291"},{"1":"receiveth","2":"0.0014438944","3":"0.0005548620","4":"0.0004899559","5":"0.0013260645"},{"1":"release","2":"0.0008250825","3":"0.0005548620","4":"0.0004899559","5":"0.0004420215"},{"1":"remember","2":"0.0004125413","3":"0.0006935775","4":"0.0002449780","5":"0.0002946810"},{"1":"rest","2":"0.0002062706","3":"0.0005548620","4":"0.0004899559","5":"0.0007367025"},{"1":"resurrection","2":"0.0008250825","3":"0.0006935775","4":"0.0004899559","5":"0.0007367025"},{"1":"righteous","2":"0.0004125413","3":"0.0005548620","4":"0.0002449780","5":"0.0017680860"},{"1":"rise","2":"0.0008250825","3":"0.0018033014","4":"0.0031847134","5":"0.0013260645"},{"1":"risen","2":"0.0004125413","3":"0.0009710085","4":"0.0017148457","5":"0.0010313835"},{"1":"round","2":"0.0002062706","3":"0.0012484395","4":"0.0024497795","5":"0.0004420215"},{"1":"ruler","2":"0.0004125413","3":"0.0008322930","4":"0.0007349339","5":"0.0007367025"},{"1":"sabbath","2":"0.0022689769","3":"0.0024968789","4":"0.0026947575","5":"0.0014734050"},{"1":"saith","2":"0.0233085809","3":"0.0013871549","4":"0.0117589417","5":"0.0069250037"},{"1":"sake","2":"0.0010313531","3":"0.0006935775","4":"0.0019598236","5":"0.0017680860"},{"1":"sat","2":"0.0018564356","3":"0.0022194479","4":"0.0046545811","5":"0.0023574481"},{"1":"satan","2":"0.0002062706","3":"0.0008322930","4":"0.0014698677","5":"0.0005893620"},{"1":"save","2":"0.0010313531","3":"0.0018033014","4":"0.0022048016","5":"0.0017680860"},{"1":"saved","2":"0.0006188119","3":"0.0009710085","4":"0.0012248898","5":"0.0007367025"},{"1":"sayest","2":"0.0018564356","3":"0.0005548620","4":"0.0007349339","5":"0.0002946810"},{"1":"scattered","2":"0.0004125413","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"scourge","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0004420215"},{"1":"scribes","2":"0.0002062706","3":"0.0020807324","4":"0.0051445370","5":"0.0032414911"},{"1":"scriptures","2":"0.0002062706","3":"0.0004161465","4":"0.0004899559","5":"0.0005893620"},{"1":"sea","2":"0.0020627063","3":"0.0005548620","4":"0.0046545811","5":"0.0026521291"},{"1":"season","2":"0.0004125413","3":"0.0008322930","4":"0.0004899559","5":"0.0001473405"},{"1":"secret","2":"0.0006188119","3":"0.0002774310","4":"0.0002449780","5":"0.0011787240"},{"1":"seed","2":"0.0006188119","3":"0.0008322930","4":"0.0017148457","5":"0.0016207455"},{"1":"seek","2":"0.0030940594","3":"0.0013871549","4":"0.0009799118","5":"0.0007367025"},{"1":"seeking","2":"0.0002062706","3":"0.0005548620","4":"0.0002449780","5":"0.0002946810"},{"1":"seeth","2":"0.0028877888","3":"0.0001387155","4":"0.0002449780","5":"0.0004420215"},{"1":"send","2":"0.0012376238","3":"0.0013871549","4":"0.0024497795","5":"0.0019154266"},{"1":"sepulchre","2":"0.0022689769","3":"0.0011097240","4":"0.0014698677","5":"0.0008840430"},{"1":"servant","2":"0.0014438944","3":"0.0034678874","4":"0.0012248898","5":"0.0032414911"},{"1":"servants","2":"0.0014438944","3":"0.0012484395","4":"0.0009799118","5":"0.0023574481"},{"1":"set","2":"0.0014438944","3":"0.0019420169","4":"0.0022048016","5":"0.0011787240"},{"1":"shalt","2":"0.0016501650","3":"0.0036066029","4":"0.0014698677","5":"0.0042728746"},{"1":"sheep","2":"0.0045379538","3":"0.0002774310","4":"0.0004899559","5":"0.0016207455"},{"1":"shew","2":"0.0018564356","3":"0.0011097240","4":"0.0009799118","5":"0.0013260645"},{"1":"ship","2":"0.0014438944","3":"0.0005548620","4":"0.0044096031","5":"0.0019154266"},{"1":"shouldest","2":"0.0006188119","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"sick","2":"0.0010313531","3":"0.0009710085","4":"0.0031847134","5":"0.0020627671"},{"1":"sight","2":"0.0008250825","3":"0.0015258704","4":"0.0004899559","5":"0.0004420215"},{"1":"sign","2":"0.0004125413","3":"0.0011097240","4":"0.0009799118","5":"0.0016207455"},{"1":"signs","2":"0.0004125413","3":"0.0004161465","4":"0.0007349339","5":"0.0002946810"},{"1":"simon","2":"0.0049504950","3":"0.0019420169","4":"0.0022048016","5":"0.0013260645"},{"1":"sinners","2":"0.0002062706","3":"0.0015258704","4":"0.0012248898","5":"0.0007367025"},{"1":"sins","2":"0.0012376238","3":"0.0015258704","4":"0.0019598236","5":"0.0008840430"},{"1":"sister","2":"0.0010313531","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"sisters","2":"0.0002062706","3":"0.0001387155","4":"0.0007349339","5":"0.0002946810"},{"1":"sit","2":"0.0002062706","3":"0.0018033014","4":"0.0014698677","5":"0.0016207455"},{"1":"sitting","2":"0.0006188119","3":"0.0008322930","4":"0.0012248898","5":"0.0010313835"},{"1":"sixth","2":"0.0004125413","3":"0.0004161465","4":"0.0002449780","5":"0.0002946810"},{"1":"sleep","2":"0.0006188119","3":"0.0002774310","4":"0.0004899559","5":"0.0002946810"},{"1":"sleepeth","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"smote","2":"0.0004125413","3":"0.0006935775","4":"0.0004899559","5":"0.0005893620"},{"1":"sold","2":"0.0006188119","3":"0.0004161465","4":"0.0007349339","5":"0.0008840430"},{"1":"soldiers","2":"0.0010313531","3":"0.0004161465","4":"0.0002449780","5":"0.0005893620"},{"1":"son","2":"0.0129950495","3":"0.0201137467","4":"0.0093091622","5":"0.0114925593"},{"1":"sons","2":"0.0004125413","3":"0.0004161465","4":"0.0007349339","5":"0.0005893620"},{"1":"sorrowful","2":"0.0002062706","3":"0.0002774310","4":"0.0004899559","5":"0.0005893620"},{"1":"sought","2":"0.0018564356","3":"0.0018033014","4":"0.0012248898","5":"0.0005893620"},{"1":"soul","2":"0.0002062706","3":"0.0008322930","4":"0.0012248898","5":"0.0010313835"},{"1":"spake","2":"0.0063943894","3":"0.0048550423","4":"0.0026947575","5":"0.0023574481"},{"1":"speak","2":"0.0041254125","3":"0.0015258704","4":"0.0024497795","5":"0.0016207455"},{"1":"spirit","2":"0.0037128713","3":"0.0029130254","4":"0.0041646252","5":"0.0014734050"},{"1":"spoken","2":"0.0037128713","3":"0.0012484395","4":"0.0014698677","5":"0.0022101076"},{"1":"stand","2":"0.0002062706","3":"0.0008322930","4":"0.0014698677","5":"0.0007367025"},{"1":"standing","2":"0.0006188119","3":"0.0005548620","4":"0.0004899559","5":"0.0005893620"},{"1":"steal","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0005893620"},{"1":"stone","2":"0.0022689769","3":"0.0013871549","4":"0.0012248898","5":"0.0011787240"},{"1":"stones","2":"0.0004125413","3":"0.0004161465","4":"0.0007349339","5":"0.0002946810"},{"1":"stood","2":"0.0033003300","3":"0.0026355944","4":"0.0019598236","5":"0.0010313835"},{"1":"straight","2":"0.0002062706","3":"0.0004161465","4":"0.0002449780","5":"0.0001473405"},{"1":"straightway","2":"0.0002062706","3":"0.0005548620","4":"0.0046545811","5":"0.0011787240"},{"1":"stretch","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"surely","2":"0.0002062706","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"sword","2":"0.0004125413","3":"0.0005548620","4":"0.0002449780","5":"0.0007367025"},{"1":"synagogue","2":"0.0008250825","3":"0.0012484395","4":"0.0019598236","5":"0.0002946810"},{"1":"synagogues","2":"0.0002062706","3":"0.0009710085","4":"0.0007349339","5":"0.0010313835"},{"1":"tabernacles","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"table","2":"0.0004125413","3":"0.0005548620","4":"0.0002449780","5":"0.0001473405"},{"1":"taketh","2":"0.0010313531","3":"0.0009710085","4":"0.0014698677","5":"0.0008840430"},{"1":"taking","2":"0.0002062706","3":"0.0004161465","4":"0.0002449780","5":"0.0001473405"},{"1":"talked","2":"0.0002062706","3":"0.0004161465","4":"0.0002449780","5":"0.0001473405"},{"1":"tarry","2":"0.0006188119","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"taste","2":"0.0002062706","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"taught","2":"0.0016501650","3":"0.0011097240","4":"0.0022048016","5":"0.0005893620"},{"1":"teach","2":"0.0006188119","3":"0.0002774310","4":"0.0009799118","5":"0.0005893620"},{"1":"temple","2":"0.0028877888","3":"0.0026355944","4":"0.0029397354","5":"0.0029468101"},{"1":"tempting","2":"0.0002062706","3":"0.0001387155","4":"0.0004899559","5":"0.0004420215"},{"1":"testimony","2":"0.0010313531","3":"0.0004161465","4":"0.0007349339","5":"0.0002946810"},{"1":"thereof","2":"0.0008250825","3":"0.0004161465","4":"0.0002449780","5":"0.0013260645"},{"1":"thereon","2":"0.0004125413","3":"0.0002774310","4":"0.0004899559","5":"0.0005893620"},{"1":"thief","2":"0.0006188119","3":"0.0004161465","4":"0.0002449780","5":"0.0002946810"},{"1":"thieves","2":"0.0002062706","3":"0.0004161465","4":"0.0004899559","5":"0.0007367025"},{"1":"thine","2":"0.0024752475","3":"0.0027743099","4":"0.0009799118","5":"0.0029468101"},{"1":"thirty","2":"0.0004125413","3":"0.0001387155","4":"0.0002449780","5":"0.0005893620"},{"1":"thither","2":"0.0010313531","3":"0.0002774310","4":"0.0002449780","5":"0.0001473405"},{"1":"thomas","2":"0.0016501650","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"thorns","2":"0.0004125413","3":"0.0005548620","4":"0.0009799118","5":"0.0007367025"},{"1":"thousand","2":"0.0002062706","3":"0.0004161465","4":"0.0012248898","5":"0.0007367025"},{"1":"thrice","2":"0.0002062706","3":"0.0002774310","4":"0.0004899559","5":"0.0002946810"},{"1":"thyself","2":"0.0016501650","3":"0.0012484395","4":"0.0007349339","5":"0.0008840430"},{"1":"till","2":"0.0006188119","3":"0.0015258704","4":"0.0012248898","5":"0.0023574481"},{"1":"time","2":"0.0035066007","3":"0.0031904564","4":"0.0024497795","5":"0.0036835126"},{"1":"told","2":"0.0030940594","3":"0.0019420169","4":"0.0017148457","5":"0.0010313835"},{"1":"touch","2":"0.0002062706","3":"0.0004161465","4":"0.0012248898","5":"0.0002946810"},{"1":"town","2":"0.0006188119","3":"0.0001387155","4":"0.0007349339","5":"0.0001473405"},{"1":"treasury","2":"0.0002062706","3":"0.0001387155","4":"0.0007349339","5":"0.0001473405"},{"1":"tree","2":"0.0004125413","3":"0.0015258704","4":"0.0009799118","5":"0.0022101076"},{"1":"trees","2":"0.0002062706","3":"0.0002774310","4":"0.0004899559","5":"0.0002946810"},{"1":"troubled","2":"0.0014438944","3":"0.0005548620","4":"0.0004899559","5":"0.0004420215"},{"1":"true","2":"0.0041254125","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"trust","2":"0.0002062706","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"truth","2":"0.0055693069","3":"0.0006935775","4":"0.0007349339","5":"0.0004420215"},{"1":"twelve","2":"0.0012376238","3":"0.0018033014","4":"0.0034296913","5":"0.0019154266"},{"1":"understand","2":"0.0004125413","3":"0.0002774310","4":"0.0014698677","5":"0.0011787240"},{"1":"understood","2":"0.0006188119","3":"0.0004161465","4":"0.0002449780","5":"0.0005893620"},{"1":"verily","2":"0.0103135314","3":"0.0011097240","4":"0.0036746693","5":"0.0044202151"},{"1":"vine","2":"0.0006188119","3":"0.0001387155","4":"0.0002449780","5":"0.0001473405"},{"1":"vinegar","2":"0.0006188119","3":"0.0001387155","4":"0.0002449780","5":"0.0002946810"},{"1":"voice","2":"0.0028877888","3":"0.0016645859","4":"0.0017148457","5":"0.0010313835"},{"1":"walk","2":"0.0016501650","3":"0.0008322930","4":"0.0004899559","5":"0.0004420215"},{"1":"walking","2":"0.0002062706","3":"0.0001387155","4":"0.0009799118","5":"0.0004420215"},{"1":"wash","2":"0.0016501650","3":"0.0001387155","4":"0.0004899559","5":"0.0002946810"},{"1":"water","2":"0.0049504950","3":"0.0009710085","4":"0.0009799118","5":"0.0010313835"},{"1":"week","2":"0.0004125413","3":"0.0002774310","4":"0.0004899559","5":"0.0001473405"},{"1":"wept","2":"0.0004125413","3":"0.0005548620","4":"0.0007349339","5":"0.0001473405"},{"1":"whatsoever","2":"0.0022689769","3":"0.0009710085","4":"0.0022048016","5":"0.0023574481"},{"1":"wherewith","2":"0.0004125413","3":"0.0002774310","4":"0.0004899559","5":"0.0001473405"},{"1":"white","2":"0.0004125413","3":"0.0001387155","4":"0.0007349339","5":"0.0004420215"},{"1":"whomsoever","2":"0.0002062706","3":"0.0004161465","4":"0.0004899559","5":"0.0004420215"},{"1":"whosoever","2":"0.0020627063","3":"0.0029130254","4":"0.0036746693","5":"0.0053042581"},{"1":"wife","2":"0.0002062706","3":"0.0024968789","4":"0.0026947575","5":"0.0025047886"},{"1":"wilderness","2":"0.0008250825","3":"0.0009710085","4":"0.0012248898","5":"0.0007367025"},{"1":"wilt","2":"0.0010313531","3":"0.0006935775","4":"0.0012248898","5":"0.0016207455"},{"1":"wind","2":"0.0004125413","3":"0.0005548620","4":"0.0014698677","5":"0.0005893620"},{"1":"wine","2":"0.0012376238","3":"0.0009710085","4":"0.0012248898","5":"0.0004420215"},{"1":"wise","2":"0.0004125413","3":"0.0005548620","4":"0.0002449780","5":"0.0025047886"},{"1":"withered","2":"0.0004125413","3":"0.0004161465","4":"0.0009799118","5":"0.0005893620"},{"1":"witness","2":"0.0043316832","3":"0.0005548620","4":"0.0019598236","5":"0.0008840430"},{"1":"woman","2":"0.0047442244","3":"0.0026355944","4":"0.0017148457","5":"0.0014734050"},{"1":"word","2":"0.0045379538","3":"0.0027743099","4":"0.0031847134","5":"0.0027994696"},{"1":"words","2":"0.0039191419","3":"0.0015258704","4":"0.0012248898","5":"0.0008840430"},{"1":"world","2":"0.0165016502","3":"0.0013871549","4":"0.0012248898","5":"0.0026521291"},{"1":"worse","2":"0.0004125413","3":"0.0001387155","4":"0.0004899559","5":"0.0004420215"},{"1":"worship","2":"0.0018564356","3":"0.0004161465","4":"0.0002449780","5":"0.0007367025"},{"1":"worshipped","2":"0.0004125413","3":"0.0001387155","4":"0.0004899559","5":"0.0011787240"},{"1":"worthy","2":"0.0002062706","3":"0.0016645859","4":"0.0002449780","5":"0.0014734050"},{"1":"wrapped","2":"0.0002062706","3":"0.0004161465","4":"0.0002449780","5":"0.0001473405"},{"1":"written","2":"0.0030940594","3":"0.0023581634","4":"0.0019598236","5":"0.0014734050"},{"1":"zebedee","2":"0.0002062706","3":"0.0001387155","4":"0.0009799118","5":"0.0005893620"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
+  </script>
+</div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="методы-уменьшения-размерностей.html#cb17-1"></a>PCA &lt;-<span class="st"> </span><span class="kw">prcomp</span>(gospels[,<span class="op">-</span><span class="dv">1</span>], <span class="dt">scale. =</span> <span class="ot">TRUE</span>)</span>
+<span id="cb17-2"><a href="методы-уменьшения-размерностей.html#cb17-2"></a><span class="kw">row.names</span>(PCA<span class="op">$</span>x) &lt;-<span class="st"> </span>gospels<span class="op">$</span>word</span>
+<span id="cb17-3"><a href="методы-уменьшения-размерностей.html#cb17-3"></a></span>
+<span id="cb17-4"><a href="методы-уменьшения-размерностей.html#cb17-4"></a><span class="kw">library</span>(ggfortify)</span>
+<span id="cb17-5"><a href="методы-уменьшения-размерностей.html#cb17-5"></a><span class="kw">autoplot</span>(PCA,</span>
+<span id="cb17-6"><a href="методы-уменьшения-размерностей.html#cb17-6"></a>         <span class="dt">shape =</span> <span class="ot">FALSE</span>,</span>
+<span id="cb17-7"><a href="методы-уменьшения-размерностей.html#cb17-7"></a>         <span class="dt">loadings =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb17-8"><a href="методы-уменьшения-размерностей.html#cb17-8"></a>         <span class="dt">label =</span> <span class="ot">TRUE</span>,</span>
+<span id="cb17-9"><a href="методы-уменьшения-размерностей.html#cb17-9"></a>         <span class="dt">loadings.label =</span> <span class="ot">TRUE</span>)</span></code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-16-1.png" width="672" /></p>
+<p>Косинус угла между стрелочками соответствует коэффиценту корреляции между ними</p>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="методы-уменьшения-размерностей.html#cb18-1"></a><span class="kw">cor</span>(gospels[,<span class="op">-</span><span class="dv">1</span>])</span></code></pre></div>
+<pre><code>##              John      Luke      Mark   Matthew
+## John    1.0000000 0.5560482 0.6357893 0.6397344
+## Luke    0.5560482 1.0000000 0.7277001 0.7962913
+## Mark    0.6357893 0.7277001 1.0000000 0.7916982
+## Matthew 0.6397344 0.7962913 0.7916982 1.0000000</code></pre>
+<p>Мы точно так же можем работать не только с данными, но и с матрицей расстояния:</p>
+<div class="sourceCode" id="cb20"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb20-1"><a href="методы-уменьшения-размерностей.html#cb20-1"></a>st_words &lt;-<span class="st"> </span><span class="kw">tibble</span>(<span class="dt">words =</span> <span class="kw">stopwords</span>(<span class="st">&quot;ru&quot;</span>))</span>
+<span id="cb20-2"><a href="методы-уменьшения-размерностей.html#cb20-2"></a></span>
+<span id="cb20-3"><a href="методы-уменьшения-размерностей.html#cb20-3"></a><span class="kw">stringdistmatrix</span>(st_words<span class="op">$</span>words) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb20-4"><a href="методы-уменьшения-размерностей.html#cb20-4"></a><span class="st">  </span><span class="kw">prcomp</span>(<span class="dt">scale. =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb20-5"><a href="методы-уменьшения-размерностей.html#cb20-5"></a><span class="st">  </span><span class="kw">augment</span>(st_words) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb20-6"><a href="методы-уменьшения-размерностей.html#cb20-6"></a><span class="st">  </span><span class="kw">ggplot</span>(<span class="kw">aes</span>(.fittedPC1, .fittedPC2, <span class="dt">label =</span> words))<span class="op">+</span></span>
+<span id="cb20-7"><a href="методы-уменьшения-размерностей.html#cb20-7"></a><span class="st">  </span><span class="kw">geom_text</span>()</span></code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-18-1.png" width="672" /></p>
+<div class="sourceCode" id="cb21"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb21-1"><a href="методы-уменьшения-размерностей.html#cb21-1"></a><span class="kw">stringdistmatrix</span>(st_words<span class="op">$</span>words) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb21-2"><a href="методы-уменьшения-размерностей.html#cb21-2"></a><span class="st">  </span><span class="kw">prcomp</span>(<span class="dt">scale. =</span> <span class="ot">TRUE</span>) <span class="op">%&gt;%</span><span class="st"> </span></span>
+<span id="cb21-3"><a href="методы-уменьшения-размерностей.html#cb21-3"></a><span class="st">  </span><span class="kw">summary</span>()</span></code></pre></div>
+<pre><code>## Importance of components:
+##                           PC1     PC2     PC3    PC4     PC5     PC6     PC7
+## Standard deviation     9.1094 3.50931 3.05332 2.5126 2.40159 2.20270 2.10269
+## Proportion of Variance 0.5219 0.07745 0.05863 0.0397 0.03627 0.03051 0.02781
+## Cumulative Proportion  0.5219 0.59935 0.65798 0.6977 0.73396 0.76448 0.79228
+##                            PC8     PC9    PC10    PC11    PC12    PC13    PC14
+## Standard deviation     1.83939 1.68455 1.64582 1.50108 1.43699 1.32001 1.19788
+## Proportion of Variance 0.02128 0.01785 0.01704 0.01417 0.01299 0.01096 0.00902
+## Cumulative Proportion  0.81356 0.83141 0.84844 0.86262 0.87560 0.88656 0.89559
+##                           PC15    PC16    PC17    PC18    PC19    PC20    PC21
+## Standard deviation     1.14934 1.12332 1.08208 1.04435 0.93055 0.90376 0.88367
+## Proportion of Variance 0.00831 0.00794 0.00736 0.00686 0.00545 0.00514 0.00491
+## Cumulative Proportion  0.90389 0.91183 0.91919 0.92605 0.93150 0.93664 0.94155
+##                           PC22    PC23    PC24    PC25   PC26    PC27    PC28
+## Standard deviation     0.87275 0.81203 0.75994 0.73676 0.7249 0.67007 0.64885
+## Proportion of Variance 0.00479 0.00415 0.00363 0.00341 0.0033 0.00282 0.00265
+## Cumulative Proportion  0.94634 0.95049 0.95412 0.95753 0.9608 0.96366 0.96631
+##                           PC29    PC30   PC31    PC32    PC33   PC34    PC35
+## Standard deviation     0.61520 0.59373 0.5775 0.57012 0.53217 0.5039 0.48679
+## Proportion of Variance 0.00238 0.00222 0.0021 0.00204 0.00178 0.0016 0.00149
+## Cumulative Proportion  0.96869 0.97091 0.9730 0.97505 0.97683 0.9784 0.97992
+##                           PC36    PC37    PC38   PC39    PC40    PC41    PC42
+## Standard deviation     0.48309 0.44708 0.43207 0.3987 0.39240 0.36516 0.35923
+## Proportion of Variance 0.00147 0.00126 0.00117 0.0010 0.00097 0.00084 0.00081
+## Cumulative Proportion  0.98138 0.98264 0.98381 0.9848 0.98578 0.98662 0.98743
+##                           PC43   PC44    PC45    PC46    PC47    PC48    PC49
+## Standard deviation     0.34764 0.3330 0.31735 0.31360 0.30236 0.29669 0.28040
+## Proportion of Variance 0.00076 0.0007 0.00063 0.00062 0.00057 0.00055 0.00049
+## Cumulative Proportion  0.98819 0.9889 0.98952 0.99014 0.99072 0.99127 0.99177
+##                           PC50    PC51    PC52    PC53    PC54    PC55    PC56
+## Standard deviation     0.27511 0.26238 0.24448 0.23832 0.23560 0.22759 0.22533
+## Proportion of Variance 0.00048 0.00043 0.00038 0.00036 0.00035 0.00033 0.00032
+## Cumulative Proportion  0.99224 0.99267 0.99305 0.99341 0.99376 0.99408 0.99440
+##                           PC57    PC58    PC59    PC60    PC61    PC62    PC63
+## Standard deviation     0.22146 0.21053 0.20631 0.20455 0.20016 0.19190 0.18747
+## Proportion of Variance 0.00031 0.00028 0.00027 0.00026 0.00025 0.00023 0.00022
+## Cumulative Proportion  0.99471 0.99499 0.99526 0.99552 0.99577 0.99600 0.99622
+##                           PC64   PC65    PC66    PC67    PC68    PC69    PC70
+## Standard deviation     0.18245 0.1775 0.16788 0.16499 0.16281 0.15790 0.15292
+## Proportion of Variance 0.00021 0.0002 0.00018 0.00017 0.00017 0.00016 0.00015
+## Cumulative Proportion  0.99643 0.9966 0.99681 0.99698 0.99715 0.99730 0.99745
+##                           PC71    PC72    PC73    PC74    PC75    PC76   PC77
+## Standard deviation     0.14735 0.14341 0.13953 0.13850 0.13316 0.12972 0.1273
+## Proportion of Variance 0.00014 0.00013 0.00012 0.00012 0.00011 0.00011 0.0001
+## Cumulative Proportion  0.99759 0.99772 0.99784 0.99796 0.99807 0.99818 0.9983
+##                          PC78   PC79    PC80    PC81    PC82    PC83    PC84
+## Standard deviation     0.1260 0.1247 0.11829 0.11670 0.11507 0.10871 0.10524
+## Proportion of Variance 0.0001 0.0001 0.00009 0.00009 0.00008 0.00007 0.00007
+## Cumulative Proportion  0.9984 0.9985 0.99857 0.99865 0.99873 0.99881 0.99888
+##                           PC85    PC86    PC87    PC88    PC89    PC90    PC91
+## Standard deviation     0.10464 0.10307 0.10104 0.09898 0.09473 0.09188 0.08819
+## Proportion of Variance 0.00007 0.00007 0.00006 0.00006 0.00006 0.00005 0.00005
+## Cumulative Proportion  0.99895 0.99901 0.99908 0.99914 0.99920 0.99925 0.99930
+##                           PC92    PC93    PC94    PC95    PC96    PC97    PC98
+## Standard deviation     0.08491 0.08265 0.07868 0.07556 0.07372 0.07262 0.07084
+## Proportion of Variance 0.00005 0.00004 0.00004 0.00004 0.00003 0.00003 0.00003
+## Cumulative Proportion  0.99934 0.99939 0.99943 0.99946 0.99950 0.99953 0.99956
+##                           PC99   PC100   PC101   PC102   PC103   PC104   PC105
+## Standard deviation     0.06751 0.06516 0.06446 0.06293 0.05934 0.05823 0.05722
+## Proportion of Variance 0.00003 0.00003 0.00003 0.00002 0.00002 0.00002 0.00002
+## Cumulative Proportion  0.99959 0.99962 0.99964 0.99967 0.99969 0.99971 0.99973
+##                          PC106   PC107   PC108   PC109   PC110   PC111   PC112
+## Standard deviation     0.05516 0.05259 0.05088 0.04966 0.04914 0.04855 0.04592
+## Proportion of Variance 0.00002 0.00002 0.00002 0.00002 0.00002 0.00001 0.00001
+## Cumulative Proportion  0.99975 0.99977 0.99978 0.99980 0.99981 0.99983 0.99984
+##                          PC113   PC114   PC115   PC116   PC117   PC118   PC119
+## Standard deviation     0.04558 0.04354 0.04276 0.04101 0.03932 0.03791 0.03683
+## Proportion of Variance 0.00001 0.00001 0.00001 0.00001 0.00001 0.00001 0.00001
+## Cumulative Proportion  0.99986 0.99987 0.99988 0.99989 0.99990 0.99991 0.99992
+##                          PC120   PC121   PC122   PC123   PC124   PC125 PC126
+## Standard deviation     0.03536 0.03501 0.03392 0.03064 0.03019 0.02806 0.027
+## Proportion of Variance 0.00001 0.00001 0.00001 0.00001 0.00001 0.00000 0.000
+## Cumulative Proportion  0.99992 0.99993 0.99994 0.99995 0.99995 0.99996 1.000
+##                          PC127   PC128   PC129   PC130   PC131   PC132   PC133
+## Standard deviation     0.02557 0.02505 0.02465 0.02362 0.02252 0.02098 0.01907
+## Proportion of Variance 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000
+## Cumulative Proportion  0.99997 0.99997 0.99997 0.99998 0.99998 0.99998 0.99998
+##                          PC134   PC135   PC136   PC137   PC138   PC139   PC140
+## Standard deviation     0.01786 0.01688 0.01635 0.01546 0.01501 0.01397 0.01348
+## Proportion of Variance 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000 0.00000
+## Cumulative Proportion  0.99999 0.99999 0.99999 0.99999 0.99999 0.99999 1.00000
+##                          PC141   PC142   PC143    PC144    PC145    PC146
+## Standard deviation     0.01195 0.01106 0.01042 0.009156 0.008349 0.007473
+## Proportion of Variance 0.00000 0.00000 0.00000 0.000000 0.000000 0.000000
+## Cumulative Proportion  1.00000 1.00000 1.00000 1.000000 1.000000 1.000000
+##                           PC147    PC148    PC149    PC150    PC151    PC152
+## Standard deviation     0.006681 0.005886 0.005404 0.004543 0.003973 0.002793
+## Proportion of Variance 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+## Cumulative Proportion  1.000000 1.000000 1.000000 1.000000 1.000000 1.000000
+##                           PC153    PC154  PC155     PC156     PC157     PC158
+## Standard deviation     0.002337 0.001573 0.0014 0.0009382 0.0006041 0.0002766
+## Proportion of Variance 0.000000 0.000000 0.0000 0.0000000 0.0000000 0.0000000
+## Cumulative Proportion  1.000000 1.000000 1.0000 1.0000000 1.0000000 1.0000000
+##                        PC159
+## Standard deviation     4e-15
+## Proportion of Variance 0e+00
+## Cumulative Proportion  1e+00</code></pre>
+<div class="rmdtask">
+<p>
+<a href="https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/chekhov_zoshenko.csv">В датасет</a> записаны частотности некоторых слов в рассказах А. Чехова и М. Зощенко. Проведите анализ методом главных компонент и визуализируйте первые две компоненты, используя все переменные, и раскрасьте рассказы в зависимости от авторства.
+</p>
+</div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-20-1.png" width="672" /></p>
+<div class="rmdtask">
+<p>
+Посчитайте долю кумулятивной дисперсии, объясненной первыми двумя компонентами.
+</p>
+</div>
+<form name="form_87764" onsubmit="return validate_form_87764()" method="post">
+<select name="answer_87764"><option> 0.10 </option><option> 0.20 </option><option> 0.30 </option><option> 0.40 </option><option> 0.50 </option></select><br><input type="submit" value="check">
+</form>
+<p id="result_87764">
+</p>
+<script> function validate_form_87764() {var x, text; var x = document.forms["form_87764"]["answer_87764"].value;if (x == "0.10"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_87764').innerHTML = text; return false;} </script>
+<div class="rmdtask">
+<p>
+В <a href="https://readymag.com/u94255285/colors-of-classics/">статье Палитра русской классики</a> Л. Поповец собрала частоту встречаемости цветов в разных произведениях. Проанализируйте <a href="https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/popovets_l_2019_colors_of_classic.csv">датасет</a> методом главных компонент. Обнаружились ли кластеры?
+</p>
+</div>
+<div class="rmdtask">
+<p>
+Посчитайте долю кумулятивной дисперсии, объясненной первыми двумя компонентами.
+</p>
+</div>
+<form name="form_61273" onsubmit="return validate_form_61273()" method="post">
+<select name="answer_61273"><option> 0.6 </option><option> 0.7 </option><option> 0.8 </option><option> 0.9 </option></select><br><input type="submit" value="check">
+</form>
+<p id="result_61273">
+</p>
+<script> function validate_form_61273() {var x, text; var x = document.forms["form_61273"]["answer_61273"].value;if (x == "0.8"){text = 'Correct';} else {text = 'I have a different answer';} document.getElementById('result_61273').innerHTML = text; return false;} </script>
+</div>
+<div id="другие-методы-уменьшения-размерности" class="section level2">
+<h2><span class="header-section-number">18.5</span> Другие методы уменьшения размерности</h2>
+<p>Существуют и другие методы уменьшения размерности:</p>
+<ul>
+<li>CA, MCA</li>
+<li>LDA (Linear Discriminant Analysis), DCA (Discriminant Correspondence Analysis)</li>
+<li>tSNE (t-Distributed Stochastic Neighbor Embedding)</li>
+<li>и другие…</li>
+</ul>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="кластеризация.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tasks.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/agricolamz/DS_for_DH/edit/master/17-PCA.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["DS_for_DH.pdf", "DS_for_DH.epub"],
+"toc": {
+"collapse": "section"
+},
+"self_contained": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
