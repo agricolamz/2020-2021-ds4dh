@@ -4,3 +4,5 @@
 .Ruserdata
 .have_a_look.txt
 _bookdown_files*
+.DS_Store
+.Rproj
