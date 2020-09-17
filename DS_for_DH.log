@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.14)  17 SEP 2020 14:56
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.14)  17 SEP 2020 15:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1145,33 +1145,33 @@ File: images/env.png Graphic file (type bmp)
 File: images/WaCM5x3mvQM.jpg Graphic file (type bmp)
 <images/WaCM5x3mvQM.jpg>
 [16] [17]
-Underfull \hbox (badness 10000) in paragraph at lines 846--846
+Underfull \hbox (badness 10000) in paragraph at lines 850--850
 [][][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][]
 [][][][] [] [][][][][][][][] [] [][][][][] [][] [][][] [][] [][][][][][][][][][
 ] [][] [][][][][][][] [][]
  []
 
-Missing character: There is no В in font [lmmono10-regular]:!
-Missing character: There is no с in font [lmmono10-regular]:!
-Missing character: There is no е in font [lmmono10-regular]:!
-Missing character: There is no м in font [lmmono10-regular]:!
-Missing character: There is no п in font [lmmono10-regular]:!
-Missing character: There is no р in font [lmmono10-regular]:!
-Missing character: There is no и in font [lmmono10-regular]:!
-Missing character: There is no в in font [lmmono10-regular]:!
-Missing character: There is no е in font [lmmono10-regular]:!
-Missing character: There is no т in font [lmmono10-regular]:!
-Missing character: There is no В in font [lmmono10-regular]:!
-Missing character: There is no с in font [lmmono10-regular]:!
-Missing character: There is no е in font [lmmono10-regular]:!
-Missing character: There is no м in font [lmmono10-regular]:!
-Missing character: There is no п in font [lmmono10-regular]:!
-Missing character: There is no р in font [lmmono10-regular]:!
-Missing character: There is no и in font [lmmono10-regular]:!
-Missing character: There is no в in font [lmmono10-regular]:!
-Missing character: There is no е in font [lmmono10-regular]:!
-Missing character: There is no т in font [lmmono10-regular]:!
 [18]
+Missing character: There is no В in font [lmmono10-regular]:!
+Missing character: There is no с in font [lmmono10-regular]:!
+Missing character: There is no е in font [lmmono10-regular]:!
+Missing character: There is no м in font [lmmono10-regular]:!
+Missing character: There is no п in font [lmmono10-regular]:!
+Missing character: There is no р in font [lmmono10-regular]:!
+Missing character: There is no и in font [lmmono10-regular]:!
+Missing character: There is no в in font [lmmono10-regular]:!
+Missing character: There is no е in font [lmmono10-regular]:!
+Missing character: There is no т in font [lmmono10-regular]:!
+Missing character: There is no В in font [lmmono10-regular]:!
+Missing character: There is no с in font [lmmono10-regular]:!
+Missing character: There is no е in font [lmmono10-regular]:!
+Missing character: There is no м in font [lmmono10-regular]:!
+Missing character: There is no п in font [lmmono10-regular]:!
+Missing character: There is no р in font [lmmono10-regular]:!
+Missing character: There is no и in font [lmmono10-regular]:!
+Missing character: There is no в in font [lmmono10-regular]:!
+Missing character: There is no е in font [lmmono10-regular]:!
+Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no п in font [lmmono10-regular]:!
@@ -1225,6 +1225,10 @@ Missing character: There is no н in font [lmmono10-italic]:!
 Missing character: There is no и in font [lmmono10-italic]:!
 Missing character: There is no е in font [lmmono10-italic]:!
 [20]
+File: images/coord_vector.png Graphic file (type bmp)
+<images/coord_vector.png>
+File: images/coord_vector_blur.png Graphic file (type bmp)
+<images/coord_vector_blur.png>
 Missing character: There is no Х in font [lmmono10-regular]:!
 Missing character: There is no э in font [lmmono10-regular]:!
 Missing character: There is no й in font [lmmono10-regular]:!
@@ -1242,6 +1246,7 @@ Missing character: There is no й in font [lmmono10-regular]:!
 Missing character: There is no Х in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
 Missing character: There is no с in font [lmmono10-regular]:!
+[21]
 Missing character: There is no с in font [lmmono10-regular]:!
 Missing character: There is no с in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
@@ -1263,7 +1268,7 @@ Missing character: There is no ц in font [lmmono10-regular]:!
 Missing character: There is no и in font [lmmono10-regular]:!
 Missing character: There is no ю in font [lmmono10-regular]:!
 Missing character: There is no с in font [lmmono10-regular]:!
-[21] [22]
+[22] [23] [24]
 Missing character: There is no П in font [lmmono10-regular]:!
 Missing character: There is no р in font [lmmono10-regular]:!
 Missing character: There is no и in font [lmmono10-regular]:!
@@ -1276,6 +1281,12 @@ Missing character: There is no и in font [lmmono10-regular]:!
 Missing character: There is no в in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no т in font [lmmono10-regular]:!
+
+Underfull \hbox (badness 10000) in paragraph at lines 1291--1292
+[]\TU/lmtt/m/n/10 NULL < raw < logical < integer < double < complex < character
+ <
+ []
+
 Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no у in font [lmmono10-regular]:!
 Missing character: There is no ж in font [lmmono10-regular]:!
@@ -1291,7 +1302,6 @@ Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no ы in font [lmmono10-regular]:!
 Missing character: There is no х in font [lmmono10-regular]:!
-[23]
 Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no р in font [lmmono10-regular]:!
 Missing character: There is no и in font [lmmono10-regular]:!
@@ -1327,13 +1337,19 @@ Missing character: There is no д in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no ы in font [lmmono10-regular]:!
-[24]
-Overfull \hbox (69.75pt too wide) in paragraph at lines 1413--1413
+[25] [26]
+Overfull \hbox (69.75pt too wide) in paragraph at lines 1450--1450
 []\TU/lmtt/m/n/10 ##  [1] 1.000000 1.414214 1.732051 2.000000 2.236068 2.449490
  2.645751 2.828427[] 
  []
 
-[25]
+
+LaTeX Warning: Reference `for' on page 27 undefined on input line 1461.
+
+
+LaTeX Warning: Reference `apply' on page 27 undefined on input line 1464.
+
+[27]
 Missing character: There is no д in font [lmmono10-regular]:!
 Missing character: There is no л in font [lmmono10-regular]:!
 Missing character: There is no и in font [lmmono10-regular]:!
@@ -1398,24 +1414,24 @@ Missing character: There is no к in font [lmmono10-regular]:!
 Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1474--1474
+Underfull \hbox (badness 10000) in paragraph at lines 1528--1528
 [][][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][]
 [][][][] [] [][][][][][][] [] [][][][][] [][] [][][][] [][] [][][][][][][][][][
 ][][][] [][] [][][][] [][] [] [][]
  []
 
 
-Underfull \hbox (badness 3148) in paragraph at lines 1483--1488
+Underfull \hbox (badness 3148) in paragraph at lines 1537--1544
 []\TU/brill(0)/m/n/10 Речь пойдет об \TU/brill(0)/bx/n/10 индексировании \TU/br
 ill(0)/m/n/10 векторов. Задача, которую Вам придется
  []
 
-
-Underfull \hbox (badness 7869) in paragraph at lines 1514--1520
+[28]
+Underfull \hbox (badness 7869) in paragraph at lines 1567--1573
 []\TU/brill(0)/m/n/10 Если вы знакомы с другими языками программирования (не
  []
 
-[26]
+[29]
 Missing character: There is no т in font [lmmono10-italic]:!
 Missing character: There is no о in font [lmmono10-italic]:!
 Missing character: There is no ж in font [lmmono10-italic]:!
@@ -1425,27 +1441,27 @@ Missing character: There is no а in font [lmmono10-italic]:!
 Missing character: There is no м in font [lmmono10-italic]:!
 Missing character: There is no о in font [lmmono10-italic]:!
 Missing character: There is no е in font [lmmono10-italic]:!
-[27]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 1671--1671
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 1726--1726
 []\TU/lmtt/m/n/10 ##  [1] FALSE FALSE  TRUE FALSE FALSE FALSE FALSE  TRUE  TRUE
   TRUE[] 
  []
 
-[28] [29]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 1794--1794
+[30] [31]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 1849--1849
 []\TU/lmtt/m/n/10 ##  [1] FALSE FALSE FALSE FALSE  TRUE FALSE FALSE FALSE FALSE
  FALSE[] 
  []
 
-
-Underfull \hbox (badness 1472) in paragraph at lines 1850--1854
+[32]
+Underfull \hbox (badness 1472) in paragraph at lines 1905--1909
 \TU/brill(0)/m/n/10 еще \TU/lmtt/m/n/10 NaN \TU/brill(0)/m/n/10 — это разные ве
 щи. \TU/lmtt/m/n/10 NaN \TU/brill(0)/m/n/10 расшифровывается как Not a
  []
 
-[30]
 File: images/2AmXWgVoULk.jpg Graphic file (type bmp)
 <images/2AmXWgVoULk.jpg>
+[33]
 Missing character: There is no 🔬 in font [font/brill]/OT:script=latn;language=D
 FLT;mapping=tex-text;!
 Missing character: There is no 🖤 in font [font/brill]/OT:script=latn;language=D
@@ -1457,15 +1473,14 @@ FLT;mapping=tex-text;!
 Missing character: There is no ⚒ in font [font/brill]/OT:script=latn;language=D
 FLT;mapping=tex-text;!
 
-Underfull \hbox (badness 10000) in paragraph at lines 1886--1889
+Underfull \hbox (badness 10000) in paragraph at lines 1941--1944
 []\TU/brill(0)/m/n/10 — 🔬🖤Lauren M. Seyler, Ph.D.❤️⚒ href=“[]$[][][][][] [] [] 
 [] [][][][][][][] [] [][][] [] [][][][][][][][][][][] []
  []
 
-[31]
 File: images/New-Mind-Map.jpg Graphic file (type bmp)
 <images/New-Mind-Map.jpg>
-[32] [33] [34]
+[34] [35] [36]
 Missing character: There is no П in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
 Missing character: There is no м in font [lmmono10-regular]:!
@@ -1478,7 +1493,7 @@ Missing character: There is no м in font [lmmono10-regular]:!
 Missing character: There is no п in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
 Missing character: There is no м in font [lmmono10-regular]:!
-[35]
+[37]
 Missing character: There is no П in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
 Missing character: There is no м in font [lmmono10-regular]:!
@@ -1491,14 +1506,14 @@ Missing character: There is no м in font [lmmono10-regular]:!
 Missing character: There is no п in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
 Missing character: There is no м in font [lmmono10-regular]:!
-[36] [37]
-Overfull \hbox (4.18764pt too wide) in paragraph at lines 2236--2239
+[38] [39]
+Overfull \hbox (4.18764pt too wide) in paragraph at lines 2291--2294
 \TU/brill(0)/m/n/10 Итак, мы перешли к самому главному. Самому-самому. Датафрей
 мы (\TU/brill(0)/bx/n/10 data.frames\TU/brill(0)/m/n/10 ).
  []
 
-[38]
-Underfull \hbox (badness 7221) in paragraph at lines 2301--2303
+[40]
+Underfull \hbox (badness 7221) in paragraph at lines 2356--2358
 []\TU/brill(0)/m/n/10 Используя оператор \TU/lmtt/m/n/10 $ \TU/brill(0)/m/n/10 
 и присваивание можно создавать новые колонки
  []
@@ -1516,210 +1531,210 @@ Missing character: There is no н in font [lmmono10-italic]:!
 Missing character: There is no а in font [lmmono10-italic]:!
 Missing character: There is no л in font [lmmono10-italic]:!
 Missing character: There is no и in font [lmmono10-italic]:!
-[39]
-Underfull \hbox (badness 10000) in paragraph at lines 2409--2409
+[41]
+Underfull \hbox (badness 10000) in paragraph at lines 2464--2464
 [][][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][][][][][][][][][][] [] []
 [][] [] [][][][][][][][][][] [] [][][][][] [] [][][][][][] [] [][][][] [] [][][
 ][][][][][][] [][]
  []
 
-[40] [41]
-Underfull \hbox (badness 2495) in paragraph at lines 2513--2515
+[42] [43]
+Underfull \hbox (badness 2495) in paragraph at lines 2568--2570
 []\TU/brill(0)/m/n/10 Каждый Магомет получает по своей горе: использование прое
 ктов в
  []
 
 
-Underfull \hbox (badness 3579) in paragraph at lines 2547--2564
+Underfull \hbox (badness 3579) in paragraph at lines 2602--2619
 []\TU/brill(0)/m/n/10 Для чтения данных из текстового файла есть довольно удобн
 ая функция
  []
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 2547--2564
+Underfull \hbox (badness 1400) in paragraph at lines 2602--2619
 \TU/lmtt/m/n/10 read.table()\TU/brill(0)/m/n/10 . Почитайте хэлп по ней и ужасн
 итесь: столько разных пара-
  []
 
 
-Underfull \hbox (badness 1038) in paragraph at lines 2547--2564
+Underfull \hbox (badness 1038) in paragraph at lines 2602--2619
 \TU/brill(0)/m/n/10 (Значения, Разделенные Запятыми). Это просто текстовый файл
 , в котором
  []
 
-[42]
+[44]
 Underfull \vbox (badness 2884) has occurred while \output is active []
 
-[43]
-Overfull \hbox (237.75pt too wide) in paragraph at lines 2662--2662
+[45]
+Overfull \hbox (237.75pt too wide) in paragraph at lines 2717--2717
 []\TU/lmtt/m/n/10 ##  $ Name              : chr  "Addam Marbrand" "Aegon Frey (
 Jinglebell)" "Aegon Targaryen" "Adrack Humble" ...[] 
  []
 
 
-Overfull \hbox (111.75pt too wide) in paragraph at lines 2662--2662
+Overfull \hbox (111.75pt too wide) in paragraph at lines 2717--2717
 []\TU/lmtt/m/n/10 ##  $ Allegiances       : chr  "Lannister" "None" "House Targ
 aryen" "House Greyjoy" ...[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 2662--2662
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2717--2717
 []\TU/lmtt/m/n/10 ##  $ Death.Year        : int  NA 299 NA 300 NA NA 300 300 NA
  NA ...[] 
  []
 
-[44]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 2705--2705
+[46]
+Overfull \hbox (17.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ##                      Name     Allegiances Death.Year Book.
 of.Death[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (17.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 1          Addam Marbrand       Lannister         NA      
       NA[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (17.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 2 Aegon Frey (Jinglebell)            None        299      
        3[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (17.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 3         Aegon Targaryen House Targaryen         NA      
       NA[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (17.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 4           Adrack Humble   House Greyjoy        300      
        5[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (17.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 5          Aemon Costayne       Lannister         NA      
       NA[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (17.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 6         Aemon Estermont       Baratheon         NA      
       NA[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (38.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ##   Death.Chapter Book.Intro.Chapter Gender Nobility GoT CoK
  SoS FfC DwD[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (38.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 1            NA                 56      1        1   1   1
    1   1   0[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (38.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 2            51                 49      1        1   0   0
    1   0   0[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (38.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 3            NA                  5      1        1   0   0
    0   0   1[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (38.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 4            20                 20      1        1   0   0
    0   0   1[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (38.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 5            NA                 NA      1        1   0   0
    1   0   0[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 2705--2705
+Overfull \hbox (38.25pt too wide) in paragraph at lines 2760--2760
 []\TU/lmtt/m/n/10 ## 6            NA                 NA      1        1   0   1
    1   0   0[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 2730--2730
+Overfull \hbox (85.5pt too wide) in paragraph at lines 2785--2785
 []\TU/lmtt/m/n/10 ##           Arryn       Baratheon         Greyjoy     House 
 Arryn House Baratheon[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 2730--2730
+Overfull \hbox (85.5pt too wide) in paragraph at lines 2785--2785
 []\TU/lmtt/m/n/10 ##              23              56              51           
     7               8[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 2730--2730
+Overfull \hbox (85.5pt too wide) in paragraph at lines 2785--2785
 []\TU/lmtt/m/n/10 ##   House Greyjoy House Lannister   House Martell     House 
 Stark House Targaryen[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 2730--2730
+Overfull \hbox (85.5pt too wide) in paragraph at lines 2785--2785
 []\TU/lmtt/m/n/10 ##              24              21              12           
    35              19[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 2730--2730
+Overfull \hbox (85.5pt too wide) in paragraph at lines 2785--2785
 []\TU/lmtt/m/n/10 ##     House Tully    House Tyrell       Lannister         Ma
 rtell   Night[]s Watch[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 2730--2730
+Overfull \hbox (85.5pt too wide) in paragraph at lines 2785--2785
 []\TU/lmtt/m/n/10 ##               8              11              81           
    25             116[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 2730--2730
+Overfull \hbox (85.5pt too wide) in paragraph at lines 2785--2785
 []\TU/lmtt/m/n/10 ##            None           Stark       Targaryen           
 Tully          Tyrell[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 2730--2730
+Overfull \hbox (85.5pt too wide) in paragraph at lines 2785--2785
 []\TU/lmtt/m/n/10 ##             253              73              17           
    22              15[] 
  []
 
-[45]
-Underfull \hbox (badness 2903) in paragraph at lines 2770--2774
+[47]
+Underfull \hbox (badness 2903) in paragraph at lines 2825--2829
 \TU/brill(0)/m/n/10 Как мы обсуждали на прошлом занятии, мы можем сабсеттить (в
 ыделять
  []
 
 
-Underfull \hbox (badness 3118) in paragraph at lines 2770--2774
+Underfull \hbox (badness 3118) in paragraph at lines 2825--2829
 \TU/brill(0)/m/n/10 часть датафрейма) датафрейм, обращаясь к нему и как к матри
 це: \TU/brill(0)/m/it/10 дата-
  []
 
-[46]
-Overfull \hbox (12.0pt too wide) in paragraph at lines 2812--2812
+[48]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 2867--2867
 []\TU/lmtt/m/n/10 ## [1] "Mance Rayder"    "Mandon Moore"    "Maric Seaworth"  
 "Marei"[] 
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 2812--2812
+Overfull \hbox (48.75pt too wide) in paragraph at lines 2867--2867
 []\TU/lmtt/m/n/10 ## [5] "Margaery Tyrell" "Marillion"       "Maris"           
 "Marissa Frey"[] 
  []
@@ -1772,307 +1787,307 @@ Missing character: There is no щ in font [lmmono10-italic]:!
 Missing character: There is no ь in font [lmmono10-italic]:!
 Missing character: There is no ю in font [lmmono10-italic]:!
 
-Overfull \hbox (59.25pt too wide) in paragraph at lines 2850--2850
+Overfull \hbox (59.25pt too wide) in paragraph at lines 2905--2905
 []\TU/lmtt/m/n/10 ##  [1] "Lannister"       "None"            "House Targaryen"
  "House Greyjoy"[] 
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 2850--2850
+Overfull \hbox (48.75pt too wide) in paragraph at lines 2905--2905
 []\TU/lmtt/m/n/10 ##  [5] "Baratheon"       "Night[]s Watch"   "Arryn"         
   "House Stark"[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 2850--2850
+Overfull \hbox (27.75pt too wide) in paragraph at lines 2905--2905
 []\TU/lmtt/m/n/10 ##  [9] "House Tyrell"    "Tyrell"          "Stark"          
  "Greyjoy"[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2850--2850
+Overfull \hbox (33.0pt too wide) in paragraph at lines 2905--2905
 []\TU/lmtt/m/n/10 ## [13] "House Lannister" "Martell"         "House Martell"  
  "Wildling"[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 2850--2850
+Overfull \hbox (17.25pt too wide) in paragraph at lines 2905--2905
 []\TU/lmtt/m/n/10 ## [17] "Targaryen"       "House Arryn"     "House Tully"    
  "Tully"[] 
  []
 
-[47]
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2896--2896
+[49]
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ##                                 Name   Allegiances Death.Y
 ear Book.of.Death[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 7  Aemon Targaryen (son of Maekar I) Night[]s Watch       
  300             4[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 10                            Aethan Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 13                     Alan of Rosby Night[]s Watch       
  300             5[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 16                            Albett Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 24                    Alliser Thorne Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 49                             Arron Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ##    Death.Chapter Book.Intro.Chapter Gender Nobility GoT Co
 K SoS FfC DwD[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 7             35                 21      1        1   1   
 0   1   1   0[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 10            NA                  0      1        0   0   
 0   1   0   0[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 13             4                 18      1        1   0   
 1   1   0   1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 16            NA                 26      1        0   1   
 0   0   0   0[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 24            NA                 19      1        0   1   
 1   1   0   1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2896--2896
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2951--2951
 []\TU/lmtt/m/n/10 ## 49            NA                 75      1        0   0   
 0   1   0   1[] 
  []
 
 
-Underfull \hbox (badness 1259) in paragraph at lines 2908--2911
+Underfull \hbox (badness 1259) in paragraph at lines 2963--2966
 \TU/brill(0)/m/n/10 представителей Ночного Дозора. Это можно сделать, используя
  оператор \TU/lmtt/m/n/10 |
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ##                                 Name   Allegiances Death.Y
 ear Book.of.Death[] 
  []
 
-[48]
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2934--2934
+[50]
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 7  Aemon Targaryen (son of Maekar I) Night[]s Watch       
  300             4[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 10                            Aethan Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 13                     Alan of Rosby Night[]s Watch       
  300             5[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 16                            Albett Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 24                    Alliser Thorne Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (64.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 49                             Arron Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ##    Death.Chapter Book.Intro.Chapter Gender Nobility GoT Co
 K SoS FfC DwD[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 7             35                 21      1        1   1   
 0   1   1   0[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 10            NA                  0      1        0   0   
 0   1   0   0[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 13             4                 18      1        1   0   
 1   1   0   1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 16            NA                 26      1        0   1   
 0   0   0   0[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 24            NA                 19      1        0   1   
 1   1   0   1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2934--2934
+Overfull \hbox (43.5pt too wide) in paragraph at lines 2989--2989
 []\TU/lmtt/m/n/10 ## 49            NA                 75      1        0   0   
 0   1   0   1[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (64.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ##                                 Name   Allegiances Death.Y
 ear Book.of.Death[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (64.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 7  Aemon Targaryen (son of Maekar I) Night[]s Watch       
  300             4[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (64.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 10                            Aethan Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (64.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 13                     Alan of Rosby Night[]s Watch       
  300             5[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (64.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 16                            Albett Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (64.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 24                    Alliser Thorne Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (64.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 49                             Arron Night[]s Watch       
   NA            NA[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (43.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ##    Death.Chapter Book.Intro.Chapter Gender Nobility GoT Co
 K SoS FfC DwD[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (43.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 7             35                 21      1        1   1   
 0   1   1   0[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (43.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 10            NA                  0      1        0   0   
 0   1   0   0[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (43.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 13             4                 18      1        1   0   
 1   1   0   1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (43.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 16            NA                 26      1        0   1   
 0   0   0   0[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (43.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 24            NA                 19      1        0   1   
 1   1   0   1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 2982--2982
+Overfull \hbox (43.5pt too wide) in paragraph at lines 3037--3037
 []\TU/lmtt/m/n/10 ## 49            NA                 75      1        0   0   
 0   1   0   1[] 
  []
 
-[49]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 3005--3005
+[51]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3060--3060
 []\TU/lmtt/m/n/10 ##          Name Allegiances Death.Year Book.of.Death Death.C
 hapter[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 3005--3005
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3060--3060
 []\TU/lmtt/m/n/10 ## 56 Arya Stark       Stark         NA            NA        
     NA[] 
  []
 
-[50]
-Underfull \hbox (badness 10000) in paragraph at lines 3046--3046
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 3101--3101
 [][][][]$[][][][][] [] [] [] [][][][][][][][][][][][][] [] [][][] [] [][][][][]
 [][][][] [] [][][][][][][][] [] [][][][] [][] [][][][][] [][] [][] [][] [][][][
 ][] [][] [][][] [][] [][][] [][] [][] [][]
@@ -2080,26 +2095,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 3046--3046
 
 File: images/New-Mind-Map.jpg Graphic file (type bmp)
 <images/New-Mind-Map.jpg>
-(./DS_for_DH.bbl [51] [52])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3056.
-[53
+(./DS_for_DH.bbl [53] [54])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3111.
+[55
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3056.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3111.
 (./DS_for_DH.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3056.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3056.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3111.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3111.
 
 Package rerunfilecheck Info: File `DS_for_DH.out' has not changed.
 (rerunfilecheck)             Checksum: 1CDCC5316C6CBC98BB5519CF4B3D5997.
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 24300 strings out of 492970
- 450447 string characters out of 6133938
+ 24310 strings out of 492970
+ 450675 string characters out of 6133938
  594039 words of memory out of 5000000
- 28019 multiletter control sequences out of 15000+600000
+ 28027 multiletter control sequences out of 15000+600000
  555131 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 53i,8n,116p,10450b,461s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 53i,8n,116p,10450b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on DS_for_DH.pdf (53 pages).
+Output written on DS_for_DH.pdf (55 pages).
