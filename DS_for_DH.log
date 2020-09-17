@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.14)  17 SEP 2020 15:26
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.14)  17 SEP 2020 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2095,29 +2095,470 @@ Underfull \hbox (badness 10000) in paragraph at lines 3101--3101
 
 File: images/New-Mind-Map.jpg Graphic file (type bmp)
 <images/New-Mind-Map.jpg>
-(./DS_for_DH.bbl [53] [54])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3111.
+[53] [54]
+Глава 3.
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3141--3141
+[]\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
+ 19 20[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3151--3151
+[]\TU/lmtt/m/n/10 ##  [1] 20 19 18 17 16 15 14 13 12 11 10  9  8  7  6  5  4  3
+  2  1[] 
+ []
+
+
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3163--3163
+[]\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
+ 19 20 19 18 17 16 15[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3185--3185
+[]\TU/lmtt/m/n/10 ##  [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7
+ 7 8 8 8 8 8 8 8 8 9 9[] 
+ []
+
+Missing character: There is no М in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no й in font [lmmono10-regular]:!
+Missing character: There is no в in font [lmmono10-regular]:!
+Missing character: There is no е in font [lmmono10-regular]:!
+Missing character: There is no к in font [lmmono10-regular]:!
+Missing character: There is no т in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no р in font [lmmono10-regular]:!
 [55
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3111.
+Missing character: There is no М in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no й in font [lmmono10-regular]:!
+Missing character: There is no в in font [lmmono10-regular]:!
+Missing character: There is no е in font [lmmono10-regular]:!
+Missing character: There is no к in font [lmmono10-regular]:!
+Missing character: There is no т in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no р in font [lmmono10-regular]:!
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3291--3291
+[]\TU/lmtt/m/n/10 ##  [1]  0  2  0  4  0  6  0  8  0 10  0 12  0 14  0 16  0 18
+  0 20[] 
+ []
+
+[56]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 3364--3364
+[]\TU/lmtt/m/n/10 ##  [1]  9.000000  2.236068  4.000000  1.000000 64.000000  2.
+000000 81.000000[] 
+ []
+
+[57] [58]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3555--3555
+[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
+n" "o" "p" "q" "r" "s"[] 
+ []
+
+[59]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3616--3616
+[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
+n" "o" "p" "q" "r" "s"[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3616--3616
+[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
+n" "o" "p" "q" "r" "s"[] 
+ []
+
+
+Underfull \vbox (badness 1308) has occurred while \output is active []
+
+[60]
+Missing character: There is no В in font [lmmono8-regular]:!
+Missing character: There is no е in font [lmmono8-regular]:!
+Missing character: There is no к in font [lmmono8-regular]:!
+
+Underfull \hbox (badness 6910) in paragraph at lines 3678--3681
+\TU/brill(0)/m/n/10 римских цифр есть уже готовая функция? Прежде созданные
+ []
+
+[61]
+Missing character: There is no д in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+Missing character: There is no л in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no с in font [lmmono10-italic]:!
+Missing character: There is no я in font [lmmono10-italic]:!
+Missing character: There is no н in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no б in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+Missing character: There is no з in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no с in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no к in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+[62]
+Глава 4.
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3844--3844
+[]\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
+ 19 20[] 
+ []
+
+
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3860--3860
+[]\TU/lmtt/m/n/10 ##  [1] 20 19 18 17 16 15 14 13 12 11 10  9  8  7  6  5  4  3
+  2  1[] 
+ []
+
+[63
+
+]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3878--3878
+[]\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
+ 19 20 19 18 17 16 15[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3912--3912
+[]\TU/lmtt/m/n/10 ##  [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7
+ 7 8 8 8 8 8 8 8 8 9 9[] 
+ []
+
+Missing character: There is no М in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no й in font [lmmono10-regular]:!
+Missing character: There is no в in font [lmmono10-regular]:!
+Missing character: There is no е in font [lmmono10-regular]:!
+Missing character: There is no к in font [lmmono10-regular]:!
+Missing character: There is no т in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no р in font [lmmono10-regular]:!
+Missing character: There is no М in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no й in font [lmmono10-regular]:!
+Missing character: There is no в in font [lmmono10-regular]:!
+Missing character: There is no е in font [lmmono10-regular]:!
+Missing character: There is no к in font [lmmono10-regular]:!
+Missing character: There is no т in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no р in font [lmmono10-regular]:!
+Missing character: There is no М in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no й in font [lmmono10-regular]:!
+Missing character: There is no в in font [lmmono10-regular]:!
+Missing character: There is no е in font [lmmono10-regular]:!
+Missing character: There is no к in font [lmmono10-regular]:!
+Missing character: There is no т in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no р in font [lmmono10-regular]:!
+[64] [65]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 4100--4100
+[]\TU/lmtt/m/n/10 ##  [1]  0  2  0  4  0  6  0  8  0 10  0 12  0 14  0 16  0 18
+  0 20[] 
+ []
+
+[66]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 4209--4209
+[]\TU/lmtt/m/n/10 ##  [1]  9.000000  2.236068  4.000000  1.000000 64.000000  2.
+000000 81.000000[] 
+ []
+
+[67] [68]
+Missing character: There is no Е in font [lmmono10-italic]:!
+Missing character: There is no щ in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+[69]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 4487--4487
+[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
+n" "o" "p" "q" "r" "s"[] 
+ []
+
+[70]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 4579--4579
+[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
+n" "o" "p" "q" "r" "s"[] 
+ []
+
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 4579--4579
+[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
+n" "o" "p" "q" "r" "s"[] 
+ []
+
+[71]
+Missing character: There is no В in font [lmmono8-regular]:!
+Missing character: There is no е in font [lmmono8-regular]:!
+Missing character: There is no к in font [lmmono8-regular]:!
+
+Underfull \hbox (badness 6910) in paragraph at lines 4665--4668
+\TU/brill(0)/m/n/10 римских цифр есть уже готовая функция? Прежде созданные
+ []
+
+[72]
+Missing character: There is no д in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+Missing character: There is no л in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no с in font [lmmono10-italic]:!
+Missing character: There is no я in font [lmmono10-italic]:!
+Missing character: There is no н in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no б in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+Missing character: There is no з in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no с in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no к in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+[73]
+Missing character: There is no Б in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+Missing character: There is no з in font [lmmono10-italic]:!
+Missing character: There is no Е in font [lmmono10-italic]:!
+Missing character: There is no щ in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ##                 Name     Allegiances Death.Year Book.of.De
+ath Death.Chapter[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 56        Arya Stark           Stark         NA           
+ NA            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 63       Balon Swann       Lannister         NA           
+ NA            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 104     Boros Blount       Baratheon         NA           
+ NA            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 131 Cersei Lannister House Lannister         NA           
+ NA            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 302            Grenn   Night[]s Watch         NA          
+  NA            NA[] 
+ []
+
+[74]
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 345      Harys Swyft       Lannister         NA           
+ NA            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 383  Jaime Lannister       Lannister         NA           
+ NA            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 410         Jon Snow   Night[]s Watch         NA          
+  NA            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 436  Kevan Lannister House Lannister        300           
+  5            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 452 Lancel Lannister       Lannister         NA           
+ NA            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 548      Meryn Trant       Lannister         NA           
+ NA            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 652          Pycelle House Lannister        300           
+  5            NA[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 741    Samwell Tarly   Night[]s Watch         NA          
+  NA            NA[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ##     Book.Intro.Chapter Gender Nobility GoT CoK SoS FfC DwD
+ Is.Alive[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 56                   2      0        1   1   1   1   1   1
+     TRUE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 63                  29      1        1   1   1   1   1   1
+     TRUE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 104                  8      1        1   1   1   1   1   1
+     TRUE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 131                  4      0        1   1   1   1   1   1
+     TRUE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 302                 19      1        0   1   1   1   1   1
+     TRUE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 345                 69      1        1   1   1   1   1   1
+     TRUE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 383                  5      1        1   1   1   1   1   1
+     TRUE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 410                  1      1        1   1   1   1   1   1
+     TRUE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 436                 56      1        1   1   1   1   1   1
+    FALSE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 452                 47      1        1   1   1   1   1   1
+     TRUE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 548                  8      1        1   1   1   1   1   1
+     TRUE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 652                 20      1        0   1   1   1   1   1
+    FALSE[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 4874--4874
+[]\TU/lmtt/m/n/10 ## 741                 70      1        1   1   1   1   1   1
+     TRUE[] 
+ []
+
+Missing character: There is no Е in font [lmmono10-italic]:!
+Missing character: There is no щ in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4928--4928
+[]\TU/lmtt/m/n/10 ##               Name        Allegiances         Death.Year  
+    Book.of.Death[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4928--4928
+[]\TU/lmtt/m/n/10 ##                  0                  0                612  
+              610[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4928--4928
+[]\TU/lmtt/m/n/10 ##      Death.Chapter Book.Intro.Chapter             Gender  
+         Nobility[] 
+ []
+
+[75]
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4928--4928
+[]\TU/lmtt/m/n/10 ##                618                 12                  0  
+                0[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4928--4928
+[]\TU/lmtt/m/n/10 ##                GoT                CoK                SoS  
+              FfC[] 
+ []
+
+
+Overfull \hbox (64.5pt too wide) in paragraph at lines 4928--4928
+[]\TU/lmtt/m/n/10 ##                  0                  0                  0  
+                0[] 
+ []
+
+[76] (./DS_for_DH.bbl [77] [78
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 5031.
+[79]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 5031.
 (./DS_for_DH.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 3111.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3111.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 5031.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 5031.
 
 Package rerunfilecheck Info: File `DS_for_DH.out' has not changed.
-(rerunfilecheck)             Checksum: 1CDCC5316C6CBC98BB5519CF4B3D5997.
+(rerunfilecheck)             Checksum: EC5C0A2B8B87FAB48FFED8CC2257586B.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24310 strings out of 492970
- 450675 string characters out of 6133938
- 594039 words of memory out of 5000000
- 28027 multiletter control sequences out of 15000+600000
+ 24330 strings out of 492970
+ 450917 string characters out of 6133938
+ 597297 words of memory out of 5000000
+ 28047 multiletter control sequences out of 15000+600000
  555131 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  53i,8n,116p,10450b,465s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on DS_for_DH.pdf (55 pages).
+Output written on DS_for_DH.pdf (79 pages).
