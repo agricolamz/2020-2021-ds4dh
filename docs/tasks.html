@@ -145,16 +145,16 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="3.1" data-path="tasks.html"><a href="tasks.html#vec_task_1"><i class="fa fa-check"></i><b>3.1</b> Вектор</a></li>
 <li class="chapter" data-level="3.2" data-path="tasks.html"><a href="tasks.html#vec_op"><i class="fa fa-check"></i><b>3.2</b> Вектор. Операции с векторами</a></li>
 <li class="chapter" data-level="3.3" data-path="tasks.html"><a href="tasks.html#vec_task_2"><i class="fa fa-check"></i><b>3.3</b> Вектор. Индексирование</a></li>
-<li class="chapter" data-level="3.4" data-path="tasks.html"><a href="tasks.html#t"><i class="fa fa-check"></i><b>3.4</b> Матрицы</a></li>
-<li class="chapter" data-level="3.5" data-path="tasks.html"><a href="tasks.html#list_ta"><i class="fa fa-check"></i><b>3.5</b> Списки</a></li>
+<li class="chapter" data-level="3.4" data-path="tasks.html"><a href="tasks.html#list_ta"><i class="fa fa-check"></i><b>3.4</b> Списки</a></li>
+<li class="chapter" data-level="3.5" data-path="tasks.html"><a href="tasks.html#t"><i class="fa fa-check"></i><b>3.5</b> Матрицы</a></li>
 <li class="chapter" data-level="3.6" data-path="tasks.html"><a href="tasks.html#task_function"><i class="fa fa-check"></i><b>3.6</b> Создание функций</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="solutions.html"><a href="solutions.html"><i class="fa fa-check"></i><b>4</b> Решения_заданий</a><ul>
 <li class="chapter" data-level="4.1" data-path="solutions.html"><a href="solutions.html#solvvec_task_1"><i class="fa fa-check"></i><b>4.1</b> Вектор</a></li>
 <li class="chapter" data-level="4.2" data-path="solutions.html"><a href="solutions.html#solvvec_op"><i class="fa fa-check"></i><b>4.2</b> Вектор. Операции с векторами</a></li>
 <li class="chapter" data-level="4.3" data-path="solutions.html"><a href="solutions.html#solvvec_task_2"><i class="fa fa-check"></i><b>4.3</b> Вектор. Индексирование</a></li>
-<li class="chapter" data-level="4.4" data-path="solutions.html"><a href="solutions.html#solvt"><i class="fa fa-check"></i><b>4.4</b> Матрицы</a></li>
-<li class="chapter" data-level="4.5" data-path="solutions.html"><a href="solutions.html#solvlist_ta"><i class="fa fa-check"></i><b>4.5</b> Списки</a></li>
+<li class="chapter" data-level="4.4" data-path="solutions.html"><a href="solutions.html#solvlist_ta"><i class="fa fa-check"></i><b>4.4</b> Списки</a></li>
+<li class="chapter" data-level="4.5" data-path="solutions.html"><a href="solutions.html#solvt"><i class="fa fa-check"></i><b>4.5</b> Матрицы</a></li>
 <li class="chapter" data-level="4.6" data-path="solutions.html"><a href="solutions.html#solvtask_function"><i class="fa fa-check"></i><b>4.6</b> Создание функций</a></li>
 <li class="chapter" data-level="4.7" data-path="solutions.html"><a href="solutions.html#solvtask_text"><i class="fa fa-check"></i><b>4.7</b> Семейство apply()</a></li>
 </ul></li>
@@ -297,8 +297,58 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </blockquote>
 <pre><code>## integer(0)</code></pre>
 </div>
+<div id="list_ta" class="section level2">
+<h2><span class="header-section-number">3.4</span> Списки</h2>
+<p>Дан список <code>list_1</code>:</p>
+<pre><code>## $numbers
+## [1] 1 2 3 4 5
+## 
+## $letters
+##  [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot; &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot;
+## [20] &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;
+## 
+## $logic
+## [1] FALSE</code></pre>
+<ul>
+<li>Найдите первый элемент списка. Ответ должен быть списком.</li>
+</ul>
+<pre><code>## $numbers
+## [1] 1 2 3 4 5</code></pre>
+<ul>
+<li>Теперь найдите содержание первого элемента списка двумя разными способами. Ответ должен быть вектором.</li>
+</ul>
+<pre><code>## [1] 1 2 3 4 5</code></pre>
+<pre><code>## [1] 1 2 3 4 5</code></pre>
+<p>Теперь возьмите первый элемент содержания первого элемента списка. Ответ должен быть вектором.</p>
+<pre><code>## [1] 1</code></pre>
+<p>Создайте список <code>list_2</code>, содержащий в себе два списка <code>list_1</code> с именами <code>pupa</code> и <code>lupa</code>.</p>
+<pre><code>## $pupa
+## $pupa$numbers
+## [1] 1 2 3 4 5
+## 
+## $pupa$letters
+##  [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot; &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot;
+## [20] &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;
+## 
+## $pupa$logic
+## [1] FALSE
+## 
+## 
+## $lupa
+## $lupa$numbers
+## [1] 1 2 3 4 5
+## 
+## $lupa$letters
+##  [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot; &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot;
+## [20] &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;
+## 
+## $lupa$logic
+## [1] FALSE</code></pre>
+<p>Извлеките первый элемент списка, из него - второй полэлемент, а из него - третье значение</p>
+<pre><code>## [1] &quot;c&quot;</code></pre>
+</div>
 <div id="t" class="section level2">
-<h2><span class="header-section-number">3.4</span> Матрицы</h2>
+<h2><span class="header-section-number">3.5</span> Матрицы</h2>
 <ul>
 <li>Создайте матрицу 4х4, состоящую из единиц. Назовите ее <code>M</code></li>
 </ul>
@@ -376,56 +426,6 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 ##  [7,]    0   14   21   28   35   42   49   56   63
 ##  [8,]    0   16   24   32   40   48   56   64   72
 ##  [9,]    0   18   27   36   45   54   63   72   81</code></pre>
-</div>
-<div id="list_ta" class="section level2">
-<h2><span class="header-section-number">3.5</span> Списки</h2>
-<p>Дан список <code>list_1</code>:</p>
-<pre><code>## $numbers
-## [1] 1 2 3 4 5
-## 
-## $letters
-##  [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot; &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot;
-## [20] &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;
-## 
-## $logic
-## [1] FALSE</code></pre>
-<ul>
-<li>Найдите первый элемент списка. Ответ должен быть списком.</li>
-</ul>
-<pre><code>## $numbers
-## [1] 1 2 3 4 5</code></pre>
-<ul>
-<li>Теперь найдите содержание первого элемента списка двумя разными способами. Ответ должен быть вектором.</li>
-</ul>
-<pre><code>## [1] 1 2 3 4 5</code></pre>
-<pre><code>## [1] 1 2 3 4 5</code></pre>
-<p>Теперь возьмите первый элемент содержания первого элемента списка. Ответ должен быть вектором.</p>
-<pre><code>## [1] 1</code></pre>
-<p>Создайте список <code>list_2</code>, содержащий в себе два списка <code>list_1</code> с именами <code>pupa</code> и <code>lupa</code>.</p>
-<pre><code>## $pupa
-## $pupa$numbers
-## [1] 1 2 3 4 5
-## 
-## $pupa$letters
-##  [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot; &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot;
-## [20] &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;
-## 
-## $pupa$logic
-## [1] FALSE
-## 
-## 
-## $lupa
-## $lupa$numbers
-## [1] 1 2 3 4 5
-## 
-## $lupa$letters
-##  [1] &quot;a&quot; &quot;b&quot; &quot;c&quot; &quot;d&quot; &quot;e&quot; &quot;f&quot; &quot;g&quot; &quot;h&quot; &quot;i&quot; &quot;j&quot; &quot;k&quot; &quot;l&quot; &quot;m&quot; &quot;n&quot; &quot;o&quot; &quot;p&quot; &quot;q&quot; &quot;r&quot; &quot;s&quot;
-## [20] &quot;t&quot; &quot;u&quot; &quot;v&quot; &quot;w&quot; &quot;x&quot; &quot;y&quot; &quot;z&quot;
-## 
-## $lupa$logic
-## [1] FALSE</code></pre>
-<p>Извлеките первый элемент списка, из него - второй полэлемент, а из него - третье значение</p>
-<pre><code>## [1] &quot;c&quot;</code></pre>
 </div>
 <div id="task_function" class="section level2">
 <h2><span class="header-section-number">3.6</span> Создание функций</h2>
