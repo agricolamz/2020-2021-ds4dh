@@ -130,23 +130,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#matrix"><i class="fa fa-check"></i><b>2.8</b> Матрицы (matrix)</a></li>
 <li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#list"><i class="fa fa-check"></i><b>2.9</b> Списки (list)</a></li>
 <li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#df"><i class="fa fa-check"></i><b>2.10</b> Датафрейм</a></li>
-<li class="chapter" data-level="2.11" data-path="intro.html"><a href="intro.html#real_data"><i class="fa fa-check"></i><b>2.11</b> Начинаем работу с реальными данными</a><ul>
-<li class="chapter" data-level="2.11.1" data-path="intro.html"><a href="intro.html#wd"><i class="fa fa-check"></i><b>2.11.1</b> Рабочая папка и проекты</a></li>
-<li class="chapter" data-level="2.11.2" data-path="intro.html"><a href="intro.html#import"><i class="fa fa-check"></i><b>2.11.2</b> Импорт данных</a></li>
 </ul></li>
-<li class="chapter" data-level="2.12" data-path="intro.html"><a href="intro.html#prep"><i class="fa fa-check"></i><b>2.12</b> Препроцессинг данных в R</a><ul>
-<li class="chapter" data-level="2.12.1" data-path="intro.html"><a href="intro.html#explore"><i class="fa fa-check"></i><b>2.12.1</b> Исследование данных</a></li>
-<li class="chapter" data-level="2.12.2" data-path="intro.html"><a href="intro.html#subset"><i class="fa fa-check"></i><b>2.12.2</b> Subsetting</a></li>
-<li class="chapter" data-level="2.12.3" data-path="intro.html"><a href="intro.html#newcol"><i class="fa fa-check"></i><b>2.12.3</b> Создание новых колонок</a></li>
-<li class="chapter" data-level="2.12.4" data-path="intro.html"><a href="intro.html#dtvstidy"><i class="fa fa-check"></i><b>2.12.4</b> data.table vs. tidyverse</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="3" data-path="intro.html"><a href="intro.html#real_data"><i class="fa fa-check"></i><b>3</b> Импорт данных</a><ul>
-<li class="chapter" data-level="3.1" data-path="intro.html"><a href="intro.html#wd"><i class="fa fa-check"></i><b>3.1</b> Рабочая папка и проекты RStudio</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="real-data.html"><a href="real-data.html"><i class="fa fa-check"></i><b>3.1.1</b> Табличные данные: текстовые и бинарные данные</a></li>
+<li class="chapter" data-level="3" data-path="real-data.html"><a href="real-data.html"><i class="fa fa-check"></i><b>3</b> Импорт данных</a><ul>
+<li class="chapter" data-level="3.1" data-path="real-data.html"><a href="real-data.html#wd"><i class="fa fa-check"></i><b>3.1</b> Рабочая папка и проекты RStudio</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="real-data.html"><a href="real-data.html#text_binary"><i class="fa fa-check"></i><b>3.1.1</b> Табличные данные: текстовые и бинарные данные</a></li>
 </ul></li>
 <li class="chapter" data-level="3.2" data-path="real-data.html"><a href="real-data.html#проверка-импортированных-данных"><i class="fa fa-check"></i><b>3.2</b> Проверка импортированных данных</a></li>
-<li class="chapter" data-level="3.3" data-path="real-data.html"><a href="real-data.html#импорт-таблиц-в-бинарном-формате-таблицы-excel-spss"><i class="fa fa-check"></i><b>3.3</b> Импорт таблиц в бинарном формате: таблицы Excel, SPSS</a></li>
+<li class="chapter" data-level="3.3" data-path="real-data.html"><a href="real-data.html#binary"><i class="fa fa-check"></i><b>3.3</b> Импорт таблиц в бинарном формате: таблицы Excel, SPSS</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>4</b> Задания</a><ul>
 <li class="chapter" data-level="4.1" data-path="tasks.html"><a href="tasks.html#vec_task_1"><i class="fa fa-check"></i><b>4.1</b> Вектор</a></li>
@@ -554,50 +544,11 @@ tab2</code></pre></div>
 <div id="solvtask_text" class="section level2">
 <h2><span class="header-section-number">5.7</span> Семейство apply()</h2>
 <ul>
-<li>Посчитайте, в какой из 5 книг больше всего персонажей.</li>
-</ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(got[, <span class="dv">9</span><span class="op">:</span><span class="dv">13</span>], <span class="dv">2</span>, sum)</code></pre></div>
-<pre><code>## GoT CoK SoS FfC DwD 
-## 250 324 389 250 261</code></pre>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Без apply():</span>
-
-<span class="co">#colSums(got[, 9:13])</span>
-
-<span class="co">#Еще:</span>
-
-<span class="co">#sapply(got[,9:13], sum)</span></code></pre></div>
-<ul>
-<li>Сделайте датафрейм <code>heroes</code> с персонажами, которые присутствовали во всех книгах.</li>
-</ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">heroes &lt;-<span class="st"> </span>got[<span class="kw">apply</span>(got[, <span class="dv">9</span><span class="op">:</span><span class="dv">13</span>], <span class="dv">1</span>, sum) <span class="op">==</span><span class="st"> </span><span class="dv">5</span>, ]
-
-heroes</code></pre></div>
-<div data-pagedtable="false">
-<script data-pagedtable-source type="application/json">
-{"columns":[{"label":[""],"name":["_rn_"],"type":[""],"align":["left"]},{"label":["Name"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Allegiances"],"name":[2],"type":["chr"],"align":["left"]},{"label":["Death.Year"],"name":[3],"type":["int"],"align":["right"]},{"label":["Book.of.Death"],"name":[4],"type":["int"],"align":["right"]},{"label":["Death.Chapter"],"name":[5],"type":["int"],"align":["right"]},{"label":["Book.Intro.Chapter"],"name":[6],"type":["int"],"align":["right"]},{"label":["Gender"],"name":[7],"type":["int"],"align":["right"]},{"label":["Nobility"],"name":[8],"type":["int"],"align":["right"]},{"label":["GoT"],"name":[9],"type":["int"],"align":["right"]},{"label":["CoK"],"name":[10],"type":["int"],"align":["right"]},{"label":["SoS"],"name":[11],"type":["int"],"align":["right"]},{"label":["FfC"],"name":[12],"type":["int"],"align":["right"]},{"label":["DwD"],"name":[13],"type":["int"],"align":["right"]},{"label":["Is.Alive"],"name":[14],"type":["lgl"],"align":["right"]}],"data":[{"1":"Arya Stark","2":"Stark","3":"NA","4":"NA","5":"NA","6":"2","7":"0","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"56"},{"1":"Balon Swann","2":"Lannister","3":"NA","4":"NA","5":"NA","6":"29","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"63"},{"1":"Boros Blount","2":"Baratheon","3":"NA","4":"NA","5":"NA","6":"8","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"104"},{"1":"Cersei Lannister","2":"House Lannister","3":"NA","4":"NA","5":"NA","6":"4","7":"0","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"131"},{"1":"Grenn","2":"Night's Watch","3":"NA","4":"NA","5":"NA","6":"19","7":"1","8":"0","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"302"},{"1":"Harys Swyft","2":"Lannister","3":"NA","4":"NA","5":"NA","6":"69","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"345"},{"1":"Jaime Lannister","2":"Lannister","3":"NA","4":"NA","5":"NA","6":"5","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"383"},{"1":"Jon Snow","2":"Night's Watch","3":"NA","4":"NA","5":"NA","6":"1","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"410"},{"1":"Kevan Lannister","2":"House Lannister","3":"300","4":"5","5":"NA","6":"56","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"FALSE","_rn_":"436"},{"1":"Lancel Lannister","2":"Lannister","3":"NA","4":"NA","5":"NA","6":"47","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"452"},{"1":"Meryn Trant","2":"Lannister","3":"NA","4":"NA","5":"NA","6":"8","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"548"},{"1":"Pycelle","2":"House Lannister","3":"300","4":"5","5":"NA","6":"20","7":"1","8":"0","9":"1","10":"1","11":"1","12":"1","13":"1","14":"FALSE","_rn_":"652"},{"1":"Samwell Tarly","2":"Night's Watch","3":"NA","4":"NA","5":"NA","6":"70","7":"1","8":"1","9":"1","10":"1","11":"1","12":"1","13":"1","14":"TRUE","_rn_":"741"}],"options":{"columns":{"min":{},"max":[10]},"rows":{"min":[10],"max":[10]},"pages":{}}}
-  </script>
-</div>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="co">#Еще</span>
-
-<span class="co">#heroes &lt;- got[rowSums(got[, 9:13]) == 5, ]</span></code></pre></div>
-<ul>
 <li>Создайте функцию <code>na_n()</code>, которая будет возвращать количество <code>NA</code> в векторе.</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">na_n &lt;-<span class="st"> </span><span class="cf">function</span>(x) <span class="kw">sum</span>(<span class="kw">is.na</span>(x))</code></pre></div>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">na_n</span>(<span class="kw">c</span>(<span class="ot">NA</span>, <span class="dv">3</span><span class="op">:</span><span class="dv">5</span>, <span class="ot">NA</span>, <span class="dv">2</span>, <span class="ot">NA</span>))</code></pre></div>
 <pre><code>## [1] 3</code></pre>
-<ul>
-<li>Посчитайте количество NA в каждом столбце <code>got</code>.</li>
-</ul>
-<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(got, <span class="dv">2</span>, na_n)</code></pre></div>
-<pre><code>##               Name        Allegiances         Death.Year      Book.of.Death 
-##                  0                  0                612                610 
-##      Death.Chapter Book.Intro.Chapter             Gender           Nobility 
-##                618                 12                  0                  0 
-##                GoT                CoK                SoS                FfC 
-##                  0                  0                  0                  0 
-##                DwD           Is.Alive 
-##                  0                  0</code></pre>
 <ul>
 <li>Есть список <code>spisok</code>:</li>
 </ul>
