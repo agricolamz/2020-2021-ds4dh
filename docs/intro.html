@@ -612,7 +612,12 @@ n</code></pre></div>
 <p>Более того, можно использовать логический вектор для индексирования. В этом случае нужен логический вектор такой же длины:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n[<span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>, <span class="ot">TRUE</span>, <span class="ot">FALSE</span>)]</code></pre></div>
 <pre><code>## [1]  1 20  5  7  9</code></pre>
-<p>Ну а если они не равны, то тут будет снова работать правило ресайклинга!</p>
+<p>Логический вектор работает здесь как фильтр: пропускает только те значения, где на соответствующей позиции в логическом векторе для индексирования содержится <code>TRUE</code>, и не пропускает те значения, где на соответствующей позиции в логическом векторе для индексирования содержится <code>FALSE</code>.</p>
+<div class="figure">
+<img src="images/indexgandolf.png" />
+
+</div>
+<p>Ну а если эти два вектора (исходный вектор и логический вектор индексов) не равны по длине, то тут будет снова работать правило ресайклинга!</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">n[<span class="kw">c</span>(<span class="ot">TRUE</span>, <span class="ot">FALSE</span>)] <span class="co">#то же самое - recycling rule!</span></code></pre></div>
 <pre><code>## [1]  1 20  5  7  9</code></pre>
 <p>Есть еще один способ индексирования векторов, но он несколько более редкий: индексирование по имени. Дело в том, что для значений векторов можно (но не обязательно) присваивать имена:</p>
