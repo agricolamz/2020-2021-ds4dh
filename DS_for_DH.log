@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.14)  6 OCT 2020 16:08
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.14)  6 OCT 2020 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1697,274 +1697,390 @@ Underfull \hbox (badness 1454) in paragraph at lines 2857--2866
  []
 
 
-Underfull \hbox (badness 1552) in paragraph at lines 2876--2876
+Underfull \hbox (badness 1472) in paragraph at lines 2914--2914
 []\TU/brill(0)/bx/n/14.4 Импорт таблиц в бинарном формате: таблицы
  []
 
-
-Underfull \hbox (badness 1132) in paragraph at lines 2890--2894
+[51]
+Underfull \hbox (badness 1132) in paragraph at lines 2928--2932
 \TU/brill(0)/m/n/10 частью расширенного tidyverse), у него есть много альтернат
 ив (\TU/lmtt/m/n/10 xlsx\TU/brill(0)/m/n/10 ,
  []
 
-[51]
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+
+Underfull \hbox (badness 1259) in paragraph at lines 2949--2954
+[]\TU/brill(0)/m/n/10 Пакет \TU/lmtt/m/n/10 readr \TU/brill(0)/m/n/10 (часть ба
+зового tidyverse) предлагает функции, очень по-
+ []
+
+
+Underfull \hbox (badness 6396) in paragraph at lines 2949--2954
+\TU/brill(0)/m/n/10 хожие на стандартные \TU/lmtt/m/n/10 read.csv()\TU/brill(0)
+/m/n/10 , \TU/lmtt/m/n/10 read.csv2() \TU/brill(0)/m/n/10 и тому подобные,
+ []
+
+
+Underfull \hbox (badness 1688) in paragraph at lines 2949--2954
+\TU/brill(0)/m/n/10 только в названиях используется нижнее подчеркивание: \TU/l
+mtt/m/n/10 read_csv()
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 2949--2954
+\TU/brill(0)/m/n/10 и \TU/lmtt/m/n/10 read_csv2()\TU/brill(0)/m/n/10 . Они быст
+рее и немного удобнее, особенно если вы
+ []
+
+[52]
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##       X1 name  Gender []Eye color[] Race  []Hair color[] H
 eight Publisher[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (12.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##    <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl
 > <chr>[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##  1     0 A-Bo~ Male   yellow      Human No Hair         20
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##  2     1 Abe ~ Male   blue        Icth~ No Hair         19
 1 Dark Hor~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##  3     2 Abin~ Male   blue        Unga~ No Hair         18
 5 DC Comics[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##  4     3 Abom~ Male   green       Huma~ No Hair         20
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##  5     4 Abra~ Male   blue        Cosm~ Black            N
 A Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##  6     5 Abso~ Male   blue        Human No Hair         19
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##  7     6 Adam~ Male   blue        <NA>  Blond            N
 A NBC - He~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##  8     7 Adam~ Male   blue        Human Blond           18
 5 DC Comics[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ##  9     8 Agen~ Female blue        <NA>  Blond           17
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ## 10     9 Agen~ Male   brown       Human Brown           17
 8 Marvel C~[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 2958--2958
+Overfull \hbox (22.5pt too wide) in paragraph at lines 3000--3000
 []\TU/lmtt/m/n/10 ## # ... with 724 more rows, and 3 more variables: []Skin col
 or[] <chr>,[] 
  []
 
-[52]
-Overfull \hbox (111.75pt too wide) in paragraph at lines 2984--2984
+
+Overfull \hbox (111.75pt too wide) in paragraph at lines 3030--3030
 []\TU/lmtt/m/n/10 ## chr [8]: name, Gender, Eye color, Race, Hair color, Publis
 her, Skin color, Alignment[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 2984--2984
+Overfull \hbox (38.25pt too wide) in paragraph at lines 3030--3030
 []\TU/lmtt/m/n/10 ## Pass a specification to the []col_types[] argument to quie
 t this message[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##     ...1 name  Gender []Eye color[] Race  []Hair color[] H
 eight Publisher[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (12.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##    <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl
 > <chr>[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##  1     0 A-Bo~ Male   yellow      Human No Hair         20
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##  2     1 Abe ~ Male   blue        Icth~ No Hair         19
 1 Dark Hor~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##  3     2 Abin~ Male   blue        Unga~ No Hair         18
 5 DC Comics[] 
  []
 
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+[53]
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##  4     3 Abom~ Male   green       Huma~ No Hair         20
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##  5     4 Abra~ Male   blue        Cosm~ Black           -9
 9 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##  6     5 Abso~ Male   blue        Human No Hair         19
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##  7     6 Adam~ Male   blue        -     Blond           -9
 9 NBC - He~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##  8     7 Adam~ Male   blue        Human Blond           18
 5 DC Comics[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ##  9     8 Agen~ Female blue        -     Blond           17
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (33.0pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ## 10     9 Agen~ Male   brown       Human Brown           17
 8 Marvel C~[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 3002--3002
+Overfull \hbox (22.5pt too wide) in paragraph at lines 3048--3048
 []\TU/lmtt/m/n/10 ## # ... with 724 more rows, and 3 more variables: []Skin col
 or[] <chr>,[] 
  []
 
 LaTeX Font Info:    Font shape `TU/brill(0)/bx/n' will be
-(Font)              scaled to size 8.49255pt on input line 3012.
+(Font)              scaled to size 8.49255pt on input line 3062.
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ##       V1            name Gender Eye color              Rac
 e       Hair color[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ##   1:   0          A-Bomb   Male    yellow             Huma
 n          No Hair[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ##   2:   1      Abe Sapien   Male      blue     Icthyo Sapie
 n          No Hair[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ##   3:   2        Abin Sur   Male      blue           Ungara
 n          No Hair[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ##   4:   3     Abomination   Male     green Human / Radiatio
 n          No Hair[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ##   5:   4         Abraxas   Male      blue     Cosmic Entit
 y            Black[] 
  []
 
-[53]
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ## 730: 729 Yellowjacket II Female      blue             Huma
 n Strawberry Blond[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ## 731: 730            Ymir   Male     white       Frost Gian
 t          No Hair[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ## 732: 731            Yoda   Male     brown    Yoda[]s speci
 es            White[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ## 733: 732         Zatanna Female      blue             Huma
 n            Black[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 3045--3045
+Overfull \hbox (69.75pt too wide) in paragraph at lines 3096--3096
 []\TU/lmtt/m/n/10 ## 734: 733            Zoom   Male       red                 
 -            Brown[] 
  []
 
 [54]
+Missing character: There is no Е in font [lmmono10-italic]:!
+Missing character: There is no с in font [lmmono10-italic]:!
+Missing character: There is no л in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no в in font [lmmono10-italic]:!
+Missing character: There is no в in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no з in font [lmmono10-italic]:!
+Missing character: There is no н in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no к in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no ю in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no п in font [lmmono10-italic]:!
+Missing character: There is no р in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no б in font [lmmono10-italic]:!
+Missing character: There is no л in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+Missing character: There is no м in font [lmmono10-italic]:!
+Missing character: There is no ы in font [lmmono10-italic]:!
+Missing character: There is no с in font [lmmono10-italic]:!
+Missing character: There is no к in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no д in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no р in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no в in font [lmmono10-italic]:!
+Missing character: There is no к in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no м in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no п in font [lmmono10-italic]:!
+Missing character: There is no р in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no к in font [lmmono10-italic]:!
+Missing character: There is no р in font [lmmono10-italic]:!
+Missing character: There is no ы in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no с in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no з in font [lmmono10-italic]:!
+Missing character: There is no д in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no н in font [lmmono10-italic]:!
+Missing character: There is no н in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no г in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no ф in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no й in font [lmmono10-italic]:!
+Missing character: There is no л in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no э in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no ф in font [lmmono10-italic]:!
+Missing character: There is no у in font [lmmono10-italic]:!
+Missing character: There is no н in font [lmmono10-italic]:!
+Missing character: There is no к in font [lmmono10-italic]:!
+Missing character: There is no ц in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no я in font [lmmono10-italic]:!
+Missing character: There is no р in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+Missing character: There is no ш in font [lmmono10-italic]:!
+Missing character: There is no а in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no э in font [lmmono10-italic]:!
+Missing character: There is no т in font [lmmono10-italic]:!
+Missing character: There is no и in font [lmmono10-italic]:!
+Missing character: There is no п in font [lmmono10-italic]:!
+Missing character: There is no р in font [lmmono10-italic]:!
+Missing character: There is no о in font [lmmono10-italic]:!
+Missing character: There is no б in font [lmmono10-italic]:!
+Missing character: There is no л in font [lmmono10-italic]:!
+Missing character: There is no е in font [lmmono10-italic]:!
+Missing character: There is no м in font [lmmono10-italic]:!
+Missing character: There is no ы in font [lmmono10-italic]:!
+[55] [56
+
+]
 Глава 4.
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 3089--3089
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3156--3156
 []\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
  19 20[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 3099--3099
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3166--3166
 []\TU/lmtt/m/n/10 ##  [1] 20 19 18 17 16 15 14 13 12 11 10  9  8  7  6  5  4  3
   2  1[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 3111--3111
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3178--3178
 []\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
  19 20 19 18 17 16 15[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 3133--3133
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3200--3200
 []\TU/lmtt/m/n/10 ##  [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7
  7 8 8 8 8 8 8 8 8 9 9[] 
  []
@@ -1978,9 +2094,7 @@ Missing character: There is no к in font [lmmono10-regular]:!
 Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no р in font [lmmono10-regular]:!
-[55
-
-]
+[57]
 Missing character: There is no М in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no й in font [lmmono10-regular]:!
@@ -1991,48 +2105,48 @@ Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no р in font [lmmono10-regular]:!
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 3239--3239
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3306--3306
 []\TU/lmtt/m/n/10 ##  [1]  0  2  0  4  0  6  0  8  0 10  0 12  0 14  0 16  0 18
   0 20[] 
- []
-
-[56]
-Overfull \hbox (59.25pt too wide) in paragraph at lines 3312--3312
-[]\TU/lmtt/m/n/10 ##  [1]  9.000000  2.236068  4.000000  1.000000 64.000000  2.
-000000 81.000000[] 
- []
-
-[57]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 3367--3367
-[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
-n" "o" "p" "q" "r" "s"[] 
- []
-
-
-Overfull \hbox (90.75pt too wide) in paragraph at lines 3428--3428
-[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
-n" "o" "p" "q" "r" "s"[] 
  []
 
 [58]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 3428--3428
+Overfull \hbox (59.25pt too wide) in paragraph at lines 3379--3379
+[]\TU/lmtt/m/n/10 ##  [1]  9.000000  2.236068  4.000000  1.000000 64.000000  2.
+000000 81.000000[] 
+ []
+
+[59]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3434--3434
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
-[59]
-Underfull \vbox (badness 2435) has occurred while \output is active []
+
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3495--3495
+[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
+n" "o" "p" "q" "r" "s"[] 
+ []
 
 [60]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3495--3495
+[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
+n" "o" "p" "q" "r" "s"[] 
+ []
+
+[61]
+Underfull \vbox (badness 2435) has occurred while \output is active []
+
+[62]
 Missing character: There is no В in font [lmmono8-regular]:!
 Missing character: There is no е in font [lmmono8-regular]:!
 Missing character: There is no к in font [lmmono8-regular]:!
 
-Underfull \hbox (badness 6910) in paragraph at lines 3626--3629
+Underfull \hbox (badness 6910) in paragraph at lines 3693--3696
 \TU/brill(0)/m/n/10 римских цифр есть уже готовая функция? Прежде созданные
  []
 
-[61]
+[63]
 Missing character: There is no д in font [lmmono10-italic]:!
 Missing character: There is no е in font [lmmono10-italic]:!
 Missing character: There is no л in font [lmmono10-italic]:!
@@ -2052,30 +2166,30 @@ Missing character: There is no а in font [lmmono10-italic]:!
 Missing character: There is no т in font [lmmono10-italic]:!
 Missing character: There is no к in font [lmmono10-italic]:!
 Missing character: There is no а in font [lmmono10-italic]:!
-[62]
+[64]
 Глава 5.
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 3792--3792
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3859--3859
 []\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
  19 20[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 3808--3808
+Overfull \hbox (6.75pt too wide) in paragraph at lines 3875--3875
 []\TU/lmtt/m/n/10 ##  [1] 20 19 18 17 16 15 14 13 12 11 10  9  8  7  6  5  4  3
   2  1[] 
  []
 
-[63
+[65
 
 ]
-Overfull \hbox (85.5pt too wide) in paragraph at lines 3826--3826
+Overfull \hbox (85.5pt too wide) in paragraph at lines 3893--3893
 []\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
  19 20 19 18 17 16 15[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 3860--3860
+Overfull \hbox (90.75pt too wide) in paragraph at lines 3927--3927
 []\TU/lmtt/m/n/10 ##  [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7
  7 8 8 8 8 8 8 8 8 9 9[] 
  []
@@ -2107,50 +2221,50 @@ Missing character: There is no к in font [lmmono10-regular]:!
 Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no р in font [lmmono10-regular]:!
-[64] [65]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 4048--4048
+[66] [67]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 4115--4115
 []\TU/lmtt/m/n/10 ##  [1]  0  2  0  4  0  6  0  8  0 10  0 12  0 14  0 16  0 18
   0 20[] 
  []
 
-[66]
-Overfull \hbox (59.25pt too wide) in paragraph at lines 4157--4157
+[68]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 4224--4224
 []\TU/lmtt/m/n/10 ##  [1]  9.000000  2.236068  4.000000  1.000000 64.000000  2.
 000000 81.000000[] 
  []
 
-[67]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 4238--4238
+[69]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 4305--4305
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
-[68]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 4330--4330
+[70]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 4397--4397
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 4330--4330
+Overfull \hbox (90.75pt too wide) in paragraph at lines 4397--4397
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
-[69] [70]
+[71] [72]
 Missing character: There is no Е in font [lmmono10-italic]:!
 Missing character: There is no щ in font [lmmono10-italic]:!
 Missing character: There is no е in font [lmmono10-italic]:!
-[71]
+[73]
 Missing character: There is no В in font [lmmono8-regular]:!
 Missing character: There is no е in font [lmmono8-regular]:!
 Missing character: There is no к in font [lmmono8-regular]:!
 
-Underfull \hbox (badness 6910) in paragraph at lines 4613--4616
+Underfull \hbox (badness 6910) in paragraph at lines 4680--4683
 \TU/brill(0)/m/n/10 римских цифр есть уже готовая функция? Прежде созданные
  []
 
-[72]
+[74]
 Missing character: There is no д in font [lmmono10-italic]:!
 Missing character: There is no е in font [lmmono10-italic]:!
 Missing character: There is no л in font [lmmono10-italic]:!
@@ -2170,29 +2284,29 @@ Missing character: There is no а in font [lmmono10-italic]:!
 Missing character: There is no т in font [lmmono10-italic]:!
 Missing character: There is no к in font [lmmono10-italic]:!
 Missing character: There is no а in font [lmmono10-italic]:!
-[73] [74] (./DS_for_DH.bbl [75] [76
+[75] [76] (./DS_for_DH.bbl [77] [78
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4873.
-[77]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4873.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4940.
+[79]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4940.
 (./DS_for_DH.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4873.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4873.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 4940.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4940.
 
 Package rerunfilecheck Info: File `DS_for_DH.out' has not changed.
-(rerunfilecheck)             Checksum: 23E0A7913310747AC73890E3FD5828C0.
+(rerunfilecheck)             Checksum: 0AC6E7A8592F9E6AF2537267DC47EF47.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24344 strings out of 492970
- 451710 string characters out of 6133938
- 594098 words of memory out of 5000000
- 28057 multiletter control sequences out of 15000+600000
+ 24345 strings out of 492970
+ 451723 string characters out of 6133938
+ 596318 words of memory out of 5000000
+ 28058 multiletter control sequences out of 15000+600000
  555139 words of font info for 81 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  53i,8n,116p,10450b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on DS_for_DH.pdf (77 pages).
+Output written on DS_for_DH.pdf (79 pages).
