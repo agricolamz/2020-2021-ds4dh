@@ -172,7 +172,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.3" data-path="solutions.html"><a href="solutions.html#solvvec_task_2"><i class="fa fa-check"></i><b>7.3</b> Вектор. Индексирование</a></li>
 <li class="chapter" data-level="7.4" data-path="solutions.html"><a href="solutions.html#solvlist_ta"><i class="fa fa-check"></i><b>7.4</b> Списки</a></li>
 <li class="chapter" data-level="7.5" data-path="solutions.html"><a href="solutions.html#solvt"><i class="fa fa-check"></i><b>7.5</b> Матрицы</a></li>
-<li class="chapter" data-level="7.6" data-path="tasks.html"><a href="tasks.html#if_tasks"><i class="fa fa-check"></i><b>7.6</b> Условные конструкции</a></li>
+<li class="chapter" data-level="7.6" data-path="solutions.html"><a href="solutions.html#soltasks_if"><i class="fa fa-check"></i><b>7.6</b> Условные конструкции</a></li>
 <li class="chapter" data-level="7.7" data-path="solutions.html"><a href="solutions.html#solvtask_function"><i class="fa fa-check"></i><b>7.7</b> Создание функций</a></li>
 <li class="chapter" data-level="7.8" data-path="solutions.html"><a href="solutions.html#solvtask_text"><i class="fa fa-check"></i><b>7.8</b> Семейство apply()</a></li>
 </ul></li>
@@ -504,7 +504,7 @@ tab2</code></pre></div>
 ##  [8,]    0   16   24   32   40   48   56   64   72
 ##  [9,]    0   18   27   36   45   54   63   72   81</code></pre>
 </div>
-<div id="if_tasks" class="section level2">
+<div id="soltasks_if" class="section level2">
 <h2><span class="header-section-number">7.6</span> Условные конструкции</h2>
 <p>Дан вектор <code>nums</code>:</p>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">nums &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="dv">5</span>, <span class="dv">20</span>, <span class="dv">30</span>, <span class="dv">0</span>, <span class="dv">2</span>, <span class="dv">9</span>)</code></pre></div>
@@ -519,7 +519,7 @@ tab2</code></pre></div>
                    <span class="dt">stringsAsFactors =</span> <span class="ot">FALSE</span>,
                    <span class="dt">na.strings =</span> <span class="kw">c</span>(<span class="st">&quot;-&quot;</span>, <span class="st">&quot;-99&quot;</span>))</code></pre></div>
 <ul>
-<li>Создайте новою колонку <code>hair</code> в <code>heroes</code>, в которой будет значение <code>&quot;Bold&quot;</code> для тех супергероев, у которых в колонке <code>Hair.color</code> стоит <code>&quot;Bold&quot;</code>, и значение <code>&quot;Hairy&quot;</code> во всех остальных случаях.</li>
+<li>Создайте новою колонку <code>hair</code> в <code>heroes</code>, в которой будет значение <code>&quot;Bold&quot;</code> для тех супергероев, у которых в колонке <code>Hair.color</code> стоит <code>&quot;No Hair&quot;</code>, и значение <code>&quot;Hairy&quot;</code> во всех остальных случаях.</li>
 </ul>
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">heroes<span class="op">$</span>hair &lt;-<span class="st"> </span><span class="kw">ifelse</span>(heroes<span class="op">$</span>Hair.color <span class="op">==</span><span class="st"> &quot;No Hair&quot;</span>, <span class="st">&quot;Bold&quot;</span>, <span class="st">&quot;Hairy&quot;</span>)
 <span class="kw">head</span>(heroes)</code></pre></div>
