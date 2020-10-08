@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>5 Функциональное программирование в R | Наука о данных в R для программы Цифровых гуманитарных исследований</title>
+  <meta name="description" content="5 Функциональное программирование в R | Наука о данных в R для программы Цифровых гуманитарных исследований" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="5 Функциональное программирование в R | Наука о данных в R для программы Цифровых гуманитарных исследований" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="5 Функциональное программирование в R | Наука о данных в R для программы Цифровых гуманитарных исследований" />
+  
+  
+  
+
+<meta name="author" content="Г. А. Мороз, И. С. Поздняков" />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="loops-conditions.html"/>
+<link rel="next" href="tasks.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
+<script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Наука о данных в R для ЦГИ</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> О курсе</a></li>
+<li class="chapter" data-level="2" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>2</b> Введение в R</a><ul>
+<li class="chapter" data-level="2.1" data-path="intro.html"><a href="intro.html#наука-о-данных"><i class="fa fa-check"></i><b>2.1</b> Наука о данных</a></li>
+<li class="chapter" data-level="2.2" data-path="intro.html"><a href="intro.html#установка-r-и-rstudio"><i class="fa fa-check"></i><b>2.2</b> Установка R и RStudio</a></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#полезные-ссылки"><i class="fa fa-check"></i><b>2.3</b> Полезные ссылки</a></li>
+<li class="chapter" data-level="2.4" data-path="intro.html"><a href="intro.html#rstudio"><i class="fa fa-check"></i><b>2.4</b> Rstudio</a></li>
+<li class="chapter" data-level="2.5" data-path="intro.html"><a href="intro.html#введение-в-r"><i class="fa fa-check"></i><b>2.5</b> Введение в R</a><ul>
+<li class="chapter" data-level="2.5.1" data-path="intro.html"><a href="intro.html#calc"><i class="fa fa-check"></i><b>2.5.1</b> R как калькулятор</a></li>
+<li class="chapter" data-level="2.5.2" data-path="intro.html"><a href="intro.html#func"><i class="fa fa-check"></i><b>2.5.2</b> Функции</a></li>
+<li class="chapter" data-level="2.5.3" data-path="intro.html"><a href="intro.html#variables"><i class="fa fa-check"></i><b>2.5.3</b> Переменные</a></li>
+</ul></li>
+<li class="chapter" data-level="2.6" data-path="intro.html"><a href="intro.html#data_types"><i class="fa fa-check"></i><b>2.6</b> Типы данных</a></li>
+<li class="chapter" data-level="2.7" data-path="intro.html"><a href="intro.html#atomic"><i class="fa fa-check"></i><b>2.7</b> Вектор</a><ul>
+<li class="chapter" data-level="2.7.1" data-path="intro.html"><a href="intro.html#coercion"><i class="fa fa-check"></i><b>2.7.1</b> Приведение типов</a></li>
+<li class="chapter" data-level="2.7.2" data-path="intro.html"><a href="intro.html#vector_op"><i class="fa fa-check"></i><b>2.7.2</b> Векторизация</a></li>
+<li class="chapter" data-level="2.7.3" data-path="intro.html"><a href="intro.html#recycling"><i class="fa fa-check"></i><b>2.7.3</b> Ресайклинг</a></li>
+<li class="chapter" data-level="2.7.4" data-path="intro.html"><a href="intro.html#index_atomic"><i class="fa fa-check"></i><b>2.7.4</b> Индексирование векторов</a></li>
+<li class="chapter" data-level="2.7.5" data-path="intro.html"><a href="intro.html#na"><i class="fa fa-check"></i><b>2.7.5</b> NA --- пропущенные значения</a></li>
+<li class="chapter" data-level="2.7.6" data-path="intro.html"><a href="intro.html#google"><i class="fa fa-check"></i><b>2.7.6</b> В любой непонятной ситуации --- ищите в поисковике</a></li>
+</ul></li>
+<li class="chapter" data-level="2.8" data-path="intro.html"><a href="intro.html#matrix"><i class="fa fa-check"></i><b>2.8</b> Матрицы (matrix)</a></li>
+<li class="chapter" data-level="2.9" data-path="intro.html"><a href="intro.html#list"><i class="fa fa-check"></i><b>2.9</b> Списки (list)</a></li>
+<li class="chapter" data-level="2.10" data-path="intro.html"><a href="intro.html#df"><i class="fa fa-check"></i><b>2.10</b> Датафрейм</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="real-data.html"><a href="real-data.html"><i class="fa fa-check"></i><b>3</b> Импорт данных</a><ul>
+<li class="chapter" data-level="3.1" data-path="real-data.html"><a href="real-data.html#wd"><i class="fa fa-check"></i><b>3.1</b> Рабочая папка и проекты RStudio</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="real-data.html"><a href="real-data.html#text_binary"><i class="fa fa-check"></i><b>3.1.1</b> Табличные данные: текстовые и бинарные данные</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="real-data.html"><a href="real-data.html#проверка-импортированных-данных"><i class="fa fa-check"></i><b>3.2</b> Проверка импортированных данных</a></li>
+<li class="chapter" data-level="3.3" data-path="real-data.html"><a href="real-data.html#export_data"><i class="fa fa-check"></i><b>3.3</b> Экспорт данных</a></li>
+<li class="chapter" data-level="3.4" data-path="real-data.html"><a href="real-data.html#binary"><i class="fa fa-check"></i><b>3.4</b> Импорт таблиц в бинарном формате: таблицы Excel, SPSS</a></li>
+<li class="chapter" data-level="3.5" data-path="real-data.html"><a href="real-data.html#fastread"><i class="fa fa-check"></i><b>3.5</b> Быстрый импорт данных</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="loops-conditions.html"><a href="loops-conditions.html"><i class="fa fa-check"></i><b>4</b> Условные конструкции и циклы</a><ul>
+<li class="chapter" data-level="4.1" data-path="loops-conditions.html"><a href="loops-conditions.html#if"><i class="fa fa-check"></i><b>4.1</b> Выражения <code>if</code>, <code>else</code>, <code>else if</code></a></li>
+<li class="chapter" data-level="4.2" data-path="loops-conditions.html"><a href="loops-conditions.html#for"><i class="fa fa-check"></i><b>4.2</b> Циклы <code>for</code></a></li>
+<li class="chapter" data-level="4.3" data-path="loops-conditions.html"><a href="loops-conditions.html#ifelse"><i class="fa fa-check"></i><b>4.3</b> Векторизованные условные конструкции: функции <code>ifelse()</code> и <code>dplyr::case_when()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="functional.html"><a href="functional.html"><i class="fa fa-check"></i><b>5</b> Функциональное программирование в R</a><ul>
+<li class="chapter" data-level="5.1" data-path="functional.html"><a href="functional.html#create_fun"><i class="fa fa-check"></i><b>5.1</b> Создание функций</a></li>
+<li class="chapter" data-level="5.2" data-path="functional.html"><a href="functional.html#why_functions"><i class="fa fa-check"></i><b>5.2</b> Когда и зачем создавать функции?</a></li>
+<li class="chapter" data-level="5.3" data-path="functional.html"><a href="functional.html#functions_objects"><i class="fa fa-check"></i><b>5.3</b> Функции как объекты первого порядка</a></li>
+<li class="chapter" data-level="5.4" data-path="functional.html"><a href="functional.html#apply_f"><i class="fa fa-check"></i><b>5.4</b> Семейство функций apply()</a><ul>
+<li class="chapter" data-level="5.4.1" data-path="functional.html"><a href="functional.html#apply"><i class="fa fa-check"></i><b>5.4.1</b> Применение <code>apply()</code> для матриц</a></li>
+<li class="chapter" data-level="5.4.2" data-path="functional.html"><a href="functional.html#anon_f"><i class="fa fa-check"></i><b>5.4.2</b> Анонимные функции</a></li>
+<li class="chapter" data-level="5.4.3" data-path="functional.html"><a href="functional.html#apply_other"><i class="fa fa-check"></i><b>5.4.3</b> Другие функции семейства <code>apply()</code></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>6</b> Задания</a><ul>
+<li class="chapter" data-level="6.1" data-path="tasks.html"><a href="tasks.html#vec_task_1"><i class="fa fa-check"></i><b>6.1</b> Вектор</a></li>
+<li class="chapter" data-level="6.2" data-path="tasks.html"><a href="tasks.html#vec_op"><i class="fa fa-check"></i><b>6.2</b> Вектор. Операции с векторами</a></li>
+<li class="chapter" data-level="6.3" data-path="tasks.html"><a href="tasks.html#vec_task_2"><i class="fa fa-check"></i><b>6.3</b> Вектор. Индексирование</a></li>
+<li class="chapter" data-level="6.4" data-path="tasks.html"><a href="tasks.html#list_ta"><i class="fa fa-check"></i><b>6.4</b> Списки</a></li>
+<li class="chapter" data-level="6.5" data-path="tasks.html"><a href="tasks.html#t"><i class="fa fa-check"></i><b>6.5</b> Матрицы</a></li>
+<li class="chapter" data-level="6.6" data-path="tasks.html"><a href="tasks.html#task_function"><i class="fa fa-check"></i><b>6.6</b> Создание функций</a></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="solutions.html"><a href="solutions.html"><i class="fa fa-check"></i><b>7</b> Решения_заданий</a><ul>
+<li class="chapter" data-level="7.1" data-path="solutions.html"><a href="solutions.html#solvvec_task_1"><i class="fa fa-check"></i><b>7.1</b> Вектор</a></li>
+<li class="chapter" data-level="7.2" data-path="solutions.html"><a href="solutions.html#solvvec_op"><i class="fa fa-check"></i><b>7.2</b> Вектор. Операции с векторами</a></li>
+<li class="chapter" data-level="7.3" data-path="solutions.html"><a href="solutions.html#solvvec_task_2"><i class="fa fa-check"></i><b>7.3</b> Вектор. Индексирование</a></li>
+<li class="chapter" data-level="7.4" data-path="solutions.html"><a href="solutions.html#solvlist_ta"><i class="fa fa-check"></i><b>7.4</b> Списки</a></li>
+<li class="chapter" data-level="7.5" data-path="solutions.html"><a href="solutions.html#solvt"><i class="fa fa-check"></i><b>7.5</b> Матрицы</a></li>
+<li class="chapter" data-level="7.6" data-path="solutions.html"><a href="solutions.html#solvtask_function"><i class="fa fa-check"></i><b>7.6</b> Создание функций</a></li>
+<li class="chapter" data-level="7.7" data-path="solutions.html"><a href="solutions.html#solvtask_text"><i class="fa fa-check"></i><b>7.7</b> Семейство apply()</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="ссылки-на-литературу.html"><a href="ссылки-на-литературу.html"><i class="fa fa-check"></i>Ссылки на литературу</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Наука о данных в R для программы Цифровых гуманитарных исследований</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="functional" class="section level1">
+<h1><span class="header-section-number">5</span> Функциональное программирование в R</h1>
+<div id="create_fun" class="section level2">
+<h2><span class="header-section-number">5.1</span> Создание функций</h2>
+<p>Поздравляю, сейчас мы выйдем на качественно новый уровень владения R. Вместо того, чтобы пользоваться теми функциями, которые уже написали за нас, мы можем сами создавать свои функции! В этом нет ничего сложного.</p>
+<p>Синтаксис создания функции внешне похож на создание циклов или условных конструкций. Мы пишем ключевое слово <code>function</code>, в круглых скобках обозначаем переменные, с которыми собираемся что-то делать. Внутри фигурных скобок пишем выражения, которые будут выполняться при запуске функции. У функции есть свое собственное окружение — место, где хранятся переменные. Именно те объекты, которые мы передаем в скобочках, и будут в окружении, так же как и “обычные” переменные для нас в глобальном окружении. Это означает, что функция будет искать переменные в первую очередь среди объектов, которые переданы в круглых скобочках. С ними функция и будет работать. На выходе функция выдаст то, что вычисляется внутри функции <code>return()</code>. Если <code>return()</code> появляется в теле функции несколько раз, то до результат будет возвращаться из той функции <code>return()</code>, до которой выполнение дошло первым.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pow &lt;-<span class="st"> </span><span class="cf">function</span>(x, p) {
+  power &lt;-<span class="st"> </span>x <span class="op">^</span><span class="st"> </span>p
+  <span class="kw">return</span>(power)
+}
+<span class="kw">pow</span>(<span class="dv">3</span>, <span class="dv">2</span>)</code></pre></div>
+<pre><code>## [1] 9</code></pre>
+<p>Если функция проработала до конца, а функция <code>return()</code> так и не встретилась, то возвращается последнее посчитанное значение.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pow &lt;-<span class="st"> </span><span class="cf">function</span>(x, p) {
+  x <span class="op">^</span><span class="st"> </span>p
+}
+<span class="kw">pow</span>(<span class="dv">3</span>, <span class="dv">2</span>)</code></pre></div>
+<pre><code>## [1] 9</code></pre>
+<p>Если в последней строчке будет присвоение, то функция ничего не вернет обратно. Это очень распространенная ошибка: функция вроде бы работает правильно, но ничего не возвращает. Нужно писать так, как будто бы в последней строчке результат выполнения выводится в консоль.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pow &lt;-<span class="st"> </span><span class="cf">function</span>(x, p) {
+  power &lt;-<span class="st"> </span>x <span class="op">^</span><span class="st"> </span>p <span class="co">#Функция ничего не вернет, потому что в последней строчке присвоение!</span>
+}
+<span class="kw">pow</span>(<span class="dv">3</span>, <span class="dv">2</span>) <span class="co">#ничего не возвращается из функции</span></code></pre></div>
+<p>Если функция небольшая, то ее можно записать в одну строчку без фигурных скобок.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pow &lt;-<span class="st"> </span><span class="cf">function</span>(x, p) x <span class="op">^</span><span class="st"> </span>p
+<span class="kw">pow</span>(<span class="dv">3</span>, <span class="dv">2</span>) </code></pre></div>
+<pre><code>## [1] 9</code></pre>
+<p>Вообще, фигурные скобки используются для того, чтобы выполнить серию выражений, но вернуть только результат выполнения последнего выражения. Это можно использовать, чтобы не создавать лишних временных переменных в глобальном окружении.</p>
+<p>Мы можем оставить в функции параметры по умолчанию.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pow &lt;-<span class="st"> </span><span class="cf">function</span>(x, <span class="dt">p =</span> <span class="dv">2</span>) x <span class="op">^</span><span class="st"> </span>p
+<span class="kw">pow</span>(<span class="dv">3</span>) </code></pre></div>
+<pre><code>## [1] 9</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">pow</span>(<span class="dv">3</span>, <span class="dv">3</span>) </code></pre></div>
+<pre><code>## [1] 27</code></pre>
+<p>В R работают <strong>ленивые вычисления (lazy evaluations)</strong>. Это означает, что параметры функций будут только когда они понадобятся, а не заранее. Например, эта функция не будет выдавать ошибку, если мы не зададим параметр <code>we_will_not_use_this_parameter =</code>, потому что он нигде не используется в расчетах.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">pow &lt;-<span class="st"> </span><span class="cf">function</span>(x, <span class="dt">p =</span> <span class="dv">2</span>, we_will_not_use_this_parameter) x <span class="op">^</span><span class="st"> </span>p
+<span class="kw">pow</span>(<span class="dt">x =</span> <span class="dv">3</span>)</code></pre></div>
+<pre><code>## [1] 9</code></pre>
+</div>
+<div id="why_functions" class="section level2">
+<h2><span class="header-section-number">5.2</span> Когда и зачем создавать функции?</h2>
+<p>Когда стоит создавать функции? Существует <a href="https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)">&quot;правило трех&quot;</a> --- если у вас есть три куска очень похожего кода, то самое время превратить код в функцию. Это очень условное правило, но, действительно, стоит избегать копипастинга в коде. В этом случае очень легко ошибиться, а сам код становится нечитаемым.</p>
+<p>Есть и другой подход к созданию функций: их стоит создавать не столько для того, чтобы использовать тот же код снова, сколько для абстрагирования от того, что происходит в отдельных строчках кода. Если несколько строчек кода были написаны для того, чтобы решить одну задачу, которой можно дать понятное название (например, подсчет какой-то особенной метрики, для которой нет готовой функции в R), то этот код стоит обернуть в функцию. Если функция работает корректно, то теперь не нужно думать над тем, что происходит внутри нее. Вы ее можете мысленно представить как операцию, которая имеет определенный вход и выход --- как и встроенные функции в R.</p>
+<p>Отсюда следует важный вывод, что хорошее название для функции --- это очень важно. Очень, очень, очень важно.</p>
+</div>
+<div id="functions_objects" class="section level2">
+<h2><span class="header-section-number">5.3</span> Функции как объекты первого порядка</h2>
+<p>Ранее мы убедились, что арифметические операторы --- это тоже функции. На самом деле, практически все в R --- это функции. Даже <code>function</code> --- это функция <code>function()</code>. Даже скобочки <code>(</code>, <code>{</code> --- это функции!</p>
+<p>А сами функции --- это объекты первого порядка в R. Это означает, что с функциями вы можете делать практически все то же самое, что и с другими объектами в R (векторами, датафреймами и т.д.). Небольшой пример, который может взорвать ваш мозг:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">list</span>(mean, min, <span class="st">`</span><span class="dt">{</span><span class="st">`</span>)</code></pre></div>
+<pre><code>## [[1]]
+## function (x, ...) 
+## UseMethod(&quot;mean&quot;)
+## &lt;bytecode: 0x7f96827c8d48&gt;
+## &lt;environment: namespace:base&gt;
+## 
+## [[2]]
+## function (..., na.rm = FALSE)  .Primitive(&quot;min&quot;)
+## 
+## [[3]]
+## .Primitive(&quot;{&quot;)</code></pre>
+<p>Мы можем создать список из функций! Зачем --- это другой вопрос, но ведь можем же!</p>
+<p>Еще можно создавать функции внутри функций,<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a> использовать функции в качестве аргументов функций, сохранять функции как переменные. Пожалуй, самое важное из этого всего - это то, что функция может быть аргументом в функции. Не просто название функции как строковая переменная, не результат выполнения функции, а именно сама функция. Это лежит в основе использования семейства функций <code>apply()</code> @ref(apply_f) и многих фишек tidyverse.</p>
+<blockquote>
+<p>В Python дело обстоит похожим образом: функции там тоже являются объектами первого порядка, поэтому все эти фишки функционального программирования (с поправкой на синтаксис, конечно) будут работать и там.</p>
+</blockquote>
+</div>
+<div id="apply_f" class="section level2">
+<h2><span class="header-section-number">5.4</span> Семейство функций apply()</h2>
+<div id="apply" class="section level3">
+<h3><span class="header-section-number">5.4.1</span> Применение <code>apply()</code> для матриц</h3>
+<p>Семейство? Да, их целое множество: <code>apply()</code>, <code>lapply()</code>,<code>sapply()</code>, <code>vapply()</code>,<code>tapply()</code>,<code>mapply()</code>, <code>rapply()</code>... Ладно, не пугайтесь, всех их знать не придется. Обычно достаточно первых двух-трех. Проще всего пояснить как они работают на простой матрице с числами:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">A &lt;-<span class="st"> </span><span class="kw">matrix</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">12</span>, <span class="dv">3</span>, <span class="dv">4</span>)
+A </code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]    1    4    7   10
+## [2,]    2    5    8   11
+## [3,]    3    6    9   12</code></pre>
+<blockquote>
+<p>Функция <code>apply()</code> предназначена для работы с матрицами (или многомерными массивами). Если вы скормите функции <code>apply()</code> датафрейм, то этот датафрейм будет сначала превращен в матрицу. Главное отличие матрицы от датафрейма в том, что в матрице все значения одного типа, поэтому будьте готовы, что сработает имплицитное приведение к общему типу данных. Например, если среди колонок датафрейма есть хотя бы одна строковая колонка, то все колонки станут строковыми.</p>
+</blockquote>
+<p>Теперь представим, что нам нужно посчитать что-нибудь (например, сумму) по каждой из строк. С помощью функции <code>apply()</code> вы можете в буквальном смысле &quot;применить&quot; функцию к матрице или датафрейму. Синтаксис такой: <code>apply(X, MARGIN, FUN, ...)</code>, где <code>X</code> --- данные, <code>MARGIN</code> это <code>1</code> (для строк), <code>2</code> (для колонок), <code>c(1,2)</code> для строк и колонок (т.е. для каждого элемента по отдельности), а <code>FUN</code> --- это функция, которую вы хотите применить! <code>apply()</code> будет брать строки/колонки из <code>X</code> в качестве первого аргумента для функции.</p>
+<div class="figure">
+<img src="images/Apply_function.png" alt="apply" width="400" />
+<p class="caption">apply</p>
+</div>
+<blockquote>
+<p>Заметьте, мы вставляем функцию без скобок и кавычек как аргумент в функцию. Это как раз тот случай, когда аргументом в функции выступает сама функция, а не ее название или результат ее выполнения.</p>
+</blockquote>
+<p>Давайте разберем на примере:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(A, <span class="dv">1</span>, sum) <span class="co">#сумма по каждой строчке</span></code></pre></div>
+<pre><code>## [1] 22 26 30</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(A, <span class="dv">2</span>, sum) <span class="co">#сумма по каждой колонке</span></code></pre></div>
+<pre><code>## [1]  6 15 24 33</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(A, <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), sum) <span class="co">#кхм... сумма каждого элемента</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]    1    4    7   10
+## [2,]    2    5    8   11
+## [3,]    3    6    9   12</code></pre>
+<blockquote>
+<p>Конкретно для подсчета сумм и средних по столбцам и строкам в R есть функции <code>colSums()</code>, <code>rowSums()</code>, <code>colMeans()</code> и <code>rowMeans()</code>, которые можно использовать как альтернативы <code>apply()</code> в данном случае.</p>
+</blockquote>
+<p>Если же мы хотим прописать дополнительные аргументы для функции, то их можно перечислить через запятую после функции:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(A, <span class="dv">1</span>, sum, <span class="dt">na.rm =</span> <span class="ot">TRUE</span>)</code></pre></div>
+<pre><code>## [1] 22 26 30</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(A, <span class="dv">1</span>, weighted.mean, <span class="dt">w =</span> <span class="kw">c</span>(<span class="fl">0.2</span>, <span class="fl">0.4</span>, <span class="fl">0.3</span>, <span class="fl">0.1</span>)) </code></pre></div>
+<pre><code>## [1] 4.9 5.9 6.9</code></pre>
+</div>
+<div id="anon_f" class="section level3">
+<h3><span class="header-section-number">5.4.2</span> Анонимные функции</h3>
+<p>Что делать, если мы хотим сделать что-то более сложное, чем просто применить одну функцию? А если функция принимает не первым, а вторым аргументом данные из матрицы? В этом случае нам помогут <strong>анонимные функции</strong>.</p>
+<p>Анонимные функции - это функции, которые будут использоваться один раз и без названия.</p>
+<blockquote>
+<p>Питонистам знакомо понятие <strong>лямбда-функций</strong>. Да, это то же самое.</p>
+</blockquote>
+<p>Например, мы можем посчитать отклонения от среднего без называния этой функции:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(A, <span class="dv">1</span>, <span class="cf">function</span>(x) x <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(x)) <span class="co">#отклонения от среднего по строчке</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3]
+## [1,] -4.5 -4.5 -4.5
+## [2,] -1.5 -1.5 -1.5
+## [3,]  1.5  1.5  1.5
+## [4,]  4.5  4.5  4.5</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(A, <span class="dv">2</span>, <span class="cf">function</span>(x) x <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(x)) <span class="co">#отклонения от среднего по столбцу</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]   -1   -1   -1   -1
+## [2,]    0    0    0    0
+## [3,]    1    1    1    1</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(A, <span class="kw">c</span>(<span class="dv">1</span>,<span class="dv">2</span>), <span class="cf">function</span>(x) x <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(x)) <span class="co">#отклонения от одного значения, т.е. ноль</span></code></pre></div>
+<pre><code>##      [,1] [,2] [,3] [,4]
+## [1,]    0    0    0    0
+## [2,]    0    0    0    0
+## [3,]    0    0    0    0</code></pre>
+<p>Как и в случае с обычной функцией, в качестве <code>x</code> выступает объект, с которым мы хотим что-то сделать, а дальше следует функция, которую мы собираемся применить к <code>х</code>. Можно использовать не <code>х</code>, а что угодно, как и в обычных функциях:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">apply</span>(A, <span class="dv">1</span>, <span class="cf">function</span>(whatevername) whatevername <span class="op">-</span><span class="st"> </span><span class="kw">mean</span>(whatevername))</code></pre></div>
+<pre><code>##      [,1] [,2] [,3]
+## [1,] -4.5 -4.5 -4.5
+## [2,] -1.5 -1.5 -1.5
+## [3,]  1.5  1.5  1.5
+## [4,]  4.5  4.5  4.5</code></pre>
+</div>
+<div id="apply_other" class="section level3">
+<h3><span class="header-section-number">5.4.3</span> Другие функции семейства <code>apply()</code></h3>
+<p>Ок, с <code>apply()</code> разобрались. А что с остальными? Некоторые из них еще проще и не требуют индексов, например, <code>lapply</code> (для применения к каждому элементу списка) и <code>sapply()</code> - упрощенная версия <code>lapply()</code>, которая пытается по возможности &quot;упростить&quot; результат до вектора или матрицы.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">some_list &lt;-<span class="st"> </span><span class="kw">list</span>(<span class="dt">some =</span> <span class="dv">1</span><span class="op">:</span><span class="dv">10</span>, <span class="dt">list =</span> letters)
+<span class="kw">lapply</span>(some_list, length)</code></pre></div>
+<pre><code>## $some
+## [1] 10
+## 
+## $list
+## [1] 26</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sapply</span>(some_list, length)</code></pre></div>
+<pre><code>## some list 
+##   10   26</code></pre>
+<p>Использование <code>sapply()</code> на векторе приводит к тем же результатам, что и просто применить векторизованную функцию обычным способом.</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sapply</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>, sqrt)</code></pre></div>
+<pre><code>##  [1] 1.000000 1.414214 1.732051 2.000000 2.236068 2.449490 2.645751 2.828427
+##  [9] 3.000000 3.162278</code></pre>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r"><span class="kw">sqrt</span>(<span class="dv">1</span><span class="op">:</span><span class="dv">10</span>)</code></pre></div>
+<pre><code>##  [1] 1.000000 1.414214 1.732051 2.000000 2.236068 2.449490 2.645751 2.828427
+##  [9] 3.000000 3.162278</code></pre>
+<p>Зачем вообще тогда нужен <code>sapply()</code>, если мы можем просто применить векторизованную функцию? Ключевое слово здесь <em>векторизованная</em> функция. Если функция не векторизована, то <code>sapply()</code> становится удобным вариантом для того, чтобы избежать итерирования с помощью циклов <code>for</code>.</p>
+<blockquote>
+<p>Еще одна альтернатива - это векторизация невекторизованной функции с помощью <code>Vectorize()</code>. Эта функция просто оборачивает функцию одним из вариантов <code>apply()</code>.</p>
+</blockquote>
+<p>Можно применять функции <code>lapply()</code> и <code>sapply()</code> на датафреймах. Поскольку фактически датафрейм - это список из векторов одинаковой длины (см. <a href="intro.html#df">2.10</a>), то итерироваться эти функции будут по колонкам:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">heroes &lt;-<span class="st"> </span><span class="kw">read.csv</span>(<span class="st">&quot;data/heroes_information.csv&quot;</span>, 
+                   <span class="dt">na.strings =</span> <span class="kw">c</span>(<span class="st">&quot;-&quot;</span>, <span class="st">&quot;-99&quot;</span>))
+<span class="kw">sapply</span>(heroes, class)</code></pre></div>
+<pre><code>##           X        name      Gender   Eye.color        Race  Hair.color 
+##   &quot;integer&quot; &quot;character&quot; &quot;character&quot; &quot;character&quot; &quot;character&quot; &quot;character&quot; 
+##      Height   Publisher  Skin.color   Alignment      Weight 
+##   &quot;numeric&quot; &quot;character&quot; &quot;character&quot; &quot;character&quot;   &quot;integer&quot;</code></pre>
+<p>Еще одна функция из семейства <code>apply()</code> - функция <code>replicate()</code> - самый простой способ повторить одну и ту же операцию много раз. Обычно эта функция используется при симуляции данных и моделировании. Например, давайте сделаем выборку из логнормального распределения:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">samp &lt;-<span class="st"> </span><span class="kw">rlnorm</span>(<span class="dv">30</span>)
+<span class="kw">hist</span>(samp)</code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-135-1.png" width="672" /></p>
+<p>А теперь давайте сделаем 1000 таких выборок и из каждой возьмем среднее:</p>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">sampdist &lt;-<span class="st"> </span><span class="kw">replicate</span>(<span class="dv">1000</span>, <span class="kw">mean</span>(<span class="kw">rlnorm</span>(<span class="dv">30</span>)))
+<span class="kw">hist</span>(sampdist)</code></pre></div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-136-1.png" width="672" /></p>
+<blockquote>
+<p>Про функции для генерации случайных чисел и про визуализацию мы поговорим в следующие дни.</p>
+</blockquote>
+<p>Если хотите познакомиться с семейством <code>apply()</code> чуточку ближе, то рекомендую <a href="https://www.datacamp.com/community/tutorials/r-tutorial-apply-family">вот этот туториал</a>.</p>
+<p>В заключение стоит сказать, что семейство функций <code>apply()</code> --- это очень сильное колдунство, но в tidyverse оно практически полностью перекрывается функциями из пакета <code>purrr</code>. Впрочем, если вы поняли логику <code>apply()</code>, то при желании вы легко сможете переключиться на альтернативы из пакета <code>purrr</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="footnotes">
+<hr />
+<ol start="6">
+<li id="fn6"><p>Функция, которая создает другие функции, называется <strong>фабрикой функций</strong>.<a href="functional.html#fnref6">↩</a></p></li>
+</ol>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="loops-conditions.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tasks.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": false,
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/agricolamz/DS_for_DH/edit/master/03-Programming.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["DS_for_DH.pdf", "DS_for_DH.epub"],
+"toc": {
+"collapse": "section"
+},
+"self_contained": true
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
