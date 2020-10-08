@@ -147,12 +147,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 </ul></li>
 <li class="chapter" data-level="5" data-path="functional.html"><a href="functional.html"><i class="fa fa-check"></i><b>5</b> Функциональное программирование в R</a><ul>
 <li class="chapter" data-level="5.1" data-path="functional.html"><a href="functional.html#create_fun"><i class="fa fa-check"></i><b>5.1</b> Создание функций</a></li>
-<li class="chapter" data-level="5.2" data-path="functional.html"><a href="functional.html#why_functions"><i class="fa fa-check"></i><b>5.2</b> Когда и зачем создавать функции?</a></li>
-<li class="chapter" data-level="5.3" data-path="functional.html"><a href="functional.html#functions_objects"><i class="fa fa-check"></i><b>5.3</b> Функции как объекты первого порядка</a></li>
-<li class="chapter" data-level="5.4" data-path="functional.html"><a href="functional.html#apply_f"><i class="fa fa-check"></i><b>5.4</b> Семейство функций apply()</a><ul>
-<li class="chapter" data-level="5.4.1" data-path="functional.html"><a href="functional.html#apply"><i class="fa fa-check"></i><b>5.4.1</b> Применение <code>apply()</code> для матриц</a></li>
-<li class="chapter" data-level="5.4.2" data-path="functional.html"><a href="functional.html#anon_f"><i class="fa fa-check"></i><b>5.4.2</b> Анонимные функции</a></li>
-<li class="chapter" data-level="5.4.3" data-path="functional.html"><a href="functional.html#apply_other"><i class="fa fa-check"></i><b>5.4.3</b> Другие функции семейства <code>apply()</code></a></li>
+<li class="chapter" data-level="5.2" data-path="functional.html"><a href="functional.html#sanity_check"><i class="fa fa-check"></i><b>5.2</b> Проверка на адекватность</a></li>
+<li class="chapter" data-level="5.3" data-path="functional.html"><a href="functional.html#why_functions"><i class="fa fa-check"></i><b>5.3</b> Когда и зачем создавать функции?</a></li>
+<li class="chapter" data-level="5.4" data-path="functional.html"><a href="functional.html#functions_objects"><i class="fa fa-check"></i><b>5.4</b> Функции как объекты первого порядка</a></li>
+<li class="chapter" data-level="5.5" data-path="functional.html"><a href="functional.html#apply_f"><i class="fa fa-check"></i><b>5.5</b> Семейство функций apply()</a><ul>
+<li class="chapter" data-level="5.5.1" data-path="functional.html"><a href="functional.html#apply"><i class="fa fa-check"></i><b>5.5.1</b> Применение <code>apply()</code> для матриц</a></li>
+<li class="chapter" data-level="5.5.2" data-path="functional.html"><a href="functional.html#anon_f"><i class="fa fa-check"></i><b>5.5.2</b> Анонимные функции</a></li>
+<li class="chapter" data-level="5.5.3" data-path="functional.html"><a href="functional.html#apply_other"><i class="fa fa-check"></i><b>5.5.3</b> Другие функции семейства <code>apply()</code></a></li>
 </ul></li>
 </ul></li>
 <li class="chapter" data-level="6" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>6</b> Задания</a><ul>
@@ -161,7 +162,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.3" data-path="tasks.html"><a href="tasks.html#vec_task_2"><i class="fa fa-check"></i><b>6.3</b> Вектор. Индексирование</a></li>
 <li class="chapter" data-level="6.4" data-path="tasks.html"><a href="tasks.html#list_ta"><i class="fa fa-check"></i><b>6.4</b> Списки</a></li>
 <li class="chapter" data-level="6.5" data-path="tasks.html"><a href="tasks.html#t"><i class="fa fa-check"></i><b>6.5</b> Матрицы</a></li>
-<li class="chapter" data-level="6.6" data-path="tasks.html"><a href="tasks.html#task_function"><i class="fa fa-check"></i><b>6.6</b> Создание функций</a></li>
+<li class="chapter" data-level="6.6" data-path="tasks.html"><a href="tasks.html#if_tasks"><i class="fa fa-check"></i><b>6.6</b> Условные конструкции</a></li>
+<li class="chapter" data-level="6.7" data-path="tasks.html"><a href="tasks.html#task_function"><i class="fa fa-check"></i><b>6.7</b> Создание функций</a></li>
+<li class="chapter" data-level="6.8" data-path="tasks.html"><a href="tasks.html#task_text"><i class="fa fa-check"></i><b>6.8</b> Семейство apply()</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="solutions.html"><a href="solutions.html"><i class="fa fa-check"></i><b>7</b> Решения_заданий</a><ul>
 <li class="chapter" data-level="7.1" data-path="solutions.html"><a href="solutions.html#solvvec_task_1"><i class="fa fa-check"></i><b>7.1</b> Вектор</a></li>
@@ -169,8 +172,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.3" data-path="solutions.html"><a href="solutions.html#solvvec_task_2"><i class="fa fa-check"></i><b>7.3</b> Вектор. Индексирование</a></li>
 <li class="chapter" data-level="7.4" data-path="solutions.html"><a href="solutions.html#solvlist_ta"><i class="fa fa-check"></i><b>7.4</b> Списки</a></li>
 <li class="chapter" data-level="7.5" data-path="solutions.html"><a href="solutions.html#solvt"><i class="fa fa-check"></i><b>7.5</b> Матрицы</a></li>
-<li class="chapter" data-level="7.6" data-path="solutions.html"><a href="solutions.html#solvtask_function"><i class="fa fa-check"></i><b>7.6</b> Создание функций</a></li>
-<li class="chapter" data-level="7.7" data-path="solutions.html"><a href="solutions.html#solvtask_text"><i class="fa fa-check"></i><b>7.7</b> Семейство apply()</a></li>
+<li class="chapter" data-level="7.6" data-path="tasks.html"><a href="tasks.html#if_tasks"><i class="fa fa-check"></i><b>7.6</b> Условные конструкции</a></li>
+<li class="chapter" data-level="7.7" data-path="solutions.html"><a href="solutions.html#solvtask_function"><i class="fa fa-check"></i><b>7.7</b> Создание функций</a></li>
+<li class="chapter" data-level="7.8" data-path="solutions.html"><a href="solutions.html#solvtask_text"><i class="fa fa-check"></i><b>7.8</b> Семейство apply()</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ссылки-на-литературу.html"><a href="ссылки-на-литературу.html"><i class="fa fa-check"></i>Ссылки на литературу</a></li>
 </ul>
@@ -575,7 +579,7 @@ n <span class="op">+</span><span class="st"> </span>m</code></pre></div>
 ##  [9] 3.000000 3.162278</code></pre>
 <p>Таких векторизованных функций в R очень много. Многие из них написаны на более низкоуровневых языках программирования (C, C++, FORTRAN), за счет чего использование таких функций приводит не только к более элегантному, лаконичному, но и к более быстрому коду.</p>
 <blockquote>
-<p>Векторизация в R --- это очень важная фишка, которая отличает этот язык программирования от многих других. Если вы уже имеете опыт программирования на другом языке, то вам во многих задачах захочется использовать циклы типа <code>for</code> и <code>while</code> <a href="loops-conditions.html#for">4.2</a>. Не спешите этого делать! В очень многих случаях циклы можно заменить векторизацией. Тем не менее, векторизация --- это не единственный способ избавить от циклов типа <code>for</code> и <code>while</code> <a href="functional.html#apply">5.4.1</a>.</p>
+<p>Векторизация в R --- это очень важная фишка, которая отличает этот язык программирования от многих других. Если вы уже имеете опыт программирования на другом языке, то вам во многих задачах захочется использовать циклы типа <code>for</code> и <code>while</code> <a href="loops-conditions.html#for">4.2</a>. Не спешите этого делать! В очень многих случаях циклы можно заменить векторизацией. Тем не менее, векторизация --- это не единственный способ избавить от циклов типа <code>for</code> и <code>while</code> <a href="functional.html#apply">5.5.1</a>.</p>
 </blockquote>
 </div>
 <div id="recycling" class="section level3">
