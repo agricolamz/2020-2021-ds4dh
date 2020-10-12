@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.14)  8 OCT 2020 20:05
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.14)  12 OCT 2020 11:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4007,7 +4007,7 @@ Overfull \hbox (38.25pt too wide) in paragraph at lines 4719--4719
 
 Underfull \vbox (badness 1838) has occurred while \output is active []
 
-[81] [82]
+[81]
 Missing character: There is no д in font [lmmono10-italic]:!
 Missing character: There is no е in font [lmmono10-italic]:!
 Missing character: There is no л in font [lmmono10-italic]:!
@@ -4027,16 +4027,16 @@ Missing character: There is no а in font [lmmono10-italic]:!
 Missing character: There is no т in font [lmmono10-italic]:!
 Missing character: There is no к in font [lmmono10-italic]:!
 Missing character: There is no а in font [lmmono10-italic]:!
-[83] [84]
+[82] [83] [84]
 Глава 7.
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 5032--5032
+Overfull \hbox (6.75pt too wide) in paragraph at lines 5014--5014
 []\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
  19 20[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 5048--5048
+Overfull \hbox (6.75pt too wide) in paragraph at lines 5030--5030
 []\TU/lmtt/m/n/10 ##  [1] 20 19 18 17 16 15 14 13 12 11 10  9  8  7  6  5  4  3
   2  1[] 
  []
@@ -4044,13 +4044,13 @@ Overfull \hbox (6.75pt too wide) in paragraph at lines 5048--5048
 [85
 
 ]
-Overfull \hbox (85.5pt too wide) in paragraph at lines 5066--5066
+Overfull \hbox (85.5pt too wide) in paragraph at lines 5048--5048
 []\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
  19 20 19 18 17 16 15[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 5100--5100
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5082--5082
 []\TU/lmtt/m/n/10 ##  [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7
  7 8 8 8 8 8 8 8 8 9 9[] 
  []
@@ -4083,31 +4083,31 @@ Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no р in font [lmmono10-regular]:!
 [86] [87]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 5288--5288
+Overfull \hbox (6.75pt too wide) in paragraph at lines 5270--5270
 []\TU/lmtt/m/n/10 ##  [1]  0  2  0  4  0  6  0  8  0 10  0 12  0 14  0 16  0 18
   0 20[] 
  []
 
 [88]
-Overfull \hbox (59.25pt too wide) in paragraph at lines 5397--5397
+Overfull \hbox (59.25pt too wide) in paragraph at lines 5379--5379
 []\TU/lmtt/m/n/10 ##  [1]  9.000000  2.236068  4.000000  1.000000 64.000000  2.
 000000 81.000000[] 
  []
 
 [89]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 5478--5478
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5460--5460
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
 [90]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 5570--5570
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5552--5552
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 5570--5570
+Overfull \hbox (90.75pt too wide) in paragraph at lines 5552--5552
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
@@ -4224,43 +4224,43 @@ Missing character: There is no с in font [lmmono10-regular]:!
 Missing character: There is no л in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 5852--5852
+Overfull \hbox (38.25pt too wide) in paragraph at lines 5834--5834
 []\TU/lmtt/m/n/10 ##   X          name Gender Eye.color              Race Hair.
 color Height[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 5852--5852
+Overfull \hbox (38.25pt too wide) in paragraph at lines 5834--5834
 []\TU/lmtt/m/n/10 ## 1 0        A-Bomb   Male    yellow             Human    No
  Hair    203[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 5852--5852
+Overfull \hbox (38.25pt too wide) in paragraph at lines 5834--5834
 []\TU/lmtt/m/n/10 ## 2 1    Abe Sapien   Male      blue     Icthyo Sapien    No
  Hair    191[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 5852--5852
+Overfull \hbox (38.25pt too wide) in paragraph at lines 5834--5834
 []\TU/lmtt/m/n/10 ## 3 2      Abin Sur   Male      blue           Ungaran    No
  Hair    185[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 5852--5852
+Overfull \hbox (38.25pt too wide) in paragraph at lines 5834--5834
 []\TU/lmtt/m/n/10 ## 4 3   Abomination   Male     green Human / Radiation    No
  Hair    203[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 5852--5852
+Overfull \hbox (38.25pt too wide) in paragraph at lines 5834--5834
 []\TU/lmtt/m/n/10 ## 5 4       Abraxas   Male      blue     Cosmic Entity      
 Black     NA[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 5852--5852
+Overfull \hbox (38.25pt too wide) in paragraph at lines 5834--5834
 []\TU/lmtt/m/n/10 ## 6 5 Absorbing Man   Male      blue             Human    No
  Hair    193[] 
  []
@@ -4285,15 +4285,15 @@ Missing character: There is no а in font [lmmono10-italic]:!
 Missing character: There is no т in font [lmmono10-italic]:!
 Missing character: There is no к in font [lmmono10-italic]:!
 Missing character: There is no а in font [lmmono10-italic]:!
-[96] [97] [98] (./DS_for_DH.bbl [99] [100
+[96] [97] (./DS_for_DH.bbl [98])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6165.
+[99
 
-])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 6204.
-[101]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 6204.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 6165.
 (./DS_for_DH.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6204.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6204.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 6165.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 6165.
 
 Package rerunfilecheck Info: File `DS_for_DH.out' has not changed.
 (rerunfilecheck)             Checksum: 4237AD5FEEE74D30156E359CF2F69AB5.
@@ -4307,4 +4307,4 @@ Here is how much of TeX's memory you used:
  1348 hyphenation exceptions out of 8191
  53i,8n,116p,10450b,495s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on DS_for_DH.pdf (101 pages).
+Output written on DS_for_DH.pdf (99 pages).
