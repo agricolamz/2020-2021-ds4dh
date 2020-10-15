@@ -961,3 +961,218 @@ prime_numbers <- function(x) (2:x)[sapply(2:x, is_prime)]
 ```{r, echo = TRUE}
 prime_numbers(200)
 ```
+
+
+```{r}
+library(tidyverse)
+heroes <- read_csv("data/heroes_information.csv",
+                   na = c("-", "-99"))
+powers <- read_csv("data/super_hero_powers.csv")
+```
+
+
+
+## magrittr::`%>%` {#task_pipe}
+
+- Перепишите следующие выражения, используя `%>%`:
+
+```{r, echo = TRUE}
+sqrt(sum(1:10))
+```
+
+```{r}
+1:10 %>%
+  sum() %>%
+  sqrt()
+```
+
+
+```{r, echo = TRUE}
+abs(min(-5:5))
+```
+
+```{r}
+-5:5 %>%
+  min() %>%
+  abs()
+```
+
+```{r, echo = TRUE}
+c("Корень из", 2, "равен", sqrt(2))
+```
+
+```{r}
+2 %>% c("Корень из", ., "равен", sqrt(.))
+```
+
+
+##Выбор строк: `dplyr::slice()` и `dplyr::filter()` {#task_filt}
+
+- Выберите только те строчки, в которых содержится информация о супергероях тяжелее 500 кг.
+
+```{r}
+heroes %>% 
+  filter(Weight > 500)
+```
+
+- Выберите только те строчки, в которых содержится информация о *женщинах*-супергероях тяжелее 500 кг.
+
+```{r}
+heroes %>% 
+  filter(Weight > 500 & Gender == "Female")
+```
+
+- Выберите только те строчки, в которых содержится информация о супергероях человеческой расы (`"Human"`) женского пола. Из этих супергероев возьмите первые 5.
+
+```{r}
+heroes %>% 
+  filter(Race == "Human" & Gender == "Female") %>%
+  slice(1:5)
+```
+
+##Выбор столбцов: `dplyr::select()` {#task_select}
+
+- Выберете первые 4 столбца в `powers`.
+
+```{r}
+powers %>%
+  select(1:4)
+```
+
+- Выберите все столбцы от `Reflexes` до `Empathy` в тиббле `powers`:
+
+```{r}
+powers %>%
+  select(Reflexes:Empathy)
+```
+
+- Выберите все столбцы тиббла `powers` кроме первого (`hero_names`):
+
+```{r}
+powers %>%
+select(!hero_names)
+```
+
+## Сортировка строк: `dplyr::arrange()` {#task_arr}
+
+- Выберите из тиббла `heroes` колонки `name`, `Gender`, `Height` и отсортируйте строчки *по возрастанию* `Height`.
+
+```{r}
+heroes %>%
+  select(name, Gender, Height) %>%
+  arrange(Height)
+```
+
+- Выберите из тиббла `heroes` колонки `name`, `Gender`, `Height` и отсортируйте строчки *по убыванию* `Height`.
+
+```{r}
+heroes %>%
+  select(name, Gender, Height) %>%
+  arrange(desc(Height))
+```
+
+
+- Выберите из тиббла `heroes` колонки `name`, `Gender`, `Height` и отсортируйте строчки сначала по `Gender`, затем *по убыванию* `Height`.
+
+
+```{r}
+heroes %>%
+  select(name, Gender, Height) %>%
+  arrange(Gender, desc(Height))
+```
+
+## Уникальные значения: `dplyr::distinct()` {#task_dist}
+
+- Извлеките уникальные значения столбца `Eye color` из тиббла `heroes`.
+
+```{r}
+heroes %>%
+  distinct(`Eye color`)
+```
+
+- Извлеките уникальные значения столбца `Hair color` из тиббла `heroes`.
+
+```{r}
+heroes %>%
+  distinct(`Hair color`)
+```
+
+## Создание колонок: `dplyr::mutate()` и `dplyr::transmute()` {#task_mutate}
+
+- Создайте колонку `height_m` с ростом супергероев в метрах, затем выберите только колонки `name` и `height_m`.
+
+```{r}
+heroes %>%
+  mutate(height_m = Height/100) %>%
+  select(name, height_m)
+```
+
+- Создайте новою колонку hair в heroes, в которой будет значение "Bold" для тех супергероев, у которых в колонке Hair.color стоит "No Hair", и значение "Hairy" во всех остальных случаях. Затем выберите только колонки `name`, `Hair color`, `hair`.
+
+```{r}
+heroes %>%
+  mutate(hair = ifelse(`Hair color` == "No Hair", "Bold", "Hairy")) %>%
+  select(name, `Hair color`, hair)
+```
+
+## Агрегация: `dplyr::group_by() %>% summarise()` {#task_group_by}
+
+- Посчитайте количество супергероев по расам и отсортируйте по убыванию. Извлеките первые 5 строк.
+
+```{r}
+heroes %>%
+  count(Race, sort = TRUE) %>%
+  slice(1:5)
+```
+
+- Посчитайте средний пост по полу.
+
+```{r}
+heroes %>%
+  group_by(Gender) %>%
+  summarise(height_mean = mean(Height, na.rm = TRUE))
+```
+
+## Соединение датафреймов: *_join {#task_join}
+
+Создайте тиббл `web_creators`, в котором будут супергерои, которые могут плести паутину, т.е. у них стоит `TRUE` в колонке `Web Creation` в тиббле `powers`.
+
+```{r}
+powers_web <- powers %>%
+  select(hero_names, `Web Creation`)
+web_creators <- left_join(heroes, powers_web, by = c("name" = "hero_names")) %>%
+  filter(`Web Creation`)
+web_creators
+```
+
+## Tidy data {#task_join}
+
+- Для начала создайте тиббл `heroes_weight`, скопировав код:
+
+```{r, echo = TRUE}
+heroes_weight <- heroes %>%
+  filter(Publisher %in% c("DC Comics", "Marvel Comics")) %>%
+  group_by(Gender, Publisher) %>%
+  summarise(weight_mean = mean(Weight, na.rm = TRUE)) %>%
+  drop_na()
+heroes_weight 
+```
+
+> Функция `drop_na()` позволяет выбросить все строчки, в которых встречается `NA`.
+
+- Превратите тиббл `heroes_weight` в широкий тиббл:
+
+```{r}
+heroes_weight %>%
+  pivot_wider(names_from = "Publisher", values_from = "weight_mean")
+```
+
+- Затем превратите его обратно в длинный тиббл:
+
+```{r}
+heroes_weight %>%
+  pivot_wider(names_from = "Publisher", values_from = "weight_mean") %>%
+  pivot_longer(cols = !Gender,
+               names_to = "Publisher",
+               values_to = "weight_mean")
+```
