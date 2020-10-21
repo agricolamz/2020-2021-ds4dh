@@ -163,13 +163,24 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.3" data-path="tidy-intro.html"><a href="tidy-intro.html#tibble"><i class="fa fa-check"></i><b>6.3</b> tibble</a></li>
 <li class="chapter" data-level="6.4" data-path="tidy-intro.html"><a href="tidy-intro.html#pipe"><i class="fa fa-check"></i><b>6.4</b> magrittr::<code>%&gt;%</code></a></li>
 <li class="chapter" data-level="6.5" data-path="tidy-intro.html"><a href="tidy-intro.html#главные-пакеты-tidyverse-dplyr-и-tidyr"><i class="fa fa-check"></i><b>6.5</b> Главные пакеты tidyverse: <code>dplyr</code> и <code>tidyr</code></a></li>
-<li class="chapter" data-level="6.6" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_filter"><i class="fa fa-check"></i><b>6.6</b> Выбор строк</a></li>
-<li class="chapter" data-level="6.7" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_select"><i class="fa fa-check"></i><b>6.7</b> Выборов столбцов</a></li>
-<li class="chapter" data-level="6.8" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_arrange"><i class="fa fa-check"></i><b>6.8</b> Сортировка строк: <code>dplyr::arrange()</code></a></li>
-<li class="chapter" data-level="6.9" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_distinct"><i class="fa fa-check"></i><b>6.9</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
-<li class="chapter" data-level="6.10" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_mutate"><i class="fa fa-check"></i><b>6.10</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
-<li class="chapter" data-level="6.11" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_group_by"><i class="fa fa-check"></i><b>6.11</b> Агрегация: <code>dplyr::group_by() %&gt;% dplyr::summarise()</code></a></li>
-<li class="chapter" data-level="6.12" data-path="tidy-intro.html"><a href="tidy-intro.html#подсчет-строк-dplyrn-dplyrcount"><i class="fa fa-check"></i><b>6.12</b> Подсчет строк: <code>dplyr::n()</code>, <code>dplyr::count()</code></a></li>
+<li class="chapter" data-level="6.6" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_select_cols"><i class="fa fa-check"></i><b>6.6</b> Работа с колонками тиббла</a><ul>
+<li class="chapter" data-level="6.6.1" data-path="tidy-intro.html"><a href="tidy-intro.html#выбор-колонок-dplyrselect"><i class="fa fa-check"></i><b>6.6.1</b> Выбор колонок: <code>dplyr::select()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="6.7" data-path="tidy-intro.html"><a href="tidy-intro.html#tidyselect"><i class="fa fa-check"></i><b>6.7</b> Мини-язык tidyselect для выбора колонок</a><ul>
+<li class="chapter" data-level="6.7.1" data-path="tidy-intro.html"><a href="tidy-intro.html#переименование-колонок-dplyrrename"><i class="fa fa-check"></i><b>6.7.1</b> Переименование колонок: <code>dplyr::rename()</code></a></li>
+<li class="chapter" data-level="6.7.2" data-path="tidy-intro.html"><a href="tidy-intro.html#перестановка-колонок-dplyrrelocate"><i class="fa fa-check"></i><b>6.7.2</b> Перестановка колонок: <code>dplyr::relocate()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="6.8" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_select_rows"><i class="fa fa-check"></i><b>6.8</b> Работа со строками тиббла</a><ul>
+<li class="chapter" data-level="6.8.1" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_slice"><i class="fa fa-check"></i><b>6.8.1</b> Выбор строк по номеру: <code>dplyr::slice()</code></a></li>
+<li class="chapter" data-level="6.8.2" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_filter"><i class="fa fa-check"></i><b>6.8.2</b> Выбор строк по условию: <code>dplyr::filter()</code></a></li>
+<li class="chapter" data-level="6.8.3" data-path="tidy-intro.html"><a href="tidy-intro.html#slice_family"><i class="fa fa-check"></i><b>6.8.3</b> Семейство функций <code>slice()</code></a></li>
+<li class="chapter" data-level="6.8.4" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_drop_na"><i class="fa fa-check"></i><b>6.8.4</b> Удаление строчек с NA: <code>tidyr::drop_na()</code></a></li>
+<li class="chapter" data-level="6.8.5" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_arrange"><i class="fa fa-check"></i><b>6.8.5</b> Сортировка строк: <code>dplyr::arrange()</code></a></li>
+</ul></li>
+<li class="chapter" data-level="6.9" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_mutate"><i class="fa fa-check"></i><b>6.9</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
+<li class="chapter" data-level="6.10" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_group_by"><i class="fa fa-check"></i><b>6.10</b> Агрегация данных в тиббле</a></li>
+<li class="chapter" data-level="6.11" data-path="tidy-intro.html"><a href="tidy-intro.html#подсчет-строк-dplyrn-dplyrcount"><i class="fa fa-check"></i><b>6.11</b> Подсчет строк: <code>dplyr::n()</code>, <code>dplyr::count()</code></a></li>
+<li class="chapter" data-level="6.12" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_distinct"><i class="fa fa-check"></i><b>6.12</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
 <li class="chapter" data-level="6.13" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_bind"><i class="fa fa-check"></i><b>6.13</b> Соединение датафреймов: bind_rows(), bind_cols()</a></li>
 <li class="chapter" data-level="6.14" data-path="tidy-intro.html"><a href="tidy-intro.html#соединение-датафреймов-_join"><i class="fa fa-check"></i><b>6.14</b> Соединение датафреймов: *_join</a></li>
 <li class="chapter" data-level="6.15" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_data"><i class="fa fa-check"></i><b>6.15</b> Tidy data: <code>tidyr::pivot_longer()</code>, <code>tidyr::pivot_wider()</code></a></li>
@@ -379,7 +390,8 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">readr<span class="op">::</span><span class="kw">read_csv</span>(<span class="st">&quot;data/heroes_information.csv&quot;</span>,
          <span class="dt">na =</span> <span class="kw">c</span>(<span class="st">&quot;-&quot;</span>, <span class="st">&quot;-99&quot;</span>))</code></pre></div>
 <pre><code>## Warning: Missing column names filled in: &#39;X1&#39; [1]</code></pre>
-<pre><code>## Parsed with column specification:
+<pre><code>## 
+## ── Column specification ──────
 ## cols(
 ##   X1 = col_double(),
 ##   name = col_character(),
