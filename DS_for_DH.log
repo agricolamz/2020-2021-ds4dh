@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.14)  29 OCT 2020 16:37
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.3.14)  29 OCT 2020 18:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -4131,13 +4131,13 @@ Overfull \hbox (90.75pt too wide) in paragraph at lines 4770--4770
      203 Marvel Comics[] 
  []
 
-[86]
+
 Overfull \hbox (90.75pt too wide) in paragraph at lines 4770--4770
 []\TU/lmtt/m/n/10 ##  2 Abe Sapien Male   blue        Icthyo Sapien No Hair    
      191 Dark Horse C~[] 
  []
 
-
+[86]
 Overfull \hbox (69.75pt too wide) in paragraph at lines 4770--4770
 []\TU/lmtt/m/n/10 ##  3 Abin Sur   Male   blue        Ungaran       No Hair    
      185 DC Comics[] 
@@ -5261,20 +5261,20 @@ Overfull \hbox (6.75pt too wide) in paragraph at lines 5432--5432
 
 
 Overfull \hbox (27.75pt too wide) in paragraph at lines 5432--5432
-[]\TU/lmtt/m/n/10 ## 1   213 Dead~ Male   brown       Human Brown           185
+[]\TU/lmtt/m/n/10 ## 1   367 John~ Male   green       Human Black           185
  DC Comics[] 
  []
 
 
 Overfull \hbox (27.75pt too wide) in paragraph at lines 5432--5432
-[]\TU/lmtt/m/n/10 ## 2    38 Arac~ Female blue        Human Blond           175
+[]\TU/lmtt/m/n/10 ## 2   547 Red ~ Male   green       Human Red             180
+ DC Comics[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 5432--5432
+[]\TU/lmtt/m/n/10 ## 3   170 Chan~ Male   brown       <NA>  Black           180
  Marvel C~[] 
- []
-
-
-Overfull \hbox (27.75pt too wide) in paragraph at lines 5432--5432
-[]\TU/lmtt/m/n/10 ## 3   578 Scar~ Male   blue        Human Brown           183
- DC Comics[] 
  []
 
 
@@ -5297,43 +5297,43 @@ Overfull \hbox (6.75pt too wide) in paragraph at lines 5455--5455
 
 
 Overfull \hbox (27.75pt too wide) in paragraph at lines 5455--5455
-[]\TU/lmtt/m/n/10 ## 1   272 Gala~ Male   black       Cosm~ Black           876
- Marvel C~[] 
- []
-
-
-Overfull \hbox (27.75pt too wide) in paragraph at lines 5455--5455
-[]\TU/lmtt/m/n/10 ## 2    54 Atom~ Male   brown       <NA>  Black            NA
+[]\TU/lmtt/m/n/10 ## 1    75 Beas~ Male   green       Human Green           173
  DC Comics[] 
  []
 
 
 Overfull \hbox (27.75pt too wide) in paragraph at lines 5455--5455
-[]\TU/lmtt/m/n/10 ## 3   543 Raph~ Male   <NA>        Muta~ No Hair          NA
- IDW Publ~[] 
+[]\TU/lmtt/m/n/10 ## 2   635 Star~ Female blue        Human Blond           165
+ DC Comics[] 
  []
 
 
 Overfull \hbox (27.75pt too wide) in paragraph at lines 5455--5455
-[]\TU/lmtt/m/n/10 ## 4   649 Sylar Male   <NA>        <NA>  <NA>             NA
+[]\TU/lmtt/m/n/10 ## 3   514 Peng~ Male   blue        Human Black           157
+ DC Comics[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 5455--5455
+[]\TU/lmtt/m/n/10 ## 4   359 Jess~ Female green       Human Brown            NA
+ DC Comics[] 
+ []
+
+
+Overfull \hbox (27.75pt too wide) in paragraph at lines 5455--5455
+[]\TU/lmtt/m/n/10 ## 5   437 Matt~ Male   <NA>        <NA>  <NA>             NA
  NBC - He~[] 
  []
 
 
 Overfull \hbox (27.75pt too wide) in paragraph at lines 5455--5455
-[]\TU/lmtt/m/n/10 ## 5   190 Crys~ Female green       Inhu~ Red             168
- Marvel C~[] 
+[]\TU/lmtt/m/n/10 ## 6   139 Buffy Female green       Human Blond           157
+ Dark Hor~[] 
  []
 
 
 Overfull \hbox (27.75pt too wide) in paragraph at lines 5455--5455
-[]\TU/lmtt/m/n/10 ## 6   269 Fran~ <NA>   blue        <NA>  Grey            188
- Marvel C~[] 
- []
-
-
-Overfull \hbox (27.75pt too wide) in paragraph at lines 5455--5455
-[]\TU/lmtt/m/n/10 ## 7   168 Cham~ Male   brown       Muta~ Brown           175
+[]\TU/lmtt/m/n/10 ## 7   114 Blink Female green       Muta~ Magenta         165
  Marvel C~[] 
  []
 
@@ -5357,62 +5357,62 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 5483--5483
 
 
 Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
-[]\TU/lmtt/m/n/10 ##  1   304 Guy ~ Male   blue        Huma~ Red             18
-8 DC Comics[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
-[]\TU/lmtt/m/n/10 ##  2   528 Prof~ Male   blue        Muta~ No Hair         18
-3 Marvel C~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
-[]\TU/lmtt/m/n/10 ##  3   634 Star~ Female green       Tama~ Auburn          19
-3 DC Comics[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
-[]\TU/lmtt/m/n/10 ##  4   627 Spid~ Female brown       <NA>  Brown           17
-3 Marvel C~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
-[]\TU/lmtt/m/n/10 ##  5   183 Colo~ Male   <NA>        <NA>  <NA>             N
-A DC Comics[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
-[]\TU/lmtt/m/n/10 ##  6   245 Etri~ Male   red         Demon No Hair         19
-3 DC Comics[] 
- []
-
-[98]
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
-[]\TU/lmtt/m/n/10 ##  7   409 Livi~ <NA>   yellow      <NA>  <NA>            19
-8 Marvel C~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
-[]\TU/lmtt/m/n/10 ##  8   462 Mock~ Female blue        Human Blond           17
+[]\TU/lmtt/m/n/10 ##  1    42 Ares  Male   brown       <NA>  Brown           18
 5 Marvel C~[] 
  []
 
 
 Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
-[]\TU/lmtt/m/n/10 ##  9   293 Gori~ Male   yellow      Gori~ Black           19
+[]\TU/lmtt/m/n/10 ##  2   239 Elon~ Male   blue        <NA>  Red             18
+5 DC Comics[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
+[]\TU/lmtt/m/n/10 ##  3   450 Mich~ Male   blue        Muta~ <NA>             N
+A IDW Publ~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
+[]\TU/lmtt/m/n/10 ##  4   694 Vibe  Male   brown       Human Black           17
 8 DC Comics[] 
  []
 
 
 Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
-[]\TU/lmtt/m/n/10 ## 10   152 Capt~ Male   blue        <NA>  Brown           18
-8 Team Epi~[] 
+[]\TU/lmtt/m/n/10 ##  5   370 Jolt  Female blue        <NA>  Black           16
+5 Marvel C~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
+[]\TU/lmtt/m/n/10 ##  6   270 Fren~ Female brown       <NA>  Black           21
+1 Marvel C~[] 
+ []
+
+[98]
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
+[]\TU/lmtt/m/n/10 ##  7    15 Alex~ Male   <NA>        <NA>  <NA>             N
+A NBC - He~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
+[]\TU/lmtt/m/n/10 ##  8   311 Hawk  Male   red         <NA>  Brown           18
+5 DC Comics[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
+[]\TU/lmtt/m/n/10 ##  9   111 Blade Male   brown       Vamp~ Black           18
+8 Marvel C~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5483--5483
+[]\TU/lmtt/m/n/10 ## 10   729 Yell~ Female blue        Human Strawberry ~    16
+5 Marvel C~[] 
  []
 
 
@@ -5812,7 +5812,7 @@ or[] <chr>,[]
  []
 
 
-Overfull \hbox (71.14215pt too wide) in paragraph at lines 5639--5639
+Overfull \hbox (71.05043pt too wide) in paragraph at lines 5639--5639
 []\TU/brill(0)/bx/n/14.4 Создание колонок: \TU/lmtt/b/n/14.4 dplyr::mutate() \T
 U/brill(0)/bx/n/14.4 и \TU/lmtt/b/n/14.4 dplyr::transmute() 
  []
@@ -5900,13 +5900,13 @@ or[] <chr>,[]
  []
 
 
-Underfull \hbox (badness 5316) in paragraph at lines 5815--5820
+Underfull \hbox (badness 5316) in paragraph at lines 5818--5823
 []\TU/brill(0)/m/n/10 В \TU/lmtt/m/n/10 dplyr \TU/brill(0)/m/n/10 есть дополнит
 ельные суммирующие функции для более удобно-
  []
 
 
-Underfull \hbox (badness 7344) in paragraph at lines 5815--5820
+Underfull \hbox (badness 7344) in paragraph at lines 5818--5823
 \TU/brill(0)/m/n/10 го индексирования в стиле tidyverse. Например, функции \TU/
 lmtt/m/n/10 dplyr::nth()\TU/brill(0)/m/n/10 ,
  []
@@ -5974,489 +5974,526 @@ Missing character: There is no н in font [lmmono10-italic]:!
 Missing character: There is no о in font [lmmono10-italic]:!
 Missing character: There is no е in font [lmmono10-italic]:!
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##       X1 name  Gender []Eye color[] Race  []Hair color[] H
 eight Publisher[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 5889--5889
+Overfull \hbox (12.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##    <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl
 > <chr>[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##  1     0 A-Bo~ Male   yellow      Human No Hair         20
-3 Marvel C~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
-[]\TU/lmtt/m/n/10 ##  2     1 Abe ~ Male   blue        Icth~ No Hair         19
-1 Dark Hor~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
-[]\TU/lmtt/m/n/10 ##  3     2 Abin~ Male   blue        Unga~ No Hair         18
-5 DC Comics[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
-[]\TU/lmtt/m/n/10 ##  4     3 Abom~ Male   green       Huma~ No Hair         20
-3 Marvel C~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
-[]\TU/lmtt/m/n/10 ##  5     4 Abra~ Male   blue        Cosm~ Black            N
-A Marvel C~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
-[]\TU/lmtt/m/n/10 ##  6     5 Abso~ Male   blue        Human No Hair         19
 3 Marvel C~[] 
  []
 
 [105]
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
-[]\TU/lmtt/m/n/10 ##  7     6 Adam~ Male   blue        <NA>  Blond            N
-A NBC - He~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
-[]\TU/lmtt/m/n/10 ##  8     7 Adam~ Male   blue        Human Blond           18
-5 DC Comics[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
-[]\TU/lmtt/m/n/10 ##  9     8 Agen~ Female blue        <NA>  Blond           17
-3 Marvel C~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 5889--5889
-[]\TU/lmtt/m/n/10 ## 10     9 Agen~ Male   brown       Human Brown           17
-8 Marvel C~[] 
- []
-
-
-Overfull \hbox (22.5pt too wide) in paragraph at lines 5889--5889
-[]\TU/lmtt/m/n/10 ## # ... with 724 more rows, and 3 more variables: []Skin col
-or[] <chr>,[] 
- []
-
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 5906--5906
-[]\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
-[] argument)[] 
- []
-
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 5933--5933
-[]\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
-[] argument)[] 
- []
-
-[106] [107] [108] [109]
-Overfull \hbox (45.77777pt too wide) in paragraph at lines 6132--6132
-[]\TU/brill(0)/bx/n/14.4 Трансформация нескольких колонок: \TU/lmtt/b/n/14.4 dp
-lyr::across() 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
-[]\TU/lmtt/m/n/10 ##       X1 name  Gender []Eye color[] Race  []Hair color[] H
-eight Publisher[] 
- []
-
-
-Overfull \hbox (12.0pt too wide) in paragraph at lines 6185--6185
-[]\TU/lmtt/m/n/10 ##    <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl
-> <chr>[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
-[]\TU/lmtt/m/n/10 ##  1     0 A-Bo~ Male   yellow      Human No Hair         20
-3 Marvel C~[] 
- []
-
-
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##  2     1 Abe ~ Male   blue        Icth~ No Hair         19
 1 Dark Hor~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##  3     2 Abin~ Male   blue        Unga~ No Hair         18
 5 DC Comics[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##  4     3 Abom~ Male   green       Huma~ No Hair         20
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##  5     4 Abra~ Male   blue        Cosm~ Black            N
 A Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##  6     5 Abso~ Male   blue        Human No Hair         19
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##  7     6 Adam~ Male   blue        <NA>  Blond            N
 A NBC - He~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##  8     7 Adam~ Male   blue        Human Blond           18
 5 DC Comics[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ##  9     8 Agen~ Female blue        <NA>  Blond           17
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6185--6185
+Overfull \hbox (33.0pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ## 10     9 Agen~ Male   brown       Human Brown           17
 8 Marvel C~[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 6185--6185
+Overfull \hbox (22.5pt too wide) in paragraph at lines 5894--5894
 []\TU/lmtt/m/n/10 ## # ... with 724 more rows, and 3 more variables: []Skin col
 or[] <chr>,[] 
  []
 
-[110]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6202--6202
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 5911--5911
 []\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
 [] argument)[] 
  []
 
+File: images/group_by_s.png Graphic file (type bmp)
+<images/group_by_s.png>
+[106]
+Overfull \hbox (17.25pt too wide) in paragraph at lines 5946--5946
+[]\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
+[] argument)[] 
+ []
 
-LaTeX Warning: Reference `purrr' on page 111 undefined on input line 6226.
+[107]
+Underfull \vbox (badness 1881) has occurred while \output is active []
+
+[108] [109]
+File: images/group_by_m.png Graphic file (type bmp)
+<images/group_by_m.png>
+
+Overfull \hbox (46.83255pt too wide) in paragraph at lines 6155--6155
+[]\TU/brill(0)/bx/n/14.4 Трансформация нескольких колонок: \TU/lmtt/b/n/14.4 dp
+lyr::across() 
+ []
+
+[110]
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##       X1 name  Gender []Eye color[] Race  []Hair color[] H
+eight Publisher[] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##    <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl
+> <chr>[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##  1     0 A-Bo~ Male   yellow      Human No Hair         20
+3 Marvel C~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##  2     1 Abe ~ Male   blue        Icth~ No Hair         19
+1 Dark Hor~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##  3     2 Abin~ Male   blue        Unga~ No Hair         18
+5 DC Comics[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##  4     3 Abom~ Male   green       Huma~ No Hair         20
+3 Marvel C~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##  5     4 Abra~ Male   blue        Cosm~ Black            N
+A Marvel C~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##  6     5 Abso~ Male   blue        Human No Hair         19
+3 Marvel C~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##  7     6 Adam~ Male   blue        <NA>  Blond            N
+A NBC - He~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##  8     7 Adam~ Male   blue        Human Blond           18
+5 DC Comics[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ##  9     8 Agen~ Female blue        <NA>  Blond           17
+3 Marvel C~[] 
+ []
+
+
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ## 10     9 Agen~ Male   brown       Human Brown           17
+8 Marvel C~[] 
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 6208--6208
+[]\TU/lmtt/m/n/10 ## # ... with 724 more rows, and 3 more variables: []Skin col
+or[] <chr>,[] 
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6225--6225
+[]\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
+[] argument)[] 
+ []
 
 [111]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6267--6267
-[]\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
-[] argument)[] 
- []
+
+LaTeX Warning: Reference `purrr' on page 112 undefined on input line 6249.
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6295--6295
-[]\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
-[] argument)[] 
- []
-
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6322--6322
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6290--6290
 []\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
 [] argument)[] 
  []
 
 [112]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6347--6347
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6318--6318
 []\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
 [] argument)[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 6356--6356
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6345--6345
+[]\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
+[] argument)[] 
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6370--6370
+[]\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
+[] argument)[] 
+ []
+
+
+Overfull \hbox (80.25pt too wide) in paragraph at lines 6379--6379
 []\TU/lmtt/m/n/10 ##   Gender  name []Eye color[]  Race []Hair color[] Publishe
 r []Skin color[] Alignment[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 6356--6356
+Overfull \hbox (80.25pt too wide) in paragraph at lines 6379--6379
 []\TU/lmtt/m/n/10 ##   <chr>  <dbl>       <dbl> <dbl>        <dbl>     <dbl>   
      <dbl>     <dbl>[] 
  []
 
-
-Overfull \hbox (80.25pt too wide) in paragraph at lines 6356--6356
+[113]
+Overfull \hbox (80.25pt too wide) in paragraph at lines 6379--6379
 []\TU/lmtt/m/n/10 ## 1 Female  9.04        4.68  6.42         5.05      11.5   
       4.57      3.88[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 6356--6356
+Overfull \hbox (80.25pt too wide) in paragraph at lines 6379--6379
 []\TU/lmtt/m/n/10 ## 2 Male    9.05        4.53  6.75         5.48      11.4   
       5.02      3.78[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 6356--6356
+Overfull \hbox (80.25pt too wide) in paragraph at lines 6379--6379
 []\TU/lmtt/m/n/10 ## 3 <NA>    9.48        5.16 10.1          6.44      11.9   
       4         3.96[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6372--6372
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6395--6395
 []\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
 [] argument)[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 6382--6382
+Overfull \hbox (64.5pt too wide) in paragraph at lines 6405--6405
 []\TU/lmtt/m/n/10 ##   Gender    X1 Height Weight  name []Eye color[]  Race []H
 air color[] Publisher[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 6382--6382
+Overfull \hbox (64.5pt too wide) in paragraph at lines 6405--6405
 []\TU/lmtt/m/n/10 ##   <chr>  <dbl>  <dbl>  <dbl> <dbl>       <dbl> <dbl>      
   <dbl>     <dbl>[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 6382--6382
+Overfull \hbox (64.5pt too wide) in paragraph at lines 6405--6405
 []\TU/lmtt/m/n/10 ## 1 Female  395.   175.   78.8  9.04        4.68  6.42      
    5.05      11.5[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 6382--6382
+Overfull \hbox (64.5pt too wide) in paragraph at lines 6405--6405
 []\TU/lmtt/m/n/10 ## 2 Male    357.   192.  126.   9.05        4.53  6.75      
    5.48      11.4[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 6382--6382
+Overfull \hbox (64.5pt too wide) in paragraph at lines 6405--6405
 []\TU/lmtt/m/n/10 ## 3 <NA>    329    177.  129.   9.48        5.16 10.1       
    6.44      11.9[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 6382--6382
+Overfull \hbox (6.75pt too wide) in paragraph at lines 6405--6405
 []\TU/lmtt/m/n/10 ## # ... with 2 more variables: []Skin color[] <dbl>, Alignme
 nt <dbl>[] 
  []
 
-[113]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6403--6403
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6426--6426
 []\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
 [] argument)[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 6412--6412
+Overfull \hbox (69.75pt too wide) in paragraph at lines 6435--6435
 []\TU/lmtt/m/n/10 ##   Gender Height_min Height_mean Height_max Weight_min Weig
 ht_mean Weight_max[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 6412--6412
+Overfull \hbox (69.75pt too wide) in paragraph at lines 6435--6435
 []\TU/lmtt/m/n/10 ##   <chr>       <dbl>       <dbl>      <dbl>      <dbl>     
   <dbl>      <dbl>[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 6412--6412
+Overfull \hbox (69.75pt too wide) in paragraph at lines 6435--6435
 []\TU/lmtt/m/n/10 ## 1 Female       62.5        175.        366         41     
    78.8        630[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 6412--6412
+Overfull \hbox (69.75pt too wide) in paragraph at lines 6435--6435
 []\TU/lmtt/m/n/10 ## 2 Male         15.2        192.        975          2     
   126.         900[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 6412--6412
+Overfull \hbox (69.75pt too wide) in paragraph at lines 6435--6435
 []\TU/lmtt/m/n/10 ## 3 <NA>        108          177.        198         39     
   129.         383[] 
  []
 
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6434--6434
+[114]
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6457--6457
 []\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
 [] argument)[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 6444--6444
+Overfull \hbox (75.0pt too wide) in paragraph at lines 6467--6467
 []\TU/lmtt/m/n/10 ##   Gender Height_min Height_mean Height_max Height_na_n Wei
 ght_min Weight_mean[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 6444--6444
+Overfull \hbox (75.0pt too wide) in paragraph at lines 6467--6467
 []\TU/lmtt/m/n/10 ##   <chr>       <dbl>       <dbl>      <dbl>       <int>    
   <dbl>       <dbl>[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 6444--6444
+Overfull \hbox (75.0pt too wide) in paragraph at lines 6467--6467
 []\TU/lmtt/m/n/10 ## 1 Female       62.5        175.        366          56    
      41        78.8[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 6444--6444
+Overfull \hbox (69.75pt too wide) in paragraph at lines 6467--6467
 []\TU/lmtt/m/n/10 ## 2 Male         15.2        192.        975         147    
       2       126.[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 6444--6444
+Overfull \hbox (69.75pt too wide) in paragraph at lines 6467--6467
 []\TU/lmtt/m/n/10 ## 3 <NA>        108          177.        198          14    
      39       129.[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 6444--6444
+Overfull \hbox (6.75pt too wide) in paragraph at lines 6467--6467
 []\TU/lmtt/m/n/10 ## # ... with 2 more variables: Weight_max <dbl>, Weight_na_n
  <int>[] 
  []
 
-[114]
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+[115]
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##       X1 name  Gender []Eye color[] Race  []Hair color[] H
 eight Publisher[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (12.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##    <dbl> <fct> <fct>  <fct>       <fct> <fct>         <dbl
 > <fct>[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##  1     0 A-Bo~ Male   yellow      Human No Hair         20
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##  2     1 Abe ~ Male   blue        Icth~ No Hair         19
 1 Dark Hor~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##  3     2 Abin~ Male   blue        Unga~ No Hair         18
 5 DC Comics[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##  4     3 Abom~ Male   green       Huma~ No Hair         20
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##  5     4 Abra~ Male   blue        Cosm~ Black            N
 A Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##  6     5 Abso~ Male   blue        Human No Hair         19
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##  7     6 Adam~ Male   blue        <NA>  Blond            N
 A NBC - He~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##  8     7 Adam~ Male   blue        Human Blond           18
 5 DC Comics[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ##  9     8 Agen~ Female blue        <NA>  Blond           17
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (33.0pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ## 10     9 Agen~ Male   brown       Human Brown           17
 8 Marvel C~[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 6502--6502
+Overfull \hbox (22.5pt too wide) in paragraph at lines 6525--6525
 []\TU/lmtt/m/n/10 ## # ... with 724 more rows, and 3 more variables: []Skin col
 or[] <fct>,[] 
  []
 
-[115]
-Overfull \hbox (9.95815pt too wide) in paragraph at lines 6535--6535
-[]\TU/brill(0)/bx/n/14.4 Соединение датафреймов: bind_rows(), bind_cols() 
- []
 
-
-Underfull \hbox (badness 1910) in paragraph at lines 6537--6539
+Underfull \hbox (badness 1910) in paragraph at lines 6562--6564
 \TU/brill(0)/m/n/10 Для начала создадим следующие тибблы и сохраним их как \TU/
 lmtt/m/n/10 dc\TU/brill(0)/m/n/10 , \TU/lmtt/m/n/10 marvel \TU/brill(0)/m/n/10 
 и
  []
 
-
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6551--6551
-[]\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
-[] argument)[] 
- []
-
 [116]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6579--6579
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6576--6576
 []\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
 [] argument)[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 6607--6607
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6604--6604
+[]\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
+[] argument)[] 
+ []
+
+[117]
+Overfull \hbox (17.25pt too wide) in paragraph at lines 6632--6632
 []\TU/lmtt/m/n/10 ## []summarise()[] ungrouping output (override with [].groups
 [] argument)[] 
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 6624--6627
+Underfull \hbox (badness 5637) in paragraph at lines 6649--6652
 []\TU/brill(0)/m/n/10 Несколько тибблов можно объединить вертикально с помощью 
 функции
  []
 
-[117]
-Overfull \hbox (4.92513pt too wide) in paragraph at lines 6646--6648
+
+Overfull \hbox (4.92513pt too wide) in paragraph at lines 6671--6673
 []\TU/brill(0)/m/n/10 Чтобы соединить тибблы горизонтально, воспользуйтесь функ
 цией \TU/lmtt/m/n/10 bind_cols()\TU/brill(0)/m/n/10 . 
  []
 
-[118] [119] [120] [121]
-Overfull \hbox (69.11116pt too wide) in paragraph at lines 6988--6988
+[118] [119]
+Underfull \hbox (badness 1242) in paragraph at lines 6795--6803
+\TU/brill(0)/m/n/10 очень часто, обычно это происходит один-два раза в одном пр
+оекте, когда
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 6795--6803
+\TU/brill(0)/m/n/10 нужно дополнить имеющиеся данные дополнительной информацией
+ извне
+ []
+
+[120]
+File: images/joins.png Graphic file (type bmp)
+<images/joins.png>
+[121]
+Underfull \hbox (badness 1210) in paragraph at lines 6917--6920
+\TU/brill(0)/m/n/10 Их необязательно переименовывать, можно поставить соответст
+ие вручную
+ []
+
+[122] [123]
+Underfull \hbox (badness 10000) in paragraph at lines 7076--7081
+[]\TU/brill(0)/m/n/10 Функции \TU/lmtt/m/n/10 semi_join() \TU/brill(0)/m/n/10 и
+ \TU/lmtt/m/n/10 anti_join() \TU/brill(0)/m/n/10 не присоединяют второй дата-
+ []
+
+
+Underfull \hbox (badness 2057) in paragraph at lines 7076--7081
+\TU/brill(0)/m/n/10 словарь-фильтр для отделения только тех значений в \TU/lmtt
+/m/n/10 x\TU/brill(0)/m/n/10 , которые есть в \TU/lmtt/m/n/10 y
+ []
+
+[124]
+Overfull \hbox (68.28569pt too wide) in paragraph at lines 7083--7083
 []\TU/brill(0)/bx/n/14.4 Tidy data: \TU/lmtt/b/n/14.4 tidyr::pivot_longer()\TU/
 brill(0)/bx/n/14.4 , \TU/lmtt/b/n/14.4 tidyr::pivot_wider() 
  []
 
-[122]
+[125]
 Missing character: There is no М in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
 Missing character: There is no ш in font [lmmono10-regular]:!
@@ -6464,55 +6501,6 @@ Missing character: There is no а in font [lmmono10-regular]:!
 Missing character: There is no Р in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no м in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no А in font [lmmono10-regular]:!
-Missing character: There is no н in font [lmmono10-regular]:!
-Missing character: There is no т in font [lmmono10-regular]:!
-Missing character: There is no о in font [lmmono10-regular]:!
-Missing character: There is no н in font [lmmono10-regular]:!
-Missing character: There is no и in font [lmmono10-regular]:!
-Missing character: There is no н in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no М in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no ш in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no Р in font [lmmono10-regular]:!
-Missing character: There is no о in font [lmmono10-regular]:!
-Missing character: There is no м in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-[123]
-Missing character: There is no А in font [lmmono10-regular]:!
-Missing character: There is no н in font [lmmono10-regular]:!
-Missing character: There is no т in font [lmmono10-regular]:!
-Missing character: There is no о in font [lmmono10-regular]:!
-Missing character: There is no н in font [lmmono10-regular]:!
-Missing character: There is no и in font [lmmono10-regular]:!
-Missing character: There is no н in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no М in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no ш in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no М in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no ш in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no Р in font [lmmono10-regular]:!
-Missing character: There is no о in font [lmmono10-regular]:!
-Missing character: There is no м in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no Р in font [lmmono10-regular]:!
-Missing character: There is no о in font [lmmono10-regular]:!
-Missing character: There is no м in font [lmmono10-regular]:!
-Missing character: There is no а in font [lmmono10-regular]:!
-Missing character: There is no А in font [lmmono10-regular]:!
-Missing character: There is no н in font [lmmono10-regular]:!
-Missing character: There is no т in font [lmmono10-regular]:!
-Missing character: There is no о in font [lmmono10-regular]:!
-Missing character: There is no н in font [lmmono10-regular]:!
-Missing character: There is no и in font [lmmono10-regular]:!
-Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
 Missing character: There is no А in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
@@ -6538,30 +6526,79 @@ Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no и in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
-[124]
+Missing character: There is no М in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+Missing character: There is no ш in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+Missing character: There is no М in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+Missing character: There is no ш in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+Missing character: There is no Р in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no м in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+Missing character: There is no Р in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no м in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+Missing character: There is no А in font [lmmono10-regular]:!
+Missing character: There is no н in font [lmmono10-regular]:!
+Missing character: There is no т in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no н in font [lmmono10-regular]:!
+Missing character: There is no и in font [lmmono10-regular]:!
+Missing character: There is no н in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+Missing character: There is no А in font [lmmono10-regular]:!
+Missing character: There is no н in font [lmmono10-regular]:!
+Missing character: There is no т in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no н in font [lmmono10-regular]:!
+Missing character: There is no и in font [lmmono10-regular]:!
+Missing character: There is no н in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+[126]
+Missing character: There is no М in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+Missing character: There is no ш in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+Missing character: There is no Р in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no м in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+Missing character: There is no А in font [lmmono10-regular]:!
+Missing character: There is no н in font [lmmono10-regular]:!
+Missing character: There is no т in font [lmmono10-regular]:!
+Missing character: There is no о in font [lmmono10-regular]:!
+Missing character: There is no н in font [lmmono10-regular]:!
+Missing character: There is no и in font [lmmono10-regular]:!
+Missing character: There is no н in font [lmmono10-regular]:!
+Missing character: There is no а in font [lmmono10-regular]:!
+[127] [128
+
+]
 Глава 7.
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 7200--7200
+Overfull \hbox (6.75pt too wide) in paragraph at lines 7295--7295
 []\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
  19 20[] 
  []
 
-[125
-
-]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 7210--7210
+[129]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 7305--7305
 []\TU/lmtt/m/n/10 ##  [1] 20 19 18 17 16 15 14 13 12 11 10  9  8  7  6  5  4  3
   2  1[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 7230--7230
+Overfull \hbox (85.5pt too wide) in paragraph at lines 7325--7325
 []\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
  19 20 19 18 17 16 15[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 7277--7277
+Overfull \hbox (85.5pt too wide) in paragraph at lines 7372--7372
 []\TU/lmtt/m/n/10 ##  [1] 2020 2024 2028 2032 2036 2040 2044 2048 2052 2056 206
 0 2064 2068 2072 2076[] 
  []
@@ -6627,13 +6664,13 @@ Missing character: There is no Х in font [lmmono10-regular]:!
 Missing character: There is no э in font [lmmono10-regular]:!
 Missing character: There is no й in font [lmmono10-regular]:!
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 7302--7302
+Overfull \hbox (69.75pt too wide) in paragraph at lines 7397--7397
 []\TU/lmtt/m/n/10 ##  [1] 1.000000 1.414214 1.732051 2.000000 2.236068 2.449490
  2.645751 2.828427[] 
  []
 
-[126]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 7336--7336
+[130]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 7431--7431
 []\TU/lmtt/m/n/10 ##  [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7
  7 8 8 8 8 8 8 8 8 9 9[] 
  []
@@ -6656,56 +6693,56 @@ Missing character: There is no к in font [lmmono10-regular]:!
 Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no р in font [lmmono10-regular]:!
-[127]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 7482--7482
+[131]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 7577--7577
 []\TU/lmtt/m/n/10 ##  [1]  0  2  0  4  0  6  0  8  0 10  0 12  0 14  0 16  0 18
   0 20[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 7492--7492
+Overfull \hbox (6.75pt too wide) in paragraph at lines 7587--7587
 []\TU/lmtt/m/n/10 ##  [1]  1  0  3  0  5  0  7  0  9  0 11  0 13  0 15  0 17  0
  19  0[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 7505--7505
+Overfull \hbox (69.75pt too wide) in paragraph at lines 7600--7600
 []\TU/lmtt/m/n/10 ##  [1]       2       4       8      16      32      64     1
 28     256     512[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 7505--7505
+Overfull \hbox (69.75pt too wide) in paragraph at lines 7600--7600
 []\TU/lmtt/m/n/10 ## [10]    1024    2048    4096    8192   16384   32768   655
 36  131072  262144[] 
  []
 
-[128] [129]
-Overfull \hbox (59.25pt too wide) in paragraph at lines 7748--7748
+[132] [133]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 7843--7843
 []\TU/lmtt/m/n/10 ##  [1]  9.000000  2.236068  4.000000  1.000000 64.000000  2.
 000000 81.000000[] 
  []
 
-[130] [131]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 7965--7965
+[134] [135]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 8060--8060
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
-[132]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 8036--8036
-[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
-n" "o" "p" "q" "r" "s"[] 
- []
-
-
-Overfull \hbox (90.75pt too wide) in paragraph at lines 8036--8036
+[136]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 8131--8131
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
 
-Underfull \hbox (badness 4739) in paragraph at lines 8054--8058
+Overfull \hbox (90.75pt too wide) in paragraph at lines 8131--8131
+[]\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
+n" "o" "p" "q" "r" "s"[] 
+ []
+
+
+Underfull \hbox (badness 4739) in paragraph at lines 8149--8153
 []\TU/brill(0)/m/n/10 Запустите команду \TU/lmtt/m/n/10 data(mtcars) \TU/brill(
 0)/m/n/10 чтобы загрузить встроенный дата-
  []
@@ -6713,697 +6750,697 @@ Underfull \hbox (badness 4739) in paragraph at lines 8054--8058
 
 Underfull \vbox (badness 4739) has occurred while \output is active []
 
-[133]
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+[137]
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ##                      mpg cyl  disp  hp drat    wt  qsec vs
  am gear carb[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0
   1    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0
   1    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1
   1    4    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1
   0    3    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1
   0    3    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1
   0    4    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1
   0    4    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1
   0    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1
   0    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1
   1    4    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1
   1    4    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1
   1    4    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1
   0    3    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1
   1    4    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0
   1    5    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1
   1    5    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0
   1    5    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0
   1    5    6[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0
   1    5    8[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8101--8101
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8196--8196
 []\TU/lmtt/m/n/10 ## Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1
   1    4    2[] 
  []
 
-[134]
-Overfull \hbox (1.5pt too wide) in paragraph at lines 8123--8123
+[138]
+Overfull \hbox (1.5pt too wide) in paragraph at lines 8218--8218
 []\TU/lmtt/m/n/10 ##  $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.
 2 ...[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 8123--8123
+Overfull \hbox (12.0pt too wide) in paragraph at lines 8218--8218
 []\TU/lmtt/m/n/10 ##  $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3
 .92 ...[] 
  []
 
 
-Underfull \hbox (badness 7649) in paragraph at lines 8128--8130
+Underfull \hbox (badness 7649) in paragraph at lines 8223--8225
 []\TU/brill(0)/m/n/10 Найдите значение третьей строчки четвертого столбца датаф
 рейма
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 8164--8164
+Overfull \hbox (69.75pt too wide) in paragraph at lines 8259--8259
 []\TU/lmtt/m/n/10 ##  [1] 2.620 2.875 2.320 3.215 3.440 3.460 3.570 3.190 3.150
  3.440 3.440 4.070[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 8164--8164
+Overfull \hbox (69.75pt too wide) in paragraph at lines 8259--8259
 []\TU/lmtt/m/n/10 ## [13] 3.730 3.780 5.250 5.424 5.345 2.200 1.615 1.835 2.465
  3.520 3.435 3.840[] 
  []
 
-[135]
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+[139]
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ##                      mpg cyl  disp  hp drat    wt  qsec vs
  am gear carb[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0
   1    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0
   1    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1
   0    3    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1
   0    3    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1
   0    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1
   0    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0
   0    3    2[] 
  []
 
-[136]
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+[140]
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1
   1    5    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0
   1    5    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0
   1    5    6[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0
   1    5    8[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 8263--8263
+Overfull \hbox (43.5pt too wide) in paragraph at lines 8358--8358
 []\TU/lmtt/m/n/10 ## Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1
   1    4    2[] 
  []
 
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 8277--8277
+Overfull \hbox (1.5pt too wide) in paragraph at lines 8372--8372
 []\TU/lmtt/m/n/10 ##               mpg cyl  disp  hp drat    wt qsec vs am gear
  carb[] 
  []
 
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 8277--8277
+Overfull \hbox (1.5pt too wide) in paragraph at lines 8372--8372
 []\TU/lmtt/m/n/10 ## Lotus Europa 30.4   4  95.1 113 3.77 1.513 16.9  1  1    5
     2[] 
  []
 
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 8277--8277
+Overfull \hbox (1.5pt too wide) in paragraph at lines 8372--8372
 []\TU/lmtt/m/n/10 ## Volvo 142E   21.4   4 121.0 109 4.11 2.780 18.6  1  1    4
     2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ##                 mpg cyl  disp  hp drat    wt  qsec vs am g
 ear carb[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Mazda RX4      21.0   6 160.0 110 3.90 2.620 16.46  0  1  
   4    4[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Mazda RX4 Wag  21.0   6 160.0 110 3.90 2.875 17.02  0  1  
   4    4[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Datsun 710     22.8   4 108.0  93 3.85 2.320 18.61  1  1  
   4    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0  
   3    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Merc 240D      24.4   4 146.7  62 3.69 3.190 20.00  1  0  
   4    2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Merc 230       22.8   4 140.8  95 3.92 3.150 22.90  1  0  
   4    2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Fiat 128       32.4   4  78.7  66 4.08 2.200 19.47  1  1  
   4    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Honda Civic    30.4   4  75.7  52 4.93 1.615 18.52  1  1  
   4    2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Toyota Corolla 33.9   4  71.1  65 4.22 1.835 19.90  1  1  
   4    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Toyota Corona  21.5   4 120.1  97 3.70 2.465 20.01  1  0  
   3    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Fiat X1-9      27.3   4  79.0  66 4.08 1.935 18.90  1  1  
   4    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Porsche 914-2  26.0   4 120.3  91 4.43 2.140 16.70  0  1  
   5    2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.90  1  1  
   5    2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.50  0  1  
   5    4[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.50  0  1  
   5    6[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 8337--8337
+Overfull \hbox (17.25pt too wide) in paragraph at lines 8432--8432
 []\TU/lmtt/m/n/10 ## Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.60  1  1  
   4    2[] 
  []
 
-[137]
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+[141]
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ##                      mpg cyl  disp  hp drat    wt  qsec vs
  am gear carb wt_kg[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0
   1    4    4  1188[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0
   1    4    4  1304[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1
   1    4    1  1052[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1
   0    3    1  1458[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0
   0    3    2  1560[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1
   0    3    1  1569[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0
   0    3    4  1619[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1
   0    4    2  1447[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1
   0    4    2  1429[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1
   0    4    4  1560[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1
   0    4    4  1560[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0
   0    3    3  1846[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0
   0    3    3  1692[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0
   0    3    3  1715[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0
   0    3    4  2381[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0
   0    3    4  2460[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0
   0    3    4  2424[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1
   1    4    1   998[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1
   1    4    2   733[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1
   1    4    1   832[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1
   0    3    1  1118[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0
   0    3    2  1597[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0
   0    3    2  1558[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0
   0    3    4  1742[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0
   0    3    2  1744[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1
   1    4    1   878[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0
   1    5    2   971[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1
   1    5    2   686[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0
   1    5    4  1438[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0
   1    5    6  1256[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0
   1    5    8  1619[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 8385--8385
+Overfull \hbox (75.0pt too wide) in paragraph at lines 8480--8480
 []\TU/lmtt/m/n/10 ## Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1
   1    4    2  1261[] 
  []
 
-[138]
+[142]
 Missing character: There is no м in font [lmmono10-regular]:!
 Missing character: There is no а in font [lmmono10-regular]:!
 Missing character: There is no л in font [lmmono10-regular]:!
@@ -7485,48 +7522,48 @@ Missing character: There is no с in font [lmmono10-regular]:!
 Missing character: There is no л in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 8452--8452
+Overfull \hbox (38.25pt too wide) in paragraph at lines 8547--8547
 []\TU/lmtt/m/n/10 ##   X          name Gender Eye.color              Race Hair.
 color Height[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 8452--8452
+Overfull \hbox (38.25pt too wide) in paragraph at lines 8547--8547
 []\TU/lmtt/m/n/10 ## 1 0        A-Bomb   Male    yellow             Human    No
  Hair    203[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 8452--8452
+Overfull \hbox (38.25pt too wide) in paragraph at lines 8547--8547
 []\TU/lmtt/m/n/10 ## 2 1    Abe Sapien   Male      blue     Icthyo Sapien    No
  Hair    191[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 8452--8452
+Overfull \hbox (38.25pt too wide) in paragraph at lines 8547--8547
 []\TU/lmtt/m/n/10 ## 3 2      Abin Sur   Male      blue           Ungaran    No
  Hair    185[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 8452--8452
+Overfull \hbox (38.25pt too wide) in paragraph at lines 8547--8547
 []\TU/lmtt/m/n/10 ## 4 3   Abomination   Male     green Human / Radiation    No
  Hair    203[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 8452--8452
+Overfull \hbox (38.25pt too wide) in paragraph at lines 8547--8547
 []\TU/lmtt/m/n/10 ## 5 4       Abraxas   Male      blue     Cosmic Entity      
 Black     NA[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 8452--8452
+Overfull \hbox (38.25pt too wide) in paragraph at lines 8547--8547
 []\TU/lmtt/m/n/10 ## 6 5 Absorbing Man   Male      blue             Human    No
  Hair    193[] 
  []
 
-[139]
+[143]
 Missing character: There is no Я in font [lmmono10-regular]:!
 Missing character: There is no Б in font [lmmono10-regular]:!
 Missing character: There is no э in font [lmmono10-regular]:!
@@ -7576,26 +7613,26 @@ Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no м in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
-[140]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 8592--8592
+[144]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 8687--8687
 []\TU/lmtt/m/n/10 ##  [1] "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "
 o" "p" "q" "r" "s" "t"[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 8612--8612
+Overfull \hbox (90.75pt too wide) in paragraph at lines 8707--8707
 []\TU/lmtt/m/n/10 ##  [1] "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "
 o" "p" "q" "r" "s" "t"[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 8623--8623
+Overfull \hbox (90.75pt too wide) in paragraph at lines 8718--8718
 []\TU/lmtt/m/n/10 ##  [1] "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "
 p" "q" "r" "s" "t" "u"[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 8642--8642
+Overfull \hbox (90.75pt too wide) in paragraph at lines 8737--8737
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
@@ -7614,7 +7651,7 @@ Missing character: There is no ь in font [lmmono10-regular]:!
 Missing character: There is no ш in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no й in font [lmmono10-regular]:!
-[141]
+[145]
 Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no м in font [lmmono10-regular]:!
@@ -7637,12 +7674,12 @@ Missing character: There is no у in font [lmmono10-regular]:!
 Missing character: There is no л in font [lmmono10-regular]:!
 Missing character: There is no я in font [lmmono10-regular]:!
 
-Overfull \hbox (59.25pt too wide) in paragraph at lines 8738--8738
+Overfull \hbox (59.25pt too wide) in paragraph at lines 8833--8833
 []\TU/lmtt/m/n/10 ##  [1]    1    2    4    8   16   31   32   62   64  124  24
 8  496  992 1984[] 
  []
 
-[142]
+[146]
 Missing character: There is no д in font [lmmono10-italic]:!
 Missing character: There is no е in font [lmmono10-italic]:!
 Missing character: There is no л in font [lmmono10-italic]:!
@@ -7662,8 +7699,8 @@ Missing character: There is no а in font [lmmono10-italic]:!
 Missing character: There is no т in font [lmmono10-italic]:!
 Missing character: There is no к in font [lmmono10-italic]:!
 Missing character: There is no а in font [lmmono10-italic]:!
-[143]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 8878--8878
+[147]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 8973--8973
 []\TU/lmtt/m/n/10 ##  [1] FALSE  TRUE  TRUE FALSE FALSE  TRUE  TRUE  TRUE  TRUE
   TRUE[] 
  []
@@ -7701,65 +7738,65 @@ Missing character: There is no у in font [lmmono10-regular]:!
 Missing character: There is no б in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 
-Underfull \hbox (badness 2096) in paragraph at lines 8900--8903
+Underfull \hbox (badness 2096) in paragraph at lines 8995--8998
 []\TU/brill(0)/m/n/10 *Создайте бинарный оператор \TU/lmtt/m/n/10 %between%\TU/
 brill(0)/m/n/10 , который будет возвращать
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 8913--8913
+Overfull \hbox (6.75pt too wide) in paragraph at lines 9008--9008
 []\TU/lmtt/m/n/10 ##  [1]  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE
  FALSE[] 
  []
 
-[144]
-Underfull \hbox (badness 5359) in paragraph at lines 9040--9042
+[148]
+Underfull \hbox (badness 5359) in paragraph at lines 9135--9137
 \TU/brill(0)/m/n/10 возвращает индекс максимального значения (первого, если их
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9058--9058
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9153--9153
 []\TU/lmtt/m/n/10 ##  [1]  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17
  18 19 20[] 
  []
 
-[145]
-Overfull \hbox (69.75pt too wide) in paragraph at lines 9125--9125
+[149]
+Overfull \hbox (69.75pt too wide) in paragraph at lines 9220--9220
 []\TU/lmtt/m/n/10 ##          X       name     Gender  Eye.color       Race Hai
 r.color     Height[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 9125--9125
+Overfull \hbox (69.75pt too wide) in paragraph at lines 9220--9220
 []\TU/lmtt/m/n/10 ##          0          0         29        172        304    
     172        217[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9125--9125
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9220--9220
 []\TU/lmtt/m/n/10 ##  Publisher Skin.color  Alignment     Weight       hair    
    tall[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9125--9125
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9220--9220
 []\TU/lmtt/m/n/10 ##          0        662          7        239        172    
     217[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 9145--9145
+Overfull \hbox (90.75pt too wide) in paragraph at lines 9240--9240
 []\TU/lmtt/m/n/10 ##  [1]   3   5   7  11  13  17  19  23  29  31  37  41  43  
 47  53  59  61  67  71[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 9145--9145
+Overfull \hbox (90.75pt too wide) in paragraph at lines 9240--9240
 []\TU/lmtt/m/n/10 ## [20]  73  79  83  89  97 101 103 107 109 113 127 131 137 1
 39 149 151 157 163 167[] 
  []
 
-[146]
+[150]
 Missing character: There is no К in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no р in font [lmmono10-regular]:!
@@ -7787,7 +7824,7 @@ Missing character: There is no в in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
 
-Overfull \hbox (32.65001pt too wide) in paragraph at lines 9191--9191
+Overfull \hbox (32.65001pt too wide) in paragraph at lines 9286--9286
 []\TU/lmtt/m/n/10 ## [1] "Корень из"       "2"               "равен"           
 "1.4142135623731"[] 
  []
@@ -7806,540 +7843,540 @@ Missing character: There is no в in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
 
-Overfull \hbox (32.65001pt too wide) in paragraph at lines 9195--9195
+Overfull \hbox (32.65001pt too wide) in paragraph at lines 9290--9290
 []\TU/lmtt/m/n/10 ## [1] "Корень из"       "2"               "равен"           
 "1.4142135623731"[] 
  []
 
 
-Overfull \hbox (8.70863pt too wide) in paragraph at lines 9198--9198
+Overfull \hbox (8.70863pt too wide) in paragraph at lines 9293--9293
 []\TU/brill(0)/bx/n/14.4 Выбор строк: \TU/lmtt/b/n/14.4 dplyr::slice() \TU/bril
 l(0)/bx/n/14.4 и \TU/lmtt/b/n/14.4 dplyr::filter() 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9218--9218
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9313--9313
 []\TU/lmtt/m/n/10 ##      X1 name  Gender []Eye color[] Race  []Hair color[] He
 ight Publisher[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 9218--9218
+Overfull \hbox (6.75pt too wide) in paragraph at lines 9313--9313
 []\TU/lmtt/m/n/10 ##   <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl>
  <chr>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9218--9218
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9313--9313
 []\TU/lmtt/m/n/10 ## 1   203 Dark~ Male   red         New ~ No Hair       267  
  DC Comics[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9218--9218
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9313--9313
 []\TU/lmtt/m/n/10 ## 2   283 Giga~ Female green       <NA>  Red            62.5
  DC Comics[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9218--9218
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9313--9313
 []\TU/lmtt/m/n/10 ## 3   331 Hulk  Male   green       Huma~ Green         244  
  Marvel C~[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9218--9218
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9313--9313
 []\TU/lmtt/m/n/10 ## 4   373 Jugg~ Male   blue        Human Red           287  
  Marvel C~[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9218--9218
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9313--9313
 []\TU/lmtt/m/n/10 ## 5   549 Red ~ Male   yellow      Huma~ Black         213  
  Marvel C~[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9218--9218
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9313--9313
 []\TU/lmtt/m/n/10 ## 6   575 Sasq~ Male   red         <NA>  Orange        305  
  Marvel C~[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 9218--9218
+Overfull \hbox (80.25pt too wide) in paragraph at lines 9313--9313
 []\TU/lmtt/m/n/10 ## # ... with 3 more variables: []Skin color[] <chr>, Alignme
 nt <chr>, Weight <dbl>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9233--9233
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9328--9328
 []\TU/lmtt/m/n/10 ##      X1 name  Gender []Eye color[] Race  []Hair color[] He
 ight Publisher[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 9233--9233
+Overfull \hbox (6.75pt too wide) in paragraph at lines 9328--9328
 []\TU/lmtt/m/n/10 ##   <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl>
  <chr>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9233--9233
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9328--9328
 []\TU/lmtt/m/n/10 ## 1   283 Giga~ Female green       <NA>  Red            62.5
  DC Comics[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 9233--9233
+Overfull \hbox (80.25pt too wide) in paragraph at lines 9328--9328
 []\TU/lmtt/m/n/10 ## # ... with 3 more variables: []Skin color[] <chr>, Alignme
 nt <chr>, Weight <dbl>[] 
  []
 
-[147]
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9253--9253
+[151]
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9348--9348
 []\TU/lmtt/m/n/10 ##      X1 name  Gender []Eye color[] Race  []Hair color[] He
 ight Publisher[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 9253--9253
+Overfull \hbox (6.75pt too wide) in paragraph at lines 9348--9348
 []\TU/lmtt/m/n/10 ##   <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl>
  <chr>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9253--9253
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9348--9348
 []\TU/lmtt/m/n/10 ## 1    38 Arac~ Female blue        Human Blond           175
  Marvel C~[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9253--9253
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9348--9348
 []\TU/lmtt/m/n/10 ## 2    63 Batg~ Female green       Human Red             170
  DC Comics[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9253--9253
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9348--9348
 []\TU/lmtt/m/n/10 ## 3    65 Batg~ Female green       Human Black           165
  DC Comics[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9253--9253
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9348--9348
 []\TU/lmtt/m/n/10 ## 4    72 Batw~ Female green       Human Red             178
  DC Comics[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9253--9253
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9348--9348
 []\TU/lmtt/m/n/10 ## 5    96 Blac~ Female blue        Human Blond           165
  DC Comics[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 9253--9253
+Overfull \hbox (80.25pt too wide) in paragraph at lines 9348--9348
 []\TU/lmtt/m/n/10 ## # ... with 3 more variables: []Skin color[] <chr>, Alignme
 nt <chr>, Weight <dbl>[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9279--9279
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9374--9374
 []\TU/lmtt/m/n/10 ##    hero_names    Agility []Accelerated Healing[] []Lantern
  Power Ring[][] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (69.75pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##    Reflexes Invulnerability []Energy Constru~ []Force Fiel
 ds[] []Self-Sustenanc~[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##    <lgl>    <lgl>           <lgl>            <lgl>        
   <lgl>[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##  1 FALSE    FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (6.75pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##  2 FALSE    FALSE           FALSE            FALSE        
   TRUE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##  3 TRUE     FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##  4 FALSE    FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##  5 FALSE    TRUE            FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##  6 FALSE    TRUE            FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##  7 FALSE    TRUE            FALSE            FALSE        
   FALSE[] 
  []
 
-[148]
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9304--9304
+[152]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##  8 FALSE    FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ##  9 FALSE    FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ## 10 FALSE    FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9304--9304
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9399--9399
 []\TU/lmtt/m/n/10 ## # ... with 657 more rows, and 2 more variables: []Anti-Gra
 vity[] <lgl>,[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (80.25pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##    Agility []Accelerated He~ []Lantern Power ~ []Dimension
 al Aw~ []Cold Resistanc~[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##    <lgl>   <lgl>            <lgl>            <lgl>        
     <lgl>[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##  1 TRUE    FALSE            FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##  2 FALSE   TRUE             FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (17.25pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##  3 TRUE    TRUE             FALSE            FALSE        
     TRUE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##  4 FALSE   FALSE            TRUE             FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##  5 FALSE   TRUE             FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##  6 FALSE   FALSE            FALSE            TRUE         
     FALSE[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (17.25pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##  7 FALSE   FALSE            FALSE            FALSE        
     TRUE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##  8 FALSE   TRUE             FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ##  9 FALSE   FALSE            FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## 10 FALSE   FALSE            FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## # ... with 657 more rows, and 162 more variables: Durabili
 ty <lgl>,[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Stealth <lgl>, []Energy Absorption[] <lgl>, Flight <lg
 l>, []Danger[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (69.75pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Sense[] <lgl>, []Underwater breathing[] <lgl>, Marksma
 nship <lgl>, []Weapons[] 
  []
 
 
-Overfull \hbox (54.0pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (54.0pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Master[] <lgl>, []Power Augmentation[] <lgl>, []Animal
  Attributes[] <lgl>,[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (6.75pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Longevity <lgl>, Intelligence <lgl>, []Super Strength[
 ] <lgl>,[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Cryokinesis <lgl>, Telepathy <lgl>, []Energy Armor[] <
 lgl>, []Energy[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Blasts[] <lgl>, Duplication <lgl>, []Size Changing[] <
 lgl>, []Density[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (6.75pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Control[] <lgl>, Stamina <lgl>, []Astral Travel[] <lgl
 >, []Audio[] 
  []
 
 
-Overfull \hbox (54.0pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (54.0pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Control[] <lgl>, Dexterity <lgl>, Omnitrix <lgl>, []Su
 per Speed[] <lgl>,[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (22.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Possession <lgl>, []Animal Oriented Powers[] <lgl>, []
 Weapon-based[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (85.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Powers[] <lgl>, Electrokinesis <lgl>, []Darkforce Mani
 pulation[] <lgl>, []Death[] 
  []
 
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (1.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Touch[] <lgl>, Teleportation <lgl>, []Enhanced Senses[
 ] <lgl>,[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (75.0pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Telekinesis <lgl>, []Energy Beams[] <lgl>, Magic <lgl>
 , Hyperkinesis <lgl>,[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (38.25pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Jump <lgl>, Clairvoyance <lgl>, []Dimensional Travel[]
  <lgl>, []Power[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Sense[] <lgl>, Shapeshifting <lgl>, []Peak Human Condi
 tion[] <lgl>,[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Immortality <lgl>, Camouflage <lgl>, []Element Control
 [] <lgl>,[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (64.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Phasing <lgl>, []Astral Projection[] <lgl>, []Electric
 al Transport[] <lgl>,[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (38.25pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   []Fire Control[] <lgl>, Projection <lgl>, Summoning <l
 gl>, []Enhanced[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Memory[] <lgl>, Reflexes <lgl>, Invulnerability <lgl>,
  []Energy[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Constructs[] <lgl>, []Force Fields[] <lgl>, []Self-Sus
 tenance[] <lgl>,[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (69.75pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   []Anti-Gravity[] <lgl>, Empathy <lgl>, []Power Nullifi
 er[] <lgl>, []Radiation[] 
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (48.75pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Control[] <lgl>, []Psionic Powers[] <lgl>, Elasticity 
 <lgl>, []Substance[] 
  []
 
 
-Overfull \hbox (54.0pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (54.0pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   []Technopath/Cyberpath[] <lgl>, []Photographic Reflexe
 s[] <lgl>, []Seismic[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (69.75pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Power[] <lgl>, Animation <lgl>, Precognition <lgl>, []
 Mind Control[] <lgl>,[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (6.75pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   []Fire Resistance[] <lgl>, []Power Absorption[] <lgl>,
  []Enhanced[] 
  []
 
-[149]
-Overfull \hbox (64.5pt too wide) in paragraph at lines 9362--9362
+[153]
+Overfull \hbox (64.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Hearing[] <lgl>, []Nova Force[] <lgl>, Insanity <lgl>,
  Hypnokinesis <lgl>,[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (43.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   []Animal Control[] <lgl>, []Natural Armor[] <lgl>, Int
 angibility <lgl>,[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   []Enhanced Sight[] <lgl>, []Molecular Manipulation[] <
 lgl>, []Heat[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (64.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Generation[] <lgl>, Adaptation <lgl>, Gliding <lgl>, [
 ]Power Suit[] <lgl>,[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (17.25pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   []Mind Blast[] <lgl>, []Probability Manipulation[] <lg
 l>, []Gravity[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (69.75pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Echolocation <lgl>, Levitation <lgl>, []Toxin and Dise
 ase Control[] <lgl>,[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 9362--9362
+Overfull \hbox (43.5pt too wide) in paragraph at lines 9457--9457
 []\TU/lmtt/m/n/10 ## #   Banish <lgl>, []Energy Manipulation[] <lgl>, []Heat Re
 sistance[] <lgl>,[] 
  []
 
-[150] [151]
-Overfull \hbox (74.94852pt too wide) in paragraph at lines 9494--9494
+[154] [155]
+Overfull \hbox (74.94852pt too wide) in paragraph at lines 9589--9589
 []\TU/brill(0)/bx/n/14.4 Создание колонок: \TU/lmtt/b/n/14.4 dplyr::mutate() \T
 U/brill(0)/bx/n/14.4 и \TU/lmtt/b/n/14.4 dplyr::transmute() 
  []
 
-[152]
-Overfull \hbox (13.61871pt too wide) in paragraph at lines 9548--9548
+[156]
+Overfull \hbox (13.61871pt too wide) in paragraph at lines 9643--9643
 []\TU/brill(0)/bx/n/14.4 Агрегация: \TU/lmtt/b/n/14.4 dplyr::group_by() %>% sum
 marise() 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9601--9601
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9696--9696
 []\TU/lmtt/m/n/10 ##   Gender    X1  name []Eye color[]  Race []Hair color[] He
 ight Publisher[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9601--9601
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9696--9696
 []\TU/lmtt/m/n/10 ##   <chr>  <int> <int>       <int> <int>        <int>  <int>
      <int>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9601--9601
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9696--9696
 []\TU/lmtt/m/n/10 ## 1 Female     0     0          41    98           38     56
          0[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9601--9601
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9696--9696
 []\TU/lmtt/m/n/10 ## 2 Male       0     0         121   184          123    147
          0[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 9601--9601
+Overfull \hbox (27.75pt too wide) in paragraph at lines 9696--9696
 []\TU/lmtt/m/n/10 ## 3 <NA>       0     0          10    22           11     14
          0[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 9601--9601
+Overfull \hbox (80.25pt too wide) in paragraph at lines 9696--9696
 []\TU/lmtt/m/n/10 ## # ... with 3 more variables: []Skin color[] <int>, Alignme
 nt <int>, Weight <int>[] 
  []
 
-[153]
+[157]
 Missing character: There is no в in font [lmmono10-regular]:!
 Missing character: There is no ы in font [lmmono10-regular]:!
 Missing character: There is no ш in font [lmmono10-regular]:!
@@ -8365,7 +8402,7 @@ Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no г in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 
-Underfull \hbox (badness 1142) in paragraph at lines 9623--9628
+Underfull \hbox (badness 1142) in paragraph at lines 9718--9723
 \TU/lmtt/m/n/10 Weight\TU/brill(0)/m/n/10 , где для каждого героя содержится зн
 ачение \TU/lmtt/m/n/10 "выше среднего"\TU/brill(0)/m/n/10 , если
  []
@@ -8778,144 +8815,144 @@ Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no г in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
-[154]
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+[158]
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##       X1 name  Gender []Eye color[] Race  []Hair color[] H
 eight Publisher[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (12.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##    <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl
 > <chr>[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##  1    33 Anti~ Male   blue        Symb~ Blond           22
 9 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##  2    38 Arac~ Female blue        Human Blond           17
 5 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##  3   161 Carn~ Male   green       Symb~ Red             18
 5 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##  4   335 Hybr~ Male   brown       Symb~ Black           17
 5 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##  5   479 Myst~ Male   brown       Human No Hair         18
 0 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##  6   580 Scar~ Male   brown       Clone Brown           19
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##  7   597 Silk  Female brown       Human Black            N
 A Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##  8   620 Spid~ Female blue        Human Brown           17
 0 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ##  9   621 Spid~ Female blue        Human Blond           16
 5 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ## 10   622 Spid~ Male   hazel       Human Brown           17
 8 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ## 11   623 Spid~ <NA>   red         Human Brown           17
 8 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ## 12   624 Spid~ Male   brown       Human Black           15
 7 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ## 13   673 Toxin Male   blue        Symb~ Brown           18
 8 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ## 14   674 Toxin Male   black       Symb~ Blond           19
 1 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ## 15   689 Venom Male   blue        Symb~ Strawberry ~    19
 1 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (33.0pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ## 16   692 Veno~ Male   <NA>        Symb~ <NA>            22
 6 Marvel C~[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 9705--9705
+Overfull \hbox (85.5pt too wide) in paragraph at lines 9800--9800
 []\TU/lmtt/m/n/10 ## # ... with 4 more variables: []Skin color[] <chr>, Alignme
 nt <chr>, Weight <dbl>,[] 
  []
 
-[155] [156]
+[159] [160]
 Глава 8.
-[157
+[161
 
 ]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 9899--9899
+Overfull \hbox (6.75pt too wide) in paragraph at lines 9994--9994
 []\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
  19 20[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 9915--9915
+Overfull \hbox (6.75pt too wide) in paragraph at lines 10010--10010
 []\TU/lmtt/m/n/10 ##  [1] 20 19 18 17 16 15 14 13 12 11 10  9  8  7  6  5  4  3
   2  1[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 9947--9947
+Overfull \hbox (85.5pt too wide) in paragraph at lines 10042--10042
 []\TU/lmtt/m/n/10 ##  [1]  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
  19 20 19 18 17 16 15[] 
  []
 
-[158]
-Overfull \hbox (85.5pt too wide) in paragraph at lines 10018--10018
+[162]
+Overfull \hbox (85.5pt too wide) in paragraph at lines 10113--10113
 []\TU/lmtt/m/n/10 ##  [1] 2020 2024 2028 2032 2036 2040 2044 2048 2052 2056 206
 0 2064 2068 2072 2076[] 
  []
@@ -8984,13 +9021,13 @@ Missing character: There is no Х in font [lmmono10-regular]:!
 Missing character: There is no э in font [lmmono10-regular]:!
 Missing character: There is no й in font [lmmono10-regular]:!
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 10056--10056
+Overfull \hbox (69.75pt too wide) in paragraph at lines 10151--10151
 []\TU/lmtt/m/n/10 ##  [1] 1.000000 1.414214 1.732051 2.000000 2.236068 2.449490
  2.645751 2.828427[] 
  []
 
-[159]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 10108--10108
+[163]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 10203--10203
 []\TU/lmtt/m/n/10 ##  [1] 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6 7 7 7 7 7 7
  7 8 8 8 8 8 8 8 8 9 9[] 
  []
@@ -9022,750 +9059,750 @@ Missing character: There is no к in font [lmmono10-regular]:!
 Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no р in font [lmmono10-regular]:!
-[160] [161]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 10342--10342
+[164] [165]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 10437--10437
 []\TU/lmtt/m/n/10 ##  [1]  0  2  0  4  0  6  0  8  0 10  0 12  0 14  0 16  0 18
   0 20[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 10358--10358
+Overfull \hbox (6.75pt too wide) in paragraph at lines 10453--10453
 []\TU/lmtt/m/n/10 ##  [1]  1  0  3  0  5  0  7  0  9  0 11  0 13  0 15  0 17  0
  19  0[] 
  []
 
-[162]
-Overfull \hbox (69.75pt too wide) in paragraph at lines 10377--10377
+[166]
+Overfull \hbox (69.75pt too wide) in paragraph at lines 10472--10472
 []\TU/lmtt/m/n/10 ##  [1]       2       4       8      16      32      64     1
 28     256     512[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 10377--10377
+Overfull \hbox (69.75pt too wide) in paragraph at lines 10472--10472
 []\TU/lmtt/m/n/10 ## [10]    1024    2048    4096    8192   16384   32768   655
 36  131072  262144[] 
  []
 
-[163] [164] [165]
-Overfull \hbox (59.25pt too wide) in paragraph at lines 10747--10747
+[167] [168] [169]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 10842--10842
 []\TU/lmtt/m/n/10 ##  [1]  9.000000  2.236068  4.000000  1.000000 64.000000  2.
 000000 81.000000[] 
  []
 
-[166] [167]
+[170] [171]
 Missing character: There is no Е in font [lmmono10-italic]:!
 Missing character: There is no щ in font [lmmono10-italic]:!
 Missing character: There is no е in font [lmmono10-italic]:!
-[168]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 11060--11060
+[172]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 11155--11155
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
-[169]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 11162--11162
+[173]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 11257--11257
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
-[170]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 11162--11162
+[174]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 11257--11257
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
 
 
-Underfull \hbox (badness 4739) in paragraph at lines 11186--11190
+Underfull \hbox (badness 4739) in paragraph at lines 11281--11285
 []\TU/brill(0)/m/n/10 Запустите команду \TU/lmtt/m/n/10 data(mtcars) \TU/brill(
 0)/m/n/10 чтобы загрузить встроенный дата-
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ##                      mpg cyl  disp  hp drat    wt  qsec vs
  am gear carb[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0
   1    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0
   1    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1
   1    4    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1
   0    3    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1
   0    3    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1
   0    4    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1
   0    4    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1
   0    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1
   0    4    4[] 
  []
 
-[171]
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+[175]
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1
   1    4    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1
   1    4    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1
   1    4    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1
   0    3    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1
   1    4    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0
   1    5    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1
   1    5    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0
   1    5    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0
   1    5    6[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0
   1    5    8[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11233--11233
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11328--11328
 []\TU/lmtt/m/n/10 ## Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1
   1    4    2[] 
  []
 
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 11261--11261
+Overfull \hbox (1.5pt too wide) in paragraph at lines 11356--11356
 []\TU/lmtt/m/n/10 ##  $ mpg : num  21 21 22.8 21.4 18.7 18.1 14.3 24.4 22.8 19.
 2 ...[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 11261--11261
+Overfull \hbox (12.0pt too wide) in paragraph at lines 11356--11356
 []\TU/lmtt/m/n/10 ##  $ drat: num  3.9 3.9 3.85 3.08 3.15 2.76 3.21 3.69 3.92 3
 .92 ...[] 
  []
 
 
-Underfull \hbox (badness 7649) in paragraph at lines 11266--11268
+Underfull \hbox (badness 7649) in paragraph at lines 11361--11363
 []\TU/brill(0)/m/n/10 Найдите значение третьей строчки четвертого столбца датаф
 рейма
  []
 
-[172]
-Overfull \hbox (69.75pt too wide) in paragraph at lines 11320--11320
+[176]
+Overfull \hbox (69.75pt too wide) in paragraph at lines 11415--11415
 []\TU/lmtt/m/n/10 ##  [1] 2.620 2.875 2.320 3.215 3.440 3.460 3.570 3.190 3.150
  3.440 3.440 4.070[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 11320--11320
+Overfull \hbox (69.75pt too wide) in paragraph at lines 11415--11415
 []\TU/lmtt/m/n/10 ## [13] 3.730 3.780 5.250 5.424 5.345 2.200 1.615 1.835 2.465
  3.520 3.435 3.840[] 
  []
 
-[173]
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+[177]
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ##                      mpg cyl  disp  hp drat    wt  qsec vs
  am gear carb[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0
   1    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0
   1    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1
   0    3    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1
   0    3    1[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1
   0    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1
   0    4    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0
   0    3    3[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0
   0    3    4[] 
  []
 
-[174]
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+[178]
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0
   0    3    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0
   0    3    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1
   1    5    2[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0
   1    5    4[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0
   1    5    6[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0
   1    5    8[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 11443--11443
+Overfull \hbox (43.5pt too wide) in paragraph at lines 11538--11538
 []\TU/lmtt/m/n/10 ## Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1
   1    4    2[] 
  []
 
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 11463--11463
+Overfull \hbox (1.5pt too wide) in paragraph at lines 11558--11558
 []\TU/lmtt/m/n/10 ##               mpg cyl  disp  hp drat    wt qsec vs am gear
  carb[] 
  []
 
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 11463--11463
+Overfull \hbox (1.5pt too wide) in paragraph at lines 11558--11558
 []\TU/lmtt/m/n/10 ## Lotus Europa 30.4   4  95.1 113 3.77 1.513 16.9  1  1    5
     2[] 
  []
 
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 11463--11463
+Overfull \hbox (1.5pt too wide) in paragraph at lines 11558--11558
 []\TU/lmtt/m/n/10 ## Volvo 142E   21.4   4 121.0 109 4.11 2.780 18.6  1  1    4
     2[] 
  []
 
-[175]
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+[179]
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ##                 mpg cyl  disp  hp drat    wt  qsec vs am g
 ear carb[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Mazda RX4      21.0   6 160.0 110 3.90 2.620 16.46  0  1  
   4    4[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Mazda RX4 Wag  21.0   6 160.0 110 3.90 2.875 17.02  0  1  
   4    4[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Datsun 710     22.8   4 108.0  93 3.85 2.320 18.61  1  1  
   4    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Hornet 4 Drive 21.4   6 258.0 110 3.08 3.215 19.44  1  0  
   3    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Merc 240D      24.4   4 146.7  62 3.69 3.190 20.00  1  0  
   4    2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Merc 230       22.8   4 140.8  95 3.92 3.150 22.90  1  0  
   4    2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Fiat 128       32.4   4  78.7  66 4.08 2.200 19.47  1  1  
   4    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Honda Civic    30.4   4  75.7  52 4.93 1.615 18.52  1  1  
   4    2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Toyota Corolla 33.9   4  71.1  65 4.22 1.835 19.90  1  1  
   4    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Toyota Corona  21.5   4 120.1  97 3.70 2.465 20.01  1  0  
   3    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Fiat X1-9      27.3   4  79.0  66 4.08 1.935 18.90  1  1  
   4    1[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Porsche 914-2  26.0   4 120.3  91 4.43 2.140 16.70  0  1  
   5    2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Lotus Europa   30.4   4  95.1 113 3.77 1.513 16.90  1  1  
   5    2[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Ford Pantera L 15.8   8 351.0 264 4.22 3.170 14.50  0  1  
   5    4[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Ferrari Dino   19.7   6 145.0 175 3.62 2.770 15.50  0  1  
   5    6[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 11547--11547
+Overfull \hbox (17.25pt too wide) in paragraph at lines 11642--11642
 []\TU/lmtt/m/n/10 ## Volvo 142E     21.4   4 121.0 109 4.11 2.780 18.60  1  1  
   4    2[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ##                      mpg cyl  disp  hp drat    wt  qsec vs
  am gear carb wt_kg[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Mazda RX4           21.0   6 160.0 110 3.90 2.620 16.46  0
   1    4    4  1188[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Mazda RX4 Wag       21.0   6 160.0 110 3.90 2.875 17.02  0
   1    4    4  1304[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Datsun 710          22.8   4 108.0  93 3.85 2.320 18.61  1
   1    4    1  1052[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Hornet 4 Drive      21.4   6 258.0 110 3.08 3.215 19.44  1
   0    3    1  1458[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Hornet Sportabout   18.7   8 360.0 175 3.15 3.440 17.02  0
   0    3    2  1560[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Valiant             18.1   6 225.0 105 2.76 3.460 20.22  1
   0    3    1  1569[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Duster 360          14.3   8 360.0 245 3.21 3.570 15.84  0
   0    3    4  1619[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Merc 240D           24.4   4 146.7  62 3.69 3.190 20.00  1
   0    4    2  1447[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Merc 230            22.8   4 140.8  95 3.92 3.150 22.90  1
   0    4    2  1429[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Merc 280            19.2   6 167.6 123 3.92 3.440 18.30  1
   0    4    4  1560[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Merc 280C           17.8   6 167.6 123 3.92 3.440 18.90  1
   0    4    4  1560[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Merc 450SE          16.4   8 275.8 180 3.07 4.070 17.40  0
   0    3    3  1846[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Merc 450SL          17.3   8 275.8 180 3.07 3.730 17.60  0
   0    3    3  1692[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Merc 450SLC         15.2   8 275.8 180 3.07 3.780 18.00  0
   0    3    3  1715[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Cadillac Fleetwood  10.4   8 472.0 205 2.93 5.250 17.98  0
   0    3    4  2381[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Lincoln Continental 10.4   8 460.0 215 3.00 5.424 17.82  0
   0    3    4  2460[] 
  []
 
-[176]
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+[180]
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Chrysler Imperial   14.7   8 440.0 230 3.23 5.345 17.42  0
   0    3    4  2424[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Fiat 128            32.4   4  78.7  66 4.08 2.200 19.47  1
   1    4    1   998[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Honda Civic         30.4   4  75.7  52 4.93 1.615 18.52  1
   1    4    2   733[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Toyota Corolla      33.9   4  71.1  65 4.22 1.835 19.90  1
   1    4    1   832[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Toyota Corona       21.5   4 120.1  97 3.70 2.465 20.01  1
   0    3    1  1118[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Dodge Challenger    15.5   8 318.0 150 2.76 3.520 16.87  0
   0    3    2  1597[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## AMC Javelin         15.2   8 304.0 150 3.15 3.435 17.30  0
   0    3    2  1558[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Camaro Z28          13.3   8 350.0 245 3.73 3.840 15.41  0
   0    3    4  1742[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Pontiac Firebird    19.2   8 400.0 175 3.08 3.845 17.05  0
   0    3    2  1744[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Fiat X1-9           27.3   4  79.0  66 4.08 1.935 18.90  1
   1    4    1   878[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Porsche 914-2       26.0   4 120.3  91 4.43 2.140 16.70  0
   1    5    2   971[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Lotus Europa        30.4   4  95.1 113 3.77 1.513 16.90  1
   1    5    2   686[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Ford Pantera L      15.8   8 351.0 264 4.22 3.170 14.50  0
   1    5    4  1438[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Ferrari Dino        19.7   6 145.0 175 3.62 2.770 15.50  0
   1    5    6  1256[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Maserati Bora       15.0   8 301.0 335 3.54 3.570 14.60  0
   1    5    8  1619[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 11602--11602
+Overfull \hbox (75.0pt too wide) in paragraph at lines 11697--11697
 []\TU/lmtt/m/n/10 ## Volvo 142E          21.4   4 121.0 109 4.11 2.780 18.60  1
   1    4    2  1261[] 
  []
@@ -9876,49 +9913,49 @@ Missing character: There is no и in font [lmmono10-regular]:!
 Missing character: There is no с in font [lmmono10-regular]:!
 Missing character: There is no л in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
-[177]
-Overfull \hbox (38.25pt too wide) in paragraph at lines 11682--11682
+[181]
+Overfull \hbox (38.25pt too wide) in paragraph at lines 11777--11777
 []\TU/lmtt/m/n/10 ##   X          name Gender Eye.color              Race Hair.
 color Height[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 11682--11682
+Overfull \hbox (38.25pt too wide) in paragraph at lines 11777--11777
 []\TU/lmtt/m/n/10 ## 1 0        A-Bomb   Male    yellow             Human    No
  Hair    203[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 11682--11682
+Overfull \hbox (38.25pt too wide) in paragraph at lines 11777--11777
 []\TU/lmtt/m/n/10 ## 2 1    Abe Sapien   Male      blue     Icthyo Sapien    No
  Hair    191[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 11682--11682
+Overfull \hbox (38.25pt too wide) in paragraph at lines 11777--11777
 []\TU/lmtt/m/n/10 ## 3 2      Abin Sur   Male      blue           Ungaran    No
  Hair    185[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 11682--11682
+Overfull \hbox (38.25pt too wide) in paragraph at lines 11777--11777
 []\TU/lmtt/m/n/10 ## 4 3   Abomination   Male     green Human / Radiation    No
  Hair    203[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 11682--11682
+Overfull \hbox (38.25pt too wide) in paragraph at lines 11777--11777
 []\TU/lmtt/m/n/10 ## 5 4       Abraxas   Male      blue     Cosmic Entity      
 Black     NA[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 11682--11682
+Overfull \hbox (38.25pt too wide) in paragraph at lines 11777--11777
 []\TU/lmtt/m/n/10 ## 6 5 Absorbing Man   Male      blue             Human    No
  Hair    193[] 
  []
 
-[178]
+[182]
 Missing character: There is no Я in font [lmmono10-regular]:!
 Missing character: There is no Б in font [lmmono10-regular]:!
 Missing character: There is no э in font [lmmono10-regular]:!
@@ -9933,7 +9970,7 @@ Missing character: There is no т in font [lmmono10-regular]:!
 Missing character: There is no м in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
-[179]
+[183]
 Missing character: There is no Я in font [lmmono10-regular]:!
 Missing character: There is no Б in font [lmmono10-regular]:!
 Missing character: There is no э in font [lmmono10-regular]:!
@@ -9970,25 +10007,25 @@ Missing character: There is no м in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 11904--11904
+Overfull \hbox (90.75pt too wide) in paragraph at lines 11999--11999
 []\TU/lmtt/m/n/10 ##  [1] "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "
 o" "p" "q" "r" "s" "t"[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 11935--11935
+Overfull \hbox (90.75pt too wide) in paragraph at lines 12030--12030
 []\TU/lmtt/m/n/10 ##  [1] "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "
 o" "p" "q" "r" "s" "t"[] 
  []
 
-[180]
-Overfull \hbox (90.75pt too wide) in paragraph at lines 11946--11946
+[184]
+Overfull \hbox (90.75pt too wide) in paragraph at lines 12041--12041
 []\TU/lmtt/m/n/10 ##  [1] "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "n" "o" "
 p" "q" "r" "s" "t" "u"[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 11974--11974
+Overfull \hbox (90.75pt too wide) in paragraph at lines 12069--12069
 []\TU/lmtt/m/n/10 ##  [1] "a" "b" "c" "d" "e" "f" "g" "h" "i" "j" "k" "l" "m" "
 n" "o" "p" "q" "r" "s"[] 
  []
@@ -10063,8 +10100,8 @@ Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no у in font [lmmono10-regular]:!
 Missing character: There is no л in font [lmmono10-regular]:!
 Missing character: There is no я in font [lmmono10-regular]:!
-[181]
-Overfull \hbox (59.25pt too wide) in paragraph at lines 12104--12104
+[185]
+Overfull \hbox (59.25pt too wide) in paragraph at lines 12199--12199
 []\TU/lmtt/m/n/10 ##  [1]    1    2    4    8   16   31   32   62   64  124  24
 8  496  992 1984[] 
  []
@@ -10098,7 +10135,7 @@ Missing character: There is no к in font [lmmono10-italic]:!
 Missing character: There is no ц in font [lmmono10-italic]:!
 Missing character: There is no и in font [lmmono10-italic]:!
 Missing character: There is no ю in font [lmmono10-italic]:!
-[182]
+[186]
 Missing character: There is no д in font [lmmono10-italic]:!
 Missing character: There is no е in font [lmmono10-italic]:!
 Missing character: There is no л in font [lmmono10-italic]:!
@@ -10118,8 +10155,8 @@ Missing character: There is no а in font [lmmono10-italic]:!
 Missing character: There is no т in font [lmmono10-italic]:!
 Missing character: There is no к in font [lmmono10-italic]:!
 Missing character: There is no а in font [lmmono10-italic]:!
-[183]
-Overfull \hbox (6.75pt too wide) in paragraph at lines 12257--12257
+[187]
+Overfull \hbox (6.75pt too wide) in paragraph at lines 12352--12352
 []\TU/lmtt/m/n/10 ##  [1] FALSE  TRUE  TRUE FALSE FALSE  TRUE  TRUE  TRUE  TRUE
   TRUE[] 
  []
@@ -10157,65 +10194,65 @@ Missing character: There is no у in font [lmmono10-regular]:!
 Missing character: There is no б in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 
-Underfull \hbox (badness 2096) in paragraph at lines 12285--12288
+Underfull \hbox (badness 2096) in paragraph at lines 12380--12383
 []\TU/brill(0)/m/n/10 *Создайте бинарный оператор \TU/lmtt/m/n/10 %between%\TU/
 brill(0)/m/n/10 , который будет возвращать
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 12304--12304
+Overfull \hbox (6.75pt too wide) in paragraph at lines 12399--12399
 []\TU/lmtt/m/n/10 ##  [1]  TRUE  TRUE  TRUE  TRUE  TRUE FALSE FALSE FALSE FALSE
  FALSE[] 
  []
 
-[184] [185]
-Underfull \hbox (badness 5359) in paragraph at lines 12473--12475
+[188] [189]
+Underfull \hbox (badness 5359) in paragraph at lines 12568--12570
 \TU/brill(0)/m/n/10 возвращает индекс максимального значения (первого, если их
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12497--12497
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12592--12592
 []\TU/lmtt/m/n/10 ##  [1]  0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17
  18 19 20[] 
  []
 
-[186]
-Overfull \hbox (69.75pt too wide) in paragraph at lines 12576--12576
+[190]
+Overfull \hbox (69.75pt too wide) in paragraph at lines 12671--12671
 []\TU/lmtt/m/n/10 ##          X       name     Gender  Eye.color       Race Hai
 r.color     Height[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 12576--12576
+Overfull \hbox (69.75pt too wide) in paragraph at lines 12671--12671
 []\TU/lmtt/m/n/10 ##          0          0         29        172        304    
     172        217[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12576--12576
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12671--12671
 []\TU/lmtt/m/n/10 ##  Publisher Skin.color  Alignment     Weight       hair    
    tall[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12576--12576
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12671--12671
 []\TU/lmtt/m/n/10 ##          0        662          7        239        172    
     217[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 12603--12603
+Overfull \hbox (90.75pt too wide) in paragraph at lines 12698--12698
 []\TU/lmtt/m/n/10 ##  [1]   3   5   7  11  13  17  19  23  29  31  37  41  43  
 47  53  59  61  67  71[] 
  []
 
 
-Overfull \hbox (90.75pt too wide) in paragraph at lines 12603--12603
+Overfull \hbox (90.75pt too wide) in paragraph at lines 12698--12698
 []\TU/lmtt/m/n/10 ## [20]  73  79  83  89  97 101 103 107 109 113 127 131 137 1
 39 149 151 157 163 167[] 
  []
 
-[187]
+[191]
 Missing character: There is no К in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 Missing character: There is no р in font [lmmono10-regular]:!
@@ -10243,7 +10280,7 @@ Missing character: There is no в in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
 
-Overfull \hbox (32.65001pt too wide) in paragraph at lines 12674--12674
+Overfull \hbox (32.65001pt too wide) in paragraph at lines 12769--12769
 []\TU/lmtt/m/n/10 ## [1] "Корень из"       "2"               "равен"           
 "1.4142135623731"[] 
  []
@@ -10275,540 +10312,540 @@ Missing character: There is no в in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no н in font [lmmono10-regular]:!
 
-Overfull \hbox (32.65001pt too wide) in paragraph at lines 12684--12684
+Overfull \hbox (32.65001pt too wide) in paragraph at lines 12779--12779
 []\TU/lmtt/m/n/10 ## [1] "Корень из"       "2"               "равен"           
 "1.4142135623731"[] 
  []
 
 
-Overfull \hbox (9.44238pt too wide) in paragraph at lines 12687--12687
+Overfull \hbox (9.44238pt too wide) in paragraph at lines 12782--12782
 []\TU/brill(0)/bx/n/14.4 Выбор строк: \TU/lmtt/b/n/14.4 dplyr::slice() \TU/bril
 l(0)/bx/n/14.4 и \TU/lmtt/b/n/14.4 dplyr::filter() 
  []
 
-[188]
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12714--12714
+[192]
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12809--12809
 []\TU/lmtt/m/n/10 ##      X1 name  Gender []Eye color[] Race  []Hair color[] He
 ight Publisher[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 12714--12714
+Overfull \hbox (6.75pt too wide) in paragraph at lines 12809--12809
 []\TU/lmtt/m/n/10 ##   <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl>
  <chr>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12714--12714
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12809--12809
 []\TU/lmtt/m/n/10 ## 1   203 Dark~ Male   red         New ~ No Hair       267  
  DC Comics[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12714--12714
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12809--12809
 []\TU/lmtt/m/n/10 ## 2   283 Giga~ Female green       <NA>  Red            62.5
  DC Comics[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12714--12714
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12809--12809
 []\TU/lmtt/m/n/10 ## 3   331 Hulk  Male   green       Huma~ Green         244  
  Marvel C~[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12714--12714
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12809--12809
 []\TU/lmtt/m/n/10 ## 4   373 Jugg~ Male   blue        Human Red           287  
  Marvel C~[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12714--12714
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12809--12809
 []\TU/lmtt/m/n/10 ## 5   549 Red ~ Male   yellow      Huma~ Black         213  
  Marvel C~[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12714--12714
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12809--12809
 []\TU/lmtt/m/n/10 ## 6   575 Sasq~ Male   red         <NA>  Orange        305  
  Marvel C~[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 12714--12714
+Overfull \hbox (80.25pt too wide) in paragraph at lines 12809--12809
 []\TU/lmtt/m/n/10 ## # ... with 3 more variables: []Skin color[] <chr>, Alignme
 nt <chr>, Weight <dbl>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12736--12736
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12831--12831
 []\TU/lmtt/m/n/10 ##      X1 name  Gender []Eye color[] Race  []Hair color[] He
 ight Publisher[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 12736--12736
+Overfull \hbox (6.75pt too wide) in paragraph at lines 12831--12831
 []\TU/lmtt/m/n/10 ##   <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl>
  <chr>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12736--12736
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12831--12831
 []\TU/lmtt/m/n/10 ## 1   283 Giga~ Female green       <NA>  Red            62.5
  DC Comics[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 12736--12736
+Overfull \hbox (80.25pt too wide) in paragraph at lines 12831--12831
 []\TU/lmtt/m/n/10 ## # ... with 3 more variables: []Skin color[] <chr>, Alignme
 nt <chr>, Weight <dbl>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12764--12764
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12859--12859
 []\TU/lmtt/m/n/10 ##      X1 name  Gender []Eye color[] Race  []Hair color[] He
 ight Publisher[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 12764--12764
+Overfull \hbox (6.75pt too wide) in paragraph at lines 12859--12859
 []\TU/lmtt/m/n/10 ##   <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl>
  <chr>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12764--12764
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12859--12859
 []\TU/lmtt/m/n/10 ## 1    38 Arac~ Female blue        Human Blond           175
  Marvel C~[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12764--12764
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12859--12859
 []\TU/lmtt/m/n/10 ## 2    63 Batg~ Female green       Human Red             170
  DC Comics[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12764--12764
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12859--12859
 []\TU/lmtt/m/n/10 ## 3    65 Batg~ Female green       Human Black           165
  DC Comics[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12764--12764
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12859--12859
 []\TU/lmtt/m/n/10 ## 4    72 Batw~ Female green       Human Red             178
  DC Comics[] 
  []
 
-[189]
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12764--12764
+[193]
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12859--12859
 []\TU/lmtt/m/n/10 ## 5    96 Blac~ Female blue        Human Blond           165
  DC Comics[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 12764--12764
+Overfull \hbox (80.25pt too wide) in paragraph at lines 12859--12859
 []\TU/lmtt/m/n/10 ## # ... with 3 more variables: []Skin color[] <chr>, Alignme
 nt <chr>, Weight <dbl>[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12797--12797
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12892--12892
 []\TU/lmtt/m/n/10 ##    hero_names    Agility []Accelerated Healing[] []Lantern
  Power Ring[][] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (69.75pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##    Reflexes Invulnerability []Energy Constru~ []Force Fiel
 ds[] []Self-Sustenanc~[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##    <lgl>    <lgl>           <lgl>            <lgl>        
   <lgl>[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##  1 FALSE    FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (6.75pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##  2 FALSE    FALSE           FALSE            FALSE        
   TRUE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##  3 TRUE     FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##  4 FALSE    FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##  5 FALSE    TRUE            FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##  6 FALSE    TRUE            FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##  7 FALSE    TRUE            FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##  8 FALSE    FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ##  9 FALSE    FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12829--12829
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ## 10 FALSE    FALSE           FALSE            FALSE        
   FALSE[] 
  []
 
-[190]
-Overfull \hbox (33.0pt too wide) in paragraph at lines 12829--12829
+[194]
+Overfull \hbox (33.0pt too wide) in paragraph at lines 12924--12924
 []\TU/lmtt/m/n/10 ## # ... with 657 more rows, and 2 more variables: []Anti-Gra
 vity[] <lgl>,[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (80.25pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##    Agility []Accelerated He~ []Lantern Power ~ []Dimension
 al Aw~ []Cold Resistanc~[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##    <lgl>   <lgl>            <lgl>            <lgl>        
     <lgl>[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##  1 TRUE    FALSE            FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##  2 FALSE   TRUE             FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (17.25pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##  3 TRUE    TRUE             FALSE            FALSE        
     TRUE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##  4 FALSE   FALSE            TRUE             FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##  5 FALSE   TRUE             FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##  6 FALSE   FALSE            FALSE            TRUE         
     FALSE[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (17.25pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##  7 FALSE   FALSE            FALSE            FALSE        
     TRUE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##  8 FALSE   TRUE             FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ##  9 FALSE   FALSE            FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## 10 FALSE   FALSE            FALSE            FALSE        
     FALSE[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## # ... with 657 more rows, and 162 more variables: Durabili
 ty <lgl>,[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Stealth <lgl>, []Energy Absorption[] <lgl>, Flight <lg
 l>, []Danger[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (69.75pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Sense[] <lgl>, []Underwater breathing[] <lgl>, Marksma
 nship <lgl>, []Weapons[] 
  []
 
 
-Overfull \hbox (54.0pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (54.0pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Master[] <lgl>, []Power Augmentation[] <lgl>, []Animal
  Attributes[] <lgl>,[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (6.75pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Longevity <lgl>, Intelligence <lgl>, []Super Strength[
 ] <lgl>,[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (33.0pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Cryokinesis <lgl>, Telepathy <lgl>, []Energy Armor[] <
 lgl>, []Energy[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (33.0pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Blasts[] <lgl>, Duplication <lgl>, []Size Changing[] <
 lgl>, []Density[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (6.75pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Control[] <lgl>, Stamina <lgl>, []Astral Travel[] <lgl
 >, []Audio[] 
  []
 
 
-Overfull \hbox (54.0pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (54.0pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Control[] <lgl>, Dexterity <lgl>, Omnitrix <lgl>, []Su
 per Speed[] <lgl>,[] 
  []
 
 
-Overfull \hbox (22.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (22.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Possession <lgl>, []Animal Oriented Powers[] <lgl>, []
 Weapon-based[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (85.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Powers[] <lgl>, Electrokinesis <lgl>, []Darkforce Mani
 pulation[] <lgl>, []Death[] 
  []
 
 
-Overfull \hbox (1.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (1.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Touch[] <lgl>, Teleportation <lgl>, []Enhanced Senses[
 ] <lgl>,[] 
  []
 
 
-Overfull \hbox (75.0pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (75.0pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Telekinesis <lgl>, []Energy Beams[] <lgl>, Magic <lgl>
 , Hyperkinesis <lgl>,[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (38.25pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Jump <lgl>, Clairvoyance <lgl>, []Dimensional Travel[]
  <lgl>, []Power[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (27.75pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Sense[] <lgl>, Shapeshifting <lgl>, []Peak Human Condi
 tion[] <lgl>,[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Immortality <lgl>, Camouflage <lgl>, []Element Control
 [] <lgl>,[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (64.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Phasing <lgl>, []Astral Projection[] <lgl>, []Electric
 al Transport[] <lgl>,[] 
  []
 
 
-Overfull \hbox (38.25pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (38.25pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   []Fire Control[] <lgl>, Projection <lgl>, Summoning <l
 gl>, []Enhanced[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Memory[] <lgl>, Reflexes <lgl>, Invulnerability <lgl>,
  []Energy[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (33.0pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Constructs[] <lgl>, []Force Fields[] <lgl>, []Self-Sus
 tenance[] <lgl>,[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (69.75pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   []Anti-Gravity[] <lgl>, Empathy <lgl>, []Power Nullifi
 er[] <lgl>, []Radiation[] 
  []
 
 
-Overfull \hbox (48.75pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (48.75pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Control[] <lgl>, []Psionic Powers[] <lgl>, Elasticity 
 <lgl>, []Substance[] 
  []
 
 
-Overfull \hbox (54.0pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (54.0pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   []Technopath/Cyberpath[] <lgl>, []Photographic Reflexe
 s[] <lgl>, []Seismic[] 
  []
 
-[191]
-Overfull \hbox (69.75pt too wide) in paragraph at lines 12894--12894
+[195]
+Overfull \hbox (69.75pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Power[] <lgl>, Animation <lgl>, Precognition <lgl>, []
 Mind Control[] <lgl>,[] 
  []
 
 
-Overfull \hbox (6.75pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (6.75pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   []Fire Resistance[] <lgl>, []Power Absorption[] <lgl>,
  []Enhanced[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (64.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Hearing[] <lgl>, []Nova Force[] <lgl>, Insanity <lgl>,
  Hypnokinesis <lgl>,[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (43.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   []Animal Control[] <lgl>, []Natural Armor[] <lgl>, Int
 angibility <lgl>,[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (12.0pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   []Enhanced Sight[] <lgl>, []Molecular Manipulation[] <
 lgl>, []Heat[] 
  []
 
 
-Overfull \hbox (64.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (64.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Generation[] <lgl>, Adaptation <lgl>, Gliding <lgl>, [
 ]Power Suit[] <lgl>,[] 
  []
 
 
-Overfull \hbox (17.25pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (17.25pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   []Mind Blast[] <lgl>, []Probability Manipulation[] <lg
 l>, []Gravity[] 
  []
 
 
-Overfull \hbox (69.75pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (69.75pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Echolocation <lgl>, Levitation <lgl>, []Toxin and Dise
 ase Control[] <lgl>,[] 
  []
 
 
-Overfull \hbox (43.5pt too wide) in paragraph at lines 12894--12894
+Overfull \hbox (43.5pt too wide) in paragraph at lines 12989--12989
 []\TU/lmtt/m/n/10 ## #   Banish <lgl>, []Energy Manipulation[] <lgl>, []Heat Re
 sistance[] <lgl>,[] 
  []
 
-[192] [193]
-Overfull \hbox (75.68227pt too wide) in paragraph at lines 13064--13064
+[196] [197]
+Overfull \hbox (75.68227pt too wide) in paragraph at lines 13159--13159
 []\TU/brill(0)/bx/n/14.4 Создание колонок: \TU/lmtt/b/n/14.4 dplyr::mutate() \T
 U/brill(0)/bx/n/14.4 и \TU/lmtt/b/n/14.4 dplyr::transmute() 
  []
 
-[194]
-Overfull \hbox (14.35248pt too wide) in paragraph at lines 13134--13134
+[198]
+Overfull \hbox (14.35248pt too wide) in paragraph at lines 13229--13229
 []\TU/brill(0)/bx/n/14.4 Агрегация: \TU/lmtt/b/n/14.4 dplyr::group_by() %>% sum
 marise() 
  []
 
-[195]
-Overfull \hbox (27.75pt too wide) in paragraph at lines 13212--13212
+[199]
+Overfull \hbox (27.75pt too wide) in paragraph at lines 13307--13307
 []\TU/lmtt/m/n/10 ##   Gender    X1  name []Eye color[]  Race []Hair color[] He
 ight Publisher[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 13212--13212
+Overfull \hbox (27.75pt too wide) in paragraph at lines 13307--13307
 []\TU/lmtt/m/n/10 ##   <chr>  <int> <int>       <int> <int>        <int>  <int>
      <int>[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 13212--13212
+Overfull \hbox (27.75pt too wide) in paragraph at lines 13307--13307
 []\TU/lmtt/m/n/10 ## 1 Female     0     0          41    98           38     56
          0[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 13212--13212
+Overfull \hbox (27.75pt too wide) in paragraph at lines 13307--13307
 []\TU/lmtt/m/n/10 ## 2 Male       0     0         121   184          123    147
          0[] 
  []
 
 
-Overfull \hbox (27.75pt too wide) in paragraph at lines 13212--13212
+Overfull \hbox (27.75pt too wide) in paragraph at lines 13307--13307
 []\TU/lmtt/m/n/10 ## 3 <NA>       0     0          10    22           11     14
          0[] 
  []
 
 
-Overfull \hbox (80.25pt too wide) in paragraph at lines 13212--13212
+Overfull \hbox (80.25pt too wide) in paragraph at lines 13307--13307
 []\TU/lmtt/m/n/10 ## # ... with 3 more variables: []Skin color[] <int>, Alignme
 nt <int>, Weight <int>[] 
  []
 
-[196]
+[200]
 Missing character: There is no в in font [lmmono10-regular]:!
 Missing character: There is no ы in font [lmmono10-regular]:!
 Missing character: There is no ш in font [lmmono10-regular]:!
@@ -10834,7 +10871,7 @@ Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no г in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 
-Underfull \hbox (badness 1142) in paragraph at lines 13243--13248
+Underfull \hbox (badness 1142) in paragraph at lines 13338--13343
 \TU/lmtt/m/n/10 Weight\TU/brill(0)/m/n/10 , где для каждого героя содержится зн
 ачение \TU/lmtt/m/n/10 "выше среднего"\TU/brill(0)/m/n/10 , если
  []
@@ -11079,7 +11116,7 @@ Missing character: There is no н in font [lmmono10-regular]:!
 Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no г in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
-[197]
+[201]
 Missing character: There is no в in font [lmmono10-regular]:!
 Missing character: There is no ы in font [lmmono10-regular]:!
 Missing character: There is no ш in font [lmmono10-regular]:!
@@ -11273,142 +11310,142 @@ Missing character: There is no е in font [lmmono10-regular]:!
 Missing character: There is no г in font [lmmono10-regular]:!
 Missing character: There is no о in font [lmmono10-regular]:!
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##       X1 name  Gender []Eye color[] Race  []Hair color[] H
 eight Publisher[] 
  []
 
 
-Overfull \hbox (12.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (12.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##    <dbl> <chr> <chr>  <chr>       <chr> <chr>         <dbl
 > <chr>[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##  1    33 Anti~ Male   blue        Symb~ Blond           22
 9 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##  2    38 Arac~ Female blue        Human Blond           17
 5 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##  3   161 Carn~ Male   green       Symb~ Red             18
 5 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##  4   335 Hybr~ Male   brown       Symb~ Black           17
 5 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##  5   479 Myst~ Male   brown       Human No Hair         18
 0 Marvel C~[] 
  []
 
-[198]
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+[202]
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##  6   580 Scar~ Male   brown       Clone Brown           19
 3 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##  7   597 Silk  Female brown       Human Black            N
 A Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##  8   620 Spid~ Female blue        Human Brown           17
 0 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ##  9   621 Spid~ Female blue        Human Blond           16
 5 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ## 10   622 Spid~ Male   hazel       Human Brown           17
 8 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ## 11   623 Spid~ <NA>   red         Human Brown           17
 8 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ## 12   624 Spid~ Male   brown       Human Black           15
 7 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ## 13   673 Toxin Male   blue        Symb~ Brown           18
 8 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ## 14   674 Toxin Male   black       Symb~ Blond           19
 1 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ## 15   689 Venom Male   blue        Symb~ Strawberry ~    19
 1 Marvel C~[] 
  []
 
 
-Overfull \hbox (33.0pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (33.0pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ## 16   692 Veno~ Male   <NA>        Symb~ <NA>            22
 6 Marvel C~[] 
  []
 
 
-Overfull \hbox (85.5pt too wide) in paragraph at lines 13357--13357
+Overfull \hbox (85.5pt too wide) in paragraph at lines 13452--13452
 []\TU/lmtt/m/n/10 ## # ... with 4 more variables: []Skin color[] <chr>, Alignme
 nt <chr>, Weight <dbl>,[] 
  []
 
-[199] (./DS_for_DH.bbl [200])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13445.
-[201
+[203] (./DS_for_DH.bbl [204])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 13540.
+[205
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 13445.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 13540.
 (./DS_for_DH.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 13445.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13445
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 13540.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 13540
 .
 Package rerunfilecheck Info: File `DS_for_DH.out' has not changed.
-(rerunfilecheck)             Checksum: D58A2F4EB4854530235EA9FBF0C6E31D.
+(rerunfilecheck)             Checksum: 256698AAF6D0B122BCAF5DA601EC2D9F.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 24462 strings out of 492970
- 454766 string characters out of 6133938
- 620011 words of memory out of 5000000
- 28163 multiletter control sequences out of 15000+600000
+ 24478 strings out of 492970
+ 454901 string characters out of 6133938
+ 619065 words of memory out of 5000000
+ 28176 multiletter control sequences out of 15000+600000
  555171 words of font info for 85 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  53i,10n,116p,10450b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on DS_for_DH.pdf (201 pages).
+Output written on DS_for_DH.pdf (205 pages).
