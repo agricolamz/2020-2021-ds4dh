@@ -167,7 +167,7 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.6.1" data-path="tidy-intro.html"><a href="tidy-intro.html#выбор-колонок-dplyrselect"><i class="fa fa-check"></i><b>6.6.1</b> Выбор колонок: <code>dplyr::select()</code></a></li>
 <li class="chapter" data-level="6.6.2" data-path="tidy-intro.html"><a href="tidy-intro.html#tidyselect"><i class="fa fa-check"></i><b>6.6.2</b> Мини-язык tidyselect для выбора колонок</a></li>
 <li class="chapter" data-level="6.6.3" data-path="tidy-intro.html"><a href="tidy-intro.html#переименование-колонок-dplyrrename"><i class="fa fa-check"></i><b>6.6.3</b> Переименование колонок: <code>dplyr::rename()</code></a></li>
-<li class="chapter" data-level="6.6.4" data-path="tidy-intro.html"><a href="tidy-intro.html#перестановка-колонок-dplyrrelocate"><i class="fa fa-check"></i><b>6.6.4</b> Перестановка колонок: <code>dplyr::relocate()</code></a></li>
+<li class="chapter" data-level="6.6.4" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_relocate"><i class="fa fa-check"></i><b>6.6.4</b> Перестановка колонок: <code>dplyr::relocate()</code></a></li>
 </ul></li>
 <li class="chapter" data-level="6.7" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_select_rows"><i class="fa fa-check"></i><b>6.7</b> Работа со строками тиббла</a><ul>
 <li class="chapter" data-level="6.7.1" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_slice"><i class="fa fa-check"></i><b>6.7.1</b> Выбор строк по номеру: <code>dplyr::slice()</code></a></li>
@@ -341,7 +341,7 @@ h &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">1.6</
 <pre><code>## [[1]]
 ## function (x, ...) 
 ## UseMethod(&quot;mean&quot;)
-## &lt;bytecode: 0x7fc2cd603c58&gt;
+## &lt;bytecode: 0x7f861faac258&gt;
 ## &lt;environment: namespace:base&gt;
 ## 
 ## [[2]]
@@ -350,7 +350,7 @@ h &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">1.6</
 ## [[3]]
 ## .Primitive(&quot;{&quot;)</code></pre>
 <p>Мы можем создать список из функций! Зачем --- это другой вопрос, но ведь можем же!</p>
-<p>Еще можно создавать функции внутри функций,<a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a> использовать функции в качестве аргументов функций, сохранять функции как переменные. Пожалуй, самое важное из этого всего - это то, что функция может быть аргументом в функции. Не просто название функции как строковая переменная, не результат выполнения функции, а именно сама функция. Это лежит в основе использования семейства функций <code>apply()</code> @ref(apply_f) и многих фишек tidyverse.</p>
+<p>Еще можно создавать функции внутри функций,<a href="#fn10" class="footnoteRef" id="fnref10"><sup>10</sup></a> использовать функции в качестве аргументов функций, сохранять функции как переменные. Пожалуй, самое важное из этого всего - это то, что функция может быть аргументом в функции. Не просто название функции как строковая переменная, не результат выполнения функции, а именно сама функция. Это лежит в основе использования семейства функций <code>apply()</code> (@ref(apply_f) и многих фишек tidyverse.</p>
 <blockquote>
 <p>В Python дело обстоит похожим образом: функции там тоже являются объектами первого порядка, поэтому все эти фишки функционального программирования (с поправкой на синтаксис, конечно) будут работать и там.</p>
 </blockquote>
