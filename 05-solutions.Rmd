@@ -1133,6 +1133,49 @@ heroes %>%
   summarise(height_mean = mean(Height, na.rm = TRUE))
 ```
 
+## Операции с несколькими колонками: `across()` {#solution_across}
+
+- Посчитайте количество `NA` в каждой колонке, группируя по полу (`Gender`).
+
+```{r}
+na_n <- function(x) sum(is.na(x))
+heroes %>%
+  group_by(Gender) %>%
+  summarise(across(everything(), na_n))
+```
+
+- Посчитайте количество `NA` в каждой колонке, которая заканчивается на `"color"`, группируя по полу (`Gender`).
+
+```{r}
+na_n <- function(x) sum(is.na(x))
+heroes %>%
+  group_by(Gender) %>%
+  summarise(across(ends_with("color"), na_n))
+```
+
+- Создайте из тиббла `heroes` новый тиббл с колонками `name`, `Height` и `Weight`, где для каждого героя содержится значение `"выше среднего"`, если его рост или вес выше среднего по колонке и `"ниже среднего"`, если ниже или равен среднему.
+
+```{r}
+higher_than_average <- function(x) ifelse(x > mean(x, na.rm = TRUE),
+                                          "выше среднего",
+                                          "ниже среднего")
+heroes %>%
+  transmute(name, 
+            across(c(Height, Weight), 
+                   higher_than_average))
+```
+
+- Создайте из тиббла `heroes` новый тиббл с колонками `Gender`, `name`, `Height` и `Weight`, где для каждого героя содержится значение `"выше среднего"`, если его рост или вес выше среднего по колонке и `"ниже среднего"`, если ниже или равен среднему *внутри соответствующей группы по полу*.
+
+```{r}
+heroes %>%
+  group_by(Gender) %>%
+  transmute(name, 
+            across(c(Height, Weight), 
+                   higher_than_average))
+```
+
+
 ## Соединение датафреймов: *_join {#solution_join}
 
 Создайте тиббл `web_creators`, в котором будут супергерои, которые могут плести паутину, т.е. у них стоит `TRUE` в колонке `Web Creation` в тиббле `powers`.

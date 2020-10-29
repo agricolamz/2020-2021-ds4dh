@@ -181,9 +181,10 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="6.10" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_group_by"><i class="fa fa-check"></i><b>6.10</b> Агрегация данных в тиббле</a></li>
 <li class="chapter" data-level="6.11" data-path="tidy-intro.html"><a href="tidy-intro.html#подсчет-строк-dplyrn-dplyrcount"><i class="fa fa-check"></i><b>6.11</b> Подсчет строк: <code>dplyr::n()</code>, <code>dplyr::count()</code></a></li>
 <li class="chapter" data-level="6.12" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_distinct"><i class="fa fa-check"></i><b>6.12</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
-<li class="chapter" data-level="6.13" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_bind"><i class="fa fa-check"></i><b>6.13</b> Соединение датафреймов: bind_rows(), bind_cols()</a></li>
-<li class="chapter" data-level="6.14" data-path="tidy-intro.html"><a href="tidy-intro.html#соединение-датафреймов-_join"><i class="fa fa-check"></i><b>6.14</b> Соединение датафреймов: *_join</a></li>
-<li class="chapter" data-level="6.15" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_data"><i class="fa fa-check"></i><b>6.15</b> Tidy data: <code>tidyr::pivot_longer()</code>, <code>tidyr::pivot_wider()</code></a></li>
+<li class="chapter" data-level="6.13" data-path="tidy-intro.html"><a href="tidy-intro.html#трансформация-нескольких-колонок-dplyracross"><i class="fa fa-check"></i><b>6.13</b> Трансформация нескольких колонок: <code>dplyr::across()</code></a></li>
+<li class="chapter" data-level="6.14" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_bind"><i class="fa fa-check"></i><b>6.14</b> Соединение датафреймов: bind_rows(), bind_cols()</a></li>
+<li class="chapter" data-level="6.15" data-path="tidy-intro.html"><a href="tidy-intro.html#соединение-датафреймов-_join"><i class="fa fa-check"></i><b>6.15</b> Соединение датафреймов: *_join</a></li>
+<li class="chapter" data-level="6.16" data-path="tidy-intro.html"><a href="tidy-intro.html#tidy_data"><i class="fa fa-check"></i><b>6.16</b> Tidy data: <code>tidyr::pivot_longer()</code>, <code>tidyr::pivot_wider()</code></a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>7</b> Задания</a><ul>
 <li class="chapter" data-level="7.1" data-path="tasks.html"><a href="tasks.html#task_begin"><i class="fa fa-check"></i><b>7.1</b> Начало работы в R</a></li>
@@ -205,8 +206,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="7.17" data-path="tasks.html"><a href="tasks.html#task_dist"><i class="fa fa-check"></i><b>7.17</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
 <li class="chapter" data-level="7.18" data-path="tasks.html"><a href="tasks.html#task_mutate"><i class="fa fa-check"></i><b>7.18</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
 <li class="chapter" data-level="7.19" data-path="tasks.html"><a href="tasks.html#task_group_by"><i class="fa fa-check"></i><b>7.19</b> Агрегация: <code>dplyr::group_by() %&gt;% summarise()</code></a></li>
-<li class="chapter" data-level="7.20" data-path="tasks.html"><a href="tasks.html#соединение-датафреймов-_join-task_join"><i class="fa fa-check"></i><b>7.20</b> Соединение датафреймов: *_join {#task_join}</a></li>
-<li class="chapter" data-level="7.21" data-path="tasks.html"><a href="tasks.html#task_join"><i class="fa fa-check"></i><b>7.21</b> Tidy data</a></li>
+<li class="chapter" data-level="7.20" data-path="tasks.html"><a href="tasks.html#task_across"><i class="fa fa-check"></i><b>7.20</b> Операции с несколькими колонками: <code>across()</code></a></li>
+<li class="chapter" data-level="7.21" data-path="tasks.html"><a href="tasks.html#соединение-датафреймов-_join-task_join"><i class="fa fa-check"></i><b>7.21</b> Соединение датафреймов: *_join {#task_join}</a></li>
+<li class="chapter" data-level="7.22" data-path="tasks.html"><a href="tasks.html#task_join"><i class="fa fa-check"></i><b>7.22</b> Tidy data</a></li>
 </ul></li>
 <li class="chapter" data-level="8" data-path="solutions.html"><a href="solutions.html"><i class="fa fa-check"></i><b>8</b> Решения заданий</a><ul>
 <li class="chapter" data-level="8.1" data-path="solutions.html"><a href="solutions.html#solution_begin"><i class="fa fa-check"></i><b>8.1</b> Начало работы в R</a></li>
@@ -228,8 +230,9 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <li class="chapter" data-level="8.17" data-path="solutions.html"><a href="solutions.html#solution_dist"><i class="fa fa-check"></i><b>8.17</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
 <li class="chapter" data-level="8.18" data-path="solutions.html"><a href="solutions.html#solution_mutate"><i class="fa fa-check"></i><b>8.18</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
 <li class="chapter" data-level="8.19" data-path="solutions.html"><a href="solutions.html#solution_group_by"><i class="fa fa-check"></i><b>8.19</b> Агрегация: <code>dplyr::group_by() %&gt;% summarise()</code></a></li>
-<li class="chapter" data-level="8.20" data-path="solutions.html"><a href="solutions.html#соединение-датафреймов-_join-solution_join"><i class="fa fa-check"></i><b>8.20</b> Соединение датафреймов: *_join {#solution_join}</a></li>
-<li class="chapter" data-level="8.21" data-path="solutions.html"><a href="solutions.html#solution_join"><i class="fa fa-check"></i><b>8.21</b> Tidy data</a></li>
+<li class="chapter" data-level="8.20" data-path="solutions.html"><a href="solutions.html#solution_across"><i class="fa fa-check"></i><b>8.20</b> Операции с несколькими колонками: <code>across()</code></a></li>
+<li class="chapter" data-level="8.21" data-path="solutions.html"><a href="solutions.html#соединение-датафреймов-_join-solution_join"><i class="fa fa-check"></i><b>8.21</b> Соединение датафреймов: *_join {#solution_join}</a></li>
+<li class="chapter" data-level="8.22" data-path="solutions.html"><a href="solutions.html#solution_join"><i class="fa fa-check"></i><b>8.22</b> Tidy data</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ссылки-на-литературу.html"><a href="ссылки-на-литературу.html"><i class="fa fa-check"></i>Ссылки на литературу</a></li>
 </ul>
@@ -333,7 +336,7 @@ h &lt;-<span class="st"> </span><span class="kw">c</span>(<span class="fl">1.6</
 <pre><code>## [[1]]
 ## function (x, ...) 
 ## UseMethod(&quot;mean&quot;)
-## &lt;bytecode: 0x7fbc8560b928&gt;
+## &lt;bytecode: 0x7fd99b92ac58&gt;
 ## &lt;environment: namespace:base&gt;
 ## 
 ## [[2]]
