@@ -1188,6 +1188,20 @@ web_creators <- left_join(heroes, powers_web, by = c("name" = "hero_names")) %>%
 web_creators
 ```
 
+- Найдите всех супергероев, которые присутствуют в `heroes`, но отсутствуют в `powers`. Ответом должен быть строковый вектор с именами супергероев.
+
+```{r}
+anti_join(heroes, powers, by = c("name" = "hero_names")) %>%
+  pull(name)
+```
+
+- Найдите всех супергероев, которые присутствуют в `powers`, но отсутствуют в `heroes`. Ответом должен быть строковый вектор с именами супергероев.
+
+```{r}
+anti_join(powers, heroes, by = c("hero_names" = "name")) %>%
+  pull(hero_names)
+```
+
 ## Tidy data {#solution_join}
 
 - Для начала создайте тиббл `heroes_weight`, скопировав код:
@@ -1219,3 +1233,24 @@ heroes_weight %>%
                names_to = "Publisher",
                values_to = "weight_mean")
 ```
+
+- Сделайте `powers` длинным тибблом с тремя колонками: `hero_names`, `power` (названгие суперсилы) и `has` (наличие суперсилы у данного супергероя).
+
+```{r}
+powers %>%
+  pivot_longer(cols = !hero_names,
+               names_to = "power",
+               values_to = "has")
+```
+
+- Сделайте тиббл `powers` обратно широким, но с новой структурой: каждая строчка означает суперсилу, а каждая колонка - супергероя (за исключением первой колонки - названия суперсилы).
+
+```{r}
+powers %>%
+  pivot_longer(cols = !hero_names,
+               names_to = "power",
+               values_to = "has") %>%
+  pivot_wider(names_from = hero_names,
+              values_from = has)
+```
+
