@@ -54,6 +54,9 @@
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+<script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<link href="libs/str_view-0.1.0/str_view.css" rel="stylesheet" />
+<script src="libs/str_view-binding-1.4.0/str_view.js"></script>
 
 
 <style type="text/css">
@@ -241,43 +244,69 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="6.10.2" data-path="viz-1.html"><a href="viz-1.html#upset-plot"><i class="fa fa-check"></i><b>6.10.2</b> UpSet Plot</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>7</b> Задания</a><ul>
-<li class="chapter" data-level="7.1" data-path="tasks.html"><a href="tasks.html#task_coer"><i class="fa fa-check"></i><b>7.1</b> Приведение типов</a></li>
-<li class="chapter" data-level="7.2" data-path="tasks.html"><a href="tasks.html#task_vec_ion"><i class="fa fa-check"></i><b>7.2</b> Векторизация</a></li>
-<li class="chapter" data-level="7.3" data-path="tasks.html"><a href="tasks.html#task_vec_ind"><i class="fa fa-check"></i><b>7.3</b> Индексирование векторов</a></li>
-<li class="chapter" data-level="7.4" data-path="tasks.html"><a href="tasks.html#task_matrix"><i class="fa fa-check"></i><b>7.4</b> Матрицы</a></li>
-<li class="chapter" data-level="7.5" data-path="tasks.html"><a href="tasks.html#task_list"><i class="fa fa-check"></i><b>7.5</b> Списки</a></li>
-<li class="chapter" data-level="7.6" data-path="tasks.html"><a href="tasks.html#task_df"><i class="fa fa-check"></i><b>7.6</b> Датафрейм</a></li>
-<li class="chapter" data-level="7.7" data-path="tasks.html"><a href="tasks.html#task_if"><i class="fa fa-check"></i><b>7.7</b> Условные конструкции</a></li>
-<li class="chapter" data-level="7.8" data-path="tasks.html"><a href="tasks.html#task_function"><i class="fa fa-check"></i><b>7.8</b> Создание функций</a></li>
-<li class="chapter" data-level="7.9" data-path="tasks.html"><a href="tasks.html#task_apply"><i class="fa fa-check"></i><b>7.9</b> Семейство функций apply()</a></li>
-<li class="chapter" data-level="7.10" data-path="tasks.html"><a href="tasks.html#task_pipe"><i class="fa fa-check"></i><b>7.10</b> magrittr::<code>%&gt;%</code></a></li>
-<li class="chapter" data-level="7.11" data-path="tasks.html"><a href="tasks.html#task_arr"><i class="fa fa-check"></i><b>7.11</b> Сортировка строк: <code>dplyr::arrange()</code></a></li>
-<li class="chapter" data-level="7.12" data-path="tasks.html"><a href="tasks.html#task_dist"><i class="fa fa-check"></i><b>7.12</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
-<li class="chapter" data-level="7.13" data-path="tasks.html"><a href="tasks.html#task_mutate"><i class="fa fa-check"></i><b>7.13</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
-<li class="chapter" data-level="7.14" data-path="tasks.html"><a href="tasks.html#task_group_by"><i class="fa fa-check"></i><b>7.14</b> Агрегация: <code>dplyr::group_by() %&gt;% summarise()</code></a></li>
-<li class="chapter" data-level="7.15" data-path="tasks.html"><a href="tasks.html#task_across"><i class="fa fa-check"></i><b>7.15</b> Операции с несколькими колонками: <code>across()</code></a></li>
-<li class="chapter" data-level="7.16" data-path="tasks.html"><a href="tasks.html#соединение-датафреймов-_join-task_join"><i class="fa fa-check"></i><b>7.16</b> Соединение датафреймов: *_join {#task_join}</a></li>
-<li class="chapter" data-level="7.17" data-path="tasks.html"><a href="tasks.html#task_join"><i class="fa fa-check"></i><b>7.17</b> Tidy data</a></li>
+<li class="chapter" data-level="7" data-path="strings.html"><a href="strings.html"><i class="fa fa-check"></i><b>7</b> Работа со строками</a><ul>
+<li class="chapter" data-level="7.1" data-path="strings.html"><a href="strings.html#работа-со-строками-в-r"><i class="fa fa-check"></i><b>7.1</b> Работа со строками в R</a></li>
+<li class="chapter" data-level="7.2" data-path="strings.html"><a href="strings.html#как-получить-строку"><i class="fa fa-check"></i><b>7.2</b> Как получить строку?</a></li>
+<li class="chapter" data-level="7.3" data-path="strings.html"><a href="strings.html#соединение-и-разделение-строк"><i class="fa fa-check"></i><b>7.3</b> Соединение и разделение строк</a></li>
+<li class="chapter" data-level="7.4" data-path="strings.html"><a href="strings.html#количество-символов"><i class="fa fa-check"></i><b>7.4</b> Количество символов</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="strings.html"><a href="strings.html#подсчет-количества-символов"><i class="fa fa-check"></i><b>7.4.1</b> Подсчет количества символов</a></li>
+<li class="chapter" data-level="7.4.2" data-path="strings.html"><a href="strings.html#подгонка-количества-символов"><i class="fa fa-check"></i><b>7.4.2</b> Подгонка количества символов</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="solutions.html"><a href="solutions.html"><i class="fa fa-check"></i><b>8</b> Решения заданий</a><ul>
-<li class="chapter" data-level="8.1" data-path="solutions.html"><a href="solutions.html#solution_coer"><i class="fa fa-check"></i><b>8.1</b> Приведение типов</a></li>
-<li class="chapter" data-level="8.2" data-path="solutions.html"><a href="solutions.html#solution_vec_ion"><i class="fa fa-check"></i><b>8.2</b> Векторизация</a></li>
-<li class="chapter" data-level="8.3" data-path="solutions.html"><a href="solutions.html#solution_vec_ind"><i class="fa fa-check"></i><b>8.3</b> Индексирование векторов</a></li>
-<li class="chapter" data-level="8.4" data-path="solutions.html"><a href="solutions.html#solution_matrix"><i class="fa fa-check"></i><b>8.4</b> Матрицы</a></li>
-<li class="chapter" data-level="8.5" data-path="solutions.html"><a href="solutions.html#solution_list"><i class="fa fa-check"></i><b>8.5</b> Списки</a></li>
-<li class="chapter" data-level="8.6" data-path="solutions.html"><a href="solutions.html#solution_df"><i class="fa fa-check"></i><b>8.6</b> Датафрейм</a></li>
-<li class="chapter" data-level="8.7" data-path="solutions.html"><a href="solutions.html#solution_if"><i class="fa fa-check"></i><b>8.7</b> Условные конструкции</a></li>
-<li class="chapter" data-level="8.8" data-path="solutions.html"><a href="solutions.html#solution_function"><i class="fa fa-check"></i><b>8.8</b> Создание функций</a></li>
-<li class="chapter" data-level="8.9" data-path="solutions.html"><a href="solutions.html#solution_apply"><i class="fa fa-check"></i><b>8.9</b> Семейство функций apply()</a></li>
-<li class="chapter" data-level="8.10" data-path="solutions.html"><a href="solutions.html#solution_pipe"><i class="fa fa-check"></i><b>8.10</b> magrittr::<code>%&gt;%</code></a></li>
-<li class="chapter" data-level="8.11" data-path="solutions.html"><a href="solutions.html#solution_arr"><i class="fa fa-check"></i><b>8.11</b> Сортировка строк: <code>dplyr::arrange()</code></a></li>
-<li class="chapter" data-level="8.12" data-path="solutions.html"><a href="solutions.html#solution_dist"><i class="fa fa-check"></i><b>8.12</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
-<li class="chapter" data-level="8.13" data-path="solutions.html"><a href="solutions.html#solution_mutate"><i class="fa fa-check"></i><b>8.13</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
-<li class="chapter" data-level="8.14" data-path="solutions.html"><a href="solutions.html#solution_group_by"><i class="fa fa-check"></i><b>8.14</b> Агрегация: <code>dplyr::group_by() %&gt;% summarise()</code></a></li>
-<li class="chapter" data-level="8.15" data-path="solutions.html"><a href="solutions.html#solution_across"><i class="fa fa-check"></i><b>8.15</b> Операции с несколькими колонками: <code>across()</code></a></li>
-<li class="chapter" data-level="8.16" data-path="solutions.html"><a href="solutions.html#соединение-датафреймов-_join-solution_join"><i class="fa fa-check"></i><b>8.16</b> Соединение датафреймов: *_join {#solution_join}</a></li>
-<li class="chapter" data-level="8.17" data-path="solutions.html"><a href="solutions.html#solution_join"><i class="fa fa-check"></i><b>8.17</b> Tidy data</a></li>
+<li class="chapter" data-level="7.5" data-path="strings.html"><a href="strings.html#сортировка"><i class="fa fa-check"></i><b>7.5</b> Сортировка</a></li>
+<li class="chapter" data-level="7.6" data-path="strings.html"><a href="strings.html#поиск-подстроки"><i class="fa fa-check"></i><b>7.6</b> Поиск подстроки</a></li>
+<li class="chapter" data-level="7.7" data-path="strings.html"><a href="strings.html#изменение-строк"><i class="fa fa-check"></i><b>7.7</b> Изменение строк</a><ul>
+<li class="chapter" data-level="7.7.1" data-path="strings.html"><a href="strings.html#изменение-регистра"><i class="fa fa-check"></i><b>7.7.1</b> Изменение регистра</a></li>
+<li class="chapter" data-level="7.7.2" data-path="strings.html"><a href="strings.html#выделение-подстроки"><i class="fa fa-check"></i><b>7.7.2</b> Выделение подстроки</a></li>
+<li class="chapter" data-level="7.7.3" data-path="strings.html"><a href="strings.html#замена-подстроки"><i class="fa fa-check"></i><b>7.7.3</b> Замена подстроки</a></li>
+<li class="chapter" data-level="7.7.4" data-path="strings.html"><a href="strings.html#удаление-подстроки"><i class="fa fa-check"></i><b>7.7.4</b> Удаление подстроки</a></li>
+<li class="chapter" data-level="7.7.5" data-path="strings.html"><a href="strings.html#транслитерация-строк"><i class="fa fa-check"></i><b>7.7.5</b> Транслитерация строк</a></li>
+</ul></li>
+<li class="chapter" data-level="7.8" data-path="strings.html"><a href="strings.html#регулярные-выражения"><i class="fa fa-check"></i><b>7.8</b> Регулярные выражения</a><ul>
+<li class="chapter" data-level="7.8.1" data-path="strings.html"><a href="strings.html#экранирование-метасимволов"><i class="fa fa-check"></i><b>7.8.1</b> Экранирование метасимволов</a></li>
+<li class="chapter" data-level="7.8.2" data-path="strings.html"><a href="strings.html#классы-знаков"><i class="fa fa-check"></i><b>7.8.2</b> Классы знаков</a></li>
+<li class="chapter" data-level="7.8.3" data-path="strings.html"><a href="strings.html#квантификация"><i class="fa fa-check"></i><b>7.8.3</b> Квантификация</a></li>
+<li class="chapter" data-level="7.8.4" data-path="strings.html"><a href="strings.html#позиционная-проверка-look-arounds"><i class="fa fa-check"></i><b>7.8.4</b> Позиционная проверка (look arounds)</a></li>
+</ul></li>
+<li class="chapter" data-level="7.9" data-path="strings.html"><a href="strings.html#определение-языка"><i class="fa fa-check"></i><b>7.9</b> Определение языка</a></li>
+<li class="chapter" data-level="7.10" data-path="strings.html"><a href="strings.html#расстояния-между-строками"><i class="fa fa-check"></i><b>7.10</b> Расстояния между строками</a></li>
+</ul></li>
+<li class="chapter" data-level="8" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>8</b> Задания</a><ul>
+<li class="chapter" data-level="8.1" data-path="tasks.html"><a href="tasks.html#task_coer"><i class="fa fa-check"></i><b>8.1</b> Приведение типов</a></li>
+<li class="chapter" data-level="8.2" data-path="tasks.html"><a href="tasks.html#task_vec_ion"><i class="fa fa-check"></i><b>8.2</b> Векторизация</a></li>
+<li class="chapter" data-level="8.3" data-path="tasks.html"><a href="tasks.html#task_vec_ind"><i class="fa fa-check"></i><b>8.3</b> Индексирование векторов</a></li>
+<li class="chapter" data-level="8.4" data-path="tasks.html"><a href="tasks.html#task_matrix"><i class="fa fa-check"></i><b>8.4</b> Матрицы</a></li>
+<li class="chapter" data-level="8.5" data-path="tasks.html"><a href="tasks.html#task_list"><i class="fa fa-check"></i><b>8.5</b> Списки</a></li>
+<li class="chapter" data-level="8.6" data-path="tasks.html"><a href="tasks.html#task_df"><i class="fa fa-check"></i><b>8.6</b> Датафрейм</a></li>
+<li class="chapter" data-level="8.7" data-path="tasks.html"><a href="tasks.html#task_if"><i class="fa fa-check"></i><b>8.7</b> Условные конструкции</a></li>
+<li class="chapter" data-level="8.8" data-path="tasks.html"><a href="tasks.html#task_function"><i class="fa fa-check"></i><b>8.8</b> Создание функций</a></li>
+<li class="chapter" data-level="8.9" data-path="tasks.html"><a href="tasks.html#task_apply"><i class="fa fa-check"></i><b>8.9</b> Семейство функций apply()</a></li>
+<li class="chapter" data-level="8.10" data-path="tasks.html"><a href="tasks.html#task_pipe"><i class="fa fa-check"></i><b>8.10</b> magrittr::<code>%&gt;%</code></a></li>
+<li class="chapter" data-level="8.11" data-path="tasks.html"><a href="tasks.html#task_arr"><i class="fa fa-check"></i><b>8.11</b> Сортировка строк: <code>dplyr::arrange()</code></a></li>
+<li class="chapter" data-level="8.12" data-path="tasks.html"><a href="tasks.html#task_dist"><i class="fa fa-check"></i><b>8.12</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
+<li class="chapter" data-level="8.13" data-path="tasks.html"><a href="tasks.html#task_mutate"><i class="fa fa-check"></i><b>8.13</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
+<li class="chapter" data-level="8.14" data-path="tasks.html"><a href="tasks.html#task_group_by"><i class="fa fa-check"></i><b>8.14</b> Агрегация: <code>dplyr::group_by() %&gt;% summarise()</code></a></li>
+<li class="chapter" data-level="8.15" data-path="tasks.html"><a href="tasks.html#task_across"><i class="fa fa-check"></i><b>8.15</b> Операции с несколькими колонками: <code>across()</code></a></li>
+<li class="chapter" data-level="8.16" data-path="tasks.html"><a href="tasks.html#соединение-датафреймов-_join-task_join"><i class="fa fa-check"></i><b>8.16</b> Соединение датафреймов: *_join {#task_join}</a></li>
+<li class="chapter" data-level="8.17" data-path="tasks.html"><a href="tasks.html#task_join"><i class="fa fa-check"></i><b>8.17</b> Tidy data</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="solutions.html"><a href="solutions.html"><i class="fa fa-check"></i><b>9</b> Решения заданий</a><ul>
+<li class="chapter" data-level="9.1" data-path="solutions.html"><a href="solutions.html#solution_coer"><i class="fa fa-check"></i><b>9.1</b> Приведение типов</a></li>
+<li class="chapter" data-level="9.2" data-path="solutions.html"><a href="solutions.html#solution_vec_ion"><i class="fa fa-check"></i><b>9.2</b> Векторизация</a></li>
+<li class="chapter" data-level="9.3" data-path="solutions.html"><a href="solutions.html#solution_vec_ind"><i class="fa fa-check"></i><b>9.3</b> Индексирование векторов</a></li>
+<li class="chapter" data-level="9.4" data-path="solutions.html"><a href="solutions.html#solution_matrix"><i class="fa fa-check"></i><b>9.4</b> Матрицы</a></li>
+<li class="chapter" data-level="9.5" data-path="solutions.html"><a href="solutions.html#solution_list"><i class="fa fa-check"></i><b>9.5</b> Списки</a></li>
+<li class="chapter" data-level="9.6" data-path="solutions.html"><a href="solutions.html#solution_df"><i class="fa fa-check"></i><b>9.6</b> Датафрейм</a></li>
+<li class="chapter" data-level="9.7" data-path="solutions.html"><a href="solutions.html#solution_if"><i class="fa fa-check"></i><b>9.7</b> Условные конструкции</a></li>
+<li class="chapter" data-level="9.8" data-path="solutions.html"><a href="solutions.html#solution_function"><i class="fa fa-check"></i><b>9.8</b> Создание функций</a></li>
+<li class="chapter" data-level="9.9" data-path="solutions.html"><a href="solutions.html#solution_apply"><i class="fa fa-check"></i><b>9.9</b> Семейство функций apply()</a></li>
+<li class="chapter" data-level="9.10" data-path="solutions.html"><a href="solutions.html#solution_pipe"><i class="fa fa-check"></i><b>9.10</b> magrittr::<code>%&gt;%</code></a></li>
+<li class="chapter" data-level="9.11" data-path="solutions.html"><a href="solutions.html#solution_arr"><i class="fa fa-check"></i><b>9.11</b> Сортировка строк: <code>dplyr::arrange()</code></a></li>
+<li class="chapter" data-level="9.12" data-path="solutions.html"><a href="solutions.html#solution_dist"><i class="fa fa-check"></i><b>9.12</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
+<li class="chapter" data-level="9.13" data-path="solutions.html"><a href="solutions.html#solution_mutate"><i class="fa fa-check"></i><b>9.13</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
+<li class="chapter" data-level="9.14" data-path="solutions.html"><a href="solutions.html#solution_group_by"><i class="fa fa-check"></i><b>9.14</b> Агрегация: <code>dplyr::group_by() %&gt;% summarise()</code></a></li>
+<li class="chapter" data-level="9.15" data-path="solutions.html"><a href="solutions.html#solution_across"><i class="fa fa-check"></i><b>9.15</b> Операции с несколькими колонками: <code>across()</code></a></li>
+<li class="chapter" data-level="9.16" data-path="solutions.html"><a href="solutions.html#соединение-датафреймов-_join-solution_join"><i class="fa fa-check"></i><b>9.16</b> Соединение датафреймов: *_join {#solution_join}</a></li>
+<li class="chapter" data-level="9.17" data-path="solutions.html"><a href="solutions.html#solution_join"><i class="fa fa-check"></i><b>9.17</b> Tidy data</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ссылки-на-литературу.html"><a href="ссылки-на-литературу.html"><i class="fa fa-check"></i>Ссылки на литературу</a></li>
 </ul>
