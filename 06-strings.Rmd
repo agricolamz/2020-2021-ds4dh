@@ -56,14 +56,6 @@ LETTERS
 month.name
 ```
 
-* помните, что функции `data.frame()`, `read.csv()`,  `read.csv2()`, `read.table()` из базового R всегда по-умолчанию преобразуют строки в факторы, и чтобы это предотвратить нужно использовать аргумент `stringsAsFactors`. Это много обсуждалось в сообществе R, можно, например, почитать про это [вот этот блог пост Роджера Пенга](https://simplystatistics.org/2015/07/24/stringsasfactors-an-unauthorized-biography/).
-```{r}
-str(data.frame(letters[6:10], LETTERS[4:8]))
-str(data.frame(letters[6:10], LETTERS[4:8], stringsAsFactors = FALSE))
-```
-
-Но этом курсе мы учим использовать сразу `tibble()`, `read_csv()`, `read_csv2()`, `read_tsv()`, `read_delim()` из пакета `readr` (входит в `tidyverse`).
-
 * Создание рандомных строк
 ```{r}
 set.seed(42)
@@ -280,7 +272,7 @@ tibble(mn = month.name) %>%
 
 ```{r}
 tibble(mn = month.name) %>% 
-  slice(str_which(month.name, "r"))
+  slice(str_which(mn, "r"))
 ```
 
 Также можно посчитать количество вхождений какой-то подстроки:
