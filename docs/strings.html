@@ -54,7 +54,7 @@
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
 <link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+<script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
 <link href="libs/str_view-0.1.0/str_view.css" rel="stylesheet" />
 <script src="libs/str_view-binding-1.4.0/str_view.js"></script>
 
@@ -267,6 +267,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul></li>
 <li class="chapter" data-level="6.9" data-path="strings.html"><a href="strings.html#определение-языка"><i class="fa fa-check"></i><b>6.9</b> Определение языка</a></li>
 <li class="chapter" data-level="6.10" data-path="strings.html"><a href="strings.html#расстояния-между-строками"><i class="fa fa-check"></i><b>6.10</b> Расстояния между строками</a></li>
+<li class="chapter" data-level="6.11" data-path="strings.html"><a href="strings.html#дополнительные-задания"><i class="fa fa-check"></i><b>6.11</b> Дополнительные задания:</a></li>
 </ul></li>
 <li class="chapter" data-level="7" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>7</b> Задания</a><ul>
 <li class="chapter" data-level="7.1" data-path="tasks.html"><a href="tasks.html#task_coer"><i class="fa fa-check"></i><b>7.1</b> Приведение типов</a></li>
@@ -1193,6 +1194,50 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <pre><code>## [1] 4 6 6 1 5</code></pre>
 <div class="sourceCode" id="cb173"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb173-1"><a href="strings.html#cb173-1"></a><span class="kw">amatch</span>(<span class="kw">c</span>(<span class="st">&quot;быки&quot;</span>, <span class="st">&quot;коровы&quot;</span>), <span class="kw">c</span>(<span class="st">&quot;курица&quot;</span>, <span class="st">&quot;бык&quot;</span>, <span class="st">&quot;утка&quot;</span>, <span class="st">&quot;корова&quot;</span>, <span class="st">&quot;осел&quot;</span>), <span class="dt">maxDist =</span> <span class="dv">2</span>)</span></code></pre></div>
 <pre><code>## [1] 2 4</code></pre>
+</div>
+<div id="дополнительные-задания" class="section level2">
+<h2><span class="header-section-number">6.11</span> Дополнительные задания:</h2>
+<div class="rmdtask">
+<p>
+В <a href="https://github.com/agricolamz/2020-2021-ds4dh/raw/master/data/realdonaldtrump.csv">датасет</a> записаны твиты Донольда Трампа взятые с <a href="https://www.kaggle.com/austinreese/trump-tweets">kaggle</a>. Постройте график рассеяния, которые показывает связь количества ретвитов и лайков. Чтобы убрать научную запись больших чисел используйте команду <code>options(scipen = 999)</code>.
+</p>
+</div>
+<pre><code>## 
+## ── Column specification ────────────────────────────────────────────────────────
+## cols(
+##   id = col_double(),
+##   link = col_character(),
+##   content = col_character(),
+##   date = col_datetime(format = &quot;&quot;),
+##   retweets = col_double(),
+##   favorites = col_double(),
+##   mentions = col_character(),
+##   hashtags = col_character()
+## )</code></pre>
+<p><img src="DS_for_DH_files/figure-html/trump-1.png" width="672" /></p>
+<div class="rmdtask">
+<p>
+Постройте гистограмму, которая показывает распределения длины твитов в символах. Какой метод определения размера ячейки использован на приведенном графике? [Sturgers 1926], [Scott 1979] или [Freedman, Diaconis 1981]?
+</p>
+</div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-70-1.png" width="672" /></p>
+<div class="rmdtask">
+<p>
+Постройте график рассеивания, который бы показывал связь с длиной твита во времени. Используя <code>geom_hline()</code>, наложите две линии: 140 символов и 280. Сделайте прозрачность 0.1.
+</p>
+</div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-72-1.png" width="672" /></p>
+<div class="rmdtask">
+<p>
+Постройте график рассеивания, который бы показывал связь с длиной твита во времени. Разбейте и раскрасьте твиты на основании наличия в них интернет ссылок.
+</p>
+</div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-74-1.png" width="672" /></p>
+<div class="rmdtask">
+<p>
+Постройте график рассеиванМожно ли утверждать, что твиты со ссылками длиннее? Постройте вайолинплот, которые показывает распределение значений длины твитов в зависимости от наличия в них интернет ссылок. tr %&gt;% mutate(length = nchar(content), link = str_detect(content, “https?”)) %&gt;% ggplot(aes(link, length, fill = link))+ geom_violin()+ theme_bw()+ labs(caption = “data from www.kaggle.com/austinreese/trump-tweets”, x = ““, fill =”with link")
+</p>
+</div>
 
 </div>
 </div>

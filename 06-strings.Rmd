@@ -709,7 +709,75 @@ amatch(c("быки", "коровы"), c("курица", "бык", "утка", "�
 
 ## Дополнительные задания:
 
+```{block, type = "rmdtask"}
+В [датасет](https://github.com/agricolamz/2020-2021-ds4dh/raw/master/data/realdonaldtrump.csv) записаны твиты Донольда Трампа взятые с [kaggle](https://www.kaggle.com/austinreese/trump-tweets). Постройте график рассеяния, которые показывает связь количества ретвитов и лайков. Чтобы убрать научную запись больших чисел используйте команду `options(scipen = 999)`.
+```
+
+```{r trump, echo = FALSE, cache=TRUE}
+tr <- read_csv("https://github.com/agricolamz/2020-2021-ds4dh/raw/master/data/realdonaldtrump.csv")
+
+theme_set(theme_bw())
+options(scipen = 999)
+tr %>% 
+  ggplot(aes(retweets, favorites))+
+  geom_point(alpha = 0.2)+
+  labs(caption = "data from www.kaggle.com/austinreese/trump-tweets")
+```
 
 ```{block, type = "rmdtask"}
-В датасет записаны твиты Донольда Трампа.
+Постройте гистограмму, которая показывает распределения длины твитов в символах. Какой метод определения размера ячейки использован на приведенном графике? [Sturgers 1926], [Scott 1979] или [Freedman, Diaconis 1981]?
+```
+
+```{r, echo = FALSE}
+tr %>% 
+  mutate(length = nchar(content)) %>% 
+  ggplot(aes(length))+
+  geom_histogram(bins = 17) + 
+  labs(caption = "data from www.kaggle.com/austinreese/trump-tweets")
+```
+
+```{block, type = "rmdtask"}
+Постройте график рассеивания, который бы показывал связь с длиной твита во времени. Используя `geom_hline()`, наложите две линии: 140 символов и 280. Сделайте прозрачность 0.1.
+```
+
+```{r, echo = FALSE}
+tr %>% 
+  mutate(length = nchar(content)) %>% 
+  ggplot(aes(date, length))+
+  geom_point(alpha = 0.1)+
+  geom_hline(yintercept = 140, color = "red")+
+  geom_hline(yintercept = 280, color = "darkgreen")+
+  theme_bw()+
+  labs(caption = "data from www.kaggle.com/austinreese/trump-tweets",
+       x = "")
+```
+
+```{block, type = "rmdtask"}
+Постройте график рассеивания, который бы показывал связь с длиной твита во времени. Разбейте и раскрасьте твиты на основании наличия в них интернет ссылок.
+```
+
+```{r, echo = FALSE}
+tr %>% 
+  mutate(length = nchar(content),
+         link = str_detect(content, "https?")) %>% 
+  ggplot(aes(date, length, color = link))+
+  geom_point(alpha = 0.5)+
+  theme_bw()+
+  facet_wrap(~link) +
+  labs(caption = "data from www.kaggle.com/austinreese/trump-tweets",
+       x = "",
+       color = "with link")
+```
+
+```{block, type = "rmdtask"}
+Постройте график рассеиванМожно ли утверждать, что твиты со ссылками длиннее? Постройте вайолинплот, которые показывает распределение значений длины твитов в зависимости от наличия в них интернет ссылок.
+tr %>% 
+  mutate(length = nchar(content),
+         link = str_detect(content, "https?")) %>% 
+  ggplot(aes(link, length, fill = link))+
+  geom_violin()+
+  theme_bw()+
+  labs(caption = "data from www.kaggle.com/austinreese/trump-tweets",
+       x = "",
+       fill = "with link")
 ```
