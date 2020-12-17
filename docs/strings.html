@@ -1202,18 +1202,6 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 В <a href="https://github.com/agricolamz/2020-2021-ds4dh/raw/master/data/realdonaldtrump.csv">датасет</a> записаны твиты Донольда Трампа взятые с <a href="https://www.kaggle.com/austinreese/trump-tweets">kaggle</a>. Постройте график рассеяния, которые показывает связь количества ретвитов и лайков. Чтобы убрать научную запись больших чисел используйте команду <code>options(scipen = 999)</code>.
 </p>
 </div>
-<pre><code>## 
-## ── Column specification ────────────────────────────────────────────────────────
-## cols(
-##   id = col_double(),
-##   link = col_character(),
-##   content = col_character(),
-##   date = col_datetime(format = &quot;&quot;),
-##   retweets = col_double(),
-##   favorites = col_double(),
-##   mentions = col_character(),
-##   hashtags = col_character()
-## )</code></pre>
 <p><img src="DS_for_DH_files/figure-html/trump-1.png" width="672" /></p>
 <div class="rmdtask">
 <p>
@@ -1235,9 +1223,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <p><img src="DS_for_DH_files/figure-html/unnamed-chunk-74-1.png" width="672" /></p>
 <div class="rmdtask">
 <p>
-Постройте график рассеиванМожно ли утверждать, что твиты со ссылками длиннее? Постройте вайолинплот, которые показывает распределение значений длины твитов в зависимости от наличия в них интернет ссылок. tr %&gt;% mutate(length = nchar(content), link = str_detect(content, “https?”)) %&gt;% ggplot(aes(link, length, fill = link))+ geom_violin()+ theme_bw()+ labs(caption = “data from www.kaggle.com/austinreese/trump-tweets”, x = ““, fill =”with link")
+Можно ли утверждать, что твиты со ссылками длиннее? Постройте вайолинплот, которые показывает распределение значений длины твитов в зависимости от наличия в них интернет ссылок.
 </p>
 </div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-76-1.png" width="672" /></p>
+<div class="rmdtask">
+<p>
+Найдите твиты которые содержат корень america, которые встречаются больше одного раза, и фасетизируйте по таким словам.
+</p>
+</div>
+<p><img src="DS_for_DH_files/figure-html/unnamed-chunk-78-1.png" width="672" /></p>
 
 </div>
 </div>
