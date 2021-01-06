@@ -1,8 +1,0 @@
-```{r}
-summary(cars)
-```
-
-```{python}
-x = "my string"
-print(x.split(" "))
-```
