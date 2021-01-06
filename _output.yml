@@ -7,11 +7,11 @@ bookdown::gitbook:
     toc:
       collapse: section
       before: |
-        <li><a href="./">Анализ данных для лингвистов</a></li>
-    download: ["pdf"]
+        <li><a href="./">Наука о данных в R для ЦГИ</a></li>
+    download: ["pdf", "epub"]
     sharing: no
     edit:
-      link: https://github.com/agricolamz/2021_da4l/edit/master/%s
+      link: https://github.com/agricolamz/DS_for_DH/edit/master/%s
       text: "Edit"
 bookdown::pdf_book:
   includes:
@@ -21,3 +21,4 @@ bookdown::pdf_book:
   fig_width: 7
   fig_height: 4
   highlight: tango
+bookdown::epub_book: default
