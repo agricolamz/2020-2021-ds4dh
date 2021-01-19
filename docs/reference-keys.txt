@@ -141,6 +141,11 @@ yaml-шапка
 отображение-датафреймов
 где-хостить-.html
 бывают-и-другие-способы-представления-данных
+работа-с-текстами-gutenbergr-tidytext-stopwords
+загрузка-текста-в-r
+пакет-gutenbergr
+библиотека-tidytext
+пакет-stopwords
 tasks
 task_coer
 task_vec_ion

@@ -100,6 +100,7 @@ __жирный__ или **другой жирный**
 - и минус
 
 #### Ссылки и картинки
+
 ```
 [Ссылка 1](https://agricolamz.github.io/2018_ANDAN_course_winter/2_ex.html)
 

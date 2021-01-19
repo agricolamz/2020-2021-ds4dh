@@ -1,0 +1,314 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+# Работа с текстами: `gutenbergr`, `tidytext`, `stopwords`
+
+```{r,message=FALSE}
+library(tidyverse)
+```
+
+```{r, echo=FALSE}
+theme_set(theme_bw())
+```
+
+## Загрузка текста в R
+
+В пакете `readr` (входит в `tidyverse`) для чтения текста есть функция `read_lines()`. В качестве первой переменной может выступать путь к файлу на компьютере или интернет ссылка:
+
+```{r}
+t <- read_lines("https://raw.githubusercontent.com/agricolamz/2020_HSE_DPO/master/data/Chang.txt")
+head(t)
+```
+
+Тексты хранятся в интернете по разному. Часто бывает так, что текст дигитализировали так, как он напечатан, так что в результате каждая строка в печатной книжке соответствует строке в текстовом файле (так, например, в нашем примере). Такой файл следует склеить воедино, используя пробел в качестве разделителя:
+
+```{r}
+t2 <- str_c(t, collapse = " ")
+length(t2)
+str_length(t2)
+```
+
+При таком слиянии, стоит проверить, не было ли в анализируемом тексте знаков переноса, иначе они сольются неправильно:
+
+```{r}
+str_c(c("... она запо-", "лучила ..."), collapse = " ")
+```
+
+## Пакет `gutenbergr`
+
+Пакет `gutenbergr` является API для очень старого [проекта Gutenberg](http://www.gutenberg.org/).
+
+```{r}
+library(gutenbergr)
+```
+
+Все самое важное в этом пакете хранится в датасете `gutenberg_metadata`
+
+```{r}
+str(gutenberg_metadata)
+```
+
+Например, сейчас мы можем понять, сколько книг на разных языках можно скачать из проекта:
+
+```{r}
+gutenberg_metadata %>% 
+  count(language, sort = TRUE)
+```
+
+Как видно, в основном это тексты на английском. Сколько авторов в датасете?
+
+```{r}
+gutenberg_metadata %>% 
+  count(author, sort = TRUE)
+```
+
+Сколько произведений Джейн Остин (не перепутайте с другими Остин) есть в датасете?
+
+```{r}
+gutenberg_metadata %>% 
+  filter(author == "Austen, Jane") %>% 
+  distinct(gutenberg_id, title)
+```
+
+Давайте скачаем "Эмму":
+
+```{r download_emma, cache=TRUE}
+emma <- gutenberg_download(158)
+emma
+```
+
+Можно скачивать сразу несколько книг. Давайте добавим еще "Леди Сьюзен":
+
+```{r download_books, cache=TRUE}
+books <- gutenberg_download(c(158, 946), meta_fields = "title")
+books
+books %>% 
+  count(title)
+```
+
+```{block, type = "rmdtask"}
+Сколько уникальных заголовков из базы данных содержит "Sherlock Holmes"?
+```
+
+```{r, echo=FALSE, results='asis'}
+library(checkdown)
+gutenberg_metadata %>% 
+  filter(str_detect(title, "Sherlock Holmes")) %>% 
+  distinct(title) %>% 
+  nrow() %>% 
+  check_question()
+```
+
+```{block, type = "rmdtask"}
+Скачайте все произведения Гертруды Стайн (по-английски, она Gertrude Stein) из базы данных и вставьте название самого длинного текста.
+```
+
+```{r stein, echo=FALSE, results='asis', cache=TRUE}
+gutenberg_metadata %>% 
+  filter(str_detect(author, "Stein, Gertrude"),
+         language == "en") %>% 
+  pull(gutenberg_id) %>% 
+  gutenberg_download(meta_fields = "title") ->
+  stein
+
+stein %>% 
+  count(title) %>% 
+  filter(n == max(n)) %>% 
+  pull(title) %>% 
+  check_question()
+```
+
+## Библиотека `tidytext`
+
+Сейчас скачанные книги записаны в таблицу, где одна строка это один абзац. Хочется мочь посчитать слова. Для этого книги нужно привести в tidy формат и для этого написан пакет `tidytext` (онлайн книга доступна [здесь](https://www.tidytextmining.com/)). Основное "оружие" пакета `tidytext` функция `unnest_tokens()`, которая переводит текст в tidy формат. В аргумент `output` подается вектор с именем будущей переменной, а аргумент `input` принимает переменную с текстом.
+
+```{r}
+library(tidytext)
+books %>% 
+  unnest_tokens(output = "word", input = text)
+```
+
+Теперь можно посчитать самые частотные слова в обоих произведениях:
+
+```{r}
+books %>% 
+  unnest_tokens(output = "word", input = text) %>% 
+  count(title, word, sort = TRUE)
+```
+
+Ну... Это было ожидаемо. Нужно убрать стопслова. Английские стопслова встроены в пакет (переменная `stop_words`):
+
+```{r}
+books %>% 
+  unnest_tokens(word, text) %>% 
+  count(title, word, sort = TRUE) %>% 
+  anti_join(stop_words)
+```
+
+```{block, type = "rmdtask"}
+Постройте следующий график, на котором представлены самые частотные 20 слов каждого из произведений.
+```
+
+```{r, echo = FALSE, message=FALSE}
+books %>% 
+  unnest_tokens(word, text) %>% 
+  count(title, word, sort = TRUE) %>% 
+  anti_join(stop_words) %>% 
+  group_by(title) %>% 
+  slice(1:20) %>% 
+  ggplot(aes(n, word))+
+  geom_col()+
+  facet_wrap(~title, scale = "free")
+```
+
+Как видно, на графике все не упорядочено, давайте начнем с такого примера:
+
+```{r}
+books %>% 
+  unnest_tokens(word, text) %>% 
+  count(word, sort = TRUE) %>% 
+  slice(1:20) %>% 
+  ggplot(aes(n, word))+
+  geom_col()
+```
+
+Если мы работаем с одним фасетом, то все проблемы может решить функция `fct_reorder()`, которая упорядочивает на основании некоторой переменной:
+
+```{r}
+books %>% 
+  unnest_tokens(word, text) %>% 
+  count(word, sort = TRUE) %>% 
+  slice(1:20) %>% 
+  mutate(word = fct_reorder(word, n)) %>% 
+  ggplot(aes(n, word))+
+  geom_col()
+```
+
+Однако, если мы применим это к нашим данным, то получится неупорядочено:
+
+```{r}
+books %>% 
+  unnest_tokens(word, text) %>% 
+  count(title, word, sort = TRUE) %>% 
+  group_by(title) %>% 
+  slice(1:20) %>% 
+  ungroup() %>%
+  mutate(word = fct_reorder(word, n)) %>% 
+  ggplot(aes(n, word))+
+  geom_col()+
+  facet_wrap(~title, scales = "free")
+```
+
+В пакете `tidytext` есть функция `reorder_within()`, которая позволяет упорядочить нужным образом:
+```{r}
+books %>% 
+  unnest_tokens(word, text) %>% 
+  count(title, word, sort = TRUE) %>% 
+  group_by(title) %>% 
+  slice(1:20) %>% 
+  ungroup() %>%
+  mutate(word = reorder_within(x = word, by = n, within = title)) %>% 
+  ggplot(aes(n, word))+
+  geom_col()+
+  facet_wrap(~title, scales = "free")
+```
+
+Чтобы избавиться от дополнительной подписи нужно использовать `scale_y_reordered()` или `scale_x_reordered()`:
+```{r}
+books %>% 
+  unnest_tokens(word, text) %>% 
+  count(title, word, sort = TRUE) %>% 
+  group_by(title) %>% 
+  slice(1:20) %>% 
+  ungroup() %>%
+  mutate(word = reorder_within(x = word, by = n, within = title)) %>% 
+  ggplot(aes(n, word))+
+  geom_col()+
+  facet_wrap(~title, scales = "free")+
+  scale_y_reordered()
+```
+
+
+Функция `unnest_tokens()` позволяет работать не только со словами, но и, напрмиер, с биграммами:
+
+```{r}
+books %>% 
+  unnest_tokens(word, text, token = "ngrams", n = 2)
+```
+
+Поиск самых частотных слов --- не едиснственная задача, которую можно решать при работе с текстом. Иногда имеет смысл узнать распределение слов в произведении. Давайте посмотрим как распределены в романе "Эмма" фамилии главных героев:
+
+```{r}
+books %>% 
+  filter(title == "Emma") %>% 
+  unnest_tokens(word, text) %>% 
+  mutate(narrative_time = 1:n()) %>% 
+  filter(str_detect(word, "knightley$|woodhouse$|churchill$|fairfax$")) %>%  
+  ggplot()+
+      geom_vline(aes(xintercept = narrative_time))+
+  facet_wrap(~word, ncol = 1)
+```
+
+```{block, type = "rmdtask"}
+Скачайте все произведения Гертруды Стайн из базы данных, уберите стопслова и визуализируйте топ 20 слов из каждого текста.
+```
+
+```{r, echo = FALSE, message=FALSE}
+stein %>% 
+  unnest_tokens(word, text) %>% 
+  anti_join(stop_words) %>% 
+  count(title, word, sort = TRUE) %>% 
+  group_by(title) %>% 
+  slice(1:20) %>% 
+  ungroup() %>%
+  mutate(word = reorder_within(x = word, by = n, within = title)) %>% 
+  ggplot(aes(n, word))+
+  geom_col()+
+  facet_wrap(~title, scales = "free")+
+  scale_y_reordered()
+```
+
+
+```{block, type = "rmdtask"}
+Скачайте произведение Гертруды Стайн "Geography and Plays" и визуализируйте распределение в тексте слов time и living.
+```
+
+```{r, message=FALSE, echo=FALSE}
+stein %>% 
+  filter(title == "Geography and Plays") %>% 
+  unnest_tokens(word, text) %>% 
+  mutate(narrative_time = 1:n()) %>% 
+  filter(str_detect(word, "^time$|living$")) %>%  
+  ggplot()+
+      geom_vline(aes(xintercept = narrative_time))+
+  facet_wrap(~word, ncol = 1)
+```
+
+
+## Пакет `stopwords`
+
+Выше мы упомянули, что в пакет `tidytext` встроен список английских стопслов. Стопслова для других язков можно раздобыть списки для других языков, используя пакет `stopwords`. Вместо имени языка, функция принимает ISO код языыка:
+
+```{r}
+library(stopwords)
+stopwords("ru")
+```
+
+Пакет предоставляет несколько источников списков:
+```{r}
+stopwords_getsources()
+```
+
+Давайте посмотрем какие языки сейчас доступны:
+
+```{r}
+map(stopwords_getsources(), stopwords_getlanguages)
+```
+
+Мы видим, что есть несколько источников для русского языка:
+```{r}
+length(stopwords("ru", source = "snowball"))
+length(stopwords("ru", source = "stopwords-iso"))
+```
