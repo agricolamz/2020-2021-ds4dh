@@ -653,7 +653,7 @@ heroes %>%
 heroes %>%
   group_by(Gender) %>%
   summarise(across(where(is.character), 
-                   function(x) mean(nchar(x), na.rm = TRUE)))
+                   function(x){mean(nchar(x), na.rm = TRUE)}))
 ```
 
 Или же даже посчитать и то, и другое внутри одного `summarise()`!
@@ -663,7 +663,7 @@ heroes %>%
   group_by(Gender) %>%
   summarise(across(where(is.numeric), mean, na.rm = TRUE),
             across(where(is.character), 
-                   function(x) mean(nchar(x), na.rm = TRUE)))
+                   function(x){mean(nchar(x), na.rm = TRUE)}))
 ```
 
 Внутри одного `across()` можно применить не одну функцию к каждой из выбранных колонок, а сразу несколько функций для каждой из колонок. Для этого нам нужно использовать список функций (желательно - проименованный).

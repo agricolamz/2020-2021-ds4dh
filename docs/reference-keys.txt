@@ -146,7 +146,14 @@ yaml-шапка
 пакет-gutenbergr
 библиотека-tidytext
 пакет-stopwords
+работа-со-временем-lubridate
+создание-даты
+извлечение-компонентов-даты
+операции-с-датами
+визуализация-времени-данные-левада-центра
 tasks
+task_begin
+task_new_vecs
 task_coer
 task_vec_ion
 task_vec_ind
