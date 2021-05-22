@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2 Введение в R | Наука о данных в R для программы Цифровых гуманитарных исследований</title>
   <meta name="description" content="2 Введение в R | Наука о данных в R для программы Цифровых гуманитарных исследований" />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2 Введение в R | Наука о данных в R для программы Цифровых гуманитарных исследований" />
   <meta property="og:type" content="book" />
@@ -32,7 +32,7 @@
   
 <link rel="prev" href="index.html"/>
 <link rel="next" href="real-data.html"/>
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/header-attrs-2.8/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -52,6 +52,8 @@
 
 <link href="libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="libs/pagedtable-1.1/js/pagedtable.js"></script>
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 <script src="libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
 <link href="libs/str_view-0.1.0/str_view.css" rel="stylesheet" />
 <script src="libs/str_view-binding-1.4.0/str_view.js"></script>
@@ -130,6 +132,29 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
@@ -369,47 +394,83 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="13.2.4" data-path="описательная-статистика-распределения.html"><a href="описательная-статистика-распределения.html#давайте-посчитаем-вероятности"><i class="fa fa-check"></i><b>13.2.4</b> Давайте посчитаем вероятности</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="14" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>14</b> Задания</a>
+<li class="chapter" data-level="14" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html"><i class="fa fa-check"></i><b>14</b> Проверка статистических гипотез</a>
 <ul>
-<li class="chapter" data-level="14.1" data-path="tasks.html"><a href="tasks.html#task_begin"><i class="fa fa-check"></i><b>14.1</b> Начало работы в R</a></li>
-<li class="chapter" data-level="14.2" data-path="tasks.html"><a href="tasks.html#task_new_vecs"><i class="fa fa-check"></i><b>14.2</b> Создание векторов</a></li>
-<li class="chapter" data-level="14.3" data-path="tasks.html"><a href="tasks.html#task_coer"><i class="fa fa-check"></i><b>14.3</b> Приведение типов</a></li>
-<li class="chapter" data-level="14.4" data-path="tasks.html"><a href="tasks.html#task_vec_ion"><i class="fa fa-check"></i><b>14.4</b> Векторизация</a></li>
-<li class="chapter" data-level="14.5" data-path="tasks.html"><a href="tasks.html#task_vec_ind"><i class="fa fa-check"></i><b>14.5</b> Индексирование векторов</a></li>
-<li class="chapter" data-level="14.6" data-path="tasks.html"><a href="tasks.html#task_matrix"><i class="fa fa-check"></i><b>14.6</b> Матрицы</a></li>
-<li class="chapter" data-level="14.7" data-path="tasks.html"><a href="tasks.html#task_list"><i class="fa fa-check"></i><b>14.7</b> Списки</a></li>
-<li class="chapter" data-level="14.8" data-path="tasks.html"><a href="tasks.html#task_df"><i class="fa fa-check"></i><b>14.8</b> Датафрейм</a></li>
-<li class="chapter" data-level="14.9" data-path="tasks.html"><a href="tasks.html#task_if"><i class="fa fa-check"></i><b>14.9</b> Условные конструкции</a></li>
-<li class="chapter" data-level="14.10" data-path="tasks.html"><a href="tasks.html#task_function"><i class="fa fa-check"></i><b>14.10</b> Создание функций</a></li>
-<li class="chapter" data-level="14.11" data-path="tasks.html"><a href="tasks.html#task_apply"><i class="fa fa-check"></i><b>14.11</b> Семейство функций apply()</a></li>
-<li class="chapter" data-level="14.12" data-path="tasks.html"><a href="tasks.html#task_pipe"><i class="fa fa-check"></i><b>14.12</b> magrittr::<code>%&gt;%</code></a></li>
-<li class="chapter" data-level="14.13" data-path="tasks.html"><a href="tasks.html#task_arr"><i class="fa fa-check"></i><b>14.13</b> Сортировка строк: <code>dplyr::arrange()</code></a></li>
-<li class="chapter" data-level="14.14" data-path="tasks.html"><a href="tasks.html#task_dist"><i class="fa fa-check"></i><b>14.14</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
-<li class="chapter" data-level="14.15" data-path="tasks.html"><a href="tasks.html#task_mutate"><i class="fa fa-check"></i><b>14.15</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
-<li class="chapter" data-level="14.16" data-path="tasks.html"><a href="tasks.html#task_group_by"><i class="fa fa-check"></i><b>14.16</b> Агрегация: <code>dplyr::group_by() %&gt;% summarise()</code></a></li>
-<li class="chapter" data-level="14.17" data-path="tasks.html"><a href="tasks.html#task_across"><i class="fa fa-check"></i><b>14.17</b> Операции с несколькими колонками: <code>across()</code></a></li>
-<li class="chapter" data-level="14.18" data-path="tasks.html"><a href="tasks.html#соединение-датафреймов-_join-task_join"><i class="fa fa-check"></i><b>14.18</b> Соединение датафреймов: *_join {#task_join}</a></li>
-<li class="chapter" data-level="14.19" data-path="tasks.html"><a href="tasks.html#task_join"><i class="fa fa-check"></i><b>14.19</b> Tidy data</a></li>
+<li class="chapter" data-level="14.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#о-статистике"><i class="fa fa-check"></i><b>14.1</b> О статистике</a></li>
+<li class="chapter" data-level="14.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#проверка-нулевой-гипотезы"><i class="fa fa-check"></i><b>14.2</b> Проверка нулевой гипотезы</a></li>
+<li class="chapter" data-level="14.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#классификация-статистических-тестов"><i class="fa fa-check"></i><b>14.3</b> Классификация статистических тестов</a>
+<ul>
+<li class="chapter" data-level="14.3.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#количество-выборок"><i class="fa fa-check"></i><b>14.3.1</b> Количество выборок</a></li>
+<li class="chapter" data-level="14.3.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#направление"><i class="fa fa-check"></i><b>14.3.2</b> Направление</a></li>
+<li class="chapter" data-level="14.3.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#парные-vs.-непарные"><i class="fa fa-check"></i><b>14.3.3</b> Парные vs. непарные</a></li>
+<li class="chapter" data-level="14.3.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#параметрические-vs.-непараметрические"><i class="fa fa-check"></i><b>14.3.4</b> Параметрические vs. непараметрические</a></li>
+<li class="chapter" data-level="14.3.5" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#классификация-тестов"><i class="fa fa-check"></i><b>14.3.5</b> Классификация тестов</a></li>
 </ul></li>
-<li class="chapter" data-level="15" data-path="solutions.html"><a href="solutions.html"><i class="fa fa-check"></i><b>15</b> Решения заданий</a>
+<li class="chapter" data-level="14.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#одновыборочные-тесты"><i class="fa fa-check"></i><b>14.4</b> Одновыборочные тесты</a>
 <ul>
-<li class="chapter" data-level="15.1" data-path="solutions.html"><a href="solutions.html#solution_coer"><i class="fa fa-check"></i><b>15.1</b> Приведение типов</a></li>
-<li class="chapter" data-level="15.2" data-path="solutions.html"><a href="solutions.html#solution_vec_ion"><i class="fa fa-check"></i><b>15.2</b> Векторизация</a></li>
-<li class="chapter" data-level="15.3" data-path="solutions.html"><a href="solutions.html#solution_vec_ind"><i class="fa fa-check"></i><b>15.3</b> Индексирование векторов</a></li>
-<li class="chapter" data-level="15.4" data-path="solutions.html"><a href="solutions.html#solution_matrix"><i class="fa fa-check"></i><b>15.4</b> Матрицы</a></li>
-<li class="chapter" data-level="15.5" data-path="solutions.html"><a href="solutions.html#solution_list"><i class="fa fa-check"></i><b>15.5</b> Списки</a></li>
-<li class="chapter" data-level="15.6" data-path="solutions.html"><a href="solutions.html#solution_df"><i class="fa fa-check"></i><b>15.6</b> Датафрейм</a></li>
-<li class="chapter" data-level="15.7" data-path="solutions.html"><a href="solutions.html#solution_if"><i class="fa fa-check"></i><b>15.7</b> Условные конструкции</a></li>
-<li class="chapter" data-level="15.8" data-path="solutions.html"><a href="solutions.html#solution_function"><i class="fa fa-check"></i><b>15.8</b> Создание функций</a></li>
-<li class="chapter" data-level="15.9" data-path="solutions.html"><a href="solutions.html#solution_apply"><i class="fa fa-check"></i><b>15.9</b> Семейство функций apply()</a></li>
-<li class="chapter" data-level="15.10" data-path="solutions.html"><a href="solutions.html#solution_pipe"><i class="fa fa-check"></i><b>15.10</b> magrittr::<code>%&gt;%</code></a></li>
-<li class="chapter" data-level="15.11" data-path="solutions.html"><a href="solutions.html#solution_arr"><i class="fa fa-check"></i><b>15.11</b> Сортировка строк: <code>dplyr::arrange()</code></a></li>
-<li class="chapter" data-level="15.12" data-path="solutions.html"><a href="solutions.html#solution_dist"><i class="fa fa-check"></i><b>15.12</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
-<li class="chapter" data-level="15.13" data-path="solutions.html"><a href="solutions.html#solution_mutate"><i class="fa fa-check"></i><b>15.13</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
-<li class="chapter" data-level="15.14" data-path="solutions.html"><a href="solutions.html#solution_group_by"><i class="fa fa-check"></i><b>15.14</b> Агрегация: <code>dplyr::group_by() %&gt;% summarise()</code></a></li>
-<li class="chapter" data-level="15.15" data-path="solutions.html"><a href="solutions.html#solution_across"><i class="fa fa-check"></i><b>15.15</b> Операции с несколькими колонками: <code>across()</code></a></li>
-<li class="chapter" data-level="15.16" data-path="solutions.html"><a href="solutions.html#соединение-датафреймов-_join-solution_join"><i class="fa fa-check"></i><b>15.16</b> Соединение датафреймов: *_join {#solution_join}</a></li>
-<li class="chapter" data-level="15.17" data-path="solutions.html"><a href="solutions.html#solution_join"><i class="fa fa-check"></i><b>15.17</b> Tidy data</a></li>
+<li class="chapter" data-level="14.4.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#биномиальный-тест"><i class="fa fa-check"></i><b>14.4.1</b> Биномиальный тест</a></li>
+<li class="chapter" data-level="14.4.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#одновыборочный-t-тест"><i class="fa fa-check"></i><b>14.4.2</b> Одновыборочный t-тест</a></li>
+<li class="chapter" data-level="14.4.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#тест-уилкоксона"><i class="fa fa-check"></i><b>14.4.3</b> Тест Уилкоксона</a></li>
+</ul></li>
+<li class="chapter" data-level="14.5" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#двухвыборочные-тесты"><i class="fa fa-check"></i><b>14.5</b> Двухвыборочные тесты</a>
+<ul>
+<li class="chapter" data-level="14.5.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#двухвыборочный-t-тест"><i class="fa fa-check"></i><b>14.5.1</b> Двухвыборочный t-тест</a></li>
+<li class="chapter" data-level="14.5.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#двухвыборочный-парный-t-тест"><i class="fa fa-check"></i><b>14.5.2</b> Двухвыборочный парный t-тест</a></li>
+<li class="chapter" data-level="14.5.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#критерий-манна-уитни"><i class="fa fa-check"></i><b>14.5.3</b> Критерий Манна-Уитни</a></li>
+<li class="chapter" data-level="14.5.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#критерий-χ²-тест-фишера"><i class="fa fa-check"></i><b>14.5.4</b> Критерий χ², тест Фишера</a></li>
+<li class="chapter" data-level="14.5.5" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#критерий-мак-немара"><i class="fa fa-check"></i><b>14.5.5</b> Критерий Мак Немара</a></li>
+</ul></li>
+<li class="chapter" data-level="14.6" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#послесловие"><i class="fa fa-check"></i><b>14.6</b> Послесловие</a></li>
+<li class="chapter" data-level="14.7" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#рассказы-чехова-и-зощенко"><i class="fa fa-check"></i><b>14.7</b> Рассказы Чехова и Зощенко</a>
+<ul>
+<li class="chapter" data-level="14.7.1" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#section"><i class="fa fa-check"></i><b>14.7.1</b> </a></li>
+<li class="chapter" data-level="14.7.2" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#section-1"><i class="fa fa-check"></i><b>14.7.2</b> </a></li>
+<li class="chapter" data-level="14.7.3" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#section-2"><i class="fa fa-check"></i><b>14.7.3</b> </a></li>
+<li class="chapter" data-level="14.7.4" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#section-3"><i class="fa fa-check"></i><b>14.7.4</b> </a></li>
+</ul></li>
+<li class="chapter" data-level="14.8" data-path="проверка-статистических-гипотез.html"><a href="проверка-статистических-гипотез.html#obamacare"><i class="fa fa-check"></i><b>14.8</b> Obamacare</a></li>
+</ul></li>
+<li class="chapter" data-level="15" data-path="tasks.html"><a href="tasks.html"><i class="fa fa-check"></i><b>15</b> Задания</a>
+<ul>
+<li class="chapter" data-level="15.1" data-path="tasks.html"><a href="tasks.html#task_begin"><i class="fa fa-check"></i><b>15.1</b> Начало работы в R</a></li>
+<li class="chapter" data-level="15.2" data-path="tasks.html"><a href="tasks.html#task_new_vecs"><i class="fa fa-check"></i><b>15.2</b> Создание векторов</a></li>
+<li class="chapter" data-level="15.3" data-path="tasks.html"><a href="tasks.html#task_coer"><i class="fa fa-check"></i><b>15.3</b> Приведение типов</a></li>
+<li class="chapter" data-level="15.4" data-path="tasks.html"><a href="tasks.html#task_vec_ion"><i class="fa fa-check"></i><b>15.4</b> Векторизация</a></li>
+<li class="chapter" data-level="15.5" data-path="tasks.html"><a href="tasks.html#task_vec_ind"><i class="fa fa-check"></i><b>15.5</b> Индексирование векторов</a></li>
+<li class="chapter" data-level="15.6" data-path="tasks.html"><a href="tasks.html#task_matrix"><i class="fa fa-check"></i><b>15.6</b> Матрицы</a></li>
+<li class="chapter" data-level="15.7" data-path="tasks.html"><a href="tasks.html#task_list"><i class="fa fa-check"></i><b>15.7</b> Списки</a></li>
+<li class="chapter" data-level="15.8" data-path="tasks.html"><a href="tasks.html#task_df"><i class="fa fa-check"></i><b>15.8</b> Датафрейм</a></li>
+<li class="chapter" data-level="15.9" data-path="tasks.html"><a href="tasks.html#task_if"><i class="fa fa-check"></i><b>15.9</b> Условные конструкции</a></li>
+<li class="chapter" data-level="15.10" data-path="tasks.html"><a href="tasks.html#task_function"><i class="fa fa-check"></i><b>15.10</b> Создание функций</a></li>
+<li class="chapter" data-level="15.11" data-path="tasks.html"><a href="tasks.html#task_apply"><i class="fa fa-check"></i><b>15.11</b> Семейство функций apply()</a></li>
+<li class="chapter" data-level="15.12" data-path="tasks.html"><a href="tasks.html#task_pipe"><i class="fa fa-check"></i><b>15.12</b> magrittr::<code>%&gt;%</code></a></li>
+<li class="chapter" data-level="15.13" data-path="tasks.html"><a href="tasks.html#task_arr"><i class="fa fa-check"></i><b>15.13</b> Сортировка строк: <code>dplyr::arrange()</code></a></li>
+<li class="chapter" data-level="15.14" data-path="tasks.html"><a href="tasks.html#task_dist"><i class="fa fa-check"></i><b>15.14</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
+<li class="chapter" data-level="15.15" data-path="tasks.html"><a href="tasks.html#task_mutate"><i class="fa fa-check"></i><b>15.15</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
+<li class="chapter" data-level="15.16" data-path="tasks.html"><a href="tasks.html#task_group_by"><i class="fa fa-check"></i><b>15.16</b> Агрегация: <code>dplyr::group_by() %&gt;% summarise()</code></a></li>
+<li class="chapter" data-level="15.17" data-path="tasks.html"><a href="tasks.html#task_across"><i class="fa fa-check"></i><b>15.17</b> Операции с несколькими колонками: <code>across()</code></a></li>
+<li class="chapter" data-level="15.18" data-path="tasks.html"><a href="tasks.html#соединение-датафреймов-_join-task_join"><i class="fa fa-check"></i><b>15.18</b> Соединение датафреймов: *_join {#task_join}</a></li>
+<li class="chapter" data-level="15.19" data-path="tasks.html"><a href="tasks.html#task_join"><i class="fa fa-check"></i><b>15.19</b> Tidy data</a></li>
+</ul></li>
+<li class="chapter" data-level="16" data-path="solutions.html"><a href="solutions.html"><i class="fa fa-check"></i><b>16</b> Решения заданий</a>
+<ul>
+<li class="chapter" data-level="16.1" data-path="solutions.html"><a href="solutions.html#solution_coer"><i class="fa fa-check"></i><b>16.1</b> Приведение типов</a></li>
+<li class="chapter" data-level="16.2" data-path="solutions.html"><a href="solutions.html#solution_vec_ion"><i class="fa fa-check"></i><b>16.2</b> Векторизация</a></li>
+<li class="chapter" data-level="16.3" data-path="solutions.html"><a href="solutions.html#solution_vec_ind"><i class="fa fa-check"></i><b>16.3</b> Индексирование векторов</a></li>
+<li class="chapter" data-level="16.4" data-path="solutions.html"><a href="solutions.html#solution_matrix"><i class="fa fa-check"></i><b>16.4</b> Матрицы</a></li>
+<li class="chapter" data-level="16.5" data-path="solutions.html"><a href="solutions.html#solution_list"><i class="fa fa-check"></i><b>16.5</b> Списки</a></li>
+<li class="chapter" data-level="16.6" data-path="solutions.html"><a href="solutions.html#solution_df"><i class="fa fa-check"></i><b>16.6</b> Датафрейм</a></li>
+<li class="chapter" data-level="16.7" data-path="solutions.html"><a href="solutions.html#solution_if"><i class="fa fa-check"></i><b>16.7</b> Условные конструкции</a></li>
+<li class="chapter" data-level="16.8" data-path="solutions.html"><a href="solutions.html#solution_function"><i class="fa fa-check"></i><b>16.8</b> Создание функций</a></li>
+<li class="chapter" data-level="16.9" data-path="solutions.html"><a href="solutions.html#solution_apply"><i class="fa fa-check"></i><b>16.9</b> Семейство функций apply()</a></li>
+<li class="chapter" data-level="16.10" data-path="solutions.html"><a href="solutions.html#solution_pipe"><i class="fa fa-check"></i><b>16.10</b> magrittr::<code>%&gt;%</code></a></li>
+<li class="chapter" data-level="16.11" data-path="solutions.html"><a href="solutions.html#solution_arr"><i class="fa fa-check"></i><b>16.11</b> Сортировка строк: <code>dplyr::arrange()</code></a></li>
+<li class="chapter" data-level="16.12" data-path="solutions.html"><a href="solutions.html#solution_dist"><i class="fa fa-check"></i><b>16.12</b> Уникальные значения: <code>dplyr::distinct()</code></a></li>
+<li class="chapter" data-level="16.13" data-path="solutions.html"><a href="solutions.html#solution_mutate"><i class="fa fa-check"></i><b>16.13</b> Создание колонок: <code>dplyr::mutate()</code> и <code>dplyr::transmute()</code></a></li>
+<li class="chapter" data-level="16.14" data-path="solutions.html"><a href="solutions.html#solution_group_by"><i class="fa fa-check"></i><b>16.14</b> Агрегация: <code>dplyr::group_by() %&gt;% summarise()</code></a></li>
+<li class="chapter" data-level="16.15" data-path="solutions.html"><a href="solutions.html#solution_across"><i class="fa fa-check"></i><b>16.15</b> Операции с несколькими колонками: <code>across()</code></a></li>
+<li class="chapter" data-level="16.16" data-path="solutions.html"><a href="solutions.html#соединение-датафреймов-_join-solution_join"><i class="fa fa-check"></i><b>16.16</b> Соединение датафреймов: *_join {#solution_join}</a></li>
+<li class="chapter" data-level="16.17" data-path="solutions.html"><a href="solutions.html#solution_join"><i class="fa fa-check"></i><b>16.17</b> Tidy data</a></li>
 </ul></li>
 <li class="chapter" data-level="" data-path="ссылки-на-литературу.html"><a href="ссылки-на-литературу.html"><i class="fa fa-check"></i>Ссылки на литературу</a></li>
 </ul>
@@ -443,11 +504,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p>Все больше книг “Data Science for …”:</p>
 <ul>
-<li>psychologists <span class="citation">(<a href="ссылки-на-литературу.html#ref-hansjoerg19" role="doc-biblioref">Hansjörg 2019</a>)</span></li>
-<li>immunologists <span class="citation">(<a href="ссылки-на-литературу.html#ref-thomas19" role="doc-biblioref">Thomas and Pallett 2019</a>)</span></li>
-<li>business <span class="citation">(<a href="ссылки-на-литературу.html#ref-provost13" role="doc-biblioref">Provost and Fawcett 2013</a>)</span></li>
-<li>public policy <span class="citation">(<a href="ссылки-на-литературу.html#ref-brooks13" role="doc-biblioref">Brooks and Cooper 2013</a>)</span></li>
-<li>fraud detection <span class="citation">(<a href="ссылки-на-литературу.html#ref-baesens15" role="doc-biblioref">Baesens, Van Vlasselaer, and Verbeke 2015</a>)</span></li>
+<li>psychologists <span class="citation">(<a href="#ref-hansjoerg19" role="doc-biblioref">Hansjörg 2019</a>)</span></li>
+<li>immunologists <span class="citation">(<a href="#ref-thomas19" role="doc-biblioref">Thomas and Pallett 2019</a>)</span></li>
+<li>business <span class="citation">(<a href="#ref-provost13" role="doc-biblioref">Provost and Fawcett 2013</a>)</span></li>
+<li>public policy <span class="citation">(<a href="#ref-brooks13" role="doc-biblioref">Brooks and Cooper 2013</a>)</span></li>
+<li>fraud detection <span class="citation">(<a href="#ref-baesens15" role="doc-biblioref">Baesens, Van Vlasselaer, and Verbeke 2015</a>)</span></li>
 <li>…</li>
 </ul>
 <p>Среди умений датасаентистов можно перечислить следующие:</p>
@@ -463,7 +524,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="установка-r-и-rstudio" class="section level2" number="2.2">
 <h2><span class="header-section-number">2.2</span> Установка R и RStudio</h2>
-<p>В данной книге используется исключительно R <span class="citation">(<a href="ссылки-на-литературу.html#ref-r_core_team19" role="doc-biblioref">R Core Team 2019</a>)</span>, так что для занятий понадобятся:</p>
+<p>В данной книге используется исключительно R <span class="citation">(<a href="#ref-r_core_team19" role="doc-biblioref">R Core Team 2019</a>)</span>, так что для занятий понадобятся:</p>
 <ul>
 <li>R
 <ul>
@@ -478,7 +539,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li>и некоторые пакеты на R</li>
 </ul>
 <p>Часто можно увидеть или услышать, что R — язык программирования для “статистической обработки данных.” Изначально это, конечно, было правдой, но уже давно R — это полноценный язык программирования, который при помощи своих пакетов позволяет решать огромный спектр задач. В данной книге используется следующая версия R:</p>
-<pre><code>## [1] &quot;R version 4.0.5 (2021-03-31)&quot;</code></pre>
+<pre><code>## [1] &quot;R version 4.1.0 (2021-05-18)&quot;</code></pre>
 <p>Некоторые люди не любят устанавливать лишние программы себе на компьютер, несколько вариантов есть и для них:</p>
 <ul>
 <li><a href="https://rstudio.cloud/">RStudio cloud</a> — полная функциональность RStudio, пока бесплатная, но скоро это исправят;</li>
@@ -491,7 +552,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h2><span class="header-section-number">2.3</span> Полезные ссылки</h2>
 <p>В интернете легко найти документацию и туториалы по самым разным вопросам в R, так что главный залог успеха — грамотно пользоваться поисковиком, и лучше на английском языке.</p>
 <ul>
-<li><a href="https://r4ds.had.co.nz/">книга <span class="citation">(<a href="ссылки-на-литературу.html#ref-wickham16" role="doc-biblioref">Wickham and Grolemund 2016</a>)</span></a> является достаточно сильной альтернативой всему курсу</li>
+<li><a href="https://r4ds.had.co.nz/">книга <span class="citation">(<a href="#ref-wickham16" role="doc-biblioref">Wickham and Grolemund 2016</a>)</span></a> является достаточно сильной альтернативой всему курсу</li>
 <li><a href="https://stackoverflow.com">stackoverflow</a> — сервис, где достаточно быстро отвечают на любые вопросы (не обязательно по R)</li>
 <li><a href="https://community.rstudio.com/">RStudio community</a> — быстро отвечают на вопросы, связанные с R</li>
 <li><a href="https://ru.stackoverflow.com">русский stackoverflow</a></li>
@@ -1067,7 +1128,7 @@ Does anyone ever get good at R or do they just get good at googling how to do th
 ## [5,]    5   10   15   20    5   10   15   20</code></pre>
 <p>В принципе, это все, что нам нужно знать о матрицах. Матрицы используются в R довольно редко, особенно по сравнению, например, с MATLAB. Но вот индексировать матрицы хорошо бы уметь: это понадобится в работе с датафреймами.</p>
 <blockquote>
-<p>То, что матрица - это просто двумерный вектор, не является метафорой: в R матрица - это по сути своей вектор с дополнительными <em>атрибутами</em> <code>dim</code> и <code>dimnames</code>. Атрибуты — это неотъемлемые свойства объектов, для всех объектов есть обязательные атрибуты типа и длины и могут быть любые необязательные атрибуты. Можно задавать свои атрибуты или удалять уже присвоенные: удаление атрибута <code>dim</code> у матрицы превратит ее в обычный вектор. Про атрибуты подробнее можно почитать <a href="https://perso.esiee.fr/~courivad/R/06-objects.html">здесь</a> или на стр. 99–101 книги “R in a Nutshell” <span class="citation">(<a href="ссылки-на-литературу.html#ref-adler2010r" role="doc-biblioref">Adler 2010</a>)</span>.</p>
+<p>То, что матрица - это просто двумерный вектор, не является метафорой: в R матрица - это по сути своей вектор с дополнительными <em>атрибутами</em> <code>dim</code> и <code>dimnames</code>. Атрибуты — это неотъемлемые свойства объектов, для всех объектов есть обязательные атрибуты типа и длины и могут быть любые необязательные атрибуты. Можно задавать свои атрибуты или удалять уже присвоенные: удаление атрибута <code>dim</code> у матрицы превратит ее в обычный вектор. Про атрибуты подробнее можно почитать <a href="https://perso.esiee.fr/~courivad/R/06-objects.html">здесь</a> или на стр. 99–101 книги “R in a Nutshell” <span class="citation">(<a href="#ref-adler2010r" role="doc-biblioref">Adler 2010</a>)</span>.</p>
 </blockquote>
 </div>
 <div id="list" class="section level2" number="2.10">
@@ -1209,6 +1270,33 @@ Indexing lists in <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_s
 <p>Датафреймы удобно просматривать в RStudio. Для это нужно написать команду <code>View(df)</code> или же просто нажать на названии нужной переменной из списка вверху справа (там где Environment). Тогда увидите табличку, очень похожую на Excel и тому подобные программы для работы с таблицами. Там же есть и всякие возможности для фильтрации, сортировки и поиска… Но, конечно, интереснее все эти вещи делать руками, т.е. с помощью написания кода.</p>
 <p>На этом пора заканчивать с введением и приступать к реальным данным.</p>
 
+</div>
+</div>
+<h3>Ссылки на литературу</h3>
+<div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-adler2010r" class="csl-entry">
+Adler, Joseph. 2010. <em>R in a Nutshell: A Desktop Quick Reference</em>. " O’Reilly Media, Inc.".
+</div>
+<div id="ref-baesens15" class="csl-entry">
+Baesens, Bart, Veronique Van Vlasselaer, and Wouter Verbeke. 2015. <em>Fraud Analytics Using Descriptive, Predictive, and Social Network Techniques: A Guide to Data Science for Fraud Detection</em>. John Wiley &amp; Sons.
+</div>
+<div id="ref-brooks13" class="csl-entry">
+Brooks, Harvey, and Chester L Cooper. 2013. <em>Science for Public Policy</em>. Elsevier.
+</div>
+<div id="ref-hansjoerg19" class="csl-entry">
+Hansjörg, Neth. 2019. <em>Data Science for Psychologists</em>. self published.
+</div>
+<div id="ref-provost13" class="csl-entry">
+Provost, Foster, and Tom Fawcett. 2013. <em>Data Science for Business: What You Need to Know about Data Mining and Data-Analytic Thinking</em>. O’Reilly Media, Inc.
+</div>
+<div id="ref-r_core_team19" class="csl-entry">
+R Core Team. 2019. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
+</div>
+<div id="ref-thomas19" class="csl-entry">
+Thomas, Niclas, and Laura Pallett. 2019. <em>Data Science for Immunologists</em>. CreateSpace Independent Publishing Platform.
+</div>
+<div id="ref-wickham16" class="csl-entry">
+Wickham, Hadley, and Garrett Grolemund. 2016. <em>R for Data Science: Import, Tidy, Transform, Visualize, and Model Data</em>. O’Reilly Media, Inc.
 </div>
 </div>
 <div class="footnotes">
