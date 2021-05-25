@@ -400,7 +400,7 @@ chekhov <- read_tsv("https://github.com/agricolamz/DS_for_DH/raw/master/data/tid
 zoshenko <- read_tsv("https://github.com/agricolamz/DS_for_DH/raw/master/data/tidy_zoshenko.csv")
 
 chekhov %>% 
-  filter(str_detect(word, "деньг")) %>% 
+  filter(str_detect(word, "ден[ье]г")) %>% 
   group_by(titles, n_words) %>% 
   summarise(n = sum(n)) %>% 
   mutate(ratio = n/n_words) %>% 
@@ -408,7 +408,7 @@ chekhov %>%
   ch_money
 
 zoshenko %>% 
-  filter(str_detect(word, "деньг")) %>% 
+  filter(str_detect(word, "ден[ье]г")) %>% 
   group_by(titles, n_words) %>% 
   summarise(n = sum(n)) %>% 
   mutate(ratio = n/n_words) %>% 
@@ -420,7 +420,7 @@ zoshenko$author <- "Зощенко"
 
 chekhov %>% 
   bind_rows(zoshenko) %>% 
-  filter(str_detect(word, "деньг")) %>% 
+  filter(str_detect(word, "ден[ье]г")) %>% 
   group_by(author, titles, n_words) %>% 
   summarise(n = sum(n)) %>% 
   mutate(ratio = n/n_words) %>% 
@@ -476,9 +476,9 @@ novels %>%
 check_question(round(fit$p.value, 3))
 ```
 
-* Приведите значение t-статистики, округленное до 3 знаков после запятой:
+* Приведите абсолютное (т. е. неотрицательное) значение t-статистики, округленное до 3 знаков после запятой:
 ```{r, results='asis', echo = FALSE}
-check_question(round(fit$statistic, 3))
+check_question(round(abs(fit$statistic), 3))
 ```
 
 
