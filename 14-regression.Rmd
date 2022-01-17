@@ -166,7 +166,7 @@ scale(x)[,1] == (x-mean(x))/sd(x)
 ```{r, echo=FALSE, message=FALSE}
 read_csv("https://raw.githubusercontent.com/agricolamz/DS_for_DH/master/data/moscow_average_temperature.csv") %>% 
   group_by(type) %>% 
-  mutate(normalised = scale(non_normalised)) %>% 
+  mutate(normalised = scale(non_normalised)[,1]) %>% 
   pivot_longer(names_to = "normalisation", values_to = "value", non_normalised:normalised) %>% 
   ggplot(aes(value, color = type))+
   geom_density()+

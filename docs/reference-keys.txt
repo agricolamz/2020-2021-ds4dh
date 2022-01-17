@@ -31,7 +31,6 @@ loops_conditions
 if
 for
 ifelse
-functional
 create_fun
 sanity_check
 why_functions
@@ -197,10 +196,6 @@ csv-файлы
 критерий-мак-немара
 послесловие
 рассказы-чехова-и-зощенко
-section
-section-1
-section-2
-section-3
 obamacare
 корреляция-и-регрессия
 дисперсия-и-стандартное-отклонение
